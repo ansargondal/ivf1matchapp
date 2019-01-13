@@ -14,15 +14,17 @@
     </footer>
 </div>
 
-<script src="../vendor/jquery/jquery.min.js"></script>
-<script src="../vendor/jquery-ui/jquery-ui.min.js"></script>
-<script src="../vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
-<script src="../vendor/jquery-validation/jquery.validate.js"></script>
-<script src="../vendor/data-table/data-table.js"></script>
-<script src="../vendor/data-table/dataTables.conditionalPaging.js"></script>
-<script src="../js/global.min.js"></script>
-<script src="../js/dashboard.min.js"></script>
-<script src="../vendor/bootstrap-notify/bootstrap-notify.min.js"></script>
+<script src="{{asset('../vendor/jquery/jquery.min.js')}}"></script>
+<script src="{{asset('../vendor/jquery-ui/jquery-ui.min.js')}}"></script>
+<script src="{{asset('../vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+<script src="{{asset('../vendor/jquery-validation/jquery.validate.js')}}"></script>
+<script src="{{asset('../vendor/data-table/data-table.js')}}"></script>
+<script src="{{asset('../vendor/data-table/dataTables.conditionalPaging.js')}}"></script>
+<script src="{{asset('../vendor/bootstrap-notify/bootstrap-notify.min.js')}}"></script>
+<script src="{{asset('../js/global.min.js')}}"></script>
+<script src="{{asset('../js/admin/dashboard.min.js')}}"></script>
+
+//Push js files will be placed here.
 @stack('js')
 </body>
 </html>

@@ -4,12 +4,16 @@
 
 {{--Pushing donor questionnaire only stylesheets --}}
 @push('css')
+    <link rel="stylesheet" href="{{asset('../vendor/jquery-ui/jquery-ui-1.12.1.custom/jquery-ui.css')}}">
+    <link rel="stylesheet" href="{{asset('../vendor/jquery-ui/jquery-ui-1.12.1.custom/jquery-ui.structure.css')}}">
+    <link rel="stylesheet" href="{{asset('../vendor/jquery-ui/jquery-ui-1.12.1.custom/jquery-ui.theme.css')}}">
+
     <!-- Include SmartWizard CSS -->
-    <link href="../vendor/jquer-smart_wizard/css/smart_wizard.css" rel="stylesheet" type="text/css">
-    <link href="../vendor/jquer-smart_wizard/css/smart_wizard.css" rel="stylesheet" type="text/css">
+    <link href="{{asset('../vendor/jquer-smart_wizard/css/smart_wizard.css')}}" rel="stylesheet" type="text/css"/>
     <!-- Optional SmartWizard theme -->
-    <link href="../vendor/jquer-smart_wizard/css/smart_wizard_theme_arrows.css" rel="stylesheet" type="text/css">
-    <link rel="stylesheet" href="../css/donor-questionary.css">
+    <link href="{{asset('../vendor/jquer-smart_wizard/css/smart_wizard_theme_arrows.css')}}" rel="stylesheet"
+          type="text/css"/>
+    <link rel="stylesheet" href="{{asset('../css/donor-questionary.css')}}">
 @endpush
 @section('content')
     <main class="main" id="salesman-customers">
@@ -31,7 +35,7 @@
                             <li class="nav-item"><a href="#step-10" class="nav-link">Donor Profile</a></li>
                         </ul>
 
-                        <div class="sw-container tab-content" style="min-height: 795px;">
+                        <div class="sw-container tab-content" style="min-height: 726px;">
                             <div id="step-1" class="tab-pane step-content" style="display: block;">
                                 <div class="col-xs-12">
                                     <form action="#" method="post" id="step1" novalidate="novalidate">
@@ -139,8 +143,7 @@
                                                 <div class="form-group mt-3">
                                                     <label for="couple_code"></label>
                                                     <input type="text" class="form-control" id="couple_code"
-                                                           name="any_patient"
-                                                           placeholder="Couple Code / Agency Name">
+                                                           name="any_patient" placeholder="Couple Code / Agency Name">
                                                 </div>
                                             </div>
                                         </div>
@@ -219,8 +222,7 @@
                                                         </div>
                                                         <div class="col-12 col-md-6">
                                                             <input type="text" class="form-control"
-                                                                   placeholder="Major/Degree"
-                                                                   id="i_c_attending_college"
+                                                                   placeholder="Major/Degree" id="i_c_attending_college"
                                                                    name="i_c_attending_college">
                                                         </div>
                                                     </div>
@@ -237,8 +239,7 @@
                                                         </div>
                                                         <div class="col-12 col-md-6">
                                                             <input type="text" id="i_graduate_degree"
-                                                                   class="form-control"
-                                                                   name="i_graduate_degree"
+                                                                   class="form-control" name="i_graduate_degree"
                                                                    placeholder="Graduate Degree">
                                                         </div>
                                                     </div>
@@ -256,8 +257,7 @@
                                                         <div class="col-12 col-md-6">
                                                             <input type="text" placeholder="Post Graduate Field"
                                                                    id="i_post_graduate_degree"
-                                                                   name="i_post_graduate_degree"
-                                                                   class="form-control">
+                                                                   name="i_post_graduate_degree" class="form-control">
                                                         </div>
                                                     </div>
                                                     <div class="row">
@@ -273,8 +273,8 @@
                                                         </div>
                                                         <div class="col-12 col-md-6">
                                                             <input type="text" placeholder="Please explain"
-                                                                   id="i_degree_other"
-                                                                   name="i_degree_other" class="form-control">
+                                                                   id="i_degree_other" name="i_degree_other"
+                                                                   class="form-control">
                                                         </div>
                                                     </div>
                                                 </div>
@@ -424,8 +424,8 @@
                                                     <label for="martialStatus"></label>
 
                                                     <input type="text" readonly="" class="form-control"
-                                                           id="martialStatus"
-                                                           name="martialStatus" placeholder="Single/Married">
+                                                           id="martialStatus" name="martialStatus"
+                                                           placeholder="Single/Married">
                                                     <ul class="c-dropdown-menu">
                                                         <li><a href="#" class="active">Married</a></li>
                                                         <li><a href="#">Single</a></li>
@@ -447,8 +447,8 @@
                                                     <label for="livingArrangement"></label>
 
                                                     <input type="text" readonly="" class="form-control"
-                                                           id="livingArrangement"
-                                                           name="livingArrangement" placeholder="Please Select">
+                                                           id="livingArrangement" name="livingArrangement"
+                                                           placeholder="Please Select">
                                                     <ul class="c-dropdown-menu">
                                                         <li><a href="#" class="active">Living Alone</a></li>
                                                         <li><a href="#">Living with parents/family</a></li>
@@ -489,8 +489,8 @@
                                                             <label for="oneMonth"></label>
 
                                                             <input type="text" readonly="" class="form-control"
-                                                                   id="oneMonth"
-                                                                   name="sexual_partners" placeholder="1 Month">
+                                                                   id="oneMonth" name="sexual_partners"
+                                                                   placeholder="1 Month">
                                                             <ul class="c-dropdown-menu">
                                                                 <li><a href="#" class="active">1 in last 1 month</a>
                                                                 </li>
@@ -506,8 +506,8 @@
                                                             <label for="sixmonth"></label>
 
                                                             <input type="text" readonly="" class="form-control"
-                                                                   id="sixmonth"
-                                                                   name="sexual_partners" placeholder="6 Months">
+                                                                   id="sixmonth" name="sexual_partners"
+                                                                   placeholder="6 Months">
                                                             <ul class="c-dropdown-menu">
                                                                 <li><a href="#" class="active">1 in last 6 months</a>
                                                                 </li>
@@ -524,8 +524,7 @@
                                                             <label for="year"></label>
 
                                                             <input type="text" readonly="" class="form-control"
-                                                                   id="year"
-                                                                   name="sexual_partners" placeholder="Year">
+                                                                   id="year" name="sexual_partners" placeholder="Year">
                                                             <ul class="c-dropdown-menu">
                                                                 <li><a href="#" class="active">1 in last 1 year</a></li>
                                                                 <li><a href="#">2 in last 1 year</a></li>
@@ -817,8 +816,7 @@
                                                     <label for="pregnancyHistory"></label>
 
                                                     <input type="text" readonly="" class="form-control"
-                                                           id="pregnancyHistory"
-                                                           name="pregnancyHistory"
+                                                           id="pregnancyHistory" name="pregnancyHistory"
                                                            placeholder="I have tried to become pregnant in the past.">
                                                     <ul class="c-dropdown-menu">
                                                         <li><a href="#" class="active">I have tried to become pregnant
@@ -906,8 +904,8 @@
                                                         <div class="form-group c-dropdown">
                                                             <label for="d_boyGirl_1"></label>
                                                             <input type="text" readonly="" class="form-control"
-                                                                   id="d_boyGirl_1"
-                                                                   name="d_boyGirl_1" placeholder="Select">
+                                                                   id="d_boyGirl_1" name="d_boyGirl_1"
+                                                                   placeholder="Select">
                                                             <ul class="c-dropdown-menu">
                                                                 <li><a href="#" class="active">Boy</a></li>
                                                                 <li><a href="#">Girl</a></li>
@@ -920,8 +918,7 @@
                                                     </td>
                                                     <td>
                                                         <input type="text" class="form-control"
-                                                               id="i_how_pregnancy_end_1"
-                                                               name="i_how_pregnancy_end_1">
+                                                               id="i_how_pregnancy_end_1" name="i_how_pregnancy_end_1">
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -967,8 +964,8 @@
                                                         <div class="form-group c-dropdown">
                                                             <label for="d_boyGirl_2"></label>
                                                             <input type="text" readonly="" class="form-control"
-                                                                   id="d_boyGirl_2"
-                                                                   name="d_boyGirl_2" placeholder="Select">
+                                                                   id="d_boyGirl_2" name="d_boyGirl_2"
+                                                                   placeholder="Select">
                                                             <ul class="c-dropdown-menu">
                                                                 <li><a href="#" class="active">Boy</a></li>
                                                                 <li><a href="#">Girl</a></li>
@@ -981,8 +978,7 @@
                                                     </td>
                                                     <td>
                                                         <input type="text" class="form-control"
-                                                               id="i_how_pregnancy_end_2"
-                                                               name="i_how_pregnancy_end_2">
+                                                               id="i_how_pregnancy_end_2" name="i_how_pregnancy_end_2">
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -1028,8 +1024,8 @@
                                                         <div class="form-group c-dropdown">
                                                             <label for="d_boyGirl_3"></label>
                                                             <input type="text" readonly="" class="form-control"
-                                                                   id="d_boyGirl_3"
-                                                                   name="d_boyGirl_3" placeholder="Select">
+                                                                   id="d_boyGirl_3" name="d_boyGirl_3"
+                                                                   placeholder="Select">
                                                             <ul class="c-dropdown-menu">
                                                                 <li><a href="#" class="active">Boy</a></li>
                                                                 <li><a href="#">Girl</a></li>
@@ -1042,8 +1038,7 @@
                                                     </td>
                                                     <td>
                                                         <input type="text" class="form-control"
-                                                               id="i_how_pregnancy_end_3"
-                                                               name="i_how_pregnancy_end_3">
+                                                               id="i_how_pregnancy_end_3" name="i_how_pregnancy_end_3">
                                                     </td>
                                                 </tr>
                                                 <tr>
@@ -1089,8 +1084,8 @@
                                                         <div class="form-group c-dropdown">
                                                             <label for="d_boyGirl_4"></label>
                                                             <input type="text" readonly="" class="form-control"
-                                                                   id="d_boyGirl_4"
-                                                                   name="d_boyGirl_4" placeholder="Select">
+                                                                   id="d_boyGirl_4" name="d_boyGirl_4"
+                                                                   placeholder="Select">
                                                             <ul class="c-dropdown-menu">
                                                                 <li><a href="#" class="active">Boy</a></li>
                                                                 <li><a href="#">Girl</a></li>
@@ -1103,8 +1098,7 @@
                                                     </td>
                                                     <td>
                                                         <input type="text" class="form-control"
-                                                               id="i_how_pregnancy_end_4"
-                                                               name="i_how_pregnancy_end_4">
+                                                               id="i_how_pregnancy_end_4" name="i_how_pregnancy_end_4">
                                                     </td>
                                                 </tr>
                                                 </tbody>
@@ -1265,8 +1259,8 @@
                                                     <label for="oralContraceptives"></label>
 
                                                     <input type="text" readonly="" class="form-control"
-                                                           id="oralContraceptives"
-                                                           name="oralContraceptives" placeholder="Never">
+                                                           id="oralContraceptives" name="oralContraceptives"
+                                                           placeholder="Never">
                                                     <ul class="c-dropdown-menu">
                                                         <li><a href="#" class="active">Never</a></li>
                                                         <li><a href="#">Past</a></li>
@@ -1285,8 +1279,7 @@
                                                     <label for="birthControl"></label>
 
                                                     <input type="text" readonly="" class="form-control"
-                                                           id="birthControl"
-                                                           name="birthControl" placeholder="Never">
+                                                           id="birthControl" name="birthControl" placeholder="Never">
                                                     <ul class="c-dropdown-menu">
                                                         <li><a href="#" class="active">Never</a></li>
                                                         <li><a href="#">Past</a></li>
@@ -1345,8 +1338,8 @@
                                                     <label for="intrauterineDevice"></label>
 
                                                     <input type="text" readonly="" class="form-control"
-                                                           id="intrauterineDevice"
-                                                           name="intrauterineDevice" placeholder="Never">
+                                                           id="intrauterineDevice" name="intrauterineDevice"
+                                                           placeholder="Never">
                                                     <ul class="c-dropdown-menu">
                                                         <li><a href="#" class="active">Never</a></li>
                                                         <li><a href="#">Past</a></li>
@@ -1365,8 +1358,7 @@
                                                     <label for="sterilization"></label>
 
                                                     <input type="text" readonly="" class="form-control"
-                                                           id="sterilization"
-                                                           name="sterilization" placeholder="Never">
+                                                           id="sterilization" name="sterilization" placeholder="Never">
                                                     <ul class="c-dropdown-menu">
                                                         <li><a href="#" class="active">Never</a></li>
                                                         <li><a href="#">Past</a></li>
@@ -1452,8 +1444,7 @@
                                                     <label for="diet"></label>
 
                                                     <input type="text" readonly="" class="form-control" id="diet"
-                                                           name="diet"
-                                                           placeholder="Please Select">
+                                                           name="diet" placeholder="Please Select">
                                                     <ul class="c-dropdown-menu">
                                                         <li><a href="#">Non-vegetarian</a></li>
                                                         <li><a href="#">Vegetarian</a></li>
@@ -1548,8 +1539,7 @@
                                             <div class="col-6 col-md-3">
                                                 <div class="form-group">
                                                     <input type="text" class="form-control" name="i_alcohol"
-                                                           id="i_alcohol"
-                                                           placeholder="How Much">
+                                                           id="i_alcohol" placeholder="How Much">
                                                 </div>
                                             </div>
 
@@ -1574,8 +1564,7 @@
                                             <div class="col-6 col-md-3">
                                                 <div class="form-group">
                                                     <input type="text" class="form-control" name="i_marijuana"
-                                                           id="i_marijuana"
-                                                           placeholder="How Much">
+                                                           id="i_marijuana" placeholder="How Much">
                                                 </div>
                                             </div>
 
@@ -1600,8 +1589,7 @@
                                             <div class="col-6 col-md-3">
                                                 <div class="form-group">
                                                     <input type="text" class="form-control" name="i_heroin"
-                                                           id="i_heroin"
-                                                           placeholder="How Much">
+                                                           id="i_heroin" placeholder="How Much">
                                                 </div>
                                             </div>
 
@@ -1626,8 +1614,7 @@
                                             <div class="col-6 col-md-3">
                                                 <div class="form-group">
                                                     <input type="text" class="form-control" name="i_cocaine"
-                                                           id="i_cocaine"
-                                                           placeholder="How Much">
+                                                           id="i_cocaine" placeholder="How Much">
                                                 </div>
                                             </div>
 
@@ -1641,8 +1628,7 @@
                                                     <label for="d_crystalmeth"></label>
 
                                                     <input type="text" readonly="" class="form-control"
-                                                           id="d_crystalmeth"
-                                                           name="d_crystalmeth" placeholder="Select">
+                                                           id="d_crystalmeth" name="d_crystalmeth" placeholder="Select">
                                                     <ul class="c-dropdown-menu">
                                                         <li><a href="#" class="active">Never</a></li>
                                                         <li><a href="#">Tried</a></li>
@@ -1667,8 +1653,7 @@
                                                     <label for="d_lsd"></label>
 
                                                     <input type="text" readonly="" class="form-control" id="d_lsd"
-                                                           name="d_lsd"
-                                                           placeholder="Select">
+                                                           name="d_lsd" placeholder="Select">
                                                     <ul class="c-dropdown-menu">
                                                         <li><a href="#" class="active">Never</a></li>
                                                         <li><a href="#">Tried</a></li>
@@ -1693,8 +1678,7 @@
                                                     <label for="d_pcp"></label>
 
                                                     <input type="text" readonly="" class="form-control" id="d_pcp"
-                                                           name="d_pcp"
-                                                           placeholder="Select">
+                                                           name="d_pcp" placeholder="Select">
                                                     <ul class="c-dropdown-menu">
                                                         <li><a href="#" class="active">Never</a></li>
                                                         <li><a href="#">Tried</a></li>
@@ -1719,8 +1703,7 @@
                                                     <label for="d_injectable"></label>
 
                                                     <input type="text" readonly="" class="form-control"
-                                                           id="d_injectable"
-                                                           name="d_injectable" placeholder="Select">
+                                                           id="d_injectable" name="d_injectable" placeholder="Select">
                                                     <ul class="c-dropdown-menu">
                                                         <li><a href="#" class="active">Never</a></li>
                                                         <li><a href="#">Tried</a></li>
@@ -1765,8 +1748,8 @@
                                             <div class="col-12 col-md-6">
                                                 <div class="form-group">
                                                     <input type="text" class="form-control"
-                                                           placeholder="If yes, what happened?"
-                                                           name="i_arrested" id="i_arrested">
+                                                           placeholder="If yes, what happened?" name="i_arrested"
+                                                           id="i_arrested">
                                                 </div>
                                             </div>
 
@@ -1843,8 +1826,8 @@
                                                         <div class="form-group c-dropdown">
                                                             <label for="t_n_used_1"></label>
                                                             <input type="text" readonly="" class="form-control"
-                                                                   id="t_n_used_1"
-                                                                   name="t_n_used_1" placeholder="Select">
+                                                                   id="t_n_used_1" name="t_n_used_1"
+                                                                   placeholder="Select">
                                                             <ul class="c-dropdown-menu">
                                                                 <li><a href="#" class="active">Tattoo</a></li>
                                                                 <li><a href="#">Piercing</a></li>
@@ -2437,8 +2420,7 @@
                                                 <label for="d_have_vaccinated">Yes/No</label>
 
                                                 <input type="text" readonly="" class="form-control"
-                                                       id="d_have_vaccinated"
-                                                       name="d_have_vaccinated">
+                                                       id="d_have_vaccinated" name="d_have_vaccinated">
                                                 <ul class="c-dropdown-menu">
                                                     <li><a href="#">Yes</a></li>
                                                     <li><a href="#">No</a></li>
@@ -3111,8 +3093,7 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_cleftlip"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_cleftlip"
-                                                               name="d_cleftlip" placeholder="Select">
+                                                               id="d_cleftlip" name="d_cleftlip" placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -3123,8 +3104,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_f_cleftlip"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_f_cleftlip"
-                                                               name="d_f_cleftlip" placeholder="Select">
+                                                               id="d_f_cleftlip" name="d_f_cleftlip"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -3148,8 +3129,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_cleftPalate"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_cleftpalate"
-                                                               name="d_cleftpalate" placeholder="Select">
+                                                               id="d_cleftpalate" name="d_cleftpalate"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -3160,8 +3141,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_f_cleftpalate"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_f_cleftpalate"
-                                                               name="d_f_cleftpalate" placeholder="Select">
+                                                               id="d_f_cleftpalate" name="d_f_cleftpalate"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -3185,8 +3166,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_congenitalhip"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_congenitalhip"
-                                                               name="d_congenitalhip" placeholder="Select">
+                                                               id="d_congenitalhip" name="d_congenitalhip"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -3222,8 +3203,7 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_clubfoot"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_clubfoot"
-                                                               name="d_clubfoot" placeholder="Select">
+                                                               id="d_clubfoot" name="d_clubfoot" placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -3234,8 +3214,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_f_clubfoot"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_f_clubfoot"
-                                                               name="d_f_clubfoot" placeholder="Select">
+                                                               id="d_f_clubfoot" name="d_f_clubfoot"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -3259,8 +3239,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_heartDefect"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_heartdefect"
-                                                               name="d_heartdefect" placeholder="Select">
+                                                               id="d_heartdefect" name="d_heartdefect"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -3271,8 +3251,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_f_heartdefect"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_f_heartdefect"
-                                                               name="d_f_heartdefect" placeholder="Select">
+                                                               id="d_f_heartdefect" name="d_f_heartdefect"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -3344,8 +3324,7 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_f_spina"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_f_spina"
-                                                               name="d_f_spina" placeholder="Select">
+                                                               id="d_f_spina" name="d_f_spina" placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -3369,8 +3348,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_microcephaly"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_microcephaly"
-                                                               name="d_microcephaly" placeholder="Select">
+                                                               id="d_microcephaly" name="d_microcephaly"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -3480,8 +3459,7 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_dwarfism"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_dwarfism"
-                                                               name="d_dwarfism" placeholder="Select">
+                                                               id="d_dwarfism" name="d_dwarfism" placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -3492,8 +3470,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_f_dwarfism"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_f_dwarfism"
-                                                               name="d_f_dwarfism" placeholder="Select">
+                                                               id="d_f_dwarfism" name="d_f_dwarfism"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -3517,8 +3495,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_hypospadias"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_hypospadias"
-                                                               name="d_hypospadias" placeholder="Select">
+                                                               id="d_hypospadias" name="d_hypospadias"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -3529,8 +3507,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_f_hypospadias"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_f_hypospadias"
-                                                               name="d_f_hypospadias" placeholder="Select">
+                                                               id="d_f_hypospadias" name="d_f_hypospadias"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -3725,8 +3703,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_downsyndrome"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_downsyndrome"
-                                                               name="d_downsyndrome" placeholder="Select">
+                                                               id="d_downsyndrome" name="d_downsyndrome"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -3762,8 +3740,7 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_fragilex"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_fragilex"
-                                                               name="d_fragilex" placeholder="Select">
+                                                               id="d_fragilex" name="d_fragilex" placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -3774,8 +3751,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_f_fragilex"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_f_fragilex"
-                                                               name="d_f_fragilex" placeholder="Select">
+                                                               id="d_f_fragilex" name="d_f_fragilex"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -3799,8 +3776,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_turnursyndrom"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_turnursyndrom"
-                                                               name="d_turnursyndrom" placeholder="Select">
+                                                               id="d_turnursyndrom" name="d_turnursyndrom"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -3836,8 +3813,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_klinefelter"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_klinefelter"
-                                                               name="d_klinefelter" placeholder="Select">
+                                                               id="d_klinefelter" name="d_klinefelter"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -3848,8 +3825,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_f_klinefelter"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_f_klinefelter"
-                                                               name="d_f_klinefelter" placeholder="Select">
+                                                               id="d_f_klinefelter" name="d_f_klinefelter"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -3935,8 +3912,7 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_alpha_1"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_alpha_1"
-                                                               name="d_alpha_1" placeholder="Select">
+                                                               id="d_alpha_1" name="d_alpha_1" placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -3947,8 +3923,7 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_f_alpha_1"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_f_alpha_1"
-                                                               name="d_f_alpha_1" placeholder="Select">
+                                                               id="d_f_alpha_1" name="d_f_alpha_1" placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -3983,8 +3958,7 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_f_bloom"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_f_bloom"
-                                                               name="d_f_bloom" placeholder="Select">
+                                                               id="d_f_bloom" name="d_f_bloom" placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -4008,8 +3982,7 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_canavan"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_canavan"
-                                                               name="d_canavan" placeholder="Select">
+                                                               id="d_canavan" name="d_canavan" placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -4020,8 +3993,7 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_f_canavan"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_f_canavan"
-                                                               name="d_f_canavan" placeholder="Select">
+                                                               id="d_f_canavan" name="d_f_canavan" placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -4082,8 +4054,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_fabrydisease"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_fabrydisease"
-                                                               name="d_fabrydisease" placeholder="Select">
+                                                               id="d_fabrydisease" name="d_fabrydisease"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -4119,8 +4091,7 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_factorv"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_factorv"
-                                                               name="d_factorv" placeholder="Select">
+                                                               id="d_factorv" name="d_factorv" placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -4131,8 +4102,7 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_f_factorv"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_f_factorv"
-                                                               name="d_f_factorv" placeholder="Select">
+                                                               id="d_f_factorv" name="d_f_factorv" placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -4156,8 +4126,7 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_familial"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_familial"
-                                                               name="d_familial" placeholder="Select">
+                                                               id="d_familial" name="d_familial" placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -4168,8 +4137,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_f_familial"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_f_familial"
-                                                               name="d_f_familial" placeholder="Select">
+                                                               id="d_f_familial" name="d_f_familial"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -4193,8 +4162,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_familialfever"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_familialfever"
-                                                               name="d_familialfever" placeholder="Select">
+                                                               id="d_familialfever" name="d_familialfever"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -4230,8 +4199,7 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_fanconi"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_fanconi"
-                                                               name="d_fanconi" placeholder="Select">
+                                                               id="d_fanconi" name="d_fanconi" placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -4242,8 +4210,7 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_f_fanconi"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_f_fanconi"
-                                                               name="d_f_fanconi" placeholder="Select">
+                                                               id="d_f_fanconi" name="d_f_fanconi" placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -4267,8 +4234,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_hemophilia"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_hemophilia"
-                                                               name="d_hemophilia" placeholder="Select">
+                                                               id="d_hemophilia" name="d_hemophilia"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -4279,8 +4246,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_f_hemophilia"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_f_hemophilia"
-                                                               name="d_f_hemophilia" placeholder="Select">
+                                                               id="d_f_hemophilia" name="d_f_hemophilia"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -4304,8 +4271,7 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_marfan"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_marfan"
-                                                               name="d_marfan" placeholder="Select">
+                                                               id="d_marfan" name="d_marfan" placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -4316,8 +4282,7 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_f_marfan"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_f_marfan"
-                                                               name="d_f_marfan" placeholder="Select">
+                                                               id="d_f_marfan" name="d_f_marfan" placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -4341,8 +4306,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_mucolipidosis"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_mucolipidosis"
-                                                               name="d_mucolipidosis" placeholder="Select">
+                                                               id="d_mucolipidosis" name="d_mucolipidosis"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -4378,8 +4343,7 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_niemann"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_niemann"
-                                                               name="d_niemann" placeholder="Select">
+                                                               id="d_niemann" name="d_niemann" placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -4390,8 +4354,7 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_f_niemann"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_f_niemann"
-                                                               name="d_f_niemann" placeholder="Select">
+                                                               id="d_f_niemann" name="d_f_niemann" placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -4415,8 +4378,7 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_sickle"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_sickle"
-                                                               name="d_sickle" placeholder="Select">
+                                                               id="d_sickle" name="d_sickle" placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -4427,8 +4389,7 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_f_sickle"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_f_sickle"
-                                                               name="d_f_sickle" placeholder="Select">
+                                                               id="d_f_sickle" name="d_f_sickle" placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -4452,8 +4413,7 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_taysachs"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_taysachs"
-                                                               name="d_taysachs" placeholder="Select">
+                                                               id="d_taysachs" name="d_taysachs" placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -4464,8 +4424,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_f_taysachs"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_f_taysachs"
-                                                               name="d_f_taysachs" placeholder="Select">
+                                                               id="d_f_taysachs" name="d_f_taysachs"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -4489,8 +4449,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_thallasmia"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_thallasmia"
-                                                               name="d_thallasmia" placeholder="Select">
+                                                               id="d_thallasmia" name="d_thallasmia"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -4501,8 +4461,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_f_thallasmia"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_f_thallasmia"
-                                                               name="d_f_thallasmia" placeholder="Select">
+                                                               id="d_f_thallasmia" name="d_f_thallasmia"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -4526,8 +4486,7 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_f_blindness"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_blindness"
-                                                               name="d_blindness" placeholder="Select">
+                                                               id="d_blindness" name="d_blindness" placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -4538,8 +4497,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_f_blindness"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_f_blindness"
-                                                               name="d_f_blindness" placeholder="Select">
+                                                               id="d_f_blindness" name="d_f_blindness"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -4563,8 +4522,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_colorblind"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_colorblind"
-                                                               name="d_colorblind" placeholder="Select">
+                                                               id="d_colorblind" name="d_colorblind"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -4575,8 +4534,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_f_colorblind"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_f_colorblind"
-                                                               name="d_f_colorblind" placeholder="Select">
+                                                               id="d_f_colorblind" name="d_f_colorblind"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -4600,8 +4559,7 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_deafness"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_deafness"
-                                                               name="d_deafness" placeholder="Select">
+                                                               id="d_deafness" name="d_deafness" placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -4612,8 +4570,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_f_deafness"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_f_deafness"
-                                                               name="d_f_deafness" placeholder="Select">
+                                                               id="d_f_deafness" name="d_f_deafness"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -4637,8 +4595,7 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_albinism"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_albinism"
-                                                               name="d_albinism" placeholder="Select">
+                                                               id="d_albinism" name="d_albinism" placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -4649,8 +4606,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_f_albinism"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_f_albinism"
-                                                               name="d_f_albinism" placeholder="Select">
+                                                               id="d_f_albinism" name="d_f_albinism"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -4674,8 +4631,7 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_muscular"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_muscular"
-                                                               name="d_muscular" placeholder="Select">
+                                                               id="d_muscular" name="d_muscular" placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -4686,8 +4642,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_f_muscular"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_f_muscular"
-                                                               name="d_f_muscular" placeholder="Select">
+                                                               id="d_f_muscular" name="d_f_muscular"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -4711,8 +4667,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_galactosemia"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_galactosemia"
-                                                               name="d_galactosemia" placeholder="Select">
+                                                               id="d_galactosemia" name="d_galactosemia"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -4748,8 +4704,7 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_hurler"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_hurler"
-                                                               name="d_hurler" placeholder="Select">
+                                                               id="d_hurler" name="d_hurler" placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -4760,8 +4715,7 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_f_hurler"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_f_hurler"
-                                                               name="d_f_hurler" placeholder="Select">
+                                                               id="d_f_hurler" name="d_f_hurler" placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -4785,8 +4739,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for="d_other_genetic"></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_other_genetic"
-                                                               name="d_other_genetic" placeholder="Select">
+                                                               id="d_other_genetic" name="d_other_genetic"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -4847,8 +4801,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for=""></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_breast_cancer"
-                                                               name="d_breast_cancer" placeholder="Select">
+                                                               id="d_breast_cancer" name="d_breast_cancer"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -4884,8 +4838,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for=""></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_colon_cancer"
-                                                               name="d_colon_cancer" placeholder="Select">
+                                                               id="d_colon_cancer" name="d_colon_cancer"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -5058,8 +5012,7 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for=""></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_alzheimer"
-                                                               name="d_alzheimer" placeholder="Select">
+                                                               id="d_alzheimer" name="d_alzheimer" placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -5070,8 +5023,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for=""></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_f_alzheimer"
-                                                               name="d_f_alzheimer" placeholder="Select">
+                                                               id="d_f_alzheimer" name="d_f_alzheimer"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -5095,8 +5048,7 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for=""></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_autism"
-                                                               name="d_autism" placeholder="Select">
+                                                               id="d_autism" name="d_autism" placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -5107,8 +5059,7 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for=""></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_f_autism"
-                                                               name="d_f_autism" placeholder="Select">
+                                                               id="d_f_autism" name="d_f_autism" placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -5132,8 +5083,7 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for=""></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_cerebral"
-                                                               name="d_cerebral" placeholder="Select">
+                                                               id="d_cerebral" name="d_cerebral" placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -5144,8 +5094,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for=""></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_f_cerebral"
-                                                               name="d_f_cerebral" placeholder="Select">
+                                                               id="d_f_cerebral" name="d_f_cerebral"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -5169,8 +5119,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for=""></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_creultzfeldt"
-                                                               name="d_creultzfeldt" placeholder="Select">
+                                                               id="d_creultzfeldt" name="d_creultzfeldt"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -5206,8 +5156,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for=""></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_depression"
-                                                               name="d_depression" placeholder="Select">
+                                                               id="d_depression" name="d_depression"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -5218,8 +5168,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for=""></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_f_depression"
-                                                               name="d_f_depression" placeholder="Select">
+                                                               id="d_f_depression" name="d_f_depression"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -5243,8 +5193,7 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for=""></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_gaucher"
-                                                               name="d_gaucher" placeholder="Select">
+                                                               id="d_gaucher" name="d_gaucher" placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -5255,8 +5204,7 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for=""></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_f_gaucher"
-                                                               name="d_f_gaucher" placeholder="Select">
+                                                               id="d_f_gaucher" name="d_f_gaucher" placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -5280,8 +5228,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for=""></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_huntington"
-                                                               name="d_huntington" placeholder="Select">
+                                                               id="d_huntington" name="d_huntington"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -5292,8 +5240,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for=""></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_f_huntington"
-                                                               name="d_f_huntington" placeholder="Select">
+                                                               id="d_f_huntington" name="d_f_huntington"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -5317,8 +5265,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for=""></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_hydrocephalus"
-                                                               name="d_hydrocephalus" placeholder="Select">
+                                                               id="d_hydrocephalus" name="d_hydrocephalus"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -5367,8 +5315,7 @@
                                                         <label for=""></label>
                                                         <input type="text" readonly="" class="form-control"
                                                                id="d_f_obsessive_compulsive"
-                                                               name="d_f_obsessive_compulsive"
-                                                               placeholder="Select">
+                                                               name="d_f_obsessive_compulsive" placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -5404,8 +5351,7 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for=""></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_f_mania"
-                                                               name="d_f_mania" placeholder="Select">
+                                                               id="d_f_mania" name="d_f_mania" placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -5429,8 +5375,7 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for=""></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_mental"
-                                                               name="d_mental" placeholder="Select">
+                                                               id="d_mental" name="d_mental" placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -5441,8 +5386,7 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for=""></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_f_mental"
-                                                               name="d_f_mental" placeholder="Select">
+                                                               id="d_f_mental" name="d_f_mental" placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -5466,8 +5410,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for=""></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_neurofibro"
-                                                               name="d_neurofibro" placeholder="Select">
+                                                               id="d_neurofibro" name="d_neurofibro"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -5478,8 +5422,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for=""></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_f_neurofibro"
-                                                               name="d_f_neurofibro" placeholder="Select">
+                                                               id="d_f_neurofibro" name="d_f_neurofibro"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -5503,8 +5447,7 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for=""></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_schizo"
-                                                               name="d_schizo" placeholder="Select">
+                                                               id="d_schizo" name="d_schizo" placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -5515,8 +5458,7 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for=""></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_f_schizo"
-                                                               name="d_f_schizo" placeholder="Select">
+                                                               id="d_f_schizo" name="d_f_schizo" placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -5540,8 +5482,7 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for=""></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_tourette"
-                                                               name="d_tourette" placeholder="Select">
+                                                               id="d_tourette" name="d_tourette" placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -5552,8 +5493,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for=""></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_f_tourette"
-                                                               name="d_f_tourette" placeholder="Select">
+                                                               id="d_f_tourette" name="d_f_tourette"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -5577,8 +5518,7 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for=""></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_tuberous"
-                                                               name="d_tuberous" placeholder="Select">
+                                                               id="d_tuberous" name="d_tuberous" placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -5589,8 +5529,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for=""></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_f_tuberous"
-                                                               name="d_f_tuberous" placeholder="Select">
+                                                               id="d_f_tuberous" name="d_f_tuberous"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -5674,8 +5614,7 @@
                                                 <td>
                                                     <div class="form-group">
                                                         <input type="text" class="form-control"
-                                                               id="i_multiple_sclerosis"
-                                                               name="i_multiple_sclerosis">
+                                                               id="i_multiple_sclerosis" name="i_multiple_sclerosis">
                                                     </div>
                                                 </td>
                                             </tr>
@@ -5689,8 +5628,7 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for=""></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_parkinson"
-                                                               name="d_parkinson" placeholder="Select">
+                                                               id="d_parkinson" name="d_parkinson" placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -5701,8 +5639,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for=""></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_f_parkinson"
-                                                               name="d_f_parkinson" placeholder="Select">
+                                                               id="d_f_parkinson" name="d_f_parkinson"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -5726,8 +5664,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for=""></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_lou_gehrig"
-                                                               name="d_lou_gehrig" placeholder="Select">
+                                                               id="d_lou_gehrig" name="d_lou_gehrig"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -5738,8 +5676,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for=""></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_f_lou_gehrig"
-                                                               name="d_f_lou_gehrig" placeholder="Select">
+                                                               id="d_f_lou_gehrig" name="d_f_lou_gehrig"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -5800,8 +5738,7 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for=""></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_diabetes"
-                                                               name="d_diabetes" placeholder="Select">
+                                                               id="d_diabetes" name="d_diabetes" placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -5812,8 +5749,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for=""></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_f_diabetes"
-                                                               name="d_f_diabetes" placeholder="Select">
+                                                               id="d_f_diabetes" name="d_f_diabetes"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -5837,8 +5774,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for=""></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_heart_disease"
-                                                               name="d_heart_disease" placeholder="Select">
+                                                               id="d_heart_disease" name="d_heart_disease"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -5874,8 +5811,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for=""></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_high_blood"
-                                                               name="d_high_blood" placeholder="Select">
+                                                               id="d_high_blood" name="d_high_blood"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -5886,8 +5823,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for=""></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_f_high_blood"
-                                                               name="d_f_high_blood" placeholder="Select">
+                                                               id="d_f_high_blood" name="d_f_high_blood"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -5911,8 +5848,7 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for=""></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_asthma"
-                                                               name="d_asthma" placeholder="Select">
+                                                               id="d_asthma" name="d_asthma" placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -5923,8 +5859,7 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for=""></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_f_asthma"
-                                                               name="d_f_asthma" placeholder="Select">
+                                                               id="d_f_asthma" name="d_f_asthma" placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -5959,8 +5894,7 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for=""></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_f_lupus"
-                                                               name="d_f_lupus" placeholder="Select">
+                                                               id="d_f_lupus" name="d_f_lupus" placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -5984,8 +5918,7 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for=""></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_obesity"
-                                                               name="d_obesity" placeholder="Select">
+                                                               id="d_obesity" name="d_obesity" placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -5996,8 +5929,7 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for=""></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_f_obesity"
-                                                               name="d_f_obesity" placeholder="Select">
+                                                               id="d_f_obesity" name="d_f_obesity" placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -6021,8 +5953,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for=""></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_alcoholism"
-                                                               name="d_alcoholism" placeholder="Select">
+                                                               id="d_alcoholism" name="d_alcoholism"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -6033,8 +5965,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for=""></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_f_alcoholism"
-                                                               name="d_f_alcoholism" placeholder="Select">
+                                                               id="d_f_alcoholism" name="d_f_alcoholism"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -6058,8 +5990,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for=""></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_infertility"
-                                                               name="d_infertility" placeholder="Select">
+                                                               id="d_infertility" name="d_infertility"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -6070,8 +6002,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for=""></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_f_infertility"
-                                                               name="d_f_infertility" placeholder="Select">
+                                                               id="d_f_infertility" name="d_f_infertility"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -6095,8 +6027,7 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for=""></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_recurrent"
-                                                               name="d_recurrent" placeholder="Select">
+                                                               id="d_recurrent" name="d_recurrent" placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -6107,8 +6038,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for=""></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_f_recurrent"
-                                                               name="d_f_recurrent" placeholder="Select">
+                                                               id="d_f_recurrent" name="d_f_recurrent"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -6132,8 +6063,8 @@
                                                     <div class="form-group c-dropdown">
                                                         <label for=""></label>
                                                         <input type="text" readonly="" class="form-control"
-                                                               id="d_endometriosis"
-                                                               name="d_endometriosis" placeholder="Select">
+                                                               id="d_endometriosis" name="d_endometriosis"
+                                                               placeholder="Select">
                                                         <ul class="c-dropdown-menu">
                                                             <li><a href="#" class="active">Yes</a></li>
                                                             <li><a href="#">No</a></li>
@@ -6269,8 +6200,7 @@
                                             <div class="form-group c-dropdown">
                                                 <label for="d_aids"></label>
                                                 <input type="text" readonly="" class="form-control" id="d_aids"
-                                                       name="d_aids"
-                                                       placeholder="Select">
+                                                       name="d_aids" placeholder="Select">
                                                 <ul class="c-dropdown-menu">
                                                     <li><a href="#" class="active">Yes</a></li>
                                                     <li><a href="#">No</a></li>
@@ -6412,8 +6342,7 @@
                                             <div class="form-group c-dropdown">
                                                 <label for="d_pid"></label>
                                                 <input type="text" readonly="" class="form-control" id="d_pid"
-                                                       name="d_pid"
-                                                       placeholder="Select">
+                                                       name="d_pid" placeholder="Select">
                                                 <ul class="c-dropdown-menu">
                                                     <li><a href="#" class="active">Yes</a></li>
                                                     <li><a href="#">No</a></li>
@@ -6532,8 +6461,8 @@
                                             <div class="form-group c-dropdown">
                                                 <label for="d_allergiesLatex"></label>
                                                 <input type="text" readonly="" class="form-control"
-                                                       id="d_allergiesLatex"
-                                                       name="d_allergiesLatex" placeholder="Select">
+                                                       id="d_allergiesLatex" name="d_allergiesLatex"
+                                                       placeholder="Select">
                                                 <ul class="c-dropdown-menu">
                                                     <li><a href="#" class="active">Yes</a></li>
                                                     <li><a href="#">No</a></li>
@@ -6557,8 +6486,8 @@
                                             <div class="form-group c-dropdown">
                                                 <label for="d_previousSurgery"></label>
                                                 <input type="text" readonly="" class="form-control"
-                                                       id="d_previousSurgery"
-                                                       name="d_previousSurgery" placeholder="Select">
+                                                       id="d_previousSurgery" name="d_previousSurgery"
+                                                       placeholder="Select">
                                                 <ul class="c-dropdown-menu">
                                                     <li><a href="#" class="active">Yes</a></li>
                                                     <li><a href="#">No</a></li>
@@ -6769,8 +6698,7 @@
                                             <div class="form-group c-dropdown">
                                                 <label for="d_weight_gain_loss">Weight Gain Or Loss?</label>
                                                 <input type="text" readonly="" class="form-control"
-                                                       id="d_weight_gain_loss"
-                                                       name="d_weight_gain_loss">
+                                                       id="d_weight_gain_loss" name="d_weight_gain_loss">
                                                 <ul class="c-dropdown-menu">
                                                     <li><a href="#" class="">Yes</a></li>
                                                     <li><a href="#">No</a></li>
@@ -6975,8 +6903,7 @@
                                             <div class="form-group c-dropdown">
                                                 <label for="d_baldnessinfamily">Baldness in Family</label>
                                                 <input type="text" readonly="" class="form-control"
-                                                       id="d_baldnessinfamily"
-                                                       name="d_baldnessinfamily">
+                                                       id="d_baldnessinfamily" name="d_baldnessinfamily">
                                                 <ul class="c-dropdown-menu">
                                                     <li><a href="#" class="active">Yes</a></li>
                                                     <li><a href="#">No</a></li>
@@ -6988,8 +6915,7 @@
                                             <div class="form-group c-dropdown">
                                                 <label for="d_prematureGraying">Premature Growing</label>
                                                 <input type="text" readonly="" class="form-control"
-                                                       id="d_prematureGraying"
-                                                       name="d_prematureGraying">
+                                                       id="d_prematureGraying" name="d_prematureGraying">
                                                 <ul class="c-dropdown-menu">
                                                     <li><a href="#" class="active">Yes</a></li>
                                                     <li><a href="#">No</a></li>
@@ -7007,8 +6933,7 @@
                                             <div class="form-group c-dropdown">
                                                 <label for="d_bodyfacialfeatures">Body and Facial Features</label>
                                                 <input type="text" readonly="" class="form-control"
-                                                       id="d_bodyfacialfeatures"
-                                                       name="d_bodyfacialfeatures">
+                                                       id="d_bodyfacialfeatures" name="d_bodyfacialfeatures">
                                                 <ul class="c-dropdown-menu">
                                                     <li><a href="#" class="">Small</a></li>
                                                     <li><a href="#">Medium</a></li>
@@ -7020,8 +6945,7 @@
                                             <div class="form-group c-dropdown">
                                                 <label for="d_teethcondition">Teeth Condition</label>
                                                 <input type="text" readonly="" class="form-control"
-                                                       id="d_teethcondition"
-                                                       name="d_teethcondition">
+                                                       id="d_teethcondition" name="d_teethcondition">
                                                 <ul class="c-dropdown-menu">
                                                     <li><a href="#" class="">Poor</a></li>
                                                     <li><a href="#">Fair</a></li>
@@ -7034,8 +6958,7 @@
                                             <div class="form-group c-dropdown">
                                                 <label for="d_periodonalword">Periodontal or Orthodontic work?</label>
                                                 <input type="text" readonly="" class="form-control"
-                                                       id="d_periodonalword"
-                                                       name="d_periodonalword">
+                                                       id="d_periodonalword" name="d_periodonalword">
                                                 <ul class="c-dropdown-menu">
                                                     <li><a href="#" class="active">Yes</a></li>
                                                     <li><a href="#">No</a></li>
@@ -7080,8 +7003,7 @@
                                                 <label for="d_glassesCorrective">Glasses or corrective laser
                                                     surgery?</label>
                                                 <input type="text" readonly="" class="form-control"
-                                                       id="d_glassesCorrective"
-                                                       name="d_glassesCorrective">
+                                                       id="d_glassesCorrective" name="d_glassesCorrective">
                                                 <ul class="c-dropdown-menu">
                                                     <li><a href="#" class="active">Yes</a></li>
                                                     <li><a href="#">No</a></li>
@@ -7158,8 +7080,8 @@
                                             </div>
                                             <div class="col-12">
                                                 <div class="form-group">
-                                                <textarea name="" id="" cols="20" rows="10"
-                                                          class="form-control"></textarea>
+                                                    <textarea name="" id="" cols="20" rows="10"
+                                                              class="form-control"></textarea>
                                                 </div>
                                             </div>
 
@@ -7182,8 +7104,7 @@
                                                     <div class="form-group text-center">
                                                         <div class="img-fake">
                                                             <img class="img-fluid js-img-choosed"
-                                                                 src="../img/avatar.png"
-                                                                 alt="product image">
+                                                                 src="../img/avatar.png" alt="product image">
                                                         </div>
                                                         <label for="img-chooser-1">
                                                             <span class="btn btn-file btn-primary">Choose Image</span>
@@ -7198,8 +7119,7 @@
                                                     <div class="form-group text-center">
                                                         <div class="img-fake">
                                                             <img class="img-fluid js-img-choosed"
-                                                                 src="../img/avatar.png"
-                                                                 alt="product image">
+                                                                 src="../img/avatar.png" alt="product image">
                                                         </div>
                                                         <label for="img-chooser-2">
                                                             <span class="btn btn-file btn-primary">Choose Image</span>
@@ -7214,8 +7134,7 @@
                                                     <div class="form-group text-center">
                                                         <div class="img-fake">
                                                             <img class="img-fluid js-img-choosed"
-                                                                 src="../img/avatar.png"
-                                                                 alt="product image">
+                                                                 src="../img/avatar.png" alt="product image">
                                                         </div>
                                                         <label for="img-chooser-3">
                                                             <span class="btn btn-file btn-primary">Choose Image</span>
@@ -7230,8 +7149,7 @@
                                                     <div class="form-group text-center">
                                                         <div class="img-fake">
                                                             <img class="img-fluid js-img-choosed"
-                                                                 src="../img/avatar.png"
-                                                                 alt="product image">
+                                                                 src="../img/avatar.png" alt="product image">
                                                         </div>
                                                         <label for="img-chooser-4">
                                                             <span class="btn btn-file btn-primary">Choose Image</span>
@@ -7332,13 +7250,29 @@
                             </div>
                         </div>
                         <div class="btn-toolbar sw-toolbar sw-toolbar-bottom justify-content-end">
-                            <div class="btn-group mx-auto sw-btn-group bttn" role="group" style="opacity: 0;">
+                            <div class="btn-group mx-auto sw-btn-group bttn" role="group" style="opacity: 1;">
+                                <button class="btn btn-secondary sw-btn-prev bttn disabled" type="button">Previous
+                                </button>
+                            </div>
+                            <div class="btn-group sw-btn-group-extra bttn" role="group"></div>
+                        </div>
+                        <div class="btn-toolbar sw-toolbar sw-toolbar-bottom justify-content-end sw-container tab-content"
+                             style="min-height: 726px;">
+                            <div class="btn-group mx-auto sw-btn-group bttn tab-pane step-content" role="group"
+                                 style="opacity: 0;">
                                 <button class="btn sw-btn-next" id="donor_q_next" type="button"
                                         style="background-color: transparent; color: rgb(255, 255, 255); border-radius: 5px; width: 0px; height: 0px; padding: 0px; transform: scale(0, 0);">
                                     Next Step
                                 </button>
                             </div>
-                            <div class="btn-group sw-btn-group-extra" role="group"></div>
+                            <div class="btn-group sw-btn-group-extra tab-pane step-content" role="group"></div>
+                        </div>
+                        <div class="btn-toolbar sw-toolbar sw-toolbar-bottom justify-content-end">
+                            <div class="btn-group mx-auto sw-btn-group bttn" role="group" style="opacity: 1;">
+                                <button class="btn btn-secondary sw-btn-prev bttn disabled" type="button">Previous
+                                </button>
+                            </div>
+                            <div class="btn-group sw-btn-group-extra bttn" role="group"></div>
                         </div>
                     </div>
                 </div>
@@ -7349,5 +7283,8 @@
 @endsection
 {{--Pushing donor questionnaire only  JS files --}}
 @push('js')
-    <script type="text/javascript" src="../vendor/jquer-smart_wizard/js/jquery.smartWizard-admin.js"></script>
+    <script src="{{asset('vendor/jquery-ui/jquery-ui-1.12.1.custom/jquery-ui.js')}}"></script>
+    <script src="{{asset('js/donor-questionary.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('../js/ivf1match.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('../vendor/jquer-smart_wizard/js/jquery.smartWizard-admin.js')}}"></script>
 @endpush

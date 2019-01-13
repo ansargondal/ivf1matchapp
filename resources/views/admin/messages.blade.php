@@ -53,8 +53,9 @@
                         <tr>
                             <th scope="col">ID</th>
                             <th scope="col">Name</th>
-                            <th scope="col">Email</th>
+                            <th scope="col">From</th>
                             <th scope="col">Date</th>
+                            <th scope="col">Status</th>
                             <th scope="col">Message</th>
                             <th scope="col" class="no-sort">Action</th>
 
@@ -66,6 +67,7 @@
                             <td>Randy</td>
                             <td>randy@gmail.com</td>
                             <td>oct 09, 2018</td>
+                            <td><span class="badge badge-success">approved</span></td>
                             <td>I need some...</td>
                             <p class="text-center full-message d-none">I need some infor about the task you are doing at
                                 home.it might be really useful for my colleagues as well as for my boos. I 'll be really
@@ -92,6 +94,7 @@
                             <td>John</td>
                             <td>john@gmail.com</td>
                             <td>oct_09,2018</td>
+                            <td><span class="badge badge-warning">pending</span></td>
                             <td>Home delivery...</td>
                             <p class="text-center full-message d-none">I need some infor about the task you are doing at
                                 home.it might be really useful for my colleagues as well as for my boos. I 'll be really
@@ -118,6 +121,7 @@
                             <td>Penny</td>
                             <td>penny@gmail.com</td>
                             <td>oct 09, 2018</td>
+                            <td><span class="badge badge-danger">rejected</span></td>
                             <td>Order is pendi...</td>
                             <p class="text-center full-message d-none">I need some infor about the task you are doing at
                                 home.it might be really useful for my colleagues as well as for my boos. I 'll be really
@@ -140,62 +144,11 @@
                             </td>
                         </tr>
                         <tr>
-                            <td scope="row">04</td>
-                            <td>Randy</td>
-                            <td>randy@gmail.com</td>
-                            <td>oct 09, 2018</td>
-                            <td>I need some...</td>
-                            <p class="text-center full-message d-none">I need some infor about the task you are doing at
-                                home.it might be really useful for my colleagues as well as for my boos. I 'll be really
-                                thankful to you.</p>
-                            <td class="actions text-center">
-                                <a href="#" data-toggle="tooltip" class="action js-btn-reply"
-                                   data-placement="top"
-                                   title="Reply">
-                                    <i class="fa fa-reply" aria-hidden="true"></i>
-                                </a>
-                                <a href="#" class="action js-view-message" data-toggle="tooltip" data-placement="top"
-                                   title="Read">
-                                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                                </a>
-                                <a href="#" class="action js-btn-delete" data-id="1" data-toggle="tooltip"
-                                   data-placement="top"
-                                   title="Delete">
-                                    <i class="fa fa-times" aria-hidden="true"></i>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td scope="row">05</td>
-                            <td>John</td>
-                            <td>john@gmail.com</td>
-                            <td>oct_09,2018</td>
-                            <td>Home delivery...</td>
-                            <p class="text-center full-message d-none">I need some infor about the task you are doing at
-                                home.it might be really useful for my colleagues as well as for my boos. I 'll be really
-                                thankful to you.</p>
-                            <td class="actions text-center">
-                                <a href="#" data-toggle="tooltip" class="action js-btn-reply"
-                                   data-placement="top"
-                                   title="Reply">
-                                    <i class="fa fa-reply" aria-hidden="true"></i>
-                                </a>
-                                <a href="#" class="action js-view-message" data-toggle="tooltip" data-placement="top"
-                                   title="Read">
-                                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                                </a>
-                                <a href="#" class="action js-btn-delete" data-id="1" data-toggle="tooltip"
-                                   data-placement="top"
-                                   title="Delete">
-                                    <i class="fa fa-times" aria-hidden="true"></i>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td scope="row">06</td>
+                            <td scope="row">03</td>
                             <td>Penny</td>
                             <td>penny@gmail.com</td>
                             <td>oct 09, 2018</td>
+                            <td><span class="badge badge-danger">rejected</span></td>
                             <td>Order is pendi...</td>
                             <p class="text-center full-message d-none">I need some infor about the task you are doing at
                                 home.it might be really useful for my colleagues as well as for my boos. I 'll be really
@@ -218,62 +171,11 @@
                             </td>
                         </tr>
                         <tr>
-                            <td scope="row">07</td>
-                            <td>Randy</td>
-                            <td>randy@gmail.com</td>
-                            <td>oct 09, 2018</td>
-                            <td>I need some...</td>
-                            <p class="text-center full-message d-none">I need some infor about the task you are doing at
-                                home.it might be really useful for my colleagues as well as for my boos. I 'll be really
-                                thankful to you.</p>
-                            <td class="actions text-center">
-                                <a href="#" data-toggle="tooltip" class="action js-btn-reply"
-                                   data-placement="top"
-                                   title="Reply">
-                                    <i class="fa fa-reply" aria-hidden="true"></i>
-                                </a>
-                                <a href="#" class="action js-view-message" data-toggle="tooltip" data-placement="top"
-                                   title="Read">
-                                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                                </a>
-                                <a href="#" class="action js-btn-delete" data-id="1" data-toggle="tooltip"
-                                   data-placement="top"
-                                   title="Delete">
-                                    <i class="fa fa-times" aria-hidden="true"></i>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td scope="row">08</td>
-                            <td>John</td>
-                            <td>john@gmail.com</td>
-                            <td>oct_09,2018</td>
-                            <td>Home delivery...</td>
-                            <p class="text-center full-message d-none">I need some infor about the task you are doing at
-                                home.it might be really useful for my colleagues as well as for my boos. I 'll be really
-                                thankful to you.</p>
-                            <td class="actions text-center">
-                                <a href="#" data-toggle="tooltip" class="action js-btn-reply"
-                                   data-placement="top"
-                                   title="Reply">
-                                    <i class="fa fa-reply" aria-hidden="true"></i>
-                                </a>
-                                <a href="#" class="action js-view-message" data-toggle="tooltip" data-placement="top"
-                                   title="Read">
-                                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                                </a>
-                                <a href="#" class="action js-btn-delete" data-id="1" data-toggle="tooltip"
-                                   data-placement="top"
-                                   title="Delete">
-                                    <i class="fa fa-times" aria-hidden="true"></i>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td scope="row">09</td>
+                            <td scope="row">03</td>
                             <td>Penny</td>
                             <td>penny@gmail.com</td>
                             <td>oct 09, 2018</td>
+                            <td><span class="badge badge-danger">rejected</span></td>
                             <td>Order is pendi...</td>
                             <p class="text-center full-message d-none">I need some infor about the task you are doing at
                                 home.it might be really useful for my colleagues as well as for my boos. I 'll be really
@@ -296,62 +198,11 @@
                             </td>
                         </tr>
                         <tr>
-                            <td scope="row">10</td>
-                            <td>Randy</td>
-                            <td>randy@gmail.com</td>
-                            <td>oct 09, 2018</td>
-                            <td>I need some...</td>
-                            <p class="text-center full-message d-none">I need some infor about the task you are doing at
-                                home.it might be really useful for my colleagues as well as for my boos. I 'll be really
-                                thankful to you.</p>
-                            <td class="actions text-center">
-                                <a href="#" data-toggle="tooltip" class="action js-btn-reply"
-                                   data-placement="top"
-                                   title="Reply">
-                                    <i class="fa fa-reply" aria-hidden="true"></i>
-                                </a>
-                                <a href="#" class="action js-view-message" data-toggle="tooltip" data-placement="top"
-                                   title="Read">
-                                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                                </a>
-                                <a href="#" class="action js-btn-delete" data-id="1" data-toggle="tooltip"
-                                   data-placement="top"
-                                   title="Delete">
-                                    <i class="fa fa-times" aria-hidden="true"></i>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td scope="row">11</td>
-                            <td>John</td>
-                            <td>john@gmail.com</td>
-                            <td>oct_09,2018</td>
-                            <td>Home delivery...</td>
-                            <p class="text-center full-message d-none">I need some infor about the task you are doing at
-                                home.it might be really useful for my colleagues as well as for my boos. I 'll be really
-                                thankful to you.</p>
-                            <td class="actions text-center">
-                                <a href="#" data-toggle="tooltip" class="action js-btn-reply"
-                                   data-placement="top"
-                                   title="Reply">
-                                    <i class="fa fa-reply" aria-hidden="true"></i>
-                                </a>
-                                <a href="#" class="action js-view-message" data-toggle="tooltip" data-placement="top"
-                                   title="Read">
-                                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                                </a>
-                                <a href="#" class="action js-btn-delete" data-id="1" data-toggle="tooltip"
-                                   data-placement="top"
-                                   title="Delete">
-                                    <i class="fa fa-times" aria-hidden="true"></i>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td scope="row">12</td>
+                            <td scope="row">03</td>
                             <td>Penny</td>
                             <td>penny@gmail.com</td>
                             <td>oct 09, 2018</td>
+                            <td><span class="badge badge-danger">rejected</span></td>
                             <td>Order is pendi...</td>
                             <p class="text-center full-message d-none">I need some infor about the task you are doing at
                                 home.it might be really useful for my colleagues as well as for my boos. I 'll be really
@@ -374,62 +225,11 @@
                             </td>
                         </tr>
                         <tr>
-                            <td scope="row">13</td>
-                            <td>Randy</td>
-                            <td>randy@gmail.com</td>
-                            <td>oct 09, 2018</td>
-                            <td>I need some...</td>
-                            <p class="text-center full-message d-none">I need some infor about the task you are doing at
-                                home.it might be really useful for my colleagues as well as for my boos. I 'll be really
-                                thankful to you.</p>
-                            <td class="actions text-center">
-                                <a href="#" data-toggle="tooltip" class="action js-btn-reply"
-                                   data-placement="top"
-                                   title="Reply">
-                                    <i class="fa fa-reply" aria-hidden="true"></i>
-                                </a>
-                                <a href="#" class="action js-view-message" data-toggle="tooltip" data-placement="top"
-                                   title="Read">
-                                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                                </a>
-                                <a href="#" class="action js-btn-delete" data-id="1" data-toggle="tooltip"
-                                   data-placement="top"
-                                   title="Delete">
-                                    <i class="fa fa-times" aria-hidden="true"></i>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td scope="row">14</td>
-                            <td>John</td>
-                            <td>john@gmail.com</td>
-                            <td>oct_09,2018</td>
-                            <td>Home delivery...</td>
-                            <p class="text-center full-message d-none">I need some infor about the task you are doing at
-                                home.it might be really useful for my colleagues as well as for my boos. I 'll be really
-                                thankful to you.</p>
-                            <td class="actions text-center">
-                                <a href="#" data-toggle="tooltip" class="action js-btn-reply"
-                                   data-placement="top"
-                                   title="Reply">
-                                    <i class="fa fa-reply" aria-hidden="true"></i>
-                                </a>
-                                <a href="#" class="action js-view-message" data-toggle="tooltip" data-placement="top"
-                                   title="Read">
-                                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                                </a>
-                                <a href="#" class="action js-btn-delete" data-id="1" data-toggle="tooltip"
-                                   data-placement="top"
-                                   title="Delete">
-                                    <i class="fa fa-times" aria-hidden="true"></i>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td scope="row">15</td>
+                            <td scope="row">03</td>
                             <td>Penny</td>
                             <td>penny@gmail.com</td>
                             <td>oct 09, 2018</td>
+                            <td><span class="badge badge-danger">rejected</span></td>
                             <td>Order is pendi...</td>
                             <p class="text-center full-message d-none">I need some infor about the task you are doing at
                                 home.it might be really useful for my colleagues as well as for my boos. I 'll be really
@@ -452,62 +252,11 @@
                             </td>
                         </tr>
                         <tr>
-                            <td scope="row">16</td>
-                            <td>Randy</td>
-                            <td>randy@gmail.com</td>
-                            <td>oct 09, 2018</td>
-                            <td>I need some...</td>
-                            <p class="text-center full-message d-none">I need some infor about the task you are doing at
-                                home.it might be really useful for my colleagues as well as for my boos. I 'll be really
-                                thankful to you.</p>
-                            <td class="actions text-center">
-                                <a href="#" data-toggle="tooltip" class="action js-btn-reply"
-                                   data-placement="top"
-                                   title="Reply">
-                                    <i class="fa fa-reply" aria-hidden="true"></i>
-                                </a>
-                                <a href="#" class="action js-view-message" data-toggle="tooltip" data-placement="top"
-                                   title="Read">
-                                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                                </a>
-                                <a href="#" class="action js-btn-delete" data-id="1" data-toggle="tooltip"
-                                   data-placement="top"
-                                   title="Delete">
-                                    <i class="fa fa-times" aria-hidden="true"></i>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td scope="row">17</td>
-                            <td>John</td>
-                            <td>john@gmail.com</td>
-                            <td>oct_09,2018</td>
-                            <td>Home delivery...</td>
-                            <p class="text-center full-message d-none">I need some infor about the task you are doing at
-                                home.it might be really useful for my colleagues as well as for my boos. I 'll be really
-                                thankful to you.</p>
-                            <td class="actions text-center">
-                                <a href="#" data-toggle="tooltip" class="action js-btn-reply"
-                                   data-placement="top"
-                                   title="Reply">
-                                    <i class="fa fa-reply" aria-hidden="true"></i>
-                                </a>
-                                <a href="#" class="action js-view-message" data-toggle="tooltip" data-placement="top"
-                                   title="Read">
-                                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                                </a>
-                                <a href="#" class="action js-btn-delete" data-id="1" data-toggle="tooltip"
-                                   data-placement="top"
-                                   title="Delete">
-                                    <i class="fa fa-times" aria-hidden="true"></i>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td scope="row">18</td>
+                            <td scope="row">03</td>
                             <td>Penny</td>
                             <td>penny@gmail.com</td>
                             <td>oct 09, 2018</td>
+                            <td><span class="badge badge-danger">rejected</span></td>
                             <td>Order is pendi...</td>
                             <p class="text-center full-message d-none">I need some infor about the task you are doing at
                                 home.it might be really useful for my colleagues as well as for my boos. I 'll be really
@@ -529,88 +278,21 @@
                                 </a>
                             </td>
                         </tr>
-                        <tr>
-                            <td scope="row">19</td>
-                            <td>Randy</td>
-                            <td>randy@gmail.com</td>
-                            <td>oct 09, 2018</td>
-                            <td>I need some...</td>
-                            <p class="text-center full-message d-none">I need some infor about the task you are doing at
-                                home.it might be really useful for my colleagues as well as for my boos. I 'll be really
-                                thankful to you.</p>
-                            <td class="actions text-center">
-                                <a href="#" data-toggle="tooltip" class="action js-btn-reply"
-                                   data-placement="top"
-                                   title="Reply">
-                                    <i class="fa fa-reply" aria-hidden="true"></i>
-                                </a>
-                                <a href="#" class="action js-view-message" data-toggle="tooltip" data-placement="top"
-                                   title="Read">
-                                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                                </a>
-                                <a href="#" class="action js-btn-delete" data-id="1" data-toggle="tooltip"
-                                   data-placement="top"
-                                   title="Delete">
-                                    <i class="fa fa-times" aria-hidden="true"></i>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td scope="row">20</td>
-                            <td>John</td>
-                            <td>john@gmail.com</td>
-                            <td>oct_09,2018</td>
-                            <td>Home delivery...</td>
-                            <p class="text-center full-message d-none">I need some infor about the task you are doing at
-                                home.it might be really useful for my colleagues as well as for my boos. I 'll be really
-                                thankful to you.</p>
-                            <td class="actions text-center">
-                                <a href="#" data-toggle="tooltip" class="action js-btn-reply"
-                                   data-placement="top"
-                                   title="Reply">
-                                    <i class="fa fa-reply" aria-hidden="true"></i>
-                                </a>
-                                <a href="#" class="action js-view-message" data-toggle="tooltip" data-placement="top"
-                                   title="Read">
-                                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                                </a>
-                                <a href="#" class="action js-btn-delete" data-id="1" data-toggle="tooltip"
-                                   data-placement="top"
-                                   title="Delete">
-                                    <i class="fa fa-times" aria-hidden="true"></i>
-                                </a>
-                            </td>
-                        </tr>
-                        <tr>
-                            <td scope="row">21</td>
-                            <td>Penny</td>
-                            <td>penny@gmail.com</td>
-                            <td>oct 09, 2018</td>
-                            <td>Order is pendi...</td>
-                            <p class="text-center full-message d-none">I need some infor about the task you are doing at
-                                home.it might be really useful for my colleagues as well as for my boos. I 'll be really
-                                thankful to you.</p>
-                            <td class="actions text-center">
-                                <a href="#" data-toggle="tooltip" class="action js-btn-reply"
-                                   data-placement="top"
-                                   title="Reply">
-                                    <i class="fa fa-reply" aria-hidden="true"></i>
-                                </a>
-                                <a href="#" class="action js-view-message" data-toggle="tooltip" data-placement="top"
-                                   title="Read">
-                                    <i class="fa fa-envelope" aria-hidden="true"></i>
-                                </a>
-                                <a href="#" class="action js-btn-delete" data-id="1" data-toggle="tooltip"
-                                   data-placement="top"
-                                   title="Delete">
-                                    <i class="fa fa-times" aria-hidden="true"></i>
-                                </a>
-                            </td>
-                        </tr>
+
+
                         </tbody>
                     </table>
                 </div>
             </div><!--!row-->
         </div>
     </main>
+
+    {{--Including Messages--}}
+    @include('layouts.admin.modals.message.show')
+    @include('layouts.admin.modals.message.reply')
 @endsection
+
+{{--Pushing Recipients only js file--}}
+@push('js')
+    <script src="{{asset('../js/admin/messages.js')}}"></script>
+@endpush

@@ -6,18 +6,16 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link href="https://fonts.googleapis.com/css?family=Raleway:400,500,600,700" rel="stylesheet">
-    <link rel="stylesheet" href="../vendor/font-awesome/css/font-awesome.min.css">
-    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap-reboot.min.css">
-    <link rel="stylesheet" href="../vendor/bootstrap/css/bootstrap.min.css">
-    <link rel="stylesheet" href="../vendor/jquery-ui/jquery-ui.min.css">
-    <link rel="stylesheet" href="../vendor/data-table/data-table.css">
-    <!--    <link rel="stylesheet" href="../vendor/bootstrap-table/dist/bootstrap-table.min.css">-->
-    @stack('css')
-    <link rel="stylesheet" href="../css/dashboard.css">
-    <link rel="stylesheet" href="../css/data-table.css">
+    <link rel="stylesheet" href="{{asset('../vendor/font-awesome/css/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="{{asset('../vendor/bootstrap/css/bootstrap-reboot.min.css')}}">
+    <link rel="stylesheet" href="{{asset('../vendor/bootstrap/css/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('../vendor/jquery-ui/jquery-ui.min.css')}}">
+    <link rel="stylesheet" href="{{asset('../vendor/data-table/data-table.css')}}">
+    <link rel="stylesheet" href="{{asset('../css/dashboard.css')}}">
+    <link rel="stylesheet" href="{{asset('../css/data-table.css')}}">
     <!--    <link rel="shortcut icon" href="../img/med-van.ico" type="image/x-icon">-->
-
-    <title>@yield('title', 'Dashboard - Overview')</title>h
+    @stack('css')
+    <title>@yield('title', 'Dashboard - Overview')</title>
 </head>
 <body id="dashboard-page">
 <div class="box header-box">

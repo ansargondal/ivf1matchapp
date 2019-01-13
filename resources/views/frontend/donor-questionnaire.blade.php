@@ -3,15 +3,21 @@
 
 {{--Pusing Donor questionnaire only stylesheets--}}
 @push('css')
-    <link rel="stylesheet" href="vendor/jquery-ui/jquery-ui-1.12.1.custom/jquery-ui.css">
-    <link rel="stylesheet" href="vendor/jquery-ui/jquery-ui-1.12.1.custom/jquery-ui.structure.css">
-    <link rel="stylesheet" href="vendor/jquery-ui/jquery-ui-1.12.1.custom/jquery-ui.theme.css">
+    <link rel="stylesheet" href="{{asset('vendor/jquery-ui/jquery-ui-1.12.1.custom/jquery-ui.css')}}">
+    <link rel="stylesheet" href="{{asset('vendor/jquery-ui/jquery-ui-1.12.1.custom/jquery-ui.structure.css')}}">
+    <link rel="stylesheet" href="{{asset('vendor/jquery-ui/jquery-ui-1.12.1.custom/jquery-ui.theme.css')}}">
 
     <!-- Include SmartWizard CSS -->
-    <link href="vendor/jquer-smart_wizard/css/smart_wizard.css" rel="stylesheet" type="text/css"/>
+    <link href="{{asset('vendor/jquer-smart_wizard/css/smart_wizard.css')}}" rel="stylesheet" type="text/css"/>
     <!-- Optional SmartWizard theme -->
-    <link href="vendor/jquer-smart_wizard/css/smart_wizard_theme_arrows.css" rel="stylesheet" type="text/css"/>
-    <link rel="stylesheet" href="css/donor-questionary.css">
+    <link href="{{asset('vendor/jquer-smart_wizard/css/smart_wizard_theme_arrows.css')}}" rel="stylesheet"
+          type="text/css"/>
+    <link rel="stylesheet" href="{{asset('css/donor-questionary.css')}}">
+    <style type="text/css">
+        .btn-toolbar.sw-toolbar.sw-toolbar-bottom.justify-content-end {
+            display: none !important;
+        }
+    </style>
 @endpush
 @section('content')
     <div class="container questionary">
@@ -6221,7 +6227,10 @@
                                            placeholder="Comments (Which family member, severity, etc)">
                                 </div>
                             </div>
+
                         </div>
+
+
                         <div class="row">
                             <div class="col-12">
                                 <h3><span>Chromosomal</span> Abnormalities</h3>
@@ -6935,11 +6944,66 @@
         </div>
         <!--Smartwizard ends here-->
     </div>
+
+    <!--signup modal----->
+    <div class="modal" id="signup_modal">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-6 text-center">
+                            <h3>Donor <span>Sign Up</span></h3>
+                            <p>Thank you for your interest in the egg donation program at IVF1. Egg donation is very
+                                special
+                                gift.</p>
+                            <a href="donor-signup.html" class="btn bttn">Sign up</a>
+                        </div>
+                        <div class="col-6 text-center">
+                            <h3>Recipient <span>Sign Up</span></h3>
+                            <p>Thank you for your interest in the egg donation program at IVF1. Egg donation is very
+                                special
+                                gift.</p>
+                            <a href="recipient-signup.html" class="btn bttn">Sign up</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--signup modal----->
+
+    <!--Successfully submitted-->
+    <div class="modal fade" id="successfully" tabindex="-1" role="dialog" aria-labelledby="congrats" aria-hidden="true">
+        <div class="modal-dialog modal-md" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel1">Application Submitted Successfully</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="wrap">
+                        <h5>Your application has been submitted to IVF 1 for <span>review.</span></h5>
+                        <h5>You will <span>receive an email</span> when your application has been approved. <br>Please
+                            <a
+                                    href="#">contact us</a> if you have any questions.</h5>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <small class="pull-left">Egg donor quiz created by <a href="#">IVF1</a>.</small>
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
 @endsection
 
 {{--Pushing Donor Questionnairy only JS files --}}
 @push('js')
-    <script src="vendor/jquery-ui/jquery-ui-1.12.1.custom/jquery-ui.js"></script>
-    <script type="text/javascript" src="vendor/jquer-smart_wizard/js/jquery.smartWizard.js"></script>
-    <script src="js/donor-questionary.min.js"></script>
+    <script src="{{asset('vendor/jquery-ui/jquery-ui-1.12.1.custom/jquery-ui.js')}}"></script>
+    <script type="text/javascript" src="{{asset('vendor/jquer-smart_wizard/js/jquery.smartWizard.js')}}"></script>
+    <script src="{{asset('js/donor-questionary.min.js')}}"></script>
 @endpush

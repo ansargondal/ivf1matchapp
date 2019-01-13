@@ -1,13 +1,17 @@
 @extends('layouts.frontend.app')
-@section('title', 'Recipient Sign Up')
+@section('title', 'Recipient Signup - Ivf1match')
 
-{{--pushing recipients only stylesheets--}}
+{{--pushing  recipient sign up stylesheets--}}
 @push('css')
+    <!-- Include SmartWizard CSS -->
+    <link href="vendor/jquer-smart_wizard/css/smart_wizard.css" rel="stylesheet" type="text/css"/>
+    <link href="vendor/jquer-smart_wizard/css/smart_wizard_theme_dots.css" rel="stylesheet" type="text/css"/>
+
     <link rel="stylesheet" href="css/recipient-signup.css">
 @endpush
 
-@section('content')
 
+@section('content')
     <!--Hero section-->
     <section class="section hero">
         <div class="container">
@@ -125,8 +129,85 @@
     </section>
     <!--What is ivf ends here-->
 
+
+    <!--signup modal----->
+    <div class="modal" id="signup_modal">
+        <div class="modal-dialog modal-md">
+            <div class="modal-content">
+
+                <!-- Modal body -->
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-6 text-center">
+                            <h3>Donor <span>Sign Up</span></h3>
+                            <p>Thank you for your interest in the egg donation program at IVF1. Egg donation is very
+                                special
+                                gift.</p>
+                            <a href="donor-signup.html" class="btn bttn">Sign up</a>
+                        </div>
+                        <div class="col-6 text-center">
+                            <h3>Recipient <span>Sign Up</span></h3>
+                            <p>Thank you for your interest in the egg donation program at IVF1. Egg donation is very
+                                special
+                                gift.</p>
+                            <a href="recipient-signup.html" class="btn bttn">Sign up</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--signup modal----->
 @endsection
 
+
+{{--Pushing recipient sign up js files--}}
 @push('js')
-    <script src="js/recipients.min.js"></script>
+    <script type="text/javascript" src="{{asset('vendor/jquery-ui/jquery-ui.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('vendor/jquer-smart_wizard/js/validator.js')}}"></script>
+    <script type="text/javascript" src="{{asset('vendor/jquer-smart_wizard/js/jquery.smartWizard-donor.js')}}"></script>
+
+    <!-- Custom Validation Files -->
+    <script type="text/javascript" src="{{asset('js/data-validation.min.js')}}"></script>
+    <script src="{{asset('js/donor-signup.min.js')}}"></script>
+    <script>
+        $().ready(function () {
+            $('#rsignup').validate({
+                rules: {
+                    firstname: {
+                        required: true,
+                        minlength: 2
+                    },
+                    lastname: {
+                        required: true,
+                        minlength: 2
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    },
+                    password: {
+                        required: true,
+                        minlength: 5
+                    }
+                },
+                messages: {
+                    firstname: {
+                        required: "Please enter your firstname.",
+                        minlength: "Firstname must have 2 atleast characters."
+                    },
+                    lastname: {
+                        required: "Please enter your lastname.",
+                        minlength: "Lastname must have 2 atleast characters."
+                    },
+                    email: "Pease enter valid email.",
+                    password: {
+                        required: "Please enter your password.",
+                        minlength: "Password must have 5 atleast characters."
+                    }
+                }
+            });
+        });
+
+    </script>
 @endpush

@@ -1,3 +1,4 @@
+<!--delete modal-->
 <div class="modal" id="delete-modal">
     <div class="modal-dialog">
         <div class="modal-content">
@@ -20,3 +21,4 @@
         </div>
     </div>
 </div>
+<!--!delete modal-->

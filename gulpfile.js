@@ -5,6 +5,7 @@ let gulp = require('gulp'),
     rename = require("gulp-rename"),
     uglify = require('gulp-uglify'),
     watch = require('gulp-watch'),
+    sourcemaps = require('gulp-sourcemaps'),
     browserSync = require('browser-sync').create();
 
 
@@ -23,9 +24,11 @@ gulp.task('copy:images', function () {
 // Compile SCSS
 gulp.task('css:compile', function () {
     return gulp.src('./resources/assets/scss/*.scss')
+        .pipe(sourcemaps.init())
         .pipe(sass.sync({
             outputStyle: 'compressed'
         }).on('error', sass.logError))
+        .pipe(sourcemaps.write())
         .pipe(gulp.dest('./public/css' +
             ''));
 });
@@ -71,7 +74,8 @@ gulp.task('js:minify', function () {
 
 
 // JS
-gulp.task('js', ['js:copy', 'js:minify']);
+// gulp.task('js', ['js:copy', 'js:minify']);
+gulp.task('js', ['js:copy']);
 
 // Default task
 gulp.task('default', ['css', 'js', 'vendor', 'copy:images']);

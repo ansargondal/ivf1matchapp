@@ -443,11 +443,13 @@
                 </div>
             </div><!--!row-->
         </div>
-
     </main>
+
+    //including modals
+    @include('layouts.admin.modals.recipient.edit')
 @endsection
 
 {{--Pushing Recipients only js file--}}
 @push('js')
-    <script src="../js/admin/recipients.min.js"></script>
+    <script src="{{asset('../js/admin/recipients.js')}}"></script>
 @endpush

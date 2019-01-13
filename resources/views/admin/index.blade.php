@@ -2,7 +2,7 @@
 @section('title', 'Dashboard - Overview')
 
 @push('css')
-    <link rel="stylesheet" href="../css/dashboardonly.css">
+    <link rel="stylesheet" href="{{asset('../css/dashboardonly.css')}}">
 @endpush
 @section('content')
     <main class="main">
@@ -462,5 +462,11 @@
             </div><!--tasks row-->
         </div>
     </main>
+
+    //including tasks new/edit modals
+    @include('layouts.admin.modals.task.create')
+    @include('layouts.admin.modals.task.edit')
+    
 @endsection
+
 

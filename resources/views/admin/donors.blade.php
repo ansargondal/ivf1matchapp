@@ -131,7 +131,7 @@
 
 @endsection
 
-{{--Pushing Donors only js file--}}
+{{--Pushing Donor js file--}}
 @push('js')
-    <script src="../js/admin/donors.min.js"></script>
+    <script src="{{asset('../js/admin/donor.js')}}"></script>
 @endpush

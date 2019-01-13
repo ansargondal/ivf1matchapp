@@ -485,4 +485,12 @@
             </div><!--!row-->
         </div>
     </main>
+
+    {{--including users modals--}}
+    @include('layouts.admin.modals.user.create')
+    @include('layouts.admin.modals.user.edit')
 @endsection
+
+@push('js')
+    <script src="{{asset('../js/admin/users.js')}}"></script>
+@endpush

@@ -111,7 +111,7 @@
     </main>
 @endsection
 
-{{--Pushing Recipients only js file--}}
+{{--Pushing User Profile only js file--}}
 @push('js')
-    <script src="../js/admin/user-profile.min.js"></script>
+    <script src="{{asset('../js/admin/user-profile.js')}}"></script>
 @endpush
