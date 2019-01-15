@@ -178,14 +178,14 @@
                                                     <h3>High <span>School</span></h3>
                                                     <div class="checkboxes">
                                                         <label class="checkbox">
-                                                            <input type="checkbox" name="high_school">
+                                                            <input type="checkbox" name="attended_school">
                                                             <span class="indicator"></span>
                                                             Attended high school but did not graduate.
                                                         </label>
                                                     </div>
                                                     <div class="checkboxes">
                                                         <label class="checkbox">
-                                                            <input type="checkbox" name="high_school">
+                                                            <input type="checkbox" name="graduated_school">
                                                             <span class="indicator"></span>
                                                             Graduated high school.
                                                         </label>
@@ -201,7 +201,7 @@
                                                         <div class="col-12">
                                                             <div class="checkboxes">
                                                                 <label class="checkbox">
-                                                                    <input type="checkbox" name="college">
+                                                                    <input type="checkbox" name="attended_college">
                                                                     <span class="indicator"></span>
                                                                     Attended college but did not graduate.
                                                                 </label>
@@ -213,7 +213,7 @@
                                                         <div class="col-12 col-md-6">
                                                             <div class="checkboxes">
                                                                 <label class="checkbox">
-                                                                    <input type="checkbox" name="college"
+                                                                    <input type="checkbox" name="attending_college"
                                                                            id="c_c_attending_college">
                                                                     <span class="indicator"></span>
                                                                     Currently attending college
@@ -223,14 +223,14 @@
                                                         <div class="col-12 col-md-6">
                                                             <input type="text" class="form-control"
                                                                    placeholder="Major/Degree" id="i_c_attending_college"
-                                                                   name="i_c_attending_college">
+                                                                   name="college_major">
                                                         </div>
                                                     </div>
                                                     <div class="row">
                                                         <div class="col-12 col-md-6">
                                                             <div class="checkboxes">
                                                                 <label class="checkbox">
-                                                                    <input type="checkbox" name="college"
+                                                                    <input type="checkbox" name="have_graduate_degree"
                                                                            id="c_graduate_degree">
                                                                     <span class="indicator"></span>
                                                                     Graduate Degree
@@ -239,7 +239,7 @@
                                                         </div>
                                                         <div class="col-12 col-md-6">
                                                             <input type="text" id="i_graduate_degree"
-                                                                   class="form-control" name="i_graduate_degree"
+                                                                   class="form-control" name="graduage_degree"
                                                                    placeholder="Graduate Degree">
                                                         </div>
                                                     </div>
@@ -247,7 +247,7 @@
                                                         <div class="col-12 col-md-6">
                                                             <div class="checkboxes">
                                                                 <label class="checkbox">
-                                                                    <input type="checkbox" name="college"
+                                                                    <input type="checkbox" name="have_post_graduate_degree"
                                                                            id="c_post_graduate_degree">
                                                                     <span class="indicator"></span>
                                                                     Post Graduate Degree
@@ -257,14 +257,14 @@
                                                         <div class="col-12 col-md-6">
                                                             <input type="text" placeholder="Post Graduate Field"
                                                                    id="i_post_graduate_degree"
-                                                                   name="i_post_graduate_degree" class="form-control">
+                                                                   name="post_graduate_degree" class="form-control">
                                                         </div>
                                                     </div>
                                                     <div class="row">
                                                         <div class="col-12 col-md-6">
                                                             <div class="checkboxes">
                                                                 <label class="checkbox">
-                                                                    <input type="checkbox" name="college"
+                                                                    <input type="checkbox" name="have_other"
                                                                            id="c_degree_other">
                                                                     <span class="indicator"></span>
                                                                     Other
@@ -273,7 +273,7 @@
                                                         </div>
                                                         <div class="col-12 col-md-6">
                                                             <input type="text" placeholder="Please explain"
-                                                                   id="i_degree_other" name="i_degree_other"
+                                                                   id="i_degree_other" name="other"
                                                                    class="form-control">
                                                         </div>
                                                     </div>

@@ -49,16 +49,16 @@
                             <div class="row">
                                 <div class="col-12 col-md-6">
                                     <div class="form-group">
-                                        <label for="firstname">First Name</label>
-                                        <input type="text" class="form-control" tabindex="0" id="firstname"
-                                               name="firstname"
+                                        <label for="fname">First Name</label>
+                                        <input type="text" class="form-control" tabindex="0" id="fname"
+                                               name="fname"
                                                autofocus>
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6">
                                     <div class="form-group">
-                                        <label for="last_name">Last Name</label>
-                                        <input type="text" class="form-control" id="last_name" name="lastname">
+                                        <label for="lname">Last Name</label>
+                                        <input type="text" class="form-control" id="lname" name="lname">
                                     </div>
                                 </div>
                             </div>
@@ -67,13 +67,13 @@
                                     <div class="form-group">
                                         <label for="date_birth">Date Birth</label>
                                         <input type="text" class="form-control date-picker" id="date_birth"
-                                               name="date_birth">
+                                               name="dob">
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6">
                                     <div class="form-group">
                                         <label for="home_phone">Home Phone</label>
-                                        <input type="text" class="form-control" id="home_phone" name="home_phone">
+                                        <input type="text" class="form-control" id="home_phone" name="home">
                                     </div>
                                 </div>
                             </div>
@@ -118,7 +118,7 @@
                                 <div class="col-12 col-md-6">
                                     <div class="form-group">
                                         <label for="zip_code">Zip Code</label>
-                                        <input type="text" class="form-control" id="zip_code" name="zip_code">
+                                        <input type="text" class="form-control" id="zip_code" name="zip">
                                     </div>
                                 </div>
                             </div>
@@ -138,7 +138,7 @@
                                         <label for="any_patient"></label>
 
                                         <input type="text" readonly class="form-control" id="any_patient"
-                                               name="any_patient"
+                                               name="donation_for"
                                                placeholder="Any Type">
                                         <ul class="c-dropdown-menu">
                                             <li><a href="#" class="active">Any Patient</a></li>
@@ -150,7 +150,7 @@
                                 <div class="col-12 col-lg-3 ">
                                     <div class="form-group mt-3">
                                         <label for="couple_code"></label>
-                                        <input type="text" class="form-control" id="couple_code" name="any_patient"
+                                        <input type="text" class="form-control" id="couple_code" name="agency_name"
                                                placeholder="Couple Code / Agency Name">
                                     </div>
                                 </div>
@@ -163,7 +163,7 @@
                                     <div class="form-group">
                                         <label for="i_starting_from">Starting From</label>
                                         <input type="text" class="form-control date-picker" id="i_starting_from"
-                                               name="i_starting_from">
+                                               name="donation_date">
                                     </div>
                                 </div>
                                 <div class="col-12 text-center">
@@ -181,15 +181,16 @@
                                     <div class="form-group">
                                         <h3>High <span>School</span></h3>
                                         <div class='checkboxes'>
-                                            <label class='checkbox'>
-                                                <input type='checkbox' name="high_school">
+                                            <label class='checkbox' for="high_school_1">
+                                                <input type='checkbox' name="high_school" class="high-school"
+                                                       id="high_school_1">
                                                 <span class='indicator'></span>
                                                 Attended high school but did not graduate.
                                             </label>
                                         </div>
                                         <div class='checkboxes'>
                                             <label class='checkbox'>
-                                                <input type='checkbox' name="high_school">
+                                                <input type='checkbox' name="high_school" class="high-school">
                                                 <span class='indicator'></span>
                                                 Graduated high school.
                                             </label>
@@ -205,7 +206,7 @@
                                             <div class="col-12">
                                                 <div class='checkboxes'>
                                                     <label class='checkbox'>
-                                                        <input type='checkbox' name="college">
+                                                        <input type='checkbox' name="college" class="college">
                                                         <span class='indicator'></span>
                                                         Attended college but did not graduate.
                                                     </label>
@@ -218,7 +219,7 @@
                                                 <div class='checkboxes'>
                                                     <label class='checkbox'>
                                                         <input type='checkbox' name="college"
-                                                               id="c_c_attending_college">
+                                                               id="c_c_attending_college" class="college">
                                                         <span class='indicator'></span>
                                                         Currently attending college
                                                     </label>
@@ -235,7 +236,7 @@
                                                 <div class='checkboxes'>
                                                     <label class='checkbox'>
                                                         <input type='checkbox' name="college"
-                                                               id="c_graduate_degree">
+                                                               id="c_graduate_degree" class="college">
                                                         <span class='indicator'></span>
                                                         Graduate Degree
                                                     </label>
@@ -251,7 +252,7 @@
                                                 <div class='checkboxes'>
                                                     <label class='checkbox'>
                                                         <input type='checkbox' name="college"
-                                                               id="c_post_graduate_degree">
+                                                               id="c_post_graduate_degree" class="college">
                                                         <span class='indicator'></span>
                                                         Post Graduate Degree
                                                     </label>
@@ -267,7 +268,8 @@
                                             <div class="col-12 col-md-6">
                                                 <div class='checkboxes'>
                                                     <label class='checkbox'>
-                                                        <input type='checkbox' name="college" id="c_degree_other">
+                                                        <input type='checkbox' name="college" id="c_degree_other"
+                                                               class="college">
                                                         <span class='indicator'></span>
                                                         Other
                                                     </label>
@@ -470,8 +472,8 @@
                                 <div class="col-12 col-md-6">
                                     <div class='checkboxes'>
                                         <label class='checkbox'>
-                                            <input type='checkbox'>
-                                            <span class='indicator'></span>
+                                            {{--<input type='non'>--}}
+                                            <span class='indicator bg-secondary'></span>
                                             Number of sexual partners
                                         </label>
                                     </div>
@@ -1100,20 +1102,14 @@
                                 </div>
                                 <div class="col-12 col-md-6">
                                     <ul>
-                                        <li>My menstrual bleeding begins every</li>
+                                        <li>My menstrual bleeding begins every (Ex: every 28 to 35 days)</li>
                                     </ul>
                                 </div>
                                 <div class="col-6 col-md-3">
                                     <div class="form-group c-dropdown">
-                                        <!-- <label for="menstrualday"></label> -->
                                         <input type="text" class="form-control" id="menstrualbleeding"
                                                name="menstrualday"
                                                placeholder="From">
-                                        <!-- <ul class="c-dropdown-menu">
-                                            <li><a href="#" class="active">1</a></li>
-                                            <li><a href="#">7</a></li>
-                                            <li><a href="#">15</a></li>
-                                        </ul> -->
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-3 mb-4">
@@ -1122,11 +1118,25 @@
 
                                         <input type="text" class="form-control" id="menstrualMonths"
                                                name="menstrualbleeding" placeholder="To">
-                                        <!-- <ul class="c-dropdown-menu">
-                                            <li><a href="#" class="active">1</a></li>
-                                            <li><a href="#">2</a></li>
-                                            <li><a href="#">3</a></li>
-                                        </ul> -->
+                                    </div>
+                                </div>
+                                <div class="col-12 col-md-6">
+                                    <ul>
+                                        <li>My menstrual bleeding lasts for (Ex: last for 3 to 5 days)</li>
+                                    </ul>
+                                </div>
+                                <div class="col-6 col-md-3">
+                                    <div class="form-group c-dropdown">
+                                        <input type="text" class="form-control" id="menstrualbleeding"
+                                               name="menstrualday"
+                                               placeholder="From">
+                                    </div>
+                                </div>
+                                <div class="col-6 col-md-3 mb-4">
+                                    <div class="form-group c-dropdown" id="menmonth">
+
+                                        <input type="text" class="form-control" id="menstrualMonths"
+                                               name="menstrualbleedinglasts" placeholder="To">
                                     </div>
                                 </div>
                                 <div class="col-12">
@@ -1753,6 +1763,74 @@
                                     </tr>
                                     </thead>
                                     <tbody>
+                                    <tr>
+                                        <th scope="row">
+                                            <div class='checkboxes text-center'>
+                                                <label class='checkbox mx-auto'>
+                                                    <input type='checkbox' name="s_n_used_1" id="s_n_used_1">
+                                                    <span class='indicator'> &nbsp;</span>
+                                                </label>
+                                            </div>
+                                        </th>
+                                        <td>
+                                            <div class="form-group">
+                                                <label for="d_n_used_1"></label>
+                                                <input type="text" class="form-control date-picker" id="d_n_used_1"
+                                                       name="d_n_used_1" placeholder="Date">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-group c-dropdown">
+                                                <label for="t_n_used_1"></label>
+                                                <input type="text" readonly class="form-control" id="t_n_used_1"
+                                                       name="t_n_used_1" placeholder="Select">
+                                                <ul class="c-dropdown-menu">
+                                                    <li><a href="#" class="active">Tattoo</a></li>
+                                                    <li><a href="#">Piercing</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" name="i_n_used_1"
+                                                       id="i_n_used_1">
+                                            </div>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th scope="row">
+                                            <div class='checkboxes text-center'>
+                                                <label class='checkbox mx-auto'>
+                                                    <input type='checkbox' name="s_n_used_1" id="s_n_used_1">
+                                                    <span class='indicator'> &nbsp;</span>
+                                                </label>
+                                            </div>
+                                        </th>
+                                        <td>
+                                            <div class="form-group">
+                                                <label for="d_n_used_1"></label>
+                                                <input type="text" class="form-control date-picker" id="d_n_used_1"
+                                                       name="d_n_used_1" placeholder="Date">
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-group c-dropdown">
+                                                <label for="t_n_used_1"></label>
+                                                <input type="text" readonly class="form-control" id="t_n_used_1"
+                                                       name="t_n_used_1" placeholder="Select">
+                                                <ul class="c-dropdown-menu">
+                                                    <li><a href="#" class="active">Tattoo</a></li>
+                                                    <li><a href="#">Piercing</a></li>
+                                                </ul>
+                                            </div>
+                                        </td>
+                                        <td>
+                                            <div class="form-group">
+                                                <input type="text" class="form-control" name="i_n_used_1"
+                                                       id="i_n_used_1">
+                                            </div>
+                                        </td>
+                                    </tr>
                                     <tr>
                                         <th scope="row">
                                             <div class='checkboxes text-center'>
@@ -6335,7 +6413,7 @@
                             </div>
                             <div class="col-12 col-md-6">
                                 <div class="form-group">
-                                    <label for="i_home_phone">Home Phone</label>
+                                    <label for="i_home_phone">Age</label>
                                     <input type="text" class="form-control" id="i_home_phone" name="i_home_phone">
                                 </div>
                             </div>
@@ -6531,6 +6609,17 @@
                             </div>
                             <div class="col-12 col-md-6">
                                 <div class="form-group c-dropdown">
+                                    <label for="d_eyeset">Eye Set</label>
+                                    <input type="text" readonly class="form-control" id="d_eyeset" name="d_eyeset">
+                                    <ul class="c-dropdown-menu">
+                                        <li><a href="#" class="">Narrow</a></li>
+                                        <li><a href="#">Average</a></li>
+                                        <li><a href="#">Wide</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="form-group c-dropdown">
                                     <label for="d_eyesize">Eye Size</label>
                                     <input type="text" readonly class="form-control" id="d_eyesize" name="d_eyesize">
                                     <ul class="c-dropdown-menu">
@@ -6553,7 +6642,7 @@
                             </div>
                             <div class="col-12 col-md-6">
                                 <div class="form-group c-dropdown">
-                                    <label for="d_haircolor">Hair Color</label>
+                                    <label for="d_haircolor">Natural Hair Color</label>
                                     <input type="text" readonly class="form-control" id="d_haircolor"
                                            name="d_haircolor">
                                     <ul class="c-dropdown-menu">
@@ -6626,7 +6715,7 @@
 
                             <div class="col-12 col-md-6">
                                 <div class="form-group c-dropdown">
-                                    <label for="d_prematureGraying">Premature Growing</label>
+                                    <label for="d_prematureGraying">Premature Graying</label>
                                     <input type="text" readonly class="form-control" id="d_prematureGraying"
                                            name="d_prematureGraying">
                                     <ul class="c-dropdown-menu">
@@ -6709,6 +6798,13 @@
                                     </ul>
                                 </div>
                             </div>
+                            <div class="col-12 col-md-12">
+                                <div class="form-group">
+                                    <label for="vision_prescription">Vision Prescription, if known</label>
+                                    <input type="text" class="form-control" id="vision_prescription"
+                                           name="vision_prescription">
+                                </div>
+                            </div>
                             <div class="col-12 col-md-6">
                                 <div class="form-group c-dropdown">
                                     <label for="d_glassesCorrective">Glasses or corrective laser surgery?</label>
@@ -6739,12 +6835,10 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="col-xs-12 col-md-6">
-                                    <div class="form-group c-drop-down">
-                                        <label for="i_stigmatism">If yes, age diagnosed</label>
-                                        <input type="text" class="form-control" id="i_stigmatism" name="i_stigmatism">
-                                    </div>
+                            <div class="col-xs-12 col-md-6">
+                                <div class="form-group c-drop-down">
+                                    <label for="i_stigmatism">If yes, age diagnosed</label>
+                                    <input type="text" class="form-control" id="i_stigmatism" name="i_stigmatism">
                                 </div>
                             </div>
 
@@ -6767,13 +6861,24 @@
                                     </p>
                                 </div>
 
-                                <div class="col-12 col-md-6">
-                                    <div class="form-group">
-                                        <input type="text" class="form-control" id="i_num_times_donated"
-                                               name="i_num_times_donated" placeholder="Number of times donated">
+                                    <div class="col-6 col-md-6">
+                                        <div class="form-group c-dropdown">
+                                            <label for="donated_eggs">Have You Donated Eggs Before</label>
+                                            <input type="text" readonly class="form-control" id="donated_eggs"
+                                                   name="donated_eggs">
+                                            <ul class="c-dropdown-menu">
+                                                <li><a href="#">Yes</a></li>
+                                                <li><a href="#" class="active">No</a></li>
+                                            </ul>
+                                        </div>
                                     </div>
-                                </div>
-
+                                    <div class="col-12 col-md-6">
+                                        <div class="form-group">
+                                            <label for="i_num_times_donated">Number of times donated</label>
+                                            <input type="text" class="form-control" id="i_num_times_donated"
+                                                   name="i_num_times_donated" >
+                                        </div>
+                                    </div>
                                 <div class="col-12">
                                     <p>Tell us something about yourself that you would like a prospective egg recipient
                                         to
@@ -6919,7 +7024,8 @@
                                 </div>
                                 <div class="col-12 col-md-6">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Other">
+                                        <label for="d_other">Other</label>
+                                        <input type="text" class="form-control" id="d_other">
                                     </div>
                                 </div>
                                 <br>

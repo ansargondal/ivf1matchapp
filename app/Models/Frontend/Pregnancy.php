@@ -1,20 +1,17 @@
 <?php
 
-namespace App\Model\Frontend;
+namespace App\Models\Frontend;
 
 use App\Models\Backend\User;
 use Illuminate\Database\Eloquent\Model;
 
-class Contact extends Model
+class Pregnancy extends Model
 {
-    protected $table = 'dn_contacts';
 
+    protected $table = 'dn_pregnancy';
     public $timestamps = false;
 
-    protected $guarded = [
-
-    ];
-
+    protected $guarded = [];
 
     public function user()
     {
