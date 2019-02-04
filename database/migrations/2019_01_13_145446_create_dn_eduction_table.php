@@ -20,21 +20,21 @@ class CreateDnEductionTable extends Migration
             $table->boolean('graduated_school')->nullable()->default(false);
             $table->boolean('attended_college')->default(false);
             $table->boolean('attending_college')->nullable()->default(false);
-            $table->string('college_major', 3)->nullable()->nullable();
+            $table->string('college_major', 70)->nullable()->nullable();
             $table->boolean('have_graduate_degree')->nullable()->default(false);
-            $table->string('graduate_degree', 30)->nullable();
+            $table->string('graduate_degree', 70)->nullable();
             $table->boolean('have_post_graduate_degree')->nullable()->default(false);
-            $table->string('post_graduate_degree')->nullable();
+            $table->string('post_graduate_degree', 70)->nullable();
             $table->boolean('have_other')->nullable()->default(false);
-            $table->string('other', 30)->nullable()->nullable();
+            $table->string('other', 70)->nullable()->nullable();
             $table->string('num_languages', 20)->nullable();
-            $table->string('languages', 100)->nullable();
-            $table->string('musical_talent', 150)->nullable();
-            $table->string('art_talent', 150)->nullable();
-            $table->string('athletic_talent', 150)->nullable();
+            $table->string('languages', 200)->nullable();
+            $table->string('musical_talent', 200)->nullable();
+            $table->string('art_talent', 200)->nullable();
+            $table->string('athletic_talent', 200)->nullable();
             $table->string('hobbies', 200)->nullable();
-            $table->string('occupation_type', 10)->nullable();
-            $table->string('occupation', 40)->nullable();
+            $table->tinyInteger('occupation_type')->nullable()->default(3);
+            $table->string('occupation', 60)->nullable();
 
 
             $table->foreign('user_id')

@@ -17,10 +17,10 @@ class CreateDnSexualHistoryTable extends Migration
             $table->increments('id');
             $table->unsignedInteger('user_id');
             $table->string('martial_status', 15);
-            $table->string('living_arrangement', 40);
-            $table->string('partners_1_month', 10);
-            $table->string('partners_6_months', 10);
-            $table->string('partners_5_years', 10);
+            $table->string('living_arrangement', 60);
+            $table->string('partners_1_month', 25);
+            $table->string('partners_6_months', 25);
+            $table->string('partners_5_years', 25);
             $table->boolean('q1')->default(false);
             $table->boolean('q2')->default(false);
             $table->boolean('q3')->default(false);
@@ -29,7 +29,7 @@ class CreateDnSexualHistoryTable extends Migration
             $table->boolean('q6')->default(false);
             $table->boolean('q7')->default(false);
             $table->boolean('q8')->default(false);
-            $table->string('orientation', 70);
+            $table->string('orientation', 200);
             $table->boolean('c_vaginal')->default(false);
             $table->boolean('c_oral')->default(false);
             $table->boolean('c_anal')->default(false);

@@ -13,7 +13,6 @@
     <link rel="stylesheet" href="{{asset('../vendor/data-table/data-table.css')}}">
     <link rel="stylesheet" href="{{asset('../css/dashboard.css')}}">
     <link rel="stylesheet" href="{{asset('../css/data-table.css')}}">
-    <!--    <link rel="shortcut icon" href="../img/med-van.ico" type="image/x-icon">-->
     @stack('css')
     <title>@yield('title', 'Dashboard - Overview')</title>
 </head>

@@ -2,7 +2,6 @@
 
 namespace App\Models\Backend;
 
-use App\Model\Frontend\Contact;
 use App\Models\Frontend\Education;
 use App\Models\Frontend\Image;
 use App\Models\Frontend\MedicalAbnormality;
@@ -10,7 +9,7 @@ use App\Models\Frontend\MedicalHistory;
 use App\Models\Frontend\MedicalProblem;
 use App\Models\Frontend\MedicalQuestion;
 use App\Models\Frontend\Pregnancy;
-use App\Models\Frontend\Profile;
+use App\Models\Frontend\DonorProfile;
 use App\Models\Frontend\Quiz;
 use App\Models\Frontend\SexualHistory;
 use Illuminate\Foundation\Auth\User as Authenticatable;
@@ -101,11 +100,11 @@ class User extends Authenticatable
 
     public function images()
     {
-        $this->hasManyThrough(Image::class, Profile::class);
+        $this->hasManyThrough(Image::class, DonorProfile::class);
     }
 
     public function profile()
     {
-        return $this->hasOne(Profile::class);
+        return $this->hasOne(DonorProfile::class);
     }
 }

@@ -1,9 +1,9 @@
 <?php
 
-use App\Models\Frontend\Profile;
+use App\Models\Frontend\DonorProfile;
 use Faker\Generator as Faker;
 
-$factory->define(Profile::class, function (Faker $faker) {
+$factory->define(DonorProfile::class, function (Faker $faker) {
 
     $religions = ['Islam', 'Buddhism', 'Christianity', 'Wicca', 'No religion', 'Other'];
 

@@ -2,7 +2,7 @@
 
 use App\Models\Backend\User;
 use App\Models\Frontend\Image;
-use App\Models\Frontend\Profile;
+use App\Models\Frontend\DonorProfile;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -21,7 +21,7 @@ class DatabaseSeeder extends Seeder
         //save 1 profile for each user
         $users->each(function ($user) {
 
-            $profile = $user->profile()->save(factory(Profile::class)->make());
+            $profile = $user->profile()->save(factory(DonorProfile::class)->make());
 //
 //            //save 4 images against each profile
             $profile->images()->saveMany(factory(Image::class, 4)->make());

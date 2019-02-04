@@ -10,7 +10,7 @@
                     <p>IVF1Match is the only egg donor / recipient matching program in which recipients can correspond
                         anonymously with donors.</p>
                     <br><br>
-                    <a href="donor-signup.html" class="bttn">Join the Cause</a>
+                    <a href="{{route('donor.register')}}" class="bttn">Join the Cause</a>
                 </div>
             </div>
         </div>

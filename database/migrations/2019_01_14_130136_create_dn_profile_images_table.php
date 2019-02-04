@@ -14,9 +14,9 @@ class CreateDnProfileImagesTable extends Migration
     public function up()
     {
         Schema::create('dn_profile_images', function (Blueprint $table) {
-            $table->integer('profile_id')->unsigned();
+            $table->integer('donor_profile_id')->unsigned();
             $table->string('path');
-            $table->foreign('profile_id')
+            $table->foreign('donor_profile_id')
                 ->references('id')->on('dn_profile')->onDelete('cascade');
         });
     }

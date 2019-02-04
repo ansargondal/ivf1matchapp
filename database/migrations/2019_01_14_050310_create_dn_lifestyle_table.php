@@ -20,7 +20,7 @@ class CreateDnLifestyleTable extends Migration
             $table->string('exercise_routine', 15);
             $table->string('exercise_type', 50);
             $table->string('diet_type', 15);
-            $table->string('diet_quality', 15);
+            $table->string('diet_quality', 30);
             $table->string('diet_restrictions', 100)->nullable();
             $table->string('tobacco', 10);
             $table->string('tobacco_amount', 50)->nullable();
@@ -52,31 +52,6 @@ class CreateDnLifestyleTable extends Migration
             $table->boolean('hour_jail')->default(false);
             $table->boolean('three_days_jail')->default(false);
 
-            $table->string('tattoo_1', 20)->nullable();
-            $table->string('tattoo_date_1', 20)->nullable();
-            $table->string('tattoo_location_1', 60)->nullable();
-            $table->string('sterile_used_1', 60)->nullable();
-
-            $table->string('tattoo_2', 20)->nullable();
-            $table->string('tattoo_date_2', 20)->nullable();
-            $table->string('tattoo_location_2', 60)->nullable();
-            $table->string('sterile_used_2', 60)->nullable();
-
-            $table->string('tattoo_3', 20)->nullable();
-            $table->string('tattoo_date_3', 20)->nullable();
-            $table->string('tattoo_location_3', 60)->nullable();
-            $table->string('sterile_used_3', 60)->nullable();
-
-            $table->string('tattoo_4', 20)->nullable();
-            $table->string('tattoo_date_4', 20)->nullable();
-            $table->string('tattoo_location_4', 60)->nullable();
-            $table->string('sterile_used_4', 60)->nullable();
-
-            $table->string('tattoo_5', 20)->nullable();
-            $table->string('tattoo_date_5', 20)->nullable();
-            $table->string('tattoo_location_5', 60)->nullable();
-            $table->string('sterile_used_5', 60)->nullable();
-
 
             $table->boolean('cjd')->default(false);
             $table->boolean('dementia')->default(false);
@@ -102,6 +77,7 @@ class CreateDnLifestyleTable extends Migration
      */
     public function down()
     {
+        Schema::dropIfExists('dn_lifestyle_sterile');
         Schema::dropIfExists('dn_lifestyle');
     }
 }

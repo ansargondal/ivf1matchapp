@@ -4,16 +4,15 @@
 {{--pushing  recipient sign up stylesheets--}}
 @push('css')
     <!-- Include SmartWizard CSS -->
-    <link href="vendor/jquer-smart_wizard/css/smart_wizard.css" rel="stylesheet" type="text/css"/>
-    <link href="vendor/jquer-smart_wizard/css/smart_wizard_theme_dots.css" rel="stylesheet" type="text/css"/>
+    <link href="../vendor/jquer-smart_wizard/css/smart_wizard.css" rel="stylesheet" type="text/css"/>
+    <link href="../vendor/jquer-smart_wizard/css/smart_wizard_theme_dots.css" rel="stylesheet" type="text/css"/>
 
-    <link rel="stylesheet" href="css/modal.css">
-    <link rel="stylesheet" href="css/donor-signup.css">
+    <link rel="stylesheet" href="{{asset('css/frontend/modal.css')}}">
+    <link rel=" stylesheet" href="{{asset('css/frontend/donor-signup.css')}}">
 @endpush
-
 @section('content')
     <!--Hero section-->
-    <section class="section hero">
+    <section class=" section hero">
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
@@ -22,7 +21,7 @@
                         Sign
                         up to become a donor</p>
                     <br><br>
-                    <a href="recipient-signup.html" class="bttn">Become a Recipient</a>
+                    <a href="{{route('recipient.register')}}" class="bttn">Become a Recipient</a>
                 </div>
             </div>
         </div>
@@ -112,7 +111,7 @@
                             <div class="text-center">
                                 <button class="btn bttn" type="submit">Next Step</button>
                                 <br><br>
-                                <p><a href="login.html">I 'm already a member?</a></p>
+                                <p><a href="{{route('login')}}">I 'm already a member?</a></p>
                             </div>
                         </div>
                     </form>
@@ -330,7 +329,8 @@
 @push('js')
     <script type="text/javascript" src="{{asset('vendor/jquery-ui/jquery-ui.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('vendor/jquer-smart_wizard/js/validator.js')}}"></script>
-    <script type="text/javascript" src="{{asset('vendor/jquer-smart_wizard/js/jquery.smartWizard-donor.js')}}"></script>
+    <script type="text/javascript"
+            src="{{asset('vendor/jquer-smart_wizard/js/jquery.smartWizard-donor.js')}}"></script>
 
     <!-- Custom Validation Files -->
     <script type="text/javascript" src="{{asset('js/data-validation.min.js')}}"></script>

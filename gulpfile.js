@@ -23,21 +23,20 @@ gulp.task('copy:images', function () {
 
 // Compile SCSS
 gulp.task('css:compile', function () {
-    return gulp.src('./resources/assets/scss/*.scss')
+    return gulp.src('./resources/assets/scss/**/**/**/*.scss')
         .pipe(sourcemaps.init())
         .pipe(sass.sync({
-            outputStyle: 'compressed'
+            outputStyle: 'expanded'
         }).on('error', sass.logError))
         .pipe(sourcemaps.write())
-        .pipe(gulp.dest('./public/css' +
-            ''));
+        .pipe(gulp.dest('./public/css'));
 });
 
 // Minify CSS
 gulp.task('css:minify', ['css:compile'], function () {
     return gulp.src([
-        './public/css/*.css',
-        '!./public/css/*.min.css'
+        './public/css/**/*.css',
+        '!./public/css/**/*.min.css'
     ])
         .pipe(cleanCSS())
         .pipe(rename({

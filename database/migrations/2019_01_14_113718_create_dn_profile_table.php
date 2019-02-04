@@ -16,10 +16,10 @@ class CreateDnProfileTable extends Migration
         Schema::create('dn_profile', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('user_id');
-            $table->string('age', 10);
-            $table->string('height', 10);
-            $table->string('weight', 10);
-            $table->string('race', 10);
+            $table->string('age', 50);
+            $table->string('height', 30);
+            $table->string('weight', 30);
+            $table->string('race', 50);
             $table->string('mother', 150);
             $table->string('mothers_mother', 150);
             $table->string('mothers_father', 150);
@@ -29,7 +29,7 @@ class CreateDnProfileTable extends Migration
             $table->string('religion', 200);
             $table->boolean('adopted');
             $table->boolean('weight_change');
-            $table->string('amount_lost', 50);
+            $table->string('amount_lost', 100)->nullable();
             $table->string('dexterity', 20);
             $table->string('bones', 20);
             $table->string('complexion', 20);
@@ -47,29 +47,28 @@ class CreateDnProfileTable extends Migration
             $table->boolean('baldness');
             $table->boolean('baldness_family');
             $table->boolean('graying');
-            $table->string('graying_age', 20);
+            $table->string('graying_age', 80)->nullable();
             $table->string('body_facial_features', 20);
             $table->string('teeth', 20);
             $table->boolean('orthodontic_work');
-            $table->string('orthodontic_age', 20);
+            $table->string('orthodontic_age', 80)->nullable();
             $table->string('hearing', 20);
             $table->string('vision', 20);
-            $table->string('vision_prescription', 20);
+            $table->string('vision_prescription', 80)->nullable();
             $table->boolean('glasses');
 
-            $table->string('vision_problem', 20);
-            $table->string('vision_problem_mother', 20);
+            $table->string('vision_problem', 80)->nullable();
             $table->boolean('stigmatism');
-            $table->string('stigmatism_age');
+            $table->string('stigmatism_age', 80)->nullable();
             $table->boolean('donated');
-            $table->string('number_of_donations', 10);
+            $table->string('number_of_donations', 10)->nullable();
             $table->longText('personal_message');
             $table->boolean('photo_permission')->default(false);
             $table->boolean('knows_someone')->default(false);
             $table->boolean('rewarding')->default(false);
             $table->boolean('fascinating')->default(false);
             $table->boolean('need_money')->default(false);
-            $table->text('other');
+            $table->text('other')->nullable();
 
             $table->foreign('user_id')
                 ->references('id')

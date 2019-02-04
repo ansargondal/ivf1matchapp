@@ -2,7 +2,7 @@
 @section('title', 'Login - Ivf1match')
 {{--Pushing Login Only css file--}}
 @push('css')
-    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="{{asset('css/frontend/login.css')}}">
 @endpush
 @section('content')
     <div class="wrap1">

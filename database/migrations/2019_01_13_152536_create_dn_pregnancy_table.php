@@ -16,35 +16,7 @@ class CreateDnPregnancyTable extends Migration
         Schema::create('dn_pregnancy', function (Blueprint $table) {
             $table->increments('id');
             $table->unsignedInteger('user_id');
-            $table->string('pregnancy_history', 50);
-
-
-            $table->boolean('delivered_baby_1')->default(false);
-            $table->string('delivery_year_1')->nullable();
-            $table->string('baby_gender_1')->nullable();
-            $table->string('baby_problems_1')->nullable();
-            $table->string('pregnancy_end_1')->nullable();
-
-
-            $table->boolean('delivered_baby_2')->default(false);
-            $table->string('delivery_year_2')->nullable();
-            $table->string('baby_gender_2')->nullable();
-            $table->string('baby_problems_2')->nullable();
-            $table->string('pregnancy_end_2')->nullable();
-
-
-            $table->boolean('delivered_baby_3')->default(false);
-            $table->string('delivery_year_3')->nullable();
-            $table->string('baby_gender_3')->nullable();
-            $table->string('baby_problems_3')->nullable();
-            $table->string('pregnancy_end_3')->nullable();
-
-
-            $table->boolean('delivered_baby_4')->default(false);
-            $table->string('delivery_year_4')->nullable();
-            $table->string('baby_gender_4')->nullable();
-            $table->string('baby_problems_4')->nullable();
-            $table->string('pregnancy_end_4')->nullable();
+            $table->string('pregnancy_history', 250);
 
 
             $table->string('first_period', 5);

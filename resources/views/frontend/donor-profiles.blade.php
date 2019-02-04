@@ -3,19 +3,19 @@
 
 {{--pushing donor profiles stylesheets--}}
 @push('css')
-    <link rel="stylesheet" href="{{asset('css/donor-profiles.css')}}">
+    <link rel="stylesheet" href="{{asset('css/frontend/donor-profiles.css')}}">
 @endpush
 @section('content')
     <section class="section hero">
         <div class="container">
             <div class="row">
                 <div class="col-md-8">
-                    <p>Browse All the avilable <span>donors</span> based on their <span>Race, Location</span> , Eyes &
+                    <p>Browse All the available <span>donors</span> based on their <span>Race, Location</span> , Eyes &
                         Local
                         or</p>
-                    <p>Sign Up as recipeint to get in touch with them.All of the messages will be moderated by admin</p>
+                    <p>Sign Up as recipient to get in touch with them.All of the messages will be moderated by admin</p>
                     <br><br>
-                    <a href="recipient-signup.html" class="bttn">Become a Recipient</a>
+                    <a href="{{route('recipient.register')}}" class="bttn">Become a Recipient</a>
                 </div>
             </div>
         </div>
@@ -46,13 +46,13 @@
                                aria-controls="eyes" aria-selected="false">Eyes</a>
                         </li>
                     </ul>
-                    <div class="tab-content" id="myTabContent">
+                    <div class="tab-content" id="filters">
                         <div class="tab-pane fade show active" id="race" role="tabpanel" aria-labelledby="race-tab">
                             <ul>
                                 <li>
                               <span class='checkboxes'>
                                   <label class='checkbox'>
-                                    <input type='checkbox'>
+                                    <input type='checkbox' value="caucasian">
                                     <span class='indicator'></span>
                                     Caucasian
                                   </label>
@@ -61,7 +61,7 @@
                                 <li>
                               <span class='checkboxes'>
                                   <label class='checkbox'>
-                                    <input type='checkbox'>
+                                    <input type='checkbox' value="hispanic">
                                     <span class='indicator'></span>
                                     Hispanic
                                   </label>
@@ -70,7 +70,7 @@
                                 <li>
                               <span class='checkboxes'>
                                   <label class='checkbox'>
-                                    <input type='checkbox'>
+                                    <input type='checkbox' value="mixed">
                                     <span class='indicator'></span>
                                     Mixed
                                   </label>
@@ -79,7 +79,7 @@
                                 <li>
                               <span class='checkboxes'>
                                   <label class='checkbox'>
-                                    <input type='checkbox'>
+                                    <input type='checkbox' value="black(carib)">
                                     <span class='indicator'></span>
                                     Black (Carib)
                                   </label>
@@ -88,7 +88,7 @@
                                 <li>
                               <span class='checkboxes'>
                                   <label class='checkbox'>
-                                    <input type='checkbox'>
+                                    <input type='checkbox' value="black(african)">
                                     <span class='indicator'></span>
                                     Black (African)
                                   </label>
@@ -97,7 +97,7 @@
                                 <li>
                               <span class='checkboxes'>
                                   <label class='checkbox'>
-                                    <input type='checkbox'>
+                                    <input type='checkbox' value="black (hispanic)">
                                     <span class='indicator'></span>
                                     Black (Hispanic)
                                   </label>
@@ -110,7 +110,7 @@
                                 <li>
                               <span class='checkboxes'>
                                   <label class='checkbox'>
-                                    <input type='checkbox'>
+                                    <input type='checkbox' value="md brown">
                                     <span class='indicator'></span>
                                     Md Brown
                                   </label>
@@ -119,7 +119,7 @@
                                 <li>
                               <span class='checkboxes'>
                                   <label class='checkbox'>
-                                    <input type='checkbox'>
+                                    <input type='checkbox' value="black">
                                     <span class='indicator'></span>
                                     Black
                                   </label>
@@ -128,7 +128,7 @@
                                 <li>
                               <span class='checkboxes'>
                                   <label class='checkbox'>
-                                    <input type='checkbox'>
+                                    <input type='checkbox' value="dk blonde">
                                     <span class='indicator'></span>
                                     Dk Blonde
                                   </label>
@@ -137,7 +137,7 @@
                                 <li>
                               <span class='checkboxes'>
                                   <label class='checkbox'>
-                                    <input type='checkbox'>
+                                    <input type='checkbox' value="it brown">
                                     <span class='indicator'></span>
                                     It Brown
                                   </label>
@@ -146,7 +146,7 @@
                                 <li>
                               <span class='checkboxes'>
                                   <label class='checkbox'>
-                                    <input type='checkbox'>
+                                    <input type='checkbox' value="dk brown">
                                     <span class='indicator'></span>
                                     Dk Brown
                                   </label>
@@ -155,7 +155,7 @@
                                 <li>
                               <span class='checkboxes'>
                                   <label class='checkbox'>
-                                    <input type='checkbox'>
+                                    <input type='checkbox' value="red">
                                     <span class='indicator'></span>
                                     Red
                                   </label>
@@ -164,7 +164,7 @@
                                 <li>
                               <span class='checkboxes'>
                                   <label class='checkbox'>
-                                    <input type='checkbox'>
+                                    <input type='checkbox' value="md blonde">
                                     <span class='indicator'></span>
                                     Md Blonde
                                   </label>
@@ -173,7 +173,7 @@
                                 <li>
                               <span class='checkboxes'>
                                   <label class='checkbox'>
-                                    <input type='checkbox'>
+                                    <input type='checkbox' value="it blonde">
                                     <span class='indicator'></span>
                                     It Blonde
                                   </label>
@@ -186,7 +186,7 @@
                                 <li>
                               <span class='checkboxes'>
                                   <label class='checkbox'>
-                                    <input type='checkbox'>
+                                    <input type='checkbox' value="blue">
                                     <span class='indicator'></span>
                                     Blue
                                   </label>
@@ -195,7 +195,7 @@
                                 <li>
                               <span class='checkboxes'>
                                   <label class='checkbox'>
-                                    <input type='checkbox'>
+                                    <input type='checkbox' value="brown">
                                     <span class='indicator'></span>
                                     Brown
                                   </label>
@@ -204,7 +204,7 @@
                                 <li>
                               <span class='checkboxes'>
                                   <label class='checkbox'>
-                                    <input type='checkbox'>
+                                    <input type='checkbox' value="hazel">
                                     <span class='indicator'></span>
                                     Hazel
                                   </label>
@@ -213,7 +213,7 @@
                                 <li>
                               <span class='checkboxes'>
                                   <label class='checkbox'>
-                                    <input type='checkbox'>
+                                    <input type='checkbox' value="green">
                                     <span class='indicator'></span>
                                     Green
                                   </label>
@@ -237,27 +237,33 @@
                 </div>
                 <div class="col-xs-12 col-lg-8">
                     <div class="row">
+                        @empty($profiles)
+                            <p>No profiles to show!</p>
+                        @endempty
 
-                        {{--@foreach($profiles as $profile)--}}
-                        {{--<div class="col-xs-12 col-md-6">--}}
-                        {{--<div class="wrap text-center">--}}
-                        {{--<img src="{{$profile->images->first()->path }}" alt="EGG DONOR"--}}
-                        {{--class="img-fluid">--}}
-                        {{--<h4>DONOR INFO</h4>--}}
-                        {{--<ul class="text-left">--}}
-                        {{--<li>Age <span class="pull-right">{{$profile->age}}</span></li>--}}
-                        {{--<li>Eyes <span class="pull-right">{{$profile->eye_color}}</span></li>--}}
-                        {{--<li>Cycle <span class="pull-right">Available</span></li>--}}
-                        {{--</ul>--}}
-                        {{--<a href="{{route('donors.show', $profile->id)}}" class="btn bttn">More Details</a>--}}
-                        {{--</div>--}}
-                        {{--</div>--}}
-                        {{--@endforeach--}}
-                        {{--<div class="col-xs-12">--}}
-                        {{--<nav aria-label="Page navigation">--}}
-                        {{--{{$profiles->links()}}--}}
-                        {{--</nav>--}}
-                        {{--</div>--}}
+                        @foreach($profiles as $profile)
+                            <div class="col-xs-12 col-md-6">
+                                <div class="wrap text-center">
+                                    <img src="{{asset('storage/'. $profile->images->first()->path)}}" alt="EGG DONOR"
+
+                                         class="img-fluid">
+                                    <h4>DONOR INFO</h4>
+                                    <ul class="text-left">
+                                        <li>Age <span class="pull-right">{{$profile->age}}</span></li>
+                                        <li>Eyes <span class="pull-right">{{$profile->eye_color}}</span></li>
+                                        <li>Cycle <span class="pull-right">Available</span></li>
+                                    </ul>
+                                    <a href="{{route('donor.show', $profile->id)}}" class="btn bttn">More Details</a>
+                                </div>
+                            </div>
+                        @endforeach
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-12">
+                            <nav aria-label="Page navigation">
+                                {{$profiles->links()}}
+                            </nav>
+                        </div>
                     </div>
                 </div>
             </div>

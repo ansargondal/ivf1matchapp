@@ -10,7 +10,8 @@
     <link rel="stylesheet" href="{{asset('vendor/font-awesome/css/font-awesome.min.css')}}">
     <link rel="stylesheet" href="{{asset('vendor/bootstrap/css/bootstrap-reboot.min.css')}}">
     <link rel="stylesheet" href="{{asset('vendor/bootstrap/css/bootstrap.min.css')}}">
-    <link rel="stylesheet" href="{{asset('css/ivf1match.css')}}">
+    <link rel="stylesheet" href="{{asset('css/frontend/ivf1match.css')}}">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     @stack('css')
 </head>
 <body id="page-top" data-spy="scroll" data-target="#navbar-main" data-offset="100">
@@ -29,8 +30,8 @@
             <li class="nav-item"><a href="{{route('home')}}#process" class="nav-link active">HOW IT WORKS</a></li>
             <li class="nav-item"><a href="#" data-toggle="modal" data-target="#signup_modal" class="nav-link">SIGN
                     UP</a></li>
-            <li class="nav-item"><a href="login.html" class="nav-link">LOG IN</a></li>
-            <li class="nav-item text-center"> &nbsp;&nbsp;&nbsp;&nbsp;<a href="{{route('donors.index')}}"
+            <li class="nav-item"><a href="{{route('login')}}" class="nav-link">LOG IN</a></li>
+            <li class="nav-item text-center"> &nbsp;&nbsp;&nbsp;&nbsp;<a href="{{route('donor.profiles')}}"
                                                                          class="bttn btn">Donor
                     Profiles</a></li>
         </ul>

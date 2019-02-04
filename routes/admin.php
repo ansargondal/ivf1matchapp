@@ -22,3 +22,8 @@ Route::get('admin/messages', function () {
     return view('admin.messages');
 });
 
+//all the routes
+
+Route::group(['namespace' => 'Admin'], function () {
+    Route::post('subscribe', 'SubscriptionController@store')->name('subscription.store');
+});

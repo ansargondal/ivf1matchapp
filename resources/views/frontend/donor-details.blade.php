@@ -3,12 +3,9 @@
 
 {{--Pushing Donor Profile details only stylesheets--}}
 @push('css')
-    <link rel="stylesheet" href="{{asset('vendor/owlcarousel/css/owl.carousel.min.css')}}">
-    <link rel="stylesheet" href="{{asset('vendor/owlcarousel/css/owl.theme.default.min.css')}}">
     <link rel="stylesheet" href="{{asset('vendor/lightbox/lightbox.css')}}">
-    <link rel="stylesheet" href="{{asset('css/donor-profile-details.css')}}">
+    <link rel="stylesheet" href="{{asset('css/frontend/donor-profile-details.css')}}">
 @endpush
-
 @section('content')
     <!--profile starts-->
     <section class="section profile">
@@ -16,20 +13,22 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="wrap">
-                        {{--@foreach($profile->images as $image)--}}
-                        {{--@if($loop->first)--}}
-                        {{--<a href="{{$image->path}}" data-lightbox="profile-images"> <img src="{{$image->path}}"--}}
-                        {{--alt=""--}}
-                        {{--class="img-responsive"></a>--}}
-                        {{--@else--}}
-                        {{--<a href="{{$image->path}}" data-lightbox="profile-images" class="hide"> <img--}}
-                        {{--src="{{$image->path}}" alt="" class="img-responsive"></a>--}}
-                        {{--@endif--}}
-                        {{--@endforeach--}}
+                        @foreach($profile->images as $image)
+                            @if($loop->first)
+                                <a href="{{asset('storage/' . $image->path)}}" data-lightbox="profile-images">
+                                    <img src="{{asset('storage/photos/' . $image->path)}}" alt=""
+                                         class="img-responsive">
+                                </a>
+                            @else
+                                <a href="{{asset('storage/'. $image->path)}}"
+                                   data-lightbox="profile-images" class="hide"> <img
+                                            src="{{asset('storage/photos/' . $image->path)}}" alt=""
+                                            class="img-responsive"></a>
+                            @endif
+                        @endforeach
                         <h3>Donor #BG 1061</h3>
-                    {{--                        <p>{{$profile->personal_message}}</p>--}}
-                    <!--                    <button class="btn bttn">Contact Doner</button>-->
-                        <a href="#" class="btn bttn">Contact Doner</a>
+                        <p>{{str_limit($profile->personal_message, 130)}}</p>
+                        <a href="#" class="btn bttn">Contact Donor</a>
                     </div>
                 </div>
                 <div class="col-lg-8">
@@ -45,25 +44,25 @@
                                     <div class="row">
                                         <div class="col-12 col-lg-6">
                                             <ul class="text-left">
-                                                {{--<li>Age <span class="pull-right">{{$profile->age}}</span></li>--}}
-                                                {{--<li>Height <span class="pull-right">{{$profile->height}}</span></li>--}}
-                                                {{--<li>Weight <span class="pull-right">{{$profile->weight}}</span></li>--}}
-                                                {{--<li>Race <span class="pull-right">{{$profile->race}}</span></li>--}}
-                                                {{--<li>Donation <i class="fa {{$profile->donated}} pull-right"></i>--}}
+                                                <li>Age <span class="pull-right">{{$profile->age}}</span></li>
+                                                <li>Height <span class="pull-right">{{$profile->height}}</span></li>
+                                                <li>Weight <span class="pull-right">{{$profile->weight}}</span></li>
+                                                <li>Race <span class="pull-right">{{$profile->race}}</span></li>
+                                                <li>Donation <i class="fa {{$profile->donated}} pull-right"></i>
                                                 </li>
                                             </ul>
                                         </div>
                                         <div class="col-12 col-lg-6">
                                             <ul class="text-left">
-                                                {{--<li>Religion <span class="pull-right">{{$profile->religion}}</span>--}}
-                                                {{--</li>--}}
-                                                {{--<li>Adopted <i class="pull-right fa {{$profile->adopted}}"></i></li>--}}
-                                                {{--<li>Local <span class="pull-right">Yes</span></li>--}}
-                                                {{--<li>Current Cycle <span class="pull-right check"><i--}}
-                                                {{--class="fa fa-check"></i></span>--}}
+                                                <li>Religion <span class="pull-right">{{$profile->religion}}</span>
+                                                </li>
+                                                <li>Adopted <i class="pull-right fa {{$profile->adopted}}"></i></li>
+                                                <li>Local <span class="pull-right">Yes</span></li>
+                                                <li>Current Cycle <span class="pull-right check"><i
+                                                                class="fa fa-check"></i></span>
                                                 </li>
                                                 <li>Donations <span
-                                                    {{--class="pull-right">{{sprintf('%02d', $profile->number_of_donations)}}</span>--}}
+                                                            class="pull-right">{{sprintf('%02d', $profile->number_of_donations)}}</span>
                                                 </li>
                                             </ul>
                                         </div>
@@ -81,22 +80,22 @@
                                     <div class="row">
                                         <div class="col-12 ">
                                             <ul class="text-left">
-                                                {{--<li>Mother's race <span class="pull-right">{{$profile->mother}}</span>--}}
-                                                {{--</li>--}}
-                                                {{--<li>Maternal grandmother's race <span--}}
-                                                {{--class="pull-right">{{$profile->mothers_mother}}</span>--}}
-                                                {{--</li>--}}
-                                                {{--<li>Maternal grandfather's race <span--}}
-                                                {{--class="pull-right">{{$profile->mothers_father}}</span>--}}
-                                                {{--</li>--}}
-                                                {{--<li>Father's race <span--}}
-                                                {{--class="pull-right">	{{$profile->father}}</span></li>--}}
-                                                {{--<li>Paternal grandmother's race<span--}}
-                                                {{--class="pull-right">{{$profile->fathers_father}}</span>--}}
-                                                {{--</li>--}}
-                                                {{--<li>Paternal grandfather's race<span--}}
-                                                {{--class="pull-right">{{$profile->fathers_mother}}</span>--}}
-                                                {{--</li>--}}
+                                                <li>Mother's race <span class="pull-right">{{$profile->mother}}</span>
+                                                </li>
+                                                <li>Maternal grandmother's race <span
+                                                            class="pull-right">{{$profile->mothers_mother}}</span>
+                                                </li>
+                                                <li>Maternal grandfather's race <span
+                                                            class="pull-right">{{$profile->mothers_father}}</span>
+                                                </li>
+                                                <li>Father's race <span
+                                                            class="pull-right">	{{$profile->father}}</span></li>
+                                                <li>Paternal grandmother's race<span
+                                                            class="pull-right">{{$profile->fathers_father}}</span>
+                                                </li>
+                                                <li>Paternal grandfather's race<span
+                                                            class="pull-right">{{$profile->fathers_mother}}</span>
+                                                </li>
                                             </ul>
                                         </div>
                                     </div>
@@ -113,21 +112,23 @@
                                     <div class="row">
                                         <div class="col-12 col-xl-6">
                                             <ul class="text-left">
-                                                {{--<li>Dexterity<span class="pull-right">{{$profile->dexterity}}</span>--}}
-                                                {{--</li>--}}
-                                                {{--<li>Body and facial features<span--}}
-                                                {{--class="pull-right">{{$profile->body_facial_features}}</span>--}}
-                                                {{--</li>--}}
-                                                {{--<li>Bone structure<span class="pull-right"></span></li>--}}
-                                                {{--<li>Complexion<span class="pull-right">{{$profile->complexion}}</span>--}}
-                                                {{--</li>--}}
+                                                <li>Dexterity<span class="pull-right">{{$profile->dexterity}}</span>
+                                                </li>
+                                                <li>Body and facial features<span
+                                                            class="pull-right">{{$profile->body_facial_features}}</span>
+                                                </li>
+                                                <li>Bone structure<span class="pull-right"></span></li>
+                                                <li>Complexion<span class="pull-right">{{$profile->complexion}}</span>
+                                                </li>
                                             </ul>
                                         </div>
                                         <div class="col-12 col-xl-6">
                                             <ul class="text-left">
-                                                {{--<li>Tanning ability<span class="pull-right">Slight</span></li>--}}
-                                                {{--<li>Skin condition<span class="pull-right">Medium</span></li>--}}
-                                                {{--<li>Dimples<span class="pull-right">No</span></li>--}}
+                                                <li>Tanning ability<span class="pull-right">{{$profile->tan}}</span>
+                                                </li>
+                                                <li>Skin condition<span class="pull-right">{{$profile->skin}}</span>
+                                                </li>
+                                                <li>Dimples <i class="pull-right fa {{$profile->dimples}}"></i></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -144,16 +145,20 @@
                                     <div class="row">
                                         <div class="col-12">
                                             <ul class="text-left">
-                                                <li>Hearing<span class="pull-right">Excellent</span></li>
-                                                <li>Vision<span class="pull-right">Excellent</span></li>
-                                                <li>Prescription<span class="pull-right"></span></li>
-                                                <li>Glasses or corrective laser surgery<span
-                                                            class="pull-right">No</span>
+                                                <li>Hearing<span class="pull-right">{{$profile->hearing}}</span></li>
+                                                <li>Vision<span class="pull-right">{{$profile->vision}}</span></li>
+                                                <li>Prescription<span
+                                                            class="pull-right">{{$profile->vision_prescription}}</span>
+                                                </li>
+                                                <li>Glasses or corrective laser surgery<i
+                                                            class="pull-right fa {{$profile->glasses}}"></i>
                                                 </li>
                                                 <li>Corrected problem<span class="pull-right check"></span></li>
                                                 <li>Other Problem<span class="pull-right"></span></li>
-                                                <li>Stigmatism<span class="pull-right">No</span></li>
-                                                <li>Age when stigmatism diagnosed<span class="pull-right"></span></li>
+                                                <li>Stigmatism<i class="pull-right fa {{$profile->stigmatism}}"></i>
+                                                </li>
+                                                <li>Age when stigmatism diagnosed<span
+                                                            class="pull-right">{{$profile->stigmatism_age}}</span></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -170,18 +175,27 @@
                                     <div class="row">
                                         <div class="col-12 col-lg-6">
                                             <ul class="text-left">
-                                                <li>Hair color<span class="pull-right">	Md brown</span></li>
-                                                <li>Hair type<span class="pull-right">Straight</span></li>
-                                                <li>Hair texture<span class="pull-right">Medium</span></li>
-                                                <li>Hair fullness<span class="pull-right">Thick</span></li>
+                                                <li>Hair color<span
+                                                            class="pull-right">	{{$profile->hair_color}}</span></li>
+                                                <li>Hair type<span class="pull-right">{{$profile->hair_type}}</span>
+                                                </li>
+                                                <li>Hair texture<span
+                                                            class="pull-right">{{$profile->hair_texture}}</span></li>
+                                                <li>Hair fullness<span
+                                                            class="pull-right">{{$profile->hair_fullness}}</span></li>
                                             </ul>
                                         </div>
                                         <div class="col-12 col-lg-6">
                                             <ul class="text-left">
-                                                <li>Baldness<span class="pull-right">No</span></li>
-                                                <li>Baldness in family<span class="pull-right">Yes</span></li>
-                                                <li>Premature graying<span class="pull-right">No</span></li>
-                                                <li>Age when started graying<span class="pull-right"></span></li>
+                                                <li>Baldness<i class="pull-right fa {{$profile->baldness}}"></i></li>
+                                                <li>Baldness in family<i
+                                                            class="pull-right fa {{$profile->baldness_family}}"></i>
+                                                </li>
+                                                <li>Premature graying<i
+                                                            class="pull-right fa {{$profile->graying}}"></i>
+                                                </li>
+                                                <li>Age when started graying<span
+                                                            class="pull-right">{{$profile->graying_age}}</span></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -198,14 +212,16 @@
                                     <div class="row">
                                         <div class="col-12 col-lg-6">
                                             <ul class="text-left">
-                                                <li>Eye color<span class="pull-right">Blue</span></li>
-                                                <li>Eye set<span class="pull-right">Average</span></li>
+                                                <li>Eye color<span class="pull-right">{{$profile->eye_color}}</span>
+                                                </li>
+                                                <li>Eye set<span class="pull-right">{{$profile->eye_set}}</span></li>
                                             </ul>
                                         </div>
                                         <div class="col-12 col-lg-6">
                                             <ul class="text-left">
-                                                <li>Eye size<span class="pull-right">Average</span></li>
-                                                <li>Eye shape<span class="pull-right">Round</span></li>
+                                                <li>Eye size<span class="pull-right">{{$profile->eye_size}}</span></li>
+                                                <li>Eye shape<span class="pull-right">{{$profile->eye_shape}}</span>
+                                                </li>
                                             </ul>
                                         </div>
                                     </div>
@@ -222,10 +238,13 @@
                                     <div class="row">
                                         <div class="col-12">
                                             <ul class="text-left">
-                                                <li>Teeth condition<span class="pull-right">Good</span></li>
-                                                <li>Periodontal or orthodontic work<span class="pull-right">Yes</span>
+                                                <li>Teeth condition<span class="pull-right">{{$profile->teeth}}</span>
                                                 </li>
-                                                <li>Age when work was done<span class="pull-right">8</span></li>
+                                                <li>Periodontal or orthodontic work<i
+                                                            class="pull-right fa {{$profile->orthodontic_work}}"></i></span>
+                                                </li>
+                                                <li>Age when work was done<span
+                                                            class="pull-right">{{$profile->orthodontic_age}}</span></li>
                                             </ul>
                                         </div>
                                     </div>
@@ -242,10 +261,26 @@
                                     <div class="row">
                                         <div class="col-12">
                                             <ul class="text-left">
-                                                <li>I know someone with infertility and always wanted to help.</li>
-                                                <li>I think it would be a rewarding experience for me.</li>
-                                                <li>I think the process is fascinating and wanted to be involved.</li>
-                                                <li>I need the money.</li>
+                                                @if($profile->knows_someone)
+                                                    <li><i class="fa fa-check "></i> I know someone with
+                                                        infertility and always wanted to help.
+                                                    </li>
+                                                @endif
+
+                                                @if($profile->rewarding)
+                                                    <li><i class="fa fa-check "></i> I think it would be a
+                                                        rewarding experience for me.
+                                                    </li>
+                                                @endif
+
+                                                @if($profile->fascinating)
+                                                    <li><i class="fa fa-check "></i> I think the process is
+                                                        fascinating and wanted to be involved.
+                                                    </li>
+                                                @endif
+                                                @if($profile->need_money)
+                                                    <li><i class="fa fa-check "></i> I need the money.</li>
+                                                @endif
                                             </ul>
                                         </div>
                                     </div>
@@ -259,3 +294,9 @@
     </section>
     <!--profile ends-->
 @endsection
+
+{{--Pushing Donor Profile Details only JS files --}}
+@push('js')
+    <script src="{{asset('js/donor-details.min.js')}}"></script>
+    <script src="{{asset('vendor/lightbox/lightbox.js')}}"></script>
+@endpush

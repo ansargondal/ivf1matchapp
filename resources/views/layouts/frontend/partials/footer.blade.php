@@ -15,7 +15,7 @@
             <div class="col-7 col-lg-3">
                 <div class="wrap">
                     <a href="https://www.socrei.org/home?ssopc=1">
-                        <img src="img/SREILogo.png" alt="" class="img-responsie">
+                        <img src="{{asset('img/SREILogo.png')}}" alt="" class="img-responsive">
                     </a>
                 </div>
             </div>
@@ -24,7 +24,8 @@
                     <p>IVF1Match is continuously providing best services to their client. We are striving to deliver you
                         best
                         possible services at your door step.</p>
-                    <form action="#" method="post" id="f-subscribe">
+                    <form action="{{route('subscription.store')}}" method="post" id="f-subscribe">
+                        @csrf
                         <div class="input-group">
                             <input type="email" name="email" class="form-control">
                             <span class="input-group-btn ">
@@ -45,10 +46,12 @@
             <div class="col-md-7">
                 <small>
                     <ul class="list-inline">
-                        <li class="list-inline-item"><a href="index.html">How It Works</a></li>
-                        <li class="list-inline-item"><a href="donor-signup.html">Sign Up</a></li>
-                        <li class="list-inline-item"><a href="login.html">Log In</a></li>
-                        <li class="list-inline-item"><a href="donor-profiles.html">Donor Profiles</a></li>
+                        <li class="list-inline-item"><a href="{{route('home')}}#process">How It Works</a></li>
+                        <li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#signup_modal"
+                                                        class="nav-link">Sign Up</a></li>
+
+                        <li class="list-inline-item"><a href="{{route('login')}}">Log In</a></li>
+                        <li class="list-inline-item"><a href="{{route('donor.profiles')}}">Donor Profiles</a></li>
                     </ul>
                 </small>
             </div>
@@ -67,8 +70,10 @@
 </footer>
 <script src="{{asset('vendor/jquery/jquery.min.js')}}"></script>
 <script src="{{asset('vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
+<script src="{{asset('vendor/bootstrap-notify/bootstrap-notify.min.js')}}"></script>
 <script src="{{asset('js/ivf1match.min.js')}}"></script>
 <script src="{{asset('vendor/jquery-validation/jquery.validate.js')}}"></script>
+<script src="{{asset('js/filters.min.js')}}"></script>
 @stack('js')
 </body>
 </html>

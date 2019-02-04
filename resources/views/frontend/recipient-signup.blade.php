@@ -4,10 +4,10 @@
 {{--pushing  recipient sign up stylesheets--}}
 @push('css')
     <!-- Include SmartWizard CSS -->
-    <link href="vendor/jquer-smart_wizard/css/smart_wizard.css" rel="stylesheet" type="text/css"/>
-    <link href="vendor/jquer-smart_wizard/css/smart_wizard_theme_dots.css" rel="stylesheet" type="text/css"/>
+    <link href="{{asset('vendor/jquer-smart_wizard/css/smart_wizard.css')}}" rel="stylesheet" type="text/css"/>
+    <link href="{{asset('vendor/jquer-smart_wizard/css/smart_wizard_theme_dots.css')}}" rel="stylesheet" type="text/css"/>
 
-    <link rel="stylesheet" href="css/recipient-signup.css">
+    <link rel="stylesheet" href="{{asset('css/frontend/recipient-signup.css')}}">
 @endpush
 
 
@@ -21,7 +21,7 @@
                     <p>If you are already a patient of IVF1, you can start browsing though our available egg donors now.
                         Otherwise, you'll need to sign up on this site to go deeper.</p>
                     <br><br>
-                    <a href="donor-signup.html" class="bttn">Become a Donor</a>
+                    <a href="{{route('donor.register')}}" class="bttn">Become a Donor</a>
                 </div>
             </div>
         </div>
@@ -119,7 +119,7 @@
                             <div class="text-center">
                                 <button class="btn bttn" type="submit">Sign Up</button>
                                 <br><br>
-                                <p><a href="login.html">I 'm already a member?</a></p>
+                                <p><a href="{{route('login')}}">I 'm already a member?</a></p>
                             </div>
                         </div>
                     </form>
