@@ -3,6 +3,7 @@
 namespace App\Models\Frontend\Donor;
 
 
+use App\Models\Backend\User;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Support\Facades\Schema;
 
@@ -17,29 +18,6 @@ class DonorProfile extends Model
     {
         return Schema::getColumnListing($table);
     }
-
-    public static function store(\Illuminate\Http\Request $request)
-    {
-        $columns_list = self::getTableColumns('dn_profile');
-
-        $data = $request->only($columns_list);
-
-
-        foreach ($data as $key => $value) {
-
-            //transform vaccinated data 'yes' => 1 and 'no' => 0
-            $temp = strtolower($request->get($key));
-
-            if ($temp === 'yes') {
-                $data[$key] = 1;
-            } elseif ($temp === 'no') {
-                $data[$key] = 0;
-            }
-        }
-
-        return self::create($data);
-    }
-
 
     public function user()
     {
@@ -59,6 +37,11 @@ class DonorProfile extends Model
     public function getAdoptedAttribute()
     {
         return $this->attributes['adopted'] ? 'fa-check' : 'fa-times';
+    }
+
+    public function getPhotoPermissionAttribute()
+    {
+        return $this->attributes['photo_permission'] ? true : false;
     }
 
     public function getDimplesAttribute()
@@ -90,6 +73,7 @@ class DonorProfile extends Model
     {
         return $this->attributes['graying'] ? 'fa-check' : 'fa-times';
     }
+
     public function getOrthodonticWorkAttribute()
     {
         return $this->attributes['orthodontic_work'] ? 'fa-check' : 'fa-times';

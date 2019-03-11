@@ -21,7 +21,7 @@
                         Sign
                         up to become a donor</p>
                     <br><br>
-                    <a href="{{route('recipient.register')}}" class="bttn">Become a Recipient</a>
+                    <a href="{{route('recipient.register.show')}}" class="bttn">Become a Recipient</a>
                 </div>
             </div>
         </div>
@@ -63,7 +63,8 @@
                     <div class="row">
                         <div class="col-xs-12">
                             <p>If you are already sure you want to become an egg donor, take our
-                                <a href="#" class="l-short-quiz" data-toggle="tooltip" data-placement="top"
+                                <a href="#" class="l-short-quiz btn-take-quiz" data-toggle="tooltip"
+                                   data-placement="top"
                                    title="Please fill in the details to take a short quiz">short
                                     quiz</a>
                                 first to see if you qualify. Its easy and will take you less than one minute</p>
@@ -71,14 +72,19 @@
                     </div>
                 </div>
                 <div class="col-xs-12 col-lg-6">
-                    <form action="#" method="POST" id="dsignup">
+                    <form action="{{route('donor.register.store')}}" method="post" id="form-user-signup">
+                        @csrf
+                        {{--gets the quiz age value from quiz form and pass it to donor Controller--}}
+                        <input type="hidden" name="quiz_age" id="quiz-age">
+                        <div class="donor-signup-overlay"><h4>Please take the Donor Quiz in order to sign up!</h4>
+                            <a href="#" class="btn-take-quiz bttn btn mt-3">Take Quiz</a></div>
                         <h2 class="highlight text-lef">Become a <span>Donor</span></h2>
                         <div class="row">
                             <div class="col-12">
                                 <div class="form-group">
                                     <label for="firstname">First Name</label>
                                     <input type="text" class="form-control" tabindex="0" id="firstname"
-                                           name="firstname">
+                                           name="fname">
                                 </div>
                             </div>
                         </div>
@@ -86,7 +92,7 @@
                             <div class="col-12">
                                 <div class="form-group">
                                     <label for="lastname">Last Name</label>
-                                    <input type="text" class="form-control" id="lastname" name="lastname">
+                                    <input type="text" class="form-control" id="lastname" name="lname">
                                 </div>
                             </div>
                         </div>
@@ -111,7 +117,7 @@
                             <div class="text-center">
                                 <button class="btn bttn" type="submit">Next Step</button>
                                 <br><br>
-                                <p><a href="{{route('login')}}">I 'm already a member?</a></p>
+                                <p><a href="{{route('login.show')}}">I 'm already a member?</a></p>
                             </div>
                         </div>
                     </form>
@@ -123,7 +129,7 @@
 
 
     {{--Donor Quiz Modal Start Confirmation--}}
-    <div class="modal fade" id="exampleModal1" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1"
+    <div class="modal fade" id="modal-start-quiz" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel1"
          aria-hidden="true" data-backdrop="static">
         <div class="modal-dialog modal-md" role="document">
             <div class="modal-content">
@@ -153,7 +159,6 @@
         </div>
     </div>
     {{--!Donor Quiz confirmation modal--}}
-
 
     {{--!Donor Quiz modal--}}
     <div class="modal fade" id="quiz-modal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
@@ -209,12 +214,14 @@
                                             <label for="age"></label>
                                             <input type="text" readonly="" class="form-control" id="age" name="age">
                                             <ul class="c-dropdown-menu">
-                                                <li><a href="#">18</a></li>
+                                                <li><a href="#"><18</a></li>
                                                 <li><a href="#">18-23</a></li>
                                                 <li><a href="#">23-27</a></li>
                                                 <li><a href="#">28+</a></li>
                                             </ul>
                                         </div>
+                                        <small class="age_error text-danger">*You must be 18 to 27 to donate eggs.
+                                        </small>
                                     </div>
                                 </div>
                                 <div id="step-3" class="tab-pane step-content">
@@ -231,6 +238,14 @@
                                             <label for="radio-4" class="radio-label">No</label>
                                         </div>
                                     </div>
+                                    <small class="pelvic_exam_error text-danger pl-3 ml-4 pt-2 d-block">All egg donors
+                                        must
+                                        have
+                                        a pelvic
+                                        exam and PAP smear in order to apply.<br> Schedule an
+                                        appointment with your
+                                        doctor today and then apply.
+                                    </small>
                                 </div>
                                 <div id="step-4" class="tab-pane step-content">
                                     <div class="wrap">
@@ -267,8 +282,11 @@
                                             <label for="radio-8" class="radio-label">No</label>
                                         </div>
                                     </div>
+                                    <small class="medications_error text-danger pl-5">Sorry! You do not qualify to
+                                        be an
+                                        egg donor.
+                                    </small>
                                 </div>
-
                             </div>
                             <div class="btn-toolbar sw-toolbar sw-toolbar-bottom justify-content-end">
                                 <div class="btn-group mx-auto sw-btn-group bttn" role="group">
@@ -311,13 +329,13 @@
                             <span>detail</span> and to complete a donor <a href="#">questionnaire online.</a></h5>
                         <br><br>
                         <div class="text-center">
-                            <a href="donor-questionary.html" class="btn bttn">Proceed</a>
+                            <a href="{{route('donor-questionnaire')}}" class="btn bttn">Proceed</a>
                         </div>
                     </div>
                 </div>
-                <div class="modal-footer">
-                    <small>Egg donor quiz created by <a href="http://ivf1.com" target="_blank">IVF1</a>.</small>
-                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <div class="modal-footer text-center py-3 ">
+                    <small class="mx-auto w-100">Egg donor quiz created by <a href="http://ivf1.com" target="_blank">IVF1</a>.
+                    </small>
                 </div>
             </div>
         </div>
@@ -329,11 +347,11 @@
 @push('js')
     <script type="text/javascript" src="{{asset('vendor/jquery-ui/jquery-ui.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('vendor/jquer-smart_wizard/js/validator.js')}}"></script>
-    <script type="text/javascript"
-            src="{{asset('vendor/jquer-smart_wizard/js/jquery.smartWizard-donor.js')}}"></script>
+    <script type="text/javascript" src="{{asset('vendor/jquer-smart_wizard/js/jquery.smartWizard-donor.js')}}"></script>
 
     <!-- Custom Validation Files -->
-    <script type="text/javascript" src="{{asset('js/data-validation.min.js')}}"></script>
-    <script type="text/javascript" src="{{asset('js/validation-functions.min.js')}}"></script>
+    <script type="text/javascript" src="{{asset('js/quiz-validation.min.js')}}"></script>
     <script src="{{asset('js/donor-signup.min.js')}}"></script>
+    <script src="{{asset('js/register-users.min.js')}}"></script>
 @endpush
+

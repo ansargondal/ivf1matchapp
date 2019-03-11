@@ -247,7 +247,8 @@
                                                         <div class="col-12 col-md-6">
                                                             <div class="checkboxes">
                                                                 <label class="checkbox">
-                                                                    <input type="checkbox" name="have_post_graduate_degree"
+                                                                    <input type="checkbox"
+                                                                           name="have_post_graduate_degree"
                                                                            id="c_post_graduate_degree">
                                                                     <span class="indicator"></span>
                                                                     Post Graduate Degree
@@ -7286,5 +7287,6 @@
     <script src="{{asset('vendor/jquery-ui/jquery-ui-1.12.1.custom/jquery-ui.js')}}"></script>
     <script src="{{asset('js/donor-questionary.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('../js/ivf1match.min.js')}}"></script>
-    <script type="text/javascript" src="{{asset('../vendor/jquer-smart_wizard/js/jquery.smartWizard-admin.js')}}"></script>
+    <script type="text/javascript"
+            src="{{asset('../vendor/jquer-smart_wizard/js/jquery.smartWizard-admin.js')}}"></script>
 @endpush

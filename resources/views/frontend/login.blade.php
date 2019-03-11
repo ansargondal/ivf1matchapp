@@ -9,25 +9,25 @@
         <div class="login-container">
             <div class="row">
                 <div class="col-md-9 mx-auto">
-                    <form action="#" method="post" id="login" class="ivf">
+                    <form action="{{route('login.authenticate')}}" method="post" id="form-login" class="ivf" autocomplete="off">
+                        @csrf
                         <div class="user-group text-center">
                             <i class="fa fa-user-secret" aria-hidden="true"></i>
                         </div>
                         <div class="form-group">
-                            <label for="username">username</label>
-                            <input type="text" class="form-control" name="username" id="username">
+                            <label for="email">Email</label>
+                            <input type="text" class="form-control" name="email" id="email">
                         </div>
                         <div class="form-group">
                             <label for="password">Password</label>
-                            <input type="password" class="form-control"
-                                   id="password" name="password">
+                            <input type="password" class="form-control" id="password" name="password">
+                            <span class="error"></span>
                             <a href="#forgot-password-modal" data-backdrop="static" data-keyboard="false"
                                data-toggle="modal" id="forgot">Forgot
-                                password?</a>
-                            <!--<small class="text-danger">Your credentials are incorrect</small>-->
+                                password?</a><br>
                         </div>
                         <div class="form-group text-center">
-                            <button class="btn btn-login bttn" type="submit" id="submit">Sign In</button>
+                            <button class="btn btn-login bttn btn-submit" type="submit" id="submit">Sign In</button>
                         </div>
 
                         <div class="form-group link-signup">
@@ -51,7 +51,7 @@
                             <div class="col-md-12 mx-auto">
                                 <div class="form-group">
                                     <label for="email">Enter your registered email address</label>
-                                    <input type="text" class="form-control" tabindex="0" id="email"
+                                    <input type="text" class="form-control" tabindex="0" id="user-email"
                                            name="email" autofocus>
                                     <!--<span class="error">Email is invalid</span>-->
                                 </div>

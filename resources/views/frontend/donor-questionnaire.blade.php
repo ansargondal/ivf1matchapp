@@ -47,7 +47,6 @@
                     <div class="col-xs-12">
                         <form action="{{route('contact.store')}}" method="post" id="step1">
                             @csrf
-                            <input type="hidden" name="user_id" value="1">
                             <div class="row">
                                 <div class="col-12 col-md-6">
                                     <div class="form-group">
@@ -178,7 +177,7 @@
                     <div class="col-xs-12">
                         <form action="{{route('education.store')}}" method="post" id="step2">
                             @csrf
-                            <input type="hidden" name="user_id" value="1">
+
                             <div class="row">
                                 <div class="col-12">
                                     <div class="form-group" id="high-school">
@@ -430,7 +429,7 @@
                     <div class="col-xs-12">
                         <form action="{{route('sexual.history.store')}}" method="post" id="step3">
                             @csrf
-                            <input type="hidden" name="user_id" value="1">
+
                             <div class="row">
                                 <div class="col-12 col-md-6">
                                     <ul>
@@ -815,7 +814,6 @@
                     <div class="col-xs-12">
                         <form action="{{route('pregnancy.store')}}" method="post" id="step4">
                             @csrf
-                            <input type="hidden" name="user_id" value="1">
                             <div class="row">
                                 <div class="col-12">
                                     <h2>Pregnancy History</h2>
@@ -1406,7 +1404,6 @@
                     <div class="col-xs-12">
                         <form action="{{route('lifestyle.store')}}" method="post" id="step5">
                             @csrf
-                            <input type="hidden" name="user_id" value="1">
                             <div class="row">
                                 <div class="col-12">
                                     <h3>Lifestyle,<span> Habbits</span></h3>
@@ -2142,7 +2139,6 @@
                         <h3>S<span>tep</span> <span>01</span></h3>
                         <form action="{{route('s1.questions.store')}}" method="post" id="step6">
                             @csrf
-                            <input type="hidden" name="user_id" value="1">
                             <div class="row">
                                 <div class="col-12">
                                     <h3>Check all <span>that apply</span></h3>
@@ -2470,7 +2466,6 @@
                     <h3>S<span>tep</span> <span>02</span></h3>
                     <form action="{{route('s2.med.history.store')}}" method="post" id="step7">
                         @csrf
-                        <input type="hidden" name="user_id" value="1">
                         <div class="row">
                             <div class="col-12">
                                 <h3>Medical <span>History:</span></h3>
@@ -3103,7 +3098,7 @@
                     <h3>S<span>tep</span> <span>03</span></h3>
                     <form action="{{route('s3.med.abnormality.store')}}" method="post" id="step8">
                         @csrf
-                        <input type="hidden" name="user_id" value="1">
+
                         <div class="row">
                             <div class="col-12">
                                 <h3><span>Please answer the following </span>questions about you and your family</h3>
@@ -6131,7 +6126,7 @@
                     <h3>S<span>tep</span> <span>04</span></h3>
                     <form action="{{route('s4.med.problem.store')}}" id="step9" method="post">
                         @csrf
-                        <input type="hidden" name="user_id" value="1">
+
                         <div class="row">
                             <h3><span>Please answer the following </span>questions about your medical history.</h3>
                         </div>
@@ -6533,7 +6528,7 @@
                     <form action="{{route('donor.profile.store')}}" id="step10" method="post"
                           enctype="multipart/form-data">
                         @csrf
-                        <input type="hidden" name="user_id" value="1">
+
                         <div class="row">
                             <div class="col-12 col-md-6">
                                 <div class="form-group">
@@ -7031,7 +7026,7 @@
                                     <div class="form-group">
                                     <textarea cols="20" rows="10" id="i_detail_self"
                                               name="personal_message"
-                                              class="form-control"></textarea>
+                                              class="form-control" required></textarea>
                                     </div>
                                 </div>
 

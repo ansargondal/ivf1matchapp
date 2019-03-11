@@ -1,13 +1,13 @@
 <!--Edit task modal-->
-<div class="modal fade" id="edit-note-modal">
+<div class="modal fade" id="note-edit-modal">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
                 <h5 class="modal-title">EDIT NOTE</h5>
-                <a href="#" class="close" data-dismiss="modal">&times;</a>
+                <a href="#note-edit-modal" class="close" data-dismiss="modal">&times;</a>
             </div>
             <div class="modal-body">
-                <form action="#" method="post" enctype="multipart/form-data">
+                <form action="#" method="post" id="edit-note-form">
                     <div class="row">
                         <div class="col-md-12">
                             <div class="form-group">
@@ -20,8 +20,8 @@
                     <div class="row">
                         <div class="col-md-12">
                             <div class="form-group">
-                                <label for="edit-task">Task</label>
-                                <input type="text" class="form-control" id="edit-task" name="task">
+                                <label for="edit-task">Note</label>
+                                <input type="text" class="form-control" id="edit-task" name="body">
                             </div>
                         </div>
 
@@ -29,8 +29,8 @@
                 </form>
             </div>
             <div class="modal-footer">
-                <button class="btn  bttn js-btn-update">UPDATE <i class="fa fa-spinner hide_spinner"
-                                                                  aria-hidden="true"></i></button>
+                <button class="btn  bttn js-btn-update" id="js-btn-update">UPDATE <i class="fa fa-spinner hide_spinner"
+                                                                                     aria-hidden="true"></i></button>
                 <button class="btn btn-close" data-dismiss="modal">CLOSE</button>
             </div>
         </div>

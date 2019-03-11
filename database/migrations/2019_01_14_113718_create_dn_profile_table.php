@@ -54,7 +54,7 @@ class CreateDnProfileTable extends Migration
             $table->string('orthodontic_age', 80)->nullable();
             $table->string('hearing', 20);
             $table->string('vision', 20);
-            $table->string('vision_prescription', 80)->nullable();
+            $table->string('vision_prescription', 255)->nullable();
             $table->boolean('glasses');
 
             $table->string('vision_problem', 80)->nullable();

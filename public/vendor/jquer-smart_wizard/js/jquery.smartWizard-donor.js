@@ -281,7 +281,13 @@
                 if (count > 4) {
                     $("body").on("click", '.sw-btn-next', function (evt) {
                         evt.preventDefault();
+
                         $("#quiz-modal").modal('hide');
+
+                        var age = $('#age').val();
+                        localStorage.setItem('quiz_completed', 'true');
+                        localStorage.setItem('age', age);
+
                         $("#congrats").modal({
                             keyboard: false,
                             backdrop: 'static'

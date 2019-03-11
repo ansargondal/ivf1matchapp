@@ -14,3 +14,5 @@
 
 require_once "frontend.php";
 require_once "admin.php";
+
+Route::get('/home', 'HomeController@index')->name('home');

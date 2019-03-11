@@ -15,7 +15,7 @@
                         or</p>
                     <p>Sign Up as recipient to get in touch with them.All of the messages will be moderated by admin</p>
                     <br><br>
-                    <a href="{{route('recipient.register')}}" class="bttn">Become a Recipient</a>
+                    <a href="{{route('recipient.register.show')}}" class="bttn">Become a Recipient</a>
                 </div>
             </div>
         </div>
@@ -226,8 +226,8 @@
                         <div class="col-xs-12">
                             <p>Local
                                 <span class="wrapper pull-right">
-                                <input type="checkbox" value="1" id="input_2">
-                                <label for='input_2' tabindex="-1">
+                                <input type="checkbox" name="is_local" id="is_local">
+                                <label for='is_local' tabindex="-1">
                                   <span class="check"></span>
                                 </label>
                             </span>
@@ -236,32 +236,43 @@
                     </div>
                 </div>
                 <div class="col-xs-12 col-lg-8">
-                    <div class="row">
-                        @empty($profiles)
+                    <div class="row" id="donor-cards-row">
+                        @empty($donors)
                             <p>No profiles to show!</p>
+
                         @endempty
 
-                        @foreach($profiles as $profile)
-                            <div class="col-xs-12 col-md-6">
-                                <div class="wrap text-center">
-                                    <img src="{{asset('storage/'. $profile->images->first()->path)}}" alt="EGG DONOR"
-
-                                         class="img-fluid">
-                                    <h4>DONOR INFO</h4>
-                                    <ul class="text-left">
-                                        <li>Age <span class="pull-right">{{$profile->age}}</span></li>
-                                        <li>Eyes <span class="pull-right">{{$profile->eye_color}}</span></li>
-                                        <li>Cycle <span class="pull-right">Available</span></li>
-                                    </ul>
-                                    <a href="{{route('donor.show', $profile->id)}}" class="btn bttn">More Details</a>
+                        @foreach($donors as $donor)
+                            {{--check if donor profile exists for a donor --}}
+                            @isset($donor->profile)
+                                <div class="col-xs-12 col-md-6">
+                                    <div class="wrap text-center">
+                                        @if($donor->profile->photo_permission)
+                                            <img src="{{asset('storage/'. $donor->images->first()->path)}}"
+                                                 alt="EGG DONOR"
+                                                 class="img-fluid">
+                                        @else
+                                            <img src="{{asset('img/avatar.png')}}"
+                                                 alt="EGG DONOR"
+                                                 class="img-fluid">
+                                        @endif
+                                        <h4>DONOR INFO</h4>
+                                        <ul class="text-left">
+                                            <li>Age <span class="pull-right">{{$donor->profile->age}}</span></li>
+                                            <li>Eyes <span class="pull-right">{{$donor->profile->eye_color}}</span></li>
+                                            <li>Cycle <span class="pull-right">{{$donor->cycle}}</span></li>
+                                        </ul>
+                                        <a href="{{route('donor.show', $donor->id)}}" class="btn bttn">More
+                                            Details</a>
+                                    </div>
                                 </div>
-                            </div>
+                            @endisset
                         @endforeach
                     </div>
                     <div class="row">
                         <div class="col-xs-12">
                             <nav aria-label="Page navigation">
-                                {{$profiles->links()}}
+                                {{$donors->links('vendor.pagination.bootstrap-4')}}
                             </nav>
                         </div>
                     </div>
@@ -270,3 +281,8 @@
         </div>
     </section>
 @endsection
+{{--Pushing Donor Profile Filters only JS files --}}
+@push('js')
+    <script src="{{asset('js/filters.min.js')}}"></script>
+@endpush
+

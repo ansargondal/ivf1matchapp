@@ -18,7 +18,7 @@ class S1MedHistoryController extends Controller
             S1Question::create($request->all());
 
             return response()->json(['error' => false, 'message' => 'Medical History Information saved.']);
-            
+
         } catch (Exception $exception) {
 
             return response()->json(['error' => true, 'message' => 'something went wrong! Try again!']);

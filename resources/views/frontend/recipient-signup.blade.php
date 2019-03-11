@@ -5,8 +5,10 @@
 @push('css')
     <!-- Include SmartWizard CSS -->
     <link href="{{asset('vendor/jquer-smart_wizard/css/smart_wizard.css')}}" rel="stylesheet" type="text/css"/>
-    <link href="{{asset('vendor/jquer-smart_wizard/css/smart_wizard_theme_dots.css')}}" rel="stylesheet" type="text/css"/>
+    <link href="{{asset('vendor/jquer-smart_wizard/css/smart_wizard_theme_dots.css')}}" rel="stylesheet"
+          type="text/css"/>
 
+    <link rel="stylesheet" href="{{asset('css/frontend/modal.css')}}">
     <link rel="stylesheet" href="{{asset('css/frontend/recipient-signup.css')}}">
 @endpush
 
@@ -21,7 +23,7 @@
                     <p>If you are already a patient of IVF1, you can start browsing though our available egg donors now.
                         Otherwise, you'll need to sign up on this site to go deeper.</p>
                     <br><br>
-                    <a href="{{route('donor.register')}}" class="bttn">Become a Donor</a>
+                    <a href="{{route('donor.register.show')}}" class="bttn">Become a Donor</a>
                 </div>
             </div>
         </div>
@@ -79,14 +81,15 @@
                     </div>
                 </div>
                 <div class="col-xs-12 col-lg-6">
-                    <form action="#" method="post" id="rsignup">
+                    <form action="{{route('recipient.register.store')}}" method="post" id="form-user-signup">
+                        @csrf
                         <h2 class="highlight text-lef">Become a <span>Recipient</span></h2>
                         <div class="row">
                             <div class="col-12">
                                 <div class="form-group">
                                     <label for="firstname">First Name</label>
                                     <input type="text" class="form-control" tabindex="0" id="firstname"
-                                           name="firstname" autofocu>
+                                           name="fname" autofocus>
                                 </div>
                             </div>
                         </div>
@@ -94,7 +97,7 @@
                             <div class="col-12">
                                 <div class="form-group">
                                     <label for="lastname">Last Name</label>
-                                    <input type="text" class="form-control" id="lastname" name="lastname">
+                                    <input type="text" class="form-control" id="lastname" name="lname">
                                 </div>
                             </div>
                         </div>
@@ -119,7 +122,7 @@
                             <div class="text-center">
                                 <button class="btn bttn" type="submit">Sign Up</button>
                                 <br><br>
-                                <p><a href="{{route('login')}}">I 'm already a member?</a></p>
+                                <p><a href="{{route('login.show')}}">I 'm already a member?</a></p>
                             </div>
                         </div>
                     </form>
@@ -130,84 +133,37 @@
     <!--What is ivf ends here-->
 
 
-    <!--signup modal----->
-    <div class="modal" id="signup_modal">
-        <div class="modal-dialog modal-md">
+    <div class="modal fade" id="modal-recipient-success" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-xl" role="document">
             <div class="modal-content">
-
-                <!-- Modal body -->
+                <div class="modal-header">
+                    <h5 class="modal-title" id="#">Singed Up Successfully!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
                 <div class="modal-body">
-                    <div class="row">
-                        <div class="col-6 text-center">
-                            <h3>Donor <span>Sign Up</span></h3>
-                            <p>Thank you for your interest in the egg donation program at IVF1. Egg donation is very
-                                special
-                                gift.</p>
-                            <a href="donor-signup.html" class="btn bttn">Sign up</a>
-                        </div>
-                        <div class="col-6 text-center">
-                            <h3>Recipient <span>Sign Up</span></h3>
-                            <p>Thank you for your interest in the egg donation program at IVF1. Egg donation is very
-                                special
-                                gift.</p>
-                            <a href="recipient-signup.html" class="btn bttn">Sign up</a>
-                        </div>
+                    <div class="wrap">
+                        <h5>You application has been submitted. We will
+                            <span>review it </span>and
+                            send you an <span>email</span> when your account
+                            has been <span>activated.</span></h5>
                     </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
     </div>
-    <!--signup modal----->
-@endsection
 
+
+@endsection
 
 {{--Pushing recipient sign up js files--}}
 @push('js')
     <script type="text/javascript" src="{{asset('vendor/jquery-ui/jquery-ui.min.js')}}"></script>
     <script type="text/javascript" src="{{asset('vendor/jquer-smart_wizard/js/validator.js')}}"></script>
     <script type="text/javascript" src="{{asset('vendor/jquer-smart_wizard/js/jquery.smartWizard-donor.js')}}"></script>
-
-    <!-- Custom Validation Files -->
-    <script type="text/javascript" src="{{asset('js/data-validation.min.js')}}"></script>
-    <script src="{{asset('js/donor-signup.min.js')}}"></script>
-    <script>
-        $().ready(function () {
-            $('#rsignup').validate({
-                rules: {
-                    firstname: {
-                        required: true,
-                        minlength: 2
-                    },
-                    lastname: {
-                        required: true,
-                        minlength: 2
-                    },
-                    email: {
-                        required: true,
-                        email: true
-                    },
-                    password: {
-                        required: true,
-                        minlength: 5
-                    }
-                },
-                messages: {
-                    firstname: {
-                        required: "Please enter your firstname.",
-                        minlength: "Firstname must have 2 atleast characters."
-                    },
-                    lastname: {
-                        required: "Please enter your lastname.",
-                        minlength: "Lastname must have 2 atleast characters."
-                    },
-                    email: "Pease enter valid email.",
-                    password: {
-                        required: "Please enter your password.",
-                        minlength: "Password must have 5 atleast characters."
-                    }
-                }
-            });
-        });
-
-    </script>
+    <script src="{{asset('js/register-users.min.js')}}"></script>
 @endpush

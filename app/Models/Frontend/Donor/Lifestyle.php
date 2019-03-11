@@ -17,16 +17,6 @@ class Lifestyle extends Model
         return Schema::getColumnListing($table);
     }
 
-    public static function store(\Illuminate\Http\Request $request)
-    {
-        $column_list = self::getTableColumns('dn_lifestyle');
-
-        //get all pregnancy history data except sexual activity
-        $data = $request->only($column_list);
-
-        return self::create($data);
-    }
-
     public function user()
     {
         return $this->belongsTo(User::class);

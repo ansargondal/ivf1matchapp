@@ -13,21 +13,31 @@
             <div class="row">
                 <div class="col-lg-4">
                     <div class="wrap">
-                        @foreach($profile->images as $image)
-                            @if($loop->first)
-                                <a href="{{asset('storage/' . $image->path)}}" data-lightbox="profile-images">
-                                    <img src="{{asset('storage/photos/' . $image->path)}}" alt=""
-                                         class="img-responsive">
-                                </a>
-                            @else
-                                <a href="{{asset('storage/'. $image->path)}}"
-                                   data-lightbox="profile-images" class="hide"> <img
-                                            src="{{asset('storage/photos/' . $image->path)}}" alt=""
-                                            class="img-responsive"></a>
-                            @endif
-                        @endforeach
-                        <h3>Donor #BG 1061</h3>
-                        <p>{{str_limit($profile->personal_message, 130)}}</p>
+
+                        {{--check if donor has give photo permissions --}}
+                        @if($donor->profile->photo_permission)
+                            @foreach($donor->images as $image)
+                                @if($loop->first)
+                                    <a href="{{asset('storage/' . $image->path)}}" data-lightbox="profile-images">
+                                        <img src="{{asset('storage/photos/' . $image->path)}}" alt=""
+                                             class="img-responsive">
+                                    </a>
+                                @else
+                                    <a href="{{asset('storage/'. $image->path)}}"
+                                       data-lightbox="profile-images" class="hide"> <img
+                                                src="{{asset('storage/photos/' . $image->path)}}" alt=""
+                                                class="img-responsive"></a>
+                                @endif
+                            @endforeach
+                        @else
+                            {{--Show avatar user permission are false--}}
+                            <a href="{{asset('img/avatar.png')}}" data-lightbox="profile-images">
+                                <img src="{{asset('img/avatar.png')}}" alt=""
+                                     class="img-responsive">
+                            </a>
+                        @endif
+                        <h3>Donor #{{$donor->code}} </h3>
+                        <p>{{str_limit($donor->profile->personal_message, 130)}}</p>
                         <a href="#" class="btn bttn">Contact Donor</a>
                     </div>
                 </div>
@@ -44,26 +54,40 @@
                                     <div class="row">
                                         <div class="col-12 col-lg-6">
                                             <ul class="text-left">
-                                                <li>Age <span class="pull-right">{{$profile->age}}</span></li>
-                                                <li>Height <span class="pull-right">{{$profile->height}}</span></li>
-                                                <li>Weight <span class="pull-right">{{$profile->weight}}</span></li>
-                                                <li>Race <span class="pull-right">{{$profile->race}}</span></li>
-                                                <li>Donation <i class="fa {{$profile->donated}} pull-right"></i>
+                                                <li>Age <span class="pull-right">{{$donor->profile->age}}</span>
+                                                </li>
+                                                <li>Height <span
+                                                            class="pull-right">{{$donor->profile->height}}</span>
+                                                </li>
+                                                <li>Weight <span
+                                                            class="pull-right">{{$donor->profile->weight}}</span>
+                                                </li>
+                                                <li>Race <span class="pull-right">{{$donor->profile->race}}</span>
+                                                </li>
+                                                <li>Donated <i
+                                                            class="fa {{$donor->profile->donated}} pull-right"></i>
                                                 </li>
                                             </ul>
                                         </div>
                                         <div class="col-12 col-lg-6">
                                             <ul class="text-left">
-                                                <li>Religion <span class="pull-right">{{$profile->religion}}</span>
+                                                <li>Religion <span
+                                                            class="pull-right">{{$donor->profile->religion}}</span>
                                                 </li>
-                                                <li>Adopted <i class="pull-right fa {{$profile->adopted}}"></i></li>
-                                                <li>Local <span class="pull-right">Yes</span></li>
-                                                <li>Current Cycle <span class="pull-right check"><i
-                                                                class="fa fa-check"></i></span>
+                                                <li>Adopted <i
+                                                            class="pull-right fa {{$donor->profile->adopted}}"></i>
                                                 </li>
-                                                <li>Donations <span
-                                                            class="pull-right">{{sprintf('%02d', $profile->number_of_donations)}}</span>
+                                                <li>Local <span
+                                                            class="pull-right">{{(strtolower($donor->contact->state) === 'illinois') ? 'Yes' : 'No'}}</span>
                                                 </li>
+                                                <li>Current Cycle <span class="pull-right">{{$donor->cycle}}</span>
+                                                </li>
+                                                {{--fa-check is coming from Donor Profile Model by Casting Boolean--}}
+                                                @if($donor->profile->donated === 'fa-check')
+                                                    <li>Donations <span
+                                                                class="pull-right">{{sprintf('%02d', $donor->profile->number_of_donations)}}</span>
+                                                    </li>
+                                                @endif
                                             </ul>
                                         </div>
                                     </div>
@@ -80,21 +104,23 @@
                                     <div class="row">
                                         <div class="col-12 ">
                                             <ul class="text-left">
-                                                <li>Mother's race <span class="pull-right">{{$profile->mother}}</span>
+                                                <li>Mother's race <span
+                                                            class="pull-right">{{$donor->profile->mother}}</span>
                                                 </li>
                                                 <li>Maternal grandmother's race <span
-                                                            class="pull-right">{{$profile->mothers_mother}}</span>
+                                                            class="pull-right">{{$donor->profile->mothers_mother}}</span>
                                                 </li>
                                                 <li>Maternal grandfather's race <span
-                                                            class="pull-right">{{$profile->mothers_father}}</span>
+                                                            class="pull-right">{{$donor->profile->mothers_father}}</span>
                                                 </li>
                                                 <li>Father's race <span
-                                                            class="pull-right">	{{$profile->father}}</span></li>
+                                                            class="pull-right">	{{$donor->profile->father}}</span>
+                                                </li>
                                                 <li>Paternal grandmother's race<span
-                                                            class="pull-right">{{$profile->fathers_father}}</span>
+                                                            class="pull-right">{{$donor->profile->fathers_father}}</span>
                                                 </li>
                                                 <li>Paternal grandfather's race<span
-                                                            class="pull-right">{{$profile->fathers_mother}}</span>
+                                                            class="pull-right">{{$donor->profile->fathers_mother}}</span>
                                                 </li>
                                             </ul>
                                         </div>
@@ -112,23 +138,31 @@
                                     <div class="row">
                                         <div class="col-12 col-xl-6">
                                             <ul class="text-left">
-                                                <li>Dexterity<span class="pull-right">{{$profile->dexterity}}</span>
+                                                <li>Dexterity<span
+                                                            class="pull-right">{{$donor->profile->dexterity}}</span>
                                                 </li>
                                                 <li>Body and facial features<span
-                                                            class="pull-right">{{$profile->body_facial_features}}</span>
+                                                            class="pull-right">{{$donor->profile->body_facial_features}}</span>
                                                 </li>
-                                                <li>Bone structure<span class="pull-right"></span></li>
-                                                <li>Complexion<span class="pull-right">{{$profile->complexion}}</span>
+                                                <li>Bone structure<span
+                                                            class="pull-right">{{$donor->profile->bones}}</span>
+                                                </li>
+                                                <li>Complexion<span
+                                                            class="pull-right">{{$donor->profile->complexion}}</span>
                                                 </li>
                                             </ul>
                                         </div>
                                         <div class="col-12 col-xl-6">
                                             <ul class="text-left">
-                                                <li>Tanning ability<span class="pull-right">{{$profile->tan}}</span>
+                                                <li>Tanning ability<span
+                                                            class="pull-right">{{$donor->profile->tan}}</span>
                                                 </li>
-                                                <li>Skin condition<span class="pull-right">{{$profile->skin}}</span>
+                                                <li>Skin condition<span
+                                                            class="pull-right">{{$donor->profile->skin}}</span>
                                                 </li>
-                                                <li>Dimples <i class="pull-right fa {{$profile->dimples}}"></i></li>
+                                                <li>Dimples <i
+                                                            class="pull-right fa {{$donor->profile->dimples}}"></i>
+                                                </li>
                                             </ul>
                                         </div>
                                     </div>
@@ -145,20 +179,32 @@
                                     <div class="row">
                                         <div class="col-12">
                                             <ul class="text-left">
-                                                <li>Hearing<span class="pull-right">{{$profile->hearing}}</span></li>
-                                                <li>Vision<span class="pull-right">{{$profile->vision}}</span></li>
+                                                <li>Hearing<span
+                                                            class="pull-right">{{$donor->profile->hearing}}</span>
+                                                </li>
+                                                <li>Vision<span
+                                                            class="pull-right">{{$donor->profile->vision}}</span>
+                                                </li>
                                                 <li>Prescription<span
-                                                            class="pull-right">{{$profile->vision_prescription}}</span>
+                                                            class="pull-right">{{str_limit($donor->profile->vision_prescription, 20)}}</span>
                                                 </li>
                                                 <li>Glasses or corrective laser surgery<i
-                                                            class="pull-right fa {{$profile->glasses}}"></i>
+                                                            class="pull-right fa {{$donor->profile->glasses}}"></i>
                                                 </li>
-                                                <li>Corrected problem<span class="pull-right check"></span></li>
-                                                <li>Other Problem<span class="pull-right"></span></li>
-                                                <li>Stigmatism<i class="pull-right fa {{$profile->stigmatism}}"></i>
+                                                @if($donor->profile->glasses === 'fa-check')
+                                                    <li>Corrected problem<span
+                                                                class="pull-right ">{{$donor->profile->vision_problem}}</span>
+                                                    </li>
+                                                @endif
+                                                <li>Stigmatism<i
+                                                            class="pull-right fa {{$donor->profile->stigmatism}}"></i>
                                                 </li>
-                                                <li>Age when stigmatism diagnosed<span
-                                                            class="pull-right">{{$profile->stigmatism_age}}</span></li>
+
+                                                @if($donor->profile->stigmatism === 'fa-check')
+                                                    <li>Age when stigmatism diagnosed<span
+                                                                class="pull-right">{{$donor->profile->stigmatism_age}}</span>
+                                                    </li>
+                                                @endif
                                             </ul>
                                         </div>
                                     </div>
@@ -176,26 +222,35 @@
                                         <div class="col-12 col-lg-6">
                                             <ul class="text-left">
                                                 <li>Hair color<span
-                                                            class="pull-right">	{{$profile->hair_color}}</span></li>
-                                                <li>Hair type<span class="pull-right">{{$profile->hair_type}}</span>
+                                                            class="pull-right">	{{$donor->profile->hair_color}}</span>
+                                                </li>
+                                                <li>Hair type<span
+                                                            class="pull-right">{{$donor->profile->hair_type}}</span>
                                                 </li>
                                                 <li>Hair texture<span
-                                                            class="pull-right">{{$profile->hair_texture}}</span></li>
+                                                            class="pull-right">{{$donor->profile->hair_texture}}</span>
+                                                </li>
                                                 <li>Hair fullness<span
-                                                            class="pull-right">{{$profile->hair_fullness}}</span></li>
+                                                            class="pull-right">{{$donor->profile->hair_fullness}}</span>
+                                                </li>
                                             </ul>
                                         </div>
                                         <div class="col-12 col-lg-6">
                                             <ul class="text-left">
-                                                <li>Baldness<i class="pull-right fa {{$profile->baldness}}"></i></li>
+                                                <li>Baldness<i
+                                                            class="pull-right fa {{$donor->profile->baldness}}"></i>
+                                                </li>
                                                 <li>Baldness in family<i
-                                                            class="pull-right fa {{$profile->baldness_family}}"></i>
+                                                            class="pull-right fa {{$donor->profile->baldness_family}}"></i>
                                                 </li>
                                                 <li>Premature graying<i
-                                                            class="pull-right fa {{$profile->graying}}"></i>
+                                                            class="pull-right fa {{$donor->profile->graying}}"></i>
                                                 </li>
-                                                <li>Age when started graying<span
-                                                            class="pull-right">{{$profile->graying_age}}</span></li>
+                                                @if($donor->profile->graying === 'fa-check')
+                                                    <li>Age when started graying<span
+                                                                class="pull-right">{{$donor->profile->graying_age}}</span>
+                                                    </li>
+                                                @endif
                                             </ul>
                                         </div>
                                     </div>
@@ -212,15 +267,21 @@
                                     <div class="row">
                                         <div class="col-12 col-lg-6">
                                             <ul class="text-left">
-                                                <li>Eye color<span class="pull-right">{{$profile->eye_color}}</span>
+                                                <li>Eye color<span
+                                                            class="pull-right">{{$donor->profile->eye_color}}</span>
                                                 </li>
-                                                <li>Eye set<span class="pull-right">{{$profile->eye_set}}</span></li>
+                                                <li>Eye set<span
+                                                            class="pull-right">{{$donor->profile->eye_set}}</span>
+                                                </li>
                                             </ul>
                                         </div>
                                         <div class="col-12 col-lg-6">
                                             <ul class="text-left">
-                                                <li>Eye size<span class="pull-right">{{$profile->eye_size}}</span></li>
-                                                <li>Eye shape<span class="pull-right">{{$profile->eye_shape}}</span>
+                                                <li>Eye size<span
+                                                            class="pull-right">{{$donor->profile->eye_size}}</span>
+                                                </li>
+                                                <li>Eye shape<span
+                                                            class="pull-right">{{$donor->profile->eye_shape}}</span>
                                                 </li>
                                             </ul>
                                         </div>
@@ -238,13 +299,17 @@
                                     <div class="row">
                                         <div class="col-12">
                                             <ul class="text-left">
-                                                <li>Teeth condition<span class="pull-right">{{$profile->teeth}}</span>
+                                                <li>Teeth condition<span
+                                                            class="pull-right">{{$donor->profile->teeth}}</span>
                                                 </li>
                                                 <li>Periodontal or orthodontic work<i
-                                                            class="pull-right fa {{$profile->orthodontic_work}}"></i></span>
+                                                            class="pull-right fa {{$donor->profile->orthodontic_work}}"></i></span>
                                                 </li>
-                                                <li>Age when work was done<span
-                                                            class="pull-right">{{$profile->orthodontic_age}}</span></li>
+                                                @if($donor->profile->orthodontic_work === 'fa-check')
+                                                    <li>Age when work was done<span
+                                                                class="pull-right">{{$donor->profile->orthodontic_age}}</span>
+                                                    </li>
+                                                @endif
                                             </ul>
                                         </div>
                                     </div>
@@ -261,24 +326,24 @@
                                     <div class="row">
                                         <div class="col-12">
                                             <ul class="text-left">
-                                                @if($profile->knows_someone)
+                                                @if($donor->profile->knows_someone)
                                                     <li><i class="fa fa-check "></i> I know someone with
                                                         infertility and always wanted to help.
                                                     </li>
                                                 @endif
 
-                                                @if($profile->rewarding)
+                                                @if($donor->profile->rewarding)
                                                     <li><i class="fa fa-check "></i> I think it would be a
                                                         rewarding experience for me.
                                                     </li>
                                                 @endif
 
-                                                @if($profile->fascinating)
+                                                @if($donor->profile->fascinating)
                                                     <li><i class="fa fa-check "></i> I think the process is
                                                         fascinating and wanted to be involved.
                                                     </li>
                                                 @endif
-                                                @if($profile->need_money)
+                                                @if($donor->profile->need_money)
                                                     <li><i class="fa fa-check "></i> I need the money.</li>
                                                 @endif
                                             </ul>

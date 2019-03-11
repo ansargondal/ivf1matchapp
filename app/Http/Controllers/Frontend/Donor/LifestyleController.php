@@ -6,14 +6,21 @@ use App\Http\Controllers\Controller;
 use App\Models\Frontend\Donor\Lifestyle;
 use App\Models\Frontend\Donor\LifeStyleSterile;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class LifestyleController extends Controller
 {
     public function store(Request $request)
     {
         try {
+
+            $column_list = Lifestyle::getTableColumns('dn_lifestyle');
+
+            //get all pregnancy history data except sexual activity
+            $data = $request->only($column_list);
+
             //Save lifestyle Info
-            $lifestyle = Lifestyle::store($request);
+            $lifestyle = Auth::user()->lifestyle()->create($data);
 
             //save lifestyle sterile information
             LifeStyleSterile::store($request, $lifestyle);

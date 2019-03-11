@@ -42,18 +42,4 @@ class MedicalHistory extends Model
         return $this->hasOne(S2Allergy::class);
     }
 
-
-    public static function store($request)
-    {
-        //get only vaccinated data for medical history table
-        $vaccinated_data = $request->only(['user_id', 'vaccinated', 'vaccinated_for']);
-
-        //transform vaccinated data 'yes' => 1 and 'no' => 0
-        $vaccinated = strtolower($request->get('vaccinated'));
-
-        $vaccinated_data['vaccinated'] = ($vaccinated === 'yes') ? 1 : 0;
-
-        //save medical history data and return last inserted medical history row
-        return MedicalHistory::create($vaccinated_data);
-    }
 }

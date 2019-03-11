@@ -11,8 +11,9 @@
     <link rel="stylesheet" href="{{asset('../vendor/bootstrap/css/bootstrap.min.css')}}">
     <link rel="stylesheet" href="{{asset('../vendor/jquery-ui/jquery-ui.min.css')}}">
     <link rel="stylesheet" href="{{asset('../vendor/data-table/data-table.css')}}">
-    <link rel="stylesheet" href="{{asset('../css/dashboard.css')}}">
-    <link rel="stylesheet" href="{{asset('../css/data-table.css')}}">
+    <link rel="stylesheet" href="{{asset('css/admin/dashboard.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/admin/data-table.min.css')}}">
+    <meta name="csrf-token" content="{{ csrf_token() }}">
     @stack('css')
     <title>@yield('title', 'Dashboard - Overview')</title>
 </head>
@@ -74,9 +75,9 @@
                         <i class="fa fa-cog" aria-hidden="true"></i>
                     </a>
                     <div class="dropdown-menu">
-                        <a href="#" class="dropdown-item">View Profile</a>
-                        <a href="#" class="dropdown-item">Edit Profile</a>
-                        <a href="#" class="dropdown-item">Logout</a>
+                        <a href="{{route('admin.profile')}}" class="dropdown-item">Edit Profile</a>
+                        <a href="#" class="dropdown-item">Change Password</a>
+                        <a href="{{route('auth.logout')}}" class="dropdown-item">Logout</a>
                     </div>
                 </li>
             </ul>

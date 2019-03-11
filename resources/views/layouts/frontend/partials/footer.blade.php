@@ -4,12 +4,11 @@
         <div class="row">
             <div class="col-5 col-lg-3">
                 <ul class="footer-links">
-                    <li>PROJECTS</li>
-                    <li><a href="#">Updates</a></li>
-                    <li><a href="#">Request an Icon</a></li>
-                    <li><a href="#">Report a Bug</a></li>
-                    <li><a href="#">help</a></li>
-                    <li><a href="#">GitHub Project</a></li>
+                    <li>USEFUL LINKS</li>
+                    <li><a href="{{route('donor.profiles')}}">Donor Profiles</a></li>
+                    <li><a href="{{route('frontend.index')}}#process">How It works</a></li>
+                    <li><a href="{{route('donor.register.show')}}">Sign Up</a></li>
+                    <li><a href="{{route('login.show')}}">Login</a></li>
                 </ul>
             </div>
             <div class="col-7 col-lg-3">
@@ -24,7 +23,7 @@
                     <p>IVF1Match is continuously providing best services to their client. We are striving to deliver you
                         best
                         possible services at your door step.</p>
-                    <form action="{{route('subscription.store')}}" method="post" id="f-subscribe">
+                    <form action="{{route('admin.subscription.store')}}" method="post" id="f-subscribe">
                         @csrf
                         <div class="input-group">
                             <input type="email" name="email" class="form-control">
@@ -44,16 +43,7 @@
         <hr>
         <div class="row footer-bottom">
             <div class="col-md-7">
-                <small>
-                    <ul class="list-inline">
-                        <li class="list-inline-item"><a href="{{route('home')}}#process">How It Works</a></li>
-                        <li class="list-inline-item"><a href="#" data-toggle="modal" data-target="#signup_modal"
-                                                        class="nav-link">Sign Up</a></li>
-
-                        <li class="list-inline-item"><a href="{{route('login')}}">Log In</a></li>
-                        <li class="list-inline-item"><a href="{{route('donor.profiles')}}">Donor Profiles</a></li>
-                    </ul>
-                </small>
+                <small class="text-secondary"> &copy;Copyright 2011-2019 ivf1match</small>
             </div>
             <div class="col-md-5">
                 <small class="credits">Made with <span><i class="fa fa-heart" aria-hidden="true"></i></span> by <a
@@ -73,7 +63,6 @@
 <script src="{{asset('vendor/bootstrap-notify/bootstrap-notify.min.js')}}"></script>
 <script src="{{asset('js/ivf1match.min.js')}}"></script>
 <script src="{{asset('vendor/jquery-validation/jquery.validate.js')}}"></script>
-<script src="{{asset('js/filters.min.js')}}"></script>
 @stack('js')
 </body>
 </html>

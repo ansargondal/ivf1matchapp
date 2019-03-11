@@ -2,7 +2,7 @@
 <div class="modal" id="delete-modal">
     <div class="modal-dialog">
         <div class="modal-content">
-            <form action="delete.php" method="post">
+            <form action="#" method="post">
                 <div class="modal-header">
                     <h6 class="modal-title">CONFIRM DELETE</h6>
                     <a href="#" class="close" data-dismiss="modal">&times</a>

@@ -22,7 +22,7 @@
 <script src="{{asset('../vendor/data-table/dataTables.conditionalPaging.js')}}"></script>
 <script src="{{asset('../vendor/bootstrap-notify/bootstrap-notify.min.js')}}"></script>
 <script src="{{asset('../js/global.min.js')}}"></script>
-<script src="{{asset('../js/admin/dashboard.min.js')}}"></script>
+
 
 //Push js files will be placed here.
 @stack('js')

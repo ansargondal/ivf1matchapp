@@ -1,5 +1,8 @@
 <?php
 
+use Yajra\DataTables\Contracts\DataTable;
+use Yajra\DataTables\DataTablesServiceProvider;
+
 return [
 
     /*
@@ -164,6 +167,7 @@ return [
          * Package Service Providers...
          */
         Spatie\Permission\PermissionServiceProvider::class,
+        DataTablesServiceProvider::class,
 
 
         /*
@@ -224,6 +228,7 @@ return [
         'Validator' => Illuminate\Support\Facades\Validator::class,
         'View' => Illuminate\Support\Facades\View::class,
         'Debugbar' => Barryvdh\Debugbar\Facade::class,
+        'DataTables' => DataTable::class
 
     ],
 

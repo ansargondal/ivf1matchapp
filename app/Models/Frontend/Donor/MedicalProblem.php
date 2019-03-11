@@ -18,26 +18,6 @@ class MedicalProblem extends Model
         return Schema::getColumnListing($table);
     }
 
-    public static function store($request)
-    {
-        $columns_list = self::getTableColumns('dn_medical_problems');
-
-        $data = $request->only($columns_list);
-
-        foreach ($data as $key => $value) {
-
-            //transform vaccinated data 'yes' => 1 and 'no' => 0
-            $temp = strtolower($request->get($key));
-
-            if ($temp === 'yes') {
-                $data[$key] = 1;
-            } elseif ($temp === 'no') {
-                $data[$key] = 0;
-            }
-        }
-
-        self::create($data);
-    }
 
     public function user()
     {

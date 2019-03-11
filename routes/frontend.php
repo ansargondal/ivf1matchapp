@@ -1,39 +1,50 @@
 <?php
 //
-Route::get('/', function () {
-    return view('frontend.index');
-})->name('home');
 
-Route::get('/recipient/register', function () {
-    return view('frontend.recipient-signup');
-})->name('recipient.register');
+//get available donors for index page
+Route::get('/', 'Frontend\Donor\DonorProfileController@availableDonors')->name('frontend.index');
+//
+
+Route::group(['middleware' => 'guest'], function () {
+
+    //Donor Registration Routes
+    Route::get('donor/register', 'Admin\DonorController@create')->name('donor.register.show');
+    Route::post('donor/register', 'Admin\DonorController@store')->name('donor.register.store');
+
+    //Recipient Registration Routes
+    Route::get('recipient/register', 'Admin\RecipientController@create')->name('recipient.register.show');
+    Route::post('recipient/register', 'Admin\RecipientController@store')->name('recipient.register.store');
+
+    //Authentication Common routes showLogin/Login/Logout
+    Route::get('login', 'Auth\LoginController@show')->name('login.show')->middleware('guest');
+    Route::post('login', 'Auth\LoginController@authenticate')->name('login.authenticate');
+});
 
 
-Route::get('/login', function () {
-    return view('frontend.login');
-})->name('login');
+Route::get('logout', 'Auth\LoginController@logout')->name('auth.logout');
 
 
+//Donor Profile Filters routes
 Route::group(['prefix' => 'donor', 'namespace' => 'Frontend\Donor'], function () {
+
 
     Route::get('profiles', 'DonorProfileController@index')->name('donor.profiles');
     Route::get('profile/{id}', 'DonorProfileController@show')->name('donor.show');
 
     Route::post('profiles/filter', 'DonorProfileController@filter')->name('donor.filter');
-
-    Route::get('register', function () {
-        return view('frontend.donor-signup');
-    })->name('donor.register');
-
-    Route::get('questionnaire', function () {
-        return view('frontend.donor-questionnaire');
-    })->name('donor-questionnaire');
 });
+
 
 /**
  * Donor Questioner Form Routes
  */
-Route::group(['namespace' => 'Frontend\Donor'], function () {
+Route::group(['namespace' => 'Frontend\Donor', 'middleware' => 'auth'], function () {
+
+    //show donor questionnaire form
+    Route::get('donor/questionnaire', function () {
+        return view('frontend.donor-questionnaire');
+    })->name('donor-questionnaire');
+
     Route::post('contact', 'ContactController@store')->name('contact.store');
     Route::post('education', 'EducationController@store')->name('education.store');
     Route::post('sexual-history', 'SexualHistoryController@store')->name('sexual.history.store');
@@ -47,4 +58,9 @@ Route::group(['namespace' => 'Frontend\Donor'], function () {
 });
 
 
-
+Route::get('roles/create', function () {
+    \Spatie\Permission\Models\Role::create(['name' => 'Donor']);
+    \Spatie\Permission\Models\Role::create(['name' => 'Recipient']);
+    \Spatie\Permission\Models\Role::create(['name' => 'Admin']);
+    \Spatie\Permission\Models\Role::create(['name' => 'Employee']);
+});

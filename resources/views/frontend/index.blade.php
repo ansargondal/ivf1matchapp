@@ -1,5 +1,6 @@
 @extends('layouts.frontend.app')
 @section('content')
+
     <!--Hero section-->
     <section class="section hero">
         <div class="container">
@@ -10,7 +11,7 @@
                     <p>IVF1Match is the only egg donor / recipient matching program in which recipients can correspond
                         anonymously with donors.</p>
                     <br><br>
-                    <a href="{{route('donor.register')}}" class="bttn">Join the Cause</a>
+                    <a href="{{route('donor.register.show')}}" class="bttn">Join the Cause</a>
                 </div>
             </div>
         </div>
@@ -45,7 +46,7 @@
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
                             been
                             the industry'</p>
-                        <a href="donor-signup.html" class="btn bttn">Become a Donor</a>
+                        <a href="{{route('donor.register.show')}}" class="btn bttn">Become a Donor</a>
                     </div>
                 </div>
                 <div class="col-xs-12 col-md-4">
@@ -55,7 +56,7 @@
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
                             been
                             the industry'</p>
-                        <a href="recipient-signup.html" class="btn bttn">Become a Recipient</a>
+                        <a href="{{route('recipient.register.show')}}" class="btn bttn">Become a Recipient</a>
                     </div>
                 </div>
                 <div class="col-xs-12 col-md-4">
@@ -65,7 +66,7 @@
                         <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has
                             been
                             the industry'</p>
-                        <a href="donor-profiles.html" class="btn bttn">Browse Donors</a>
+                        <a href="{{route('donor.profiles')}}" class="btn bttn">Browse Donors</a>
                     </div>
                 </div>
             </div>
@@ -132,42 +133,28 @@
                 </div>
             </div><!--row-->
             <div class="row">
-                <div class="col-xs-12 col-md-4">
-                    <div class="wrap text-center">
-                        <img src="img/donor-4.png" alt="EGG DONOR" class="img-fluid">
-                        <h4>DONOR INFO</h4>
-                        <ul class="text-left">
-                            <li>Age <span class="pull-right">21</span></li>
-                            <li>Eyes <span class="pull-right">Blue</span></li>
-                            <li>Cycle <span class="pull-right">Available</span></li>
-                        </ul>
-                        <a href="donor-profile-details.html" class="btn bttn">More Details</a>
+                @foreach($donors as $donor)
+                    <div class="col-xs-12 col-md-4">
+                        <div class="wrap text-center">
+                            @if($donor->profile->photo_permission)
+                                <img src="{{asset('storage/'. $donor->images->first()->path)}}"
+                                     alt="EGG DONOR"
+                                     class="img-fluid">
+                            @else
+                                <img src="{{asset('img/avatar.png')}}"
+                                     alt="EGG DONOR"
+                                     class="img-fluid">
+                            @endif
+                            <h4>DONOR INFO</h4>
+                            <ul class="text-left">
+                                <li>Age <span class="pull-right">{{$donor->profile->age}}</span></li>
+                                <li>Eyes <span class="pull-right">{{$donor->profile->eye_color}}</span></li>
+                                <li>Cycle <span class="pull-right">{{$donor->cycle}}</span></li>
+                            </ul>
+                            <a href="{{route('donor.show', $donor->id)}}" class="btn bttn">More Details</a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-xs-12 col-md-4">
-                    <div class="wrap text-center">
-                        <img src="img/donor-5.png" alt="EGG DONOR" class="img-fluid">
-                        <h4>DONOR INFO</h4>
-                        <ul class="text-left">
-                            <li>Age <span class="pull-right">21</span></li>
-                            <li>Eyes <span class="pull-right">Blue</span></li>
-                            <li>Cycle <span class="pull-right">Available</span></li>
-                        </ul>
-                        <a href="donor-profile-details.html" class="btn bttn">More Details</a>
-                    </div>
-                </div>
-                <div class="col-xs-12 col-md-4">
-                    <div class="wrap text-center">
-                        <img src="img/donor-6.png" alt="EGG DONOR" class="img-fluid">
-                        <h4>DONOR INFO</h4>
-                        <ul class="text-left">
-                            <li>Age <span class="pull-right">21</span></li>
-                            <li>Eyes <span class="pull-right">Blue</span></li>
-                            <li>Cycle <span class="pull-right">Available</span></li>
-                        </ul>
-                        <a href="donor-profile-details.html" class="btn bttn">More Details</a>
-                    </div>
-                </div>
+                @endforeach
             </div>
         </div>
     </section>

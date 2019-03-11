@@ -3,6 +3,7 @@
 namespace App\Models\Frontend\Donor;
 
 use Illuminate\Database\Eloquent\Model;
+use Symfony\Component\HttpKernel\Profiler\Profile;
 
 class Image extends Model
 {
@@ -37,4 +38,5 @@ class Image extends Model
     {
         return $this->belongsTo(Profile::class);
     }
+
 }

@@ -7,12 +7,14 @@
         <div class="c-container">
             <div class="row">
                 <div class="col-md-3 col-xl-3">
-                    <div class="card blocked-user">
+                    <div class="card ">
                         <div class="card-body ">
-                            <img src="../img/customer-2.jpg" alt="" class="salesman-profile">
+                            <img src="../img/avatar.png" alt="" class="salesman-profile">
                             <span class="salesman-info">
                         <h4>Alena Cutick</h4>
-                        <p>Lorem consectetur adipisicing elit. Omnis, voluptas!</p>
+                                <p>alina@gmail.com</p>
+                                <p><b class="pr-4">Role:</b> Admin</p>
+
                     </span>
                         </div>
                         <div class="card-footer">
@@ -22,16 +24,52 @@
                     </div>
                 </div>
                 <div class="col-md-3 col-xl-3">
-                    <div class="card new-user">
-                        <div class="card-body">
-                            <img src="../img/customer-1.jpg" alt="" class="salesman-profile">
+                    <div class="card ">
+                        <div class="card-body ">
+                            <img src="../img/avatar.png" alt="" class="salesman-profile">
                             <span class="salesman-info">
                         <h4>Alena Cutick</h4>
-                        <p>Lorem consectetur adipisicing elit. Omnis, voluptas!</p>
+                                <p>alina@gmail.com</p>
+                                <p><b class="pr-4">Role:</b> Admin</p>
+
                     </span>
                         </div>
                         <div class="card-footer">
-                            <span class="blocked-on">Created On</span>
+                            <span class="blocked-on">Blocked On</span>
+                            <span class="date">Oct 10, 2017</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xl-3">
+                    <div class="card ">
+                        <div class="card-body ">
+                            <img src="../img/avatar.png" alt="" class="salesman-profile">
+                            <span class="salesman-info">
+                        <h4>Alena Cutick</h4>
+                                <p>alina@gmail.com</p>
+                                <p><b class="pr-4">Role:</b> Admin</p>
+
+                    </span>
+                        </div>
+                        <div class="card-footer">
+                            <span class="blocked-on">Blocked On</span>
+                            <span class="date">Oct 10, 2017</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-3 col-xl-3">
+                    <div class="card ">
+                        <div class="card-body ">
+                            <img src="../img/avatar.png" alt="" class="salesman-profile">
+                            <span class="salesman-info">
+                        <h4>Alena Cutick</h4>
+                                <p>alina@gmail.com</p>
+                                <p><b class="pr-4">Role:</b> Admin</p>
+
+                    </span>
+                        </div>
+                        <div class="card-footer">
+                            <span class="blocked-on">Blocked On</span>
                             <span class="date">Oct 10, 2017</span>
                         </div>
                     </div>
@@ -56,8 +94,7 @@
             <div class="row">
                 <div class="col-md-12">
                     <div class="table-responsive">
-                        <table class="dt table  " data-toggle="table" data-search="true"
-                               data-pagination="true" id="data-table">
+                        <table class="dt table " id="dt-users">
                             <thead>
                             <tr>
                                 <th scope="col">ID</th>
@@ -492,5 +529,5 @@
 @endsection
 
 @push('js')
-    <script src="{{asset('../js/admin/users.js')}}"></script>
+    <script src="{{asset('../js/admin/users.min.js')}}"></script>
 @endpush

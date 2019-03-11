@@ -9,14 +9,32 @@ use App\Models\Frontend\Donor\S3ChromosomalAb;
 use App\Models\Frontend\Donor\S3GeneticAb;
 use App\Models\Frontend\Donor\S3NeurologicAb;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Auth;
 
 class S3MedAbnormalityController extends Controller
 {
     public function store(Request $request)
     {
         try {
+
+            $columns_list = MedicalAbnormality::getTableColumns('dn_medical_abnormality');
+            $data = $request->only($columns_list);
+
+            foreach ($data as $key => $value) {
+
+                //transform vaccinated data 'yes' => 1 and 'no' => 0
+                $temp = strtolower($request->get($key));
+
+                if ($temp === 'yes') {
+                    $data[$key] = 1;
+                } elseif ($temp === 'no') {
+                    $data[$key] = 0;
+                }
+            }
+
             //Medical Abnormality Data Insertion
-            $medical_abnormality = MedicalAbnormality::store($request);
+            $medical_abnormality = Auth::user()->medicalAbnormality()->create($data);
+
 
             //Chromosomal Abnormality Data Insertion
             S3ChromosomalAb::store($request, $medical_abnormality);
@@ -36,7 +54,5 @@ class S3MedAbnormalityController extends Controller
 
             return response()->json(['error' => true, 'message' => 'something went wrong! Try again!']);
         }
-
-
     }
 }
