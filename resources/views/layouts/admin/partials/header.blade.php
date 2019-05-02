@@ -26,57 +26,37 @@
             </a>
             <span class="page-title">Dashboard</span>
             <ul class="nav navbar-nav ml-auto ">
+                <li class="nav-item">
+                    <a href="{{route('frontend.index')}}" class="nav-link" data-toggle="tooltip" data-placement="bottom"
+                       title="Visit Website"><i class="fa fa-space-shuttle"></i></a>
+                </li>
                 <li class="nav-item dropdown ">
                     <a href="#" class="nav-link " data-toggle="dropdown">
                         <i class="fa fa-bell" aria-hidden="true"></i>
-                        <span class="badge badge-danger badge-pill">22</span>
+                        <span class="badge badge-danger badge-pill">{{sprintf('%01d',$message_count->unread)}}</span>
                     </a>
-                    <div class="dropdown-menu message-dropdown">
-                        <a href="#" class="dropdown-item">
-                            <span class="initials">RM</span>
-                            <p>
-                                <span class="username font-weight-bold">Randy Moriss</span>
-                                <span class="message-excerpt">I 'm new donor so feel free to get in touch with me, I 'm here
-                                to donate my sperms...</span>
-                            </p>
-                        </a><a href="#" class="dropdown-item">
-                            <span class="initials">TC</span>
-                            <p>
-                                <span class="username font-weight-bold">Todd Cutick</span>
-                                <span class="message-excerpt">I 'm new donor so feel free to get in touch with me, I 'm here
-                                to donate my sperms...</span>
-                            </p>
-                        </a><a href="#" class="dropdown-item">
-                            <span class="initials">RB</span>
-                            <p>
-                                <span class="username font-weight-bold">Jason Almasy</span>
-                                <span class="message-excerpt">I 'm new donor so feel free to get in touch with me, I 'm here
-                                to donate my sperms...</span>
-                            </p>
-                        </a><a href="#" class="dropdown-item">
-                            <span class="initials">AG</span>
-                            <p>
-                                <span class="username font-weight-bold">Alina Cutick</span>
-                                <span class="message-excerpt">I 'm new donor so feel free to get in touch with me, I 'm here
-                                to donate my sperms...</span>
-                            </p>
-                        </a><a href="#" class="dropdown-item">
-                            <span class="initials">AG</span>
-                            <p>
-                                <span class="username font-weight-bold">John Doe</span>
-                                <span class="message-excerpt">I 'm new donor so feel free to get in touch with me, I 'm here
-                                to donate my sperms...</span>
-                            </p>
-                        </a>
-                    </div>
+                    @if(count($messages))
+                        <div class="dropdown-menu message-dropdown">
+                            @foreach($messages as $message)
+                                <a href="{{route('admin.messages.index', ['filter' => $message->id])}}"
+                                   class="dropdown-item">
+                                    <span class="initials">{{$message->sender->intials}}</span>
+                                    <p>
+                                        <span class="username font-weight-bold">{{$message->sender->fullName}} </span>
+                                        <span class="message-excerpt">{{$message->message}}</span>
+                                    </p>
+                                </a>
+                            @endforeach
+                        </div>
+                    @endif
                 </li>
                 <li class="nav-item dropdown profile-dropdown">
                     <a href="user-profile.php" class="nav-link" data-toggle="dropdown">
                         <i class="fa fa-cog" aria-hidden="true"></i>
                     </a>
                     <div class="dropdown-menu">
-                        <a href="{{route('admin.profile')}}" class="dropdown-item">Edit Profile</a>
-                        <a href="#" class="dropdown-item">Change Password</a>
+                        <a href="{{route('admin.user.profile')}}" class="dropdown-item">Edit Profile</a>
+                        <a href="{{route('admin.user.password.edit')}}" class="dropdown-item">Change Password</a>
                         <a href="{{route('auth.logout')}}" class="dropdown-item">Logout</a>
                     </div>
                 </li>

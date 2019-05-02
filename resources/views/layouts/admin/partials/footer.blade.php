@@ -16,8 +16,8 @@
 
 <script src="{{asset('../vendor/jquery/jquery.min.js')}}"></script>
 <script src="{{asset('../vendor/jquery-ui/jquery-ui.min.js')}}"></script>
-<script src="{{asset('../vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 <script src="{{asset('../vendor/jquery-validation/jquery.validate.js')}}"></script>
+<script src="{{asset('../vendor/bootstrap/js/bootstrap.bundle.min.js')}}"></script>
 <script src="{{asset('../vendor/data-table/data-table.js')}}"></script>
 <script src="{{asset('../vendor/data-table/dataTables.conditionalPaging.js')}}"></script>
 <script src="{{asset('../vendor/bootstrap-notify/bootstrap-notify.min.js')}}"></script>

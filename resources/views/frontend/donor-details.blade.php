@@ -38,7 +38,7 @@
                         @endif
                         <h3>Donor #{{$donor->code}} </h3>
                         <p>{{str_limit($donor->profile->personal_message, 130)}}</p>
-                        <a href="#" class="btn bttn">Contact Donor</a>
+                        <a href="#" data-id="{{$donor->id}}" class="btn bttn btn-contact-donor">Contact Donor</a>
                     </div>
                 </div>
                 <div class="col-lg-8">
@@ -358,6 +358,74 @@
         </div>
     </section>
     <!--profile ends-->
+
+
+
+    <!--Send New Message Modal-->
+    <div class="modal fade" id="modal-contact-donor">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header ">
+                    <h5>Contact Donor</h5>
+                    <button class="close" data-dismiss="modal"><i class="fa fa-times" aria-hidden="true"></i></button>
+                </div>
+                <form action="{{route('admin.messages.store')}}" method="post" id="form-contact-donor">
+                    @csrf
+                    <input type="text" class="d-none" name="id">
+                    <div class="modal-body">
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="subject">Subject</label>
+                                    <input type="text" class="form-control" id="subject" name="subject" autofocus>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div class="col-md-12">
+                                <div class="form-group">
+                                    <label for="message">Message</label>
+                                    <textarea name="message" id="message" class="form-control"></textarea>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="modal-footer">
+                        <button class="btn bttn btn-submit" type="submit">SEND <i
+                                    class="fa fa-spinner fa-spin d-none"
+                                    aria-hidden="true"></i>
+                        </button>
+                        <button class="btn btn-close" data-dismiss="modal">CLOSE</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+    <!--!Send New Message Modal-->
+
+    <div class="modal fade" id="modal-message-sent" tabindex="-1" role="dialog">
+        <div class="modal-dialog modal-xl" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="#">Message Sent Successfully!</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">×</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <div class="wrap p-3 text-center">
+                        <h5>You message has been <span class="text-danger">received</span>. We will
+                            <span class="text-danger">approve it </span> after the reviewing it.
+                        </h5>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
 @endsection
 
 {{--Pushing Donor Profile Details only JS files --}}

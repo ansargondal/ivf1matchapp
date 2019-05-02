@@ -1,47 +1,49 @@
 <?php
 
-
 //all the routes
+
 Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => 'auth', 'as' => 'admin.'], function () {
 
-
-    Route::post('recipients/{id}/update-status', 'RecipientController@updateStatus')->name('recipient.status');
-
-    Route::get('/', function () {
-        return view('admin.index');
-    })->name('dashboard');
-
-
-    Route::get('profile', function () {
-        return view('admin.user-profile');
-    })->name('profile');
-
-    Route::get('users', function () {
-        return view('admin.users');
-    })->name('users');
+    //TODO:: Redirect users properly after logging in... Recipient| Donor| Admin
+    Route::get('/', 'TaskController@index')->name('dashboard');
 
     Route::get('dq', function () {
         return view('admin.donor-questionnaire');
     })->name('dq');
 
-    Route::get('recipients', function () {
-        return view('admin.recipients');
-    })->name('recipients');
 
-    Route::get('messages', function () {
-        return view('admin.messages');
-    })->name('messages');
+    Route::resource('users', 'UserController');
+    Route::get('profile', 'UserController@profile')->name('user.profile');
+    Route::get('password/edit', 'UserController@passwordEdit')->name('user.password.edit');
+    Route::post('password/update', 'UserController@passwordUpdate')->name('user.password.update');
 
 
-    Route::Resource('donors', 'DonorController');
-    Route::Resource('recipients', 'RecipientController');
-    Route::Resource('tasks', 'TaskController');
+    Route::resource('donors', 'DonorController');
+    Route::post('donors/{id}/update-status', 'DonorController@updateStatus')
+        ->name('donor.status');
+
+    Route::post('donors/{id}/update-cycle', 'DonorController@updateCycle')
+        ->name('donor.cycle');
+
+
+    Route::resource('recipients', 'RecipientController');
+    Route::post('recipients/{id}/update-status', 'RecipientController@updateStatus')
+        ->name('recipient.status');
+
+    Route::resource('tasks', 'TaskController');
+
+    Route::resource('messages', 'MessageController');
+    Route::post('messages/{id}/update-status', 'MessageController@updateStatus')
+        ->name('messages.status');
+    Route::post('messages/{id}/mark-as-read', 'MessageController@markAsRead')
+        ->name('messages.mark.as.read');
 
     Route::post('subscribe', 'SubscriptionController@store')->name('subscription.store');
 
-
     //Data table  ajax data routes Routes
     Route::get('tasksAjax', 'TaskController@tasksDTData')->name('tasks.ajax');
+    Route::get('messagesAjax', 'MessageController@messagesDTData')->name('messages.ajax');
+    Route::get('usersAjax', 'UserController@usersDTData')->name('users.ajax');
     Route::get('donorsAjax', 'DonorController@donorsDTData')->name('donors.ajax');
     Route::get('recipientsAjax', 'RecipientController@recipientsDTData')->name('recipients.ajax');
 

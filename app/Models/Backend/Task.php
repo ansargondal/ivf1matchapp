@@ -9,13 +9,10 @@ class Task extends Model
 {
     protected $fillable = ['type', 'body', 'user_id'];
 
-//    protected $casts = [
-//        'created_at' => 'datetime:d, M Y',
-//    ];
 
     public function getCreatedAtAttribute()
     {
-        return Carbon::createFromFormat('Y-m-d h:i:s', $this->attributes['created_at'])->format('M, d, Y');
+        return Carbon::createFromFormat('Y-m-d H:i:s', $this->attributes['created_at'])->format('M, d, Y');
     }
 
     public function user()

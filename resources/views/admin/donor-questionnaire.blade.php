@@ -34,7 +34,6 @@
                             <li class="nav-item"><a href="#step-9" class="nav-link">Medical History</a></li>
                             <li class="nav-item"><a href="#step-10" class="nav-link">Donor Profile</a></li>
                         </ul>
-
                         <div class="sw-container tab-content" style="min-height: 726px;">
                             <div id="step-1" class="tab-pane step-content" style="display: block;">
                                 <div class="col-xs-12">

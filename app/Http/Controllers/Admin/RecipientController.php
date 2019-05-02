@@ -9,6 +9,10 @@ use Illuminate\Http\Request;
 
 class RecipientController extends Controller
 {
+    public function __construct()
+    {
+        $this->middleware('App\Http\Middleware\CheckRole:Admin');
+    }
 
     public function index()
     {

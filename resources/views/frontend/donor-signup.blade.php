@@ -134,7 +134,7 @@
         <div class="modal-dialog modal-md" role="document">
             <div class="modal-content">
                 <div class="modal-header">
-                    <h5 class="modal-title" id="#">Take the <span>Egg Donor Quiz!</span></h5>
+                    <h5 class="modal-title" id="#">Take the <span>Egg Donor QuiEgg Donor Quiz!</span></h5>
                     <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                         <span aria-hidden="true">×</span>
                     </button>
@@ -194,15 +194,13 @@
                                                     <input id="radio_yes" name="is_female" type="radio" value="yes">
                                                     <label for="radio_yes" class="radio-label">Yes</label>
                                                 </div>
-
                                                 <div class="radio">
-                                                    <input id="radio_no" name="is_female" type="radio" value="no"
-                                                           checked="">
+                                                    <input id="radio_no" name="is_female" type="radio" value="no">
                                                     <label for="radio_no" class="radio-label">No</label>
                                                 </div>
                                             </div>
-                                            <small class="is_female_err">*You must have eggs to be a donor.</small>
-
+                                            <small class="is_female_err d-none">*You must have eggs to be a donor.
+                                            </small>
                                         </div>
                                     </div>
                                 </form>
@@ -220,7 +218,8 @@
                                                 <li><a href="#">28+</a></li>
                                             </ul>
                                         </div>
-                                        <small class="age_error text-danger">*You must be 18 to 27 to donate eggs.
+                                        <small class="age_error d-none text-danger">*You must be 18 to 27 to donate
+                                            eggs.
                                         </small>
                                     </div>
                                 </div>
@@ -234,11 +233,11 @@
                                         </div>
 
                                         <div class="radio">
-                                            <input id="radio-4" name="had_pelvic" checked="" type="radio" value="no">
+                                            <input id="radio-4" name="had_pelvic" type="radio" value="no">
                                             <label for="radio-4" class="radio-label">No</label>
                                         </div>
                                     </div>
-                                    <small class="pelvic_exam_error text-danger pl-3 ml-4 pt-2 d-block">All egg donors
+                                    <small class="pelvic_exam_error text-danger pl-3 ml-4 pt-2 d-none">All egg donors
                                         must
                                         have
                                         a pelvic
@@ -257,10 +256,10 @@
                                         </div>
 
                                         <div class="radio">
-                                            <input id="radio-6" name="are_willing" type="radio" value="no" checked="">
+                                            <input id="radio-6" name="are_willing" type="radio" value="no">
                                             <label for="radio-6" class="radio-label">No</label>
                                         </div>
-                                        <small class="are_willing_err">*You must be willing to undergo a physical
+                                        <small class="are_willing_err d-none">*You must be willing to undergo a physical
                                             exam.
                                         </small>
                                     </div>
@@ -278,11 +277,12 @@
                                         </div>
 
                                         <div class="radio">
-                                            <input id="radio-8" name="are_able" type="radio" value="no" checked="">
+                                            <input id="radio-8" name="are_able" type="radio" value="no">
                                             <label for="radio-8" class="radio-label">No</label>
                                         </div>
                                     </div>
-                                    <small class="medications_error text-danger pl-5">Sorry! You do not qualify to
+                                    <small class="medications_error text-danger pl-5 d-none">Sorry! You do not qualify
+                                        to
                                         be an
                                         egg donor.
                                     </small>
@@ -326,7 +326,8 @@
                         <h5>We would <span>encourage</span> you to read <a
                                     href="http://www.ivf1.com/egg-donor-information/" target="_blank">about egg
                                 donation</a> in
-                            <span>detail</span> and to complete a donor <a href="#">questionnaire online.</a></h5>
+                            <span>detail</span>.
+                        </h5>
                         <br><br>
                         <div class="text-center">
                             <a href="{{route('donor-questionnaire')}}" class="btn bttn">Proceed</a>

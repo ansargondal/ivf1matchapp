@@ -9,14 +9,15 @@
         <div class="login-container">
             <div class="row">
                 <div class="col-md-9 mx-auto">
-                    <form action="{{route('login.authenticate')}}" method="post" id="form-login" class="ivf" autocomplete="off">
+                    <form action="{{route('login.authenticate')}}" method="post" id="form-login" class="ivf"
+                          autocomplete="off">
                         @csrf
                         <div class="user-group text-center">
                             <i class="fa fa-user-secret" aria-hidden="true"></i>
                         </div>
                         <div class="form-group">
                             <label for="email">Email</label>
-                            <input type="text" class="form-control" name="email" id="email">
+                            <input type="text" class="form-control" name="email" id="email" autofocus>
                         </div>
                         <div class="form-group">
                             <label for="password">Password</label>

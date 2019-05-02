@@ -12,7 +12,7 @@
 */
 
 
-require_once "frontend.php";
-require_once "admin.php";
+require_once __DIR__ . '/frontend.php';
+require_once __DIR__ . '/admin.php';
 
 Route::get('/home', 'HomeController@index')->name('home');

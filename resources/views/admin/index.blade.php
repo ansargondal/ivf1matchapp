@@ -27,8 +27,9 @@
                             </ul>
                         </div>
                         <div class="card-footer">
-                            <a href="{{route('admin.messages')}}" class="card-link">Messages<i class="fa fa-arrow-right"
-                                                                                               aria-hidden="true"></i></a>
+                            <a href="{{route('admin.messages.index')}}" class="card-link">Messages<i
+                                        class="fa fa-arrow-right"
+                                        aria-hidden="true"></i></a>
                         </div>
                     </div>
                 </div>
@@ -110,8 +111,8 @@
                             </ul>
                         </div>
                         <div class="card-footer">
-                            <a href="{{route('admin.users')}}" class="card-link">Users<i class="fa fa-arrow-right"
-                                                                                         aria-hidden="true"></i></a>
+                            <a href="{{route('admin.users.index')}}" class="card-link">Users<i class="fa fa-arrow-right"
+                                                                                               aria-hidden="true"></i></a>
                         </div>
                     </div>
                 </div>
@@ -148,7 +149,7 @@
 
 @endsection
 
-//pushing dashboard only scripts
+{{--//pushing dashboard only scripts--}}
 @push('js')
     <script src="{{asset('../js/admin/tasks.min.js')}}"></script>
 @endpush

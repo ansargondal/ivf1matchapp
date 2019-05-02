@@ -1,8 +1,8 @@
 <?php
 
 use App\Models\Backend\User;
-use App\Models\Frontend\Image;
 use App\Models\Frontend\DonorProfile;
+use App\Models\Frontend\Image;
 use Illuminate\Database\Seeder;
 
 class DatabaseSeeder extends Seeder
@@ -15,6 +15,7 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
+
         //create 10 users
         $users = factory(User::class, 20)->create();
 

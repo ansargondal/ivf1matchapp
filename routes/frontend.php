@@ -2,6 +2,8 @@
 //
 
 //get available donors for index page
+use Illuminate\Support\Facades\Route;
+
 Route::get('/', 'Frontend\Donor\DonorProfileController@availableDonors')->name('frontend.index');
 //
 
@@ -63,4 +65,5 @@ Route::get('roles/create', function () {
     \Spatie\Permission\Models\Role::create(['name' => 'Recipient']);
     \Spatie\Permission\Models\Role::create(['name' => 'Admin']);
     \Spatie\Permission\Models\Role::create(['name' => 'Employee']);
+    \Spatie\Permission\Models\Role::create(['name' => 'Manager']);
 });

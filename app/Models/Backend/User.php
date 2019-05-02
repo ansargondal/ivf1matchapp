@@ -14,6 +14,7 @@ use App\Models\Frontend\Donor\Pregnancy;
 use App\Models\Frontend\Donor\S1Question;
 use App\Models\Frontend\Donor\SexualHistory;
 use App\Models\Frontend\Quiz;
+use Illuminate\Auth\Passwords\CanResetPassword;
 use Illuminate\Foundation\Auth\User as Authenticatable;
 use Illuminate\Notifications\Notifiable;
 use Illuminate\Support\Facades\Hash;
@@ -23,6 +24,7 @@ class User extends Authenticatable
 {
     use Notifiable;
     use HasRoles;
+    use CanResetPassword;
 
 
     /**
@@ -49,15 +51,15 @@ class User extends Authenticatable
         return ucfirst($this->attributes['fname']) . ' ' . ucfirst($this->attributes['lname']);
     }
 
+    public function getIntialsAttribute()
+    {
+        return strtoupper($this->attributes['fname'][0]) . strtoupper($this->attributes['lname'][0]);
+    }
+
     public function getStatusClassAttribute()
     {
         return $this->getMatchedClass($this->attributes['status']);
     }
-
-//    public function getUpdatedAtAttribute()
-//    {
-//        return Carbon::createFromFormat('Y-m-d', $this->attributes['updated_at']);
-//    }
 
     public function getMatchedClass($status)
     {
@@ -150,4 +152,12 @@ class User extends Authenticatable
     {
         return $this->hasOne(DonorProfile::class);
     }
+
+    public function messages()
+    {
+//        $foreign_key = Auth::user()->hasRole('Recipient') ? 'recipient_id' : 'donor_id';
+
+        return $this->hasMany(Message::class);
+    }
+
 }

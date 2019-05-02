@@ -14,11 +14,16 @@
                                 <img src="../img/avatar.png" alt="" class="salesman-profile">
                                 <span class="salesman-info">
                         <h4>{{$recipient->fullName}}</h4>
-                                <p>{{$recipient->email}}</p>
+                                    <p><b class="mr-4">ID: </b>
+                                    <span class="">{{ucfirst($recipient->id)}}</span>
+                                </p>
                                 <p><b class="mr-4">Status: </b>
                                     <span class="{{$recipient->statusClass}}">{{ucfirst($recipient->status)}}</span>
                                 </p>
+
+                                    {{--                                    <p>{{$recipient->email}}</p>--}}
                     </span>
+
                             </div>
                             <div class="card-footer">
                                 <span class="blocked-on">Last Updated</span>

@@ -1,5 +1,5 @@
-<!--View Message Modal-->
-<div class="modal" id="view-message-modal">
+<!--View Message Modal Modal-->
+<div class="modal" id="modal-view-message">
     <div class="modal-dialog">
         <div class="modal-content">
             <div class="modal-header">
@@ -16,8 +16,16 @@
                     </div>
                     <div class="col-md-6">
                         <div class="form-group">
-                            <label for="email">Eamil</label>
+                            <label for="email">From</label>
                             <input type="text" readonly class="form-control" id="email" name="email">
+                        </div>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-md-12">
+                        <div class="form-group">
+                            <label for="subject">Subject</label>
+                            <input type="text" readonly class="form-control" id="subject" name="subject">
                         </div>
                     </div>
                 </div>

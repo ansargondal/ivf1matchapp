@@ -18,9 +18,9 @@ class CreateDnSexualHistoryTable extends Migration
             $table->unsignedInteger('user_id');
             $table->string('martial_status', 15);
             $table->string('living_arrangement', 60);
-            $table->string('partners_1_month', 25);
-            $table->string('partners_6_months', 25);
-            $table->string('partners_5_years', 25);
+            $table->tinyInteger('partners_1_month');
+            $table->tinyInteger('partners_6_months');
+            $table->tinyInteger('partners_5_years');
             $table->boolean('q1')->default(false);
             $table->boolean('q2')->default(false);
             $table->boolean('q3')->default(false);

@@ -1,5 +1,7 @@
 <?php
 
+use App\Providers\ComposerServiceProvider;
+use App\Providers\ViewServiceProvider;
 use Yajra\DataTables\Contracts\DataTable;
 use Yajra\DataTables\DataTablesServiceProvider;
 
@@ -161,7 +163,9 @@ return [
         Illuminate\Session\SessionServiceProvider::class,
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
-        Illuminate\View\ViewServiceProvider::class,
+        \Illuminate\View\ViewServiceProvider::class,
+        ComposerServiceProvider::class,
+
 
         /*
          * Package Service Providers...

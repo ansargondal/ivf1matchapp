@@ -1,4 +1,5 @@
 @extends('layouts.frontend.app')
+@extends('layouts.frontend.app')
 @section('title', 'Donor Questionnaire')
 
 {{--Pusing Donor questionnaire only stylesheets--}}
@@ -33,7 +34,7 @@
                 <li><a href="#step-1" disabled>Contact Info</a></li>
                 <li><a href="#step-2" disabled>Education</a></li>
                 <li><a href="#step-3">Sexual History</a></li>
-                <li><a href="#step-4">Pregnanacy</a></li>
+                <li><a href="#step-4">Pregnancy</a></li>
                 <li><a href="#step-5">Lifestyle</a></li>
                 <li><a href="#step-6">Medical History</a></li>
                 <li><a href="#step-7">Medical History</a></li>
@@ -130,7 +131,7 @@
                                 </div>
                                 <br>
                                 <div class="col-12 col-lg-6 mt-3">
-                                    <p>I would like to be a known egg donor for </p>
+                                    <p>I'd like to be a donor for </p>
                                 </div>
 
                                 <div class="col-12 col-lg-3 ">
@@ -142,7 +143,7 @@
                                                placeholder="Any Type">
                                         <ul class="c-dropdown-menu">
                                             <li><a href="#" class="active">Any Patient</a></li>
-                                            <li><a href="#">A specific ad</a></li>
+                                            <li><a href="#">A specific couple</a></li>
                                             <li><a href="#">A donor egg agency</a></li>
                                         </ul>
                                     </div>
@@ -487,9 +488,8 @@
                                 <div class="col-12 col-md-6">
                                     <div class='checkboxes'>
                                         <label class='checkbox'>
-                                            {{--<input type='non'>--}}
                                             <span class='indicator bg-secondary'></span>
-                                            Number of sexual partners
+                                            Number of sexual partners in the last
                                         </label>
                                     </div>
                                 </div>
@@ -497,48 +497,24 @@
                                     <div class="row" id="sexual_partners">
                                         <div class="col-4">
                                             <div class="form-group c-dropdown">
-                                                <label for="oneMonth"></label>
-
-                                                <input type="text" readonly class="form-control" id="oneMonth"
-                                                       name="partners_1_month" placeholder="1 Month">
-                                                <ul class="c-dropdown-menu">
-                                                    <li><a href="#" class="active">1 in last 1 month</a></li>
-                                                    <li><a href="#">2 in last 1 month</a></li>
-                                                    <li><a href="#">3 in last 1 month</a></li>
-                                                    <li><a href="#">4 in last 1 month</a></li>
-                                                    <li><a href="#">5 in last 1 month</a></li>
-                                                </ul>
+                                                <label for="oneMonth">1 Month</label>
+                                                <input type="text" class="form-control" id="oneMonth"
+                                                       name="partners_1_month">
                                             </div>
                                         </div>
                                         <div class="col-4">
                                             <div class="form-group c-dropdown">
-                                                <label for="sixmonth"></label>
-
-                                                <input type="text" readonly class="form-control" id="sixmonth"
-                                                       name="partners_6_months" placeholder="6 Months">
-                                                <ul class="c-dropdown-menu">
-                                                    <li><a href="#" class="active">1 in last 6 months</a></li>
-                                                    <li><a href="#">2 in last 6 months</a></li>
-                                                    <li><a href="#">3 in last 6 months</a></li>
-                                                    <li><a href="#">4 in last 6 months</a></li>
-                                                    <li><a href="#">5 in last 6 months</a></li>
-                                                    <li><a href="#">6 in last 6 months</a></li>
-                                                </ul>
+                                                <label for="sixmonth">6 Months</label>
+                                                <input type="text" class="form-control" id="sixmonth"
+                                                       name="partners_6_months">
                                             </div>
                                         </div>
                                         <div class="col-4">
                                             <div class="form-group c-dropdown">
-                                                <label for="year"></label>
+                                                <label for="year">5 Years</label>
 
-                                                <input type="text" readonly class="form-control" id="year"
-                                                       name="partners_5_years" placeholder="Year">
-                                                <ul class="c-dropdown-menu">
-                                                    <li><a href="#" class="active">1 in last 1 year</a></li>
-                                                    <li><a href="#">2 in last 1 year</a></li>
-                                                    <li><a href="#">3 in last 1 year</a></li>
-                                                    <li><a href="#">4 in last 1 year</a></li>
-                                                    <li><a href="#">5 in last 1 year</a></li>
-                                                </ul>
+                                                <input type="text" class="form-control" id="year"
+                                                       name="partners_5_years">
                                             </div>
                                         </div>
                                     </div>
@@ -1406,7 +1382,7 @@
                             @csrf
                             <div class="row">
                                 <div class="col-12">
-                                    <h3>Lifestyle,<span> Habbits</span></h3>
+                                    <h3>Lifestyle,<span> Habits</span></h3>
                                 </div>
                             </div>
                             <div class="row">
@@ -1512,7 +1488,7 @@
                                         <label for="d_cigarettesTabacco"></label>
 
                                         <input type="text" class="form-control" id="d_cigarettesTabacco"
-                                               name="tobacco" placeholder="Select">
+                                               name="tobacco" placeholder="Select" readonly>
                                         <ul class="c-dropdown-menu">
                                             <li><a href="#" class="active">Never</a></li>
                                             <li><a href="#">Tried</a></li>
@@ -1803,6 +1779,11 @@
                                     </div>
                                 </div>
 
+                            </div>
+                            <div class="row">
+                                <div class="col-12">
+                                    <h3>Tattoos and <span> Piercings</span></h3>
+                                </div>
                             </div>
                             <div class="row table-responsive">
                                 <table class="table">
@@ -2667,7 +2648,7 @@
                                     </th>
                                     <td>
                                         <div class="form-group c-dropdown">
-                                            <input type="text" class="form-control" id="i_surgery_date_2"
+                                            <input type="text" class="form-control date-picker" id="i_surgery_date_2"
                                                    name="surgery_date[]">
                                         </div>
                                     </td>
@@ -3694,6 +3675,7 @@
                         </div>
                         <div class="row">
                             <h3>Chromosomal <span>Abnormalities</span></h3>
+                            <h3>Psychological History (Answer each question)</h3>
                         </div>
                         <div class="row table-responsive">
                             <table class="table">
@@ -6570,35 +6552,40 @@
                             </div>
                             <div class="col-12 col-md-6">
                                 <div class="form-group">
-                                    <label for="i_maternal_grandmother"> Maternal Grandmother</label>
-                                    <input type="text" class="form-control" id="i_maternal_grandmother"
-                                           name="mothers_mother">
-                                </div>
-                            </div>
-
-                        </div>
-                        <div class="row">
-                            <div class="col-12 col-md-6">
-                                <div class="form-group">
-                                    <label for="i_maternal_grandfather">Maternal Grandfather</label>
-                                    <input type="text" class="form-control" id="i_maternal_grandfather"
-                                           name="mothers_father">
-                                </div>
-                            </div>
-                            <div class="col-12 col-md-6">
-                                <div class="form-group">
 
                                     <label for="i_father">Father</label>
                                     <input type="text" class="form-control" id="i_father" name="father">
                                 </div>
                             </div>
+
+
                         </div>
                         <div class="row">
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
+                                    <label for="i_maternal_grandmother"> Maternal Grandmother</label>
+                                    <input type="text" class="form-control" id="i_maternal_grandmother"
+                                           name="mothers_mother">
+                                </div>
+                            </div>
                             <div class="col-12 col-md-6">
                                 <div class="form-group">
                                     <label for="i_paternal_grandmother">Paternal Grandmother</label>
                                     <input type="text" class="form-control" id="i_paternal_grandmother"
                                            name="fathers_mother">
+                                </div>
+                            </div>
+
+
+
+                        </div>
+                        <div class="row">
+
+                            <div class="col-12 col-md-6">
+                                <div class="form-group">
+                                    <label for="i_maternal_grandfather">Maternal Grandfather</label>
+                                    <input type="text" class="form-control" id="i_maternal_grandfather"
+                                           name="mothers_father">
                                 </div>
                             </div>
                             <div class="col-12 col-md-6">
@@ -6618,7 +6605,7 @@
                             </div>
                             <div class="col-12 col-md-6">
                                 <div class="form-group c-dropdown">
-                                    <label for="d_adopted">Adopted</label>
+                                    <label for="d_adopted">Are you adopted?</label>
                                     <input type="text" readonly class="form-control" id="d_adopted" name="adopted">
                                     <ul class="c-dropdown-menu">
                                         <li><a href="#" class="active">Yes</a></li>
@@ -6628,6 +6615,9 @@
                             </div>
                         </div>
                         <div class="row">
+                            <div class="col-12">
+                                <h3><span>Physical </span>Characteristics</h3>
+                            </div>
                             <div class="col-12 col-md-6">
                                 <div class="form-group c-dropdown">
                                     <label for="d_weight_gain_loss">Weight Gain Or Loss?</label>

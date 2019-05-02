@@ -27,15 +27,16 @@
     </button>
     <div class="collapse navbar-collapse" id="main-nav">
         <ul class="nav navbar-nav ml-auto">
-            <li class="nav-item"><a href="{{route('home')}}#process" class="nav-link active">HOW IT WORKS</a></li>
+            <li class="nav-item"><a href="{{route('frontend.index')}}#process" class="nav-link active">HOW IT WORKS</a>
+            </li>
             @guest
                 <li class="nav-item"><a href="#" data-toggle="modal" data-target="#signup_modal" class="nav-link">SIGN
                         UP</a></li>
                 <li class="nav-item"><a href="{{route('login.show')}}" class="nav-link">LOG IN</a></li>
             @endguest
             @auth
-                <li class="nav-item"><a href="{{route('auth.logout')}}" class="nav-link">LOG OUT</a></li>
                 <li class="nav-item"><a href="{{route('admin.dashboard')}}" class="nav-link">DASHBOARD</a></li>
+                <li class="nav-item"><a href="{{route('auth.logout')}}" class="nav-link">LOG OUT</a></li>
             @endauth
             <li class="nav-item text-center"> &nbsp;&nbsp;&nbsp;&nbsp;<a href="{{route('donor.profiles')}}"
                                                                          class="bttn btn">Donor
