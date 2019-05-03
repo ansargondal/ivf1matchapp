@@ -2183,6 +2183,17 @@
                                 </div>
                             </div>
                             <div class="row">
+                                <div class="col-12 radio-container">
+                                    <p>
+                                        <input type="radio" class="radio" id="test1" name="radio-group" checked>
+                                        <label for="test1"></label>
+                                        <input type="radio" class="radio" id="test2" name="radio-group">
+                                        <label for="test2"> </label>
+                                        <label for="test1" class="statement">
+                                            Have you injected drugs for a non-medical reason in the last 5 years?
+                                        </label>
+                                    </p>
+                                </div>
                                 <div class="col-12">
                                     <div class='checkboxes'>
                                         <label class='checkbox'>
