@@ -518,6 +518,16 @@
                                         </div>
                                     </div>
                                 </div>
+                                <div class="col-12 radio-boxes-container mb-3">
+                                    <div class="radio-boxes">
+                                        <div class="custom-control custom-radio custom-control-inline mr-2">
+                                            <strong>Yes</strong>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline pl-0">
+                                            <strong>No</strong>
+                                        </div>
+                                    </div>
+                                </div>
                                 <div class="col-12 radio-boxes-container">
                                     <div class="radio-boxes">
                                         <div class="custom-control custom-radio custom-control-inline first mr-2">
