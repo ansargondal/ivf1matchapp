@@ -1,5 +1,4 @@
 @extends('layouts.frontend.app')
-@extends('layouts.frontend.app')
 @section('title', 'Donor Questionnaire')
 
 {{--Pusing Donor questionnaire only stylesheets--}}
@@ -519,102 +518,151 @@
                                         </div>
                                     </div>
                                 </div>
-                                <div class="col-12">
-                                    <div class='checkboxes'>
-                                        <label class='checkbox'>
-                                            <input type='hidden' name="q1" value="0">
-                                            <input type='checkbox' name="q1" value="1">
-                                            <span class='indicator'></span>
-                                            Have you had sexual contact with a person who has injected drugs for a
-                                            non-medical reason? (includes intravenous, intramuscular or subcutaneous
-                                            injections)
-                                        </label>
+                                <div class="col-12 radio-boxes-container">
+                                    <div class="radio-boxes">
+                                        <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                            <input type="radio" id="q1-yes-radio" name="q1"
+                                                   class="custom-control-input" value="1">
+                                            <label class="custom-control-label" for="q1-yes-radio"></label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="q1-no-radio" name="q1"
+                                                   class="custom-control-input" value="0">
+                                            <label class="custom-control-label" for="q1-no-radio"></label>
+                                        </div>
                                     </div>
+                                    <label for="q1-yes-radio" class="statement"> Have you had sexual contact with a
+                                        person who has injected drugs for a
+                                        non-medical reason? (includes intravenous, intramuscular or subcutaneous
+                                        injections)</label>
                                 </div>
-                                <div class="col-12">
-                                    <div class='checkboxes'>
-                                        <label class='checkbox'>
-                                            <input type='hidden' name="q2" value="0">
-                                            <input type='checkbox' name="q2" value="1">
-                                            <span class='indicator'></span>
-                                            Have you had sexual contact with a person who has hemophilia or another
-                                            blood
-                                            clotting disorder who may have received human derived blood clotting
-                                            factors?
-                                        </label>
+                                <div class="col-12 radio-boxes-container">
+                                    <div class="radio-boxes">
+                                        <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                            <input type="radio" id="q2-yes-radio" name="q2"
+                                                   class="custom-control-input" value="1">
+                                            <label class="custom-control-label" for="q2-yes-radio"></label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="q2-no-radio" name="q2"
+                                                   class="custom-control-input" value="0">
+                                            <label class="custom-control-label" for="q2-no-radio"></label>
+                                        </div>
                                     </div>
+                                    <label for="q2-yes-radio" class="statement">
+                                        Have you had sexual contact with a person who has hemophilia or another
+                                        blood
+                                        clotting disorder who may have received human derived blood clotting
+                                        factors?
+                                    </label>
                                 </div>
-                                <div class="col-12">
-                                    <div class='checkboxes'>
-                                        <label class='checkbox'>
-                                            <input type='hidden' name="q3" value="0">
-                                            <input type='checkbox' name="q3" value="1">
-                                            <span class='indicator'></span>
-                                            Have you engaged in sexual contact in exchange for money or drugs?
-                                        </label>
+                                <div class="col-12 radio-boxes-container">
+                                    <div class="radio-boxes">
+                                        <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                            <input type="radio" id="q3-yes-radio" name="q3"
+                                                   class="custom-control-input" value="1">
+                                            <label class="custom-control-label" for="q3-yes-radio"></label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="q3-no-radio" name="q3"
+                                                   class="custom-control-input" value="0">
+                                            <label class="custom-control-label" for="q3-no-radio"></label>
+                                        </div>
                                     </div>
+                                    <label for="q3-yes-radio" class="statement"> Have you engaged in sexual contact in
+                                        exchange for money or drugs?</label>
+
                                 </div>
-                                <div class="col-12">
-                                    <div class='checkboxes'>
-                                        <label class='checkbox'>
-                                            <input type='hidden' name="q4" value="0">
-                                            <input type='checkbox' name="q4" value="1">
-                                            <span class='indicator'></span>
-                                            Have you engaged in sexual contact with a person who has had sex in exchange
-                                            for
-                                            money or drugs?
-                                        </label>
+                                <div class="col-12 radio-boxes-container">
+                                    <div class="radio-boxes">
+                                        <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                            <input type="radio" id="q4-yes-radio" name="q4"
+                                                   class="custom-control-input" value="1">
+                                            <label class="custom-control-label" for="q4-yes-radio"></label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="q4-no-radio" name="q4"
+                                                   class="custom-control-input" value="0">
+                                            <label class="custom-control-label" for="q4-no-radio"></label>
+                                        </div>
                                     </div>
+                                    <label for="q4-yes-radio" class="statement"> Have you engaged in sexual contact with
+                                        a person who has had sex in exchange
+                                        for
+                                        money or drugs?</label>
                                 </div>
-                                <div class="col-12">
-                                    <div class='checkboxes'>
-                                        <label class='checkbox'>
-                                            <input type='hidden' name="q5" value="0">
-                                            <input type='checkbox' name="q5" value="1">
-                                            <span class='indicator'></span>
-                                            Have you had sexual contact with any person known or suspected to have
-                                            infection
-                                            with HIV (AIDS), a positive HIV test, Hepatitis B infection, Hepatitis C
-                                            infection, Zika Virus, or any other sexually transmitted infection –
-                                            (Syphilis,
-                                            Gonorrhea, Chlamydia, Venereal Warts, Herpes)?
-                                        </label>
+                                <div class="col-12 radio-boxes-container">
+
+                                    <div class="radio-boxes">
+                                        <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                            <input type="radio" id="q5-yes-radio" name="q5"
+                                                   class="custom-control-input" value="1">
+                                            <label class="custom-control-label" for="q5-yes-radio"></label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="q5-no-radio" name="q5"
+                                                   class="custom-control-input" value="0">
+                                            <label class="custom-control-label" for="q5-no-radio"></label>
+                                        </div>
                                     </div>
+                                    <label for="q5-yes-radio" class="statement">
+                                        Have you had sexual contact with any person known or suspected to have
+                                        infection
+                                        with HIV (AIDS), a positive HIV test, Hepatitis B infection, Hepatitis C
+                                        infection, Zika Virus, or any other sexually transmitted infection –
+                                        (Syphilis,
+                                        Gonorrhea, Chlamydia, Venereal Warts, Herpes)?</label>
                                 </div>
-                                <div class="col-12">
-                                    <div class='checkboxes'>
-                                        <label class='checkbox'>
-                                            <input type='hidden' name="q6" value="0">
-                                            <input type='checkbox' name="q6" value="1">
-                                            <span class='indicator'></span>
-                                            Have you had sexual contact with a man who is homosexual or bisexual?
-                                        </label>
+                                <div class="col-12 radio-boxes-container">
+                                    <div class="radio-boxes">
+                                        <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                            <input type="radio" id="q6-yes-radio" name="q6"
+                                                   class="custom-control-input" value="1">
+                                            <label class="custom-control-label" for="q6-yes-radio"></label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="q6-no-radio" name="q6"
+                                                   class="custom-control-input" value="0">
+                                            <label class="custom-control-label" for="q6-no-radio"></label>
+                                        </div>
                                     </div>
+                                    <label for="q6-yes-radio" class="statement"> Have you had sexual contact with a man
+                                        who is homosexual or bisexual? </label>
                                 </div>
-                                <div class="col-12">
-                                    <div class='checkboxes'>
-                                        <label class='checkbox'>
-                                            <input type='hidden' name="q7" value="0">
-                                            <input type='checkbox' name="q7" value="1">
-                                            <span class='indicator'></span>
-                                            In the last year, have you had vaginal intercourse without the use of a
-                                            condom?
-                                        </label>
+                                <div class="col-12 radio-boxes-container">
+                                    <div class="radio-boxes">
+                                        <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                            <input type="radio" id="q7-yes-radio" name="q7"
+                                                   class="custom-control-input" value="1">
+                                            <label class="custom-control-label" for="q7-yes-radio"></label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="q7-no-radio" name="q7"
+                                                   class="custom-control-input" value="0">
+                                            <label class="custom-control-label" for="q7-no-radio"></label>
+                                        </div>
                                     </div>
+                                    <label for="q7-yes-radio" class="statement"> In the last year, have you had vaginal
+                                        intercourse without the use of a condom?
+                                    </label>
                                 </div>
-                                <div class="col-12">
-                                    <div class='checkboxes'>
-                                        <label class='checkbox'>
-                                            <input type='hidden' name="q8" value="0">
-                                            <input type='checkbox' name="q8" value="1">
-                                            <span class='indicator'></span>
-                                            Have you had sexual contact with an individual who was born in or lived in
-                                            any
-                                            of the following countries since 1977: Cameroon, Central African Republic,
-                                            Chad,
-                                            Congo, Equatorial Guinea, Gabon, Niger or Nigeria?
-                                        </label>
+                                <div class="col-12 radio-boxes-container">
+                                    <div class="radio-boxes">
+                                        <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                            <input type="radio" id="q8-yes-radio" name="q8"
+                                                   class="custom-control-input" value="1">
+                                            <label class="custom-control-label" for="q8-yes-radio"></label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="q8-no-radio" name="q8"
+                                                   class="custom-control-input" value="0">
+                                            <label class="custom-control-label" for="q8-no-radio"></label>
+                                        </div>
                                     </div>
+                                    <label for="q8-yes-radio" class="statement">Have you had sexual contact with an
+                                        individual who was born in or lived in any
+                                        of the following countries since 1977: Cameroon, Central African Republic, Chad,
+                                        Congo, Equatorial Guinea, Gabon, Niger or Nigeria?</label>
                                 </div>
                             </div>
                             <div class="row">
@@ -1074,8 +1122,7 @@
                                             >
                                         </td>
                                         <td>
-                                            <input type="text" class="form-control" id="i_how_pregnancy_end_4"
-
+                                            <input type="text" class="form-control" id="i_how_pregnancy_end_4">
                                         </td>
                                     </tr>
                                     </tbody>
@@ -6575,7 +6622,6 @@
                                            name="fathers_mother">
                                 </div>
                             </div>
-
 
 
                         </div>
