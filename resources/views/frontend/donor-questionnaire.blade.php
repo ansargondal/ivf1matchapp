@@ -1212,7 +1212,7 @@
                                                name="bleeding_lasts_to" placeholder="To">
                                     </div>
                                 </div>
-                                <div class="col-12 radio-boxes-container mb-3">
+                                <div class="col-12 radio-boxes-container mb-3 mt-3">
                                     <div class="radio-boxes checkboxes">
                                         <div class="custom-control custom-radio custom-control-inline mr-2">
                                             <strong>Yes</strong>
@@ -1793,25 +1793,50 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-12">
-                                    <div class='checkboxes'>
-                                        <label class='checkbox'>
-                                            <input type="hidden" name="law_trouble" value="0">
-                                            <input type='checkbox' id="c_trouble_with_law" name="law_trouble" value="1">
-                                            <span class='indicator'></span>
-                                            I have been in trouble with the law.
-                                        </label>
+                                <div class="col-12 radio-boxes-container mb-3 mt-3">
+                                    <div class="radio-boxes checkboxes">
+                                        <div class="custom-control custom-radio custom-control-inline mr-2">
+                                            <strong>Yes</strong>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline pl-0">
+                                            <strong>No</strong>
+                                        </div>
                                     </div>
                                 </div>
-                                <div class="col-12 col-md-6">
-                                    <div class='checkboxes'>
-                                        <label class='checkbox'>
-                                            <input type="hidden" name="arrested" value="0">
-                                            <input type='checkbox' name="arrested" id="c_arrested" value="1">
-                                            <span class='indicator'></span>
-                                            I have been arrested before, but not convicted.
-                                        </label>
+                                <div class="col-12 radio-boxes-container">
+                                    <div class="radio-boxes checkboxes">
+                                        <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                            <input type="radio" id="law-trouble-yes" name="law_trouble"
+                                                   class="custom-control-input" value="1">
+                                            <label class="custom-control-label" for="law-trouble-yes"></label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="law-trouble-no" name="law_trouble"
+                                                   class="custom-control-input" value="0">
+                                            <label class="custom-control-label" for="law-trouble-no"></label>
+                                        </div>
                                     </div>
+                                    <label for="law-trouble-yes" class="statement">
+                                        I have been in trouble with the law.
+                                    </label>
+                                </div>
+
+                                <div class="col-6 radio-boxes-container">
+                                    <div class="radio-boxes checkboxes">
+                                        <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                            <input type="radio" id="arrested-yes" name="arrested"
+                                                   class="custom-control-input" value="1">
+                                            <label class="custom-control-label" for="arrested-yes"></label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="arrested-no" name="arrested"
+                                                   class="custom-control-input" value="0">
+                                            <label class="custom-control-label" for="arrested-no"></label>
+                                        </div>
+                                    </div>
+                                    <label for="arrested-yes" class="statement statement-input">
+                                        I have been arrested before, but not convicted.
+                                    </label>
                                 </div>
                                 <div class="col-12 col-md-6">
                                     <div class="form-group">
@@ -1820,15 +1845,22 @@
                                     </div>
                                 </div>
 
-                                <div class="col-12 col-md-6">
-                                    <div class='checkboxes'>
-                                        <label class='checkbox'>
-                                            <input type="hidden" name="convicted" value="0">
-                                            <input type='checkbox' name="convicted" id="c_convicted" value="1">
-                                            <span class='indicator'></span>
-                                            I have been convicted of a crime.
-                                        </label>
+                                <div class="col-6 radio-boxes-container">
+                                    <div class="radio-boxes checkboxes">
+                                        <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                            <input type="radio" id="convicted-yes" name="convicted"
+                                                   class="custom-control-input" value="1">
+                                            <label class="custom-control-label" for="convicted-yes"></label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="convicted-no" name="convicted"
+                                                   class="custom-control-input" value="0">
+                                            <label class="custom-control-label" for="convicted-no"></label>
+                                        </div>
                                     </div>
+                                    <label for="convicted-yes" class="statement statement-input">
+                                        I have been convicted of a crime.
+                                    </label>
                                 </div>
                                 <div class="col-12 col-md-6">
                                     <div class="form-group">
@@ -1837,28 +1869,41 @@
                                     </div>
                                 </div>
 
-                                <div class="col-12">
-                                    <div class='checkboxes'>
-                                        <label class='checkbox'>
-                                            <input type="hidden" name="hour_jail" value="0">
-                                            <input type='checkbox' name="hour_jail" id="c_spent_one" value="1">
-                                            <span class='indicator'></span>
-                                            I have spent at least one hour in jail or prison.
-                                        </label>
+                                <div class="col-12 radio-boxes-container">
+                                    <div class="radio-boxes checkboxes">
+                                        <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                            <input type="radio" id="hour-jail-yes" name="hour_jail"
+                                                   class="custom-control-input" value="1">
+                                            <label class="custom-control-label" for="hour-jail-yes"></label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="hour-jail-no" name="hour_jail"
+                                                   class="custom-control-input" value="0">
+                                            <label class="custom-control-label" for="hour-jail-no"></label>
+                                        </div>
                                     </div>
+                                    <label for="hour-jail-yes" class="statement">
+                                        I have spent at least one hour in jail or prison.
+                                    </label>
+                                </div>
+                                <div class="col-12 radio-boxes-container">
+                                    <div class="radio-boxes checkboxes">
+                                        <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                            <input type="radio" id="three-days-jail-yes" name="three_days_jail"
+                                                   class="custom-control-input" value="1">
+                                            <label class="custom-control-label" for="three-days-jail-yes"></label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="three-days-jail-no" name="three_days_jail"
+                                                   class="custom-control-input" value="0">
+                                            <label class="custom-control-label" for="three-days-jail-no"></label>
+                                        </div>
+                                    </div>
+                                    <label for="three-days-jail-yes" class="statement">
+                                        I have spent more than 72 consecutive hours in prison in the last year.
+                                    </label>
                                 </div>
 
-                                <div class="col-12">
-                                    <div class='checkboxes'>
-                                        <label class='checkbox'>
-                                            <input type="hidden" name="three_days_jail" value="0">
-                                            <input type='checkbox' name="three_days_jail" id="c_spent_seventy_two"
-                                                   value="1">
-                                            <span class='indicator'></span>
-                                            I have spent more than 72 consecutive hours in prison in the last year.
-                                        </label>
-                                    </div>
-                                </div>
 
                             </div>
                             <div class="row">
@@ -2067,126 +2112,190 @@
                                     </tbody>
                                 </table>
                             </div>
-                            <div class="row">
+                            <div class="row other-history-section">
+
                                 <div class="col-12">
                                     <h3>Other <span>History</span></h3>
                                 </div>
-                                <div class="col-12">
-                                    <div class='checkboxes'>
-                                        <label class='checkbox'>
-                                            <input type="hidden" name="cjd" value="0">
-                                            <input type='checkbox' name="cjd" value="1">
-                                            <span class='indicator'></span>
-                                            Have you ever been diagnosed with vCJD or any other form of CJD?
-                                        </label>
+                                <div class="col-12 radio-boxes-container mb-3 mt-3">
+                                    <div class="radio-boxes checkboxes">
+                                        <div class="custom-control custom-radio custom-control-inline mr-2">
+                                            <strong>Yes</strong>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline pl-0">
+                                            <strong>No</strong>
+                                        </div>
                                     </div>
                                 </div>
-
-                                <div class="col-12">
-                                    <div class='checkboxes'>
-                                        <label class='checkbox'>
-                                            <input type="hidden" name="dementia" value="0">
-                                            <input type='checkbox' name="dementia" value="1">
-                                            <span class='indicator'></span>
-                                            Have you ever been diagnosed with dementia or any degenerative or
-                                            demyelinating
-                                            disease of the central nervous system (CNS) or other neurological disease of
-                                            unknown etiology?
-                                        </label>
+                                <div class="col-12 radio-boxes-container">
+                                    <div class="radio-boxes checkboxes">
+                                        <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                            <input type="radio" id="cjd-yes" name="cjd"
+                                                   class="custom-control-input" value="1">
+                                            <label class="custom-control-label" for="cjd-yes"></label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="cjd-no" name="cjd"
+                                                   class="custom-control-input" value="0">
+                                            <label class="custom-control-label" for="cjd-no"></label>
+                                        </div>
                                     </div>
+                                    <label for="cjd-yes" class="statement">
+                                        Have you ever been diagnosed with vCJD or any other form of CJD?
+                                    </label>
                                 </div>
-
-                                <div class="col-12">
-                                    <div class='checkboxes'>
-                                        <label class='checkbox'>
-                                            <input type="hidden" name="dura_mater" value="0">
-                                            <input type='checkbox' name="dura_mater" value="1">
-                                            <span class='indicator'></span>
-                                            Have you ever received a dura mater transplant?
-                                        </label>
+                                <div class="col-12 radio-boxes-container">
+                                    <div class="radio-boxes checkboxes">
+                                        <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                            <input type="radio" id="dementia-yes" name="dementia"
+                                                   class="custom-control-input" value="1">
+                                            <label class="custom-control-label" for="dementia-yes"></label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="dementia-no" name="dementia"
+                                                   class="custom-control-input" value="0">
+                                            <label class="custom-control-label" for="dementia-no"></label>
+                                        </div>
                                     </div>
+                                    <label for="dementia-yes" class="statement">
+                                        Have you ever been diagnosed with dementia or any degenerative or
+                                        demyelinating
+                                        disease of the central nervous system (CNS) or other neurological disease of
+                                        unknown etiology?
+                                    </label>
                                 </div>
-
-                                <div class="col-12">
-                                    <div class='checkboxes'>
-                                        <label class='checkbox'>
-                                            <input type="hidden" name="human_gh" value="0">
-                                            <input type='checkbox' name="human_gh" value="1">
-                                            <span class='indicator'></span>
-                                            Have you ever received injections of human pituitary-derived growth hormone?
-                                        </label>
+                                <div class="col-12 radio-boxes-container">
+                                    <div class="radio-boxes checkboxes">
+                                        <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                            <input type="radio" id="dura-mater-yes" name="dura_mater"
+                                                   class="custom-control-input" value="1">
+                                            <label class="custom-control-label" for="dura-mater-yes"></label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="dura-mater-no" name="dura_mater"
+                                                   class="custom-control-input" value="0">
+                                            <label class="custom-control-label" for="dura-mater-no"></label>
+                                        </div>
                                     </div>
+                                    <label for="dura-mater-yes" class="statement">
+                                        Have you ever received a dura mater transplant?
+                                    </label>
                                 </div>
-
-                                <div class="col-12">
-                                    <div class='checkboxes'>
-                                        <label class='checkbox'>
-                                            <input type="hidden" name="cjd_family" value="0">
-                                            <input type='checkbox' name="cjd_family" value="1">
-                                            <span class='indicator'></span>
-                                            Has one or more blood relatives been diagnosed with CJD?
-                                        </label>
+                                <div class="col-12 radio-boxes-container">
+                                    <div class="radio-boxes checkboxes">
+                                        <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                            <input type="radio" id="human-gh-yes" name="human_gh"
+                                                   class="custom-control-input" value="1">
+                                            <label class="custom-control-label" for="human-gh-yes"></label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="human-gh-no" name="human_gh"
+                                                   class="custom-control-input" value="0">
+                                            <label class="custom-control-label" for="human-gh-no"></label>
+                                        </div>
                                     </div>
+                                    <label for="human-gh-yes" class="statement">
+                                        Have you ever received injections of human pituitary-derived growth hormone?
+                                    </label>
                                 </div>
-
-                                <div class="col-12">
-                                    <div class='checkboxes'>
-                                        <label class='checkbox'>
-                                            <input type="hidden" name="visit_uk" value="0">
-                                            <input type='checkbox' name="visit_uk" value="1">
-                                            <span class='indicator'></span>
-                                            Have you spent three months or more cumulatively in the U.K. from the
-                                            beginning
-                                            of 1980 through the end of 1996?
-                                        </label>
+                                <div class="col-12 radio-boxes-container">
+                                    <div class="radio-boxes checkboxes">
+                                        <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                            <input type="radio" id="cjd-family-yes" name="cjd_family"
+                                                   class="custom-control-input" value="1">
+                                            <label class="custom-control-label" for="cjd-family-yes"></label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="cjd-family-no" name="cjd_family"
+                                                   class="custom-control-input" value="0">
+                                            <label class="custom-control-label" for="cjd-family-no"></label>
+                                        </div>
                                     </div>
+                                    <label for="cjd-family-yes" class="statement">
+                                        Has one or more blood relatives been diagnosed with CJD?
+                                    </label>
                                 </div>
-
-                                <div class="col-12">
-                                    <div class='checkboxes'>
-                                        <label class='checkbox'>
-                                            <input type="hidden" name="military_member" value="0">
-                                            <input type='checkbox' name="military_member" value="1">
-                                            <span class='indicator'></span>
-                                            Are you a current or former U.S. military member, civilian military
-                                            employee, or
-                                            dependent of a military member or civilian employee who resided at U.S.
-                                            military
-                                            bases in Northern Europe, Germany, U.K., Belgium, and the Netherlands) for 6
-                                            months or more from 1980 through 1990, or elsewhere in Europe (Greece,
-                                            Turkey,
-                                            Spain, Portugal, and Italy) for 6 months or more from 1980 through 1996?
-                                        </label>
+                                <div class="col-12 radio-boxes-container">
+                                    <div class="radio-boxes checkboxes">
+                                        <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                            <input type="radio" id="visit-uk-yes" name="visit_uk"
+                                                   class="custom-control-input" value="1">
+                                            <label class="custom-control-label" for="visit-uk-yes"></label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="visit-uk-no" name="visit_uk"
+                                                   class="custom-control-input" value="0">
+                                            <label class="custom-control-label" for="visit-uk-no"></label>
+                                        </div>
                                     </div>
+                                    <label for="visit-uk-yes" class="statement">
+                                        Have you spent three months or more cumulatively in the U.K. from the
+                                        beginning
+                                        of 1980 through the end of 1996?
+                                    </label>
                                 </div>
-
-                                <div class="col-12">
-                                    <div class='checkboxes'>
-                                        <label class='checkbox'>
-                                            <input type="hidden" name="lived_europe" value="0">
-                                            <input type='checkbox' name="lived_europe" value="1">
-                                            <span class='indicator'></span>
-                                            Have you lived cumulatively for 5 years or more in Europe from 1980 until
-                                            the
-                                            Present?
-                                        </label>
+                                <div class="col-12 radio-boxes-container">
+                                    <div class="radio-boxes checkboxes">
+                                        <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                            <input type="radio" id="military-member-yes" name="military_member"
+                                                   class="custom-control-input" value="1">
+                                            <label class="custom-control-label" for="military-member-yes"></label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="military-member-no" name="military_member"
+                                                   class="custom-control-input" value="0">
+                                            <label class="custom-control-label" for="military-member-no"></label>
+                                        </div>
                                     </div>
+                                    <label for="military-member-yes" class="statement">
+                                        Are you a current or former U.S. military member, civilian military
+                                        employee, or
+                                        dependent of a military member or civilian employee who resided at U.S.
+                                        military
+                                        bases in Northern Europe, Germany, U.K., Belgium, and the Netherlands) for 6
+                                        months or more from 1980 through 1990, or elsewhere in Europe (Greece,
+                                        Turkey,
+                                        Spain, Portugal, and Italy) for 6 months or more from 1980 through 1996?
+                                    </label>
                                 </div>
-
-                                <div class="col-12">
-                                    <div class='checkboxes'>
-                                        <label class='checkbox'>
-                                            <input type="hidden" name="blood_uk" value="0">
-                                            <input type='checkbox' name="blood_uk" value="1">
-                                            <span class='indicator'></span>
-                                            Have you received any transfusion of blood or blood components in the U.K.
-                                            or
-                                            France between 1980 to the present?
-
-                                        </label>
+                                <div class="col-12 radio-boxes-container">
+                                    <div class="radio-boxes checkboxes">
+                                        <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                            <input type="radio" id="lived-europe-yes" name="lived_europe"
+                                                   class="custom-control-input" value="1">
+                                            <label class="custom-control-label" for="lived-europe-yes"></label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="lived-europe-no" name="lived_europe"
+                                                   class="custom-control-input" value="0">
+                                            <label class="custom-control-label" for="lived-europe-no"></label>
+                                        </div>
                                     </div>
+                                    <label for="lived-europe-yes" class="statement">
+                                        Have you lived cumulatively for 5 years or more in Europe from 1980 until
+                                        the
+                                        Present?
+                                    </label>
                                 </div>
-
+                                <div class="col-12 radio-boxes-container">
+                                    <div class="radio-boxes checkboxes">
+                                        <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                            <input type="radio" id="blood-uk-yes" name="blood_uk"
+                                                   class="custom-control-input" value="1">
+                                            <label class="custom-control-label" for="blood-uk-yes"></label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="blood-uk-no" name="blood_uk"
+                                                   class="custom-control-input" value="0">
+                                            <label class="custom-control-label" for="blood-uk-no"></label>
+                                        </div>
+                                    </div>
+                                    <label for="blood-uk-yes" class="statement">
+                                        Have you received any transfusion of blood or blood components in the U.K.
+                                        or
+                                        France between 1980 to the present?
+                                    </label>
+                                </div>
                             </div>
                             <div class="row">
                                 <div class="col-xs-12 text-center">
@@ -2587,7 +2696,8 @@
                         </div>
                         <div class="row">
                             <div class="col-12">
-                                <h3>List any serious <span>medical problems</span> or illnesses. <span>Include any past problems</span>,
+                                <h3>List any serious <span>medical problems</span> or illnesses.
+                                    <span>Include any past problems</span>,
                                     even if they have resolved:</h3>
                             </div>
                         </div>
