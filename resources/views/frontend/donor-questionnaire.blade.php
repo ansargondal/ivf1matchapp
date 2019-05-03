@@ -1138,6 +1138,7 @@
                                     </tbody>
                                 </table>
                             </div>
+
                             <div class="row">
                                 <div class="col-12">
                                     <ul>
@@ -1156,9 +1157,8 @@
                                     <div class="form-group c-dropdown">
                                         <label for="firstPeriod"></label>
 
-                                        <input type="text" readonly class="form-control" id="firstPeriod"
-                                               name="first_period"
-                                               placeholder="<10">
+                                        <input type="text" readonly="" class="form-control" id="firstPeriod"
+                                               name="first_period" placeholder="<10">
                                         <ul class="c-dropdown-menu">
                                             <li><a href="#" class="">&lt;8</a></li>
                                             <li><a href="#">8</a></li>
@@ -1184,15 +1184,15 @@
                                 <div class="col-6 col-md-3 ">
                                     <div class="form-group c-dropdown">
                                         <input type="text" class="form-control" id="bleeding_begins"
-                                               name="bleeding_begins"
-                                               placeholder="From">
+                                               name="bleeding_begins" placeholder="From">
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-3 mb-4 ">
                                     <div class="form-group c-dropdown" id="menmonth">
                                         <!-- <label for="menstrualMonths"></label> -->
-                                        <input type="text" class="form-control" id="bleeding_ends"
-                                               name="bleeding_ends" placeholder="To">
+
+                                        <input type="text" class="form-control" id="bleeding_ends" name="bleeding_ends"
+                                               placeholder="To">
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6">
@@ -1203,84 +1203,94 @@
                                 <div class="col-6 col-md-3 ">
                                     <div class="form-group c-dropdown">
                                         <input type="text" class="form-control" id="bleeding_lasts_from"
-                                               name="bleeding_lasts_from"
-                                               placeholder="From">
+                                               name="bleeding_lasts_from" placeholder="From">
                                     </div>
                                 </div>
                                 <div class="col-6 col-md-3 mb-4 ">
                                     <div class="form-group c-dropdown" id="menmonth">
-
                                         <input type="text" class="form-control" id="bleeding_lasts_to"
                                                name="bleeding_lasts_to" placeholder="To">
                                     </div>
                                 </div>
-                                <div class="col-12 radio-boxes-container">
-                                    <div class="radio-boxes">
-                                        <div class="custom-control custom-radio custom-control-inline first mr-2">
-                                            <input type="radio" id="q2-yes-radio" name="q2"
-                                                   class="custom-control-input" value="1">
-                                            <label class="custom-control-label" for="q2-yes-radio"></label>
+                                <div class="col-12 radio-boxes-container mb-3">
+                                    <div class="radio-boxes checkboxes">
+                                        <div class="custom-control custom-radio custom-control-inline mr-2">
+                                            <strong>Yes</strong>
                                         </div>
-                                        <div class="custom-control custom-radio custom-control-inline">
-                                            <input type="radio" id="q2-no-radio" name="q2"
-                                                   class="custom-control-input" value="0">
-                                            <label class="custom-control-label" for="q2-no-radio"></label>
+                                        <div class="custom-control custom-radio custom-control-inline pl-0">
+                                            <strong>No</strong>
                                         </div>
-                                        <label for="q2-yes-radio" class=".statement">Have you ever had a pelvic
-                                            exam?</label>
                                     </div>
                                 </div>
-                                {{--                                <div class="col-12">
-                                                                    <div class='checkboxes'>
-                                                                        <label class='checkbox'>
-                                                                            <input type="hidden" name="pelvic_exam" value="0">
-                                                                            <input type='checkbox' name="pelvic_exam" value="1">
-                                                                            <span class='indicator'></span>
-                                                                            Have you ever had a pelvic exam?
-                                                                        </label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-12">
-                                                                    <div class='checkboxes'>
-                                                                        <label class='checkbox'>
-                                                                            <input type="hidden" name="abnormal_pap" value="0">
-                                                                            <input type='checkbox' name="abnormal_pap" value="1">
-                                                                            <span class='indicator'></span>
-                                                                            Have you ever had an abnormal PAP smear?
-                                                                        </label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-12">
-                                                                    <div class='checkboxes'>
-                                                                        <label class='checkbox'>
-                                                                            <input type="hidden" name="pregnancy_issues" value="0">
-                                                                            <input type='checkbox' name="pregnancy_issues" value="1">
-                                                                            <span class='indicator'></span>
-                                                                            Have you ever been told you might have trouble having children?
-                                                                        </label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-12">
-                                                                    <div class='checkboxes'>
-                                                                        <label class='checkbox'>
+                                <div class="col-12 radio-boxes-container">
+                                    <div class="radio-boxes checkboxes">
+                                        <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                            <input type="radio" id="abnormal-pap-yes" name="abnormal_pap"
+                                                   class="custom-control-input" value="1">
+                                            <label class="custom-control-label" for="abnormal-pap-yes"></label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="abnormal-pap-no" name="abnormal_pap"
+                                                   class="custom-control-input" value="0">
+                                            <label class="custom-control-label" for="abnormal-pap-no"></label>
+                                        </div>
+                                    </div>
+                                    <label for="abnormal-pap-yes" class="statement">
+                                        Have you ever had an abnormal PAP smear?
+                                    </label>
+                                </div>
 
-                                                                            <input type="hidden" name="bleeding_between" value="0">
-                                                                            <input type='checkbox' name="bleeding_between" value="1">
-                                                                            <span class='indicator'></span>
-                                                                            I sometimes have bleeding in between my normal periods.
-                                                                        </label>
-                                                                    </div>
-                                                                </div>
-                                                                <div class="col-12">
-                                                                    <div class='checkboxes'>
-                                                                        <label class='checkbox'>
-                                                                            <input type="hidden" name="bleeding_after" value="0">
-                                                                            <input type='checkbox' name="bleeding_after" value="1">
-                                                                            <span class='indicator'></span>
-                                                                            I sometimes have bleeding after intercourse.
-                                                                        </label>
-                                                                    </div>
-                                                                </div>--}}
+                                <div class="col-12 radio-boxes-container">
+                                    <div class="radio-boxes checkboxes">
+                                        <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                            <input type="radio" id="pregnancy-issues-yes" name="pregnancy_issues"
+                                                   class="custom-control-input" value="1">
+                                            <label class="custom-control-label" for="pregnancy-issues-yes"></label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="pregnancy-issues-no" name="pregnancy_issues"
+                                                   class="custom-control-input" value="0">
+                                            <label class="custom-control-label" for="pregnancy-issues-no"></label>
+                                        </div>
+                                    </div>
+                                    <label for="pregnancy-issues-yes" class="statement">
+                                        Have you ever been told you might have trouble having children?
+                                    </label>
+                                </div>
+                                <div class="col-12 radio-boxes-container mt-0">
+                                    <div class="radio-boxes checkboxes">
+                                        <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                            <input type="radio" id="bleeding-between-yes" name="bleeding_between"
+                                                   class="custom-control-input" value="1">
+                                            <label class="custom-control-label" for="bleeding-between-yes"></label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="bleeding-between-no" name="bleeding_between"
+                                                   class="custom-control-input" value="0">
+                                            <label class="custom-control-label" for="bleeding-between-no"></label>
+                                        </div>
+                                    </div>
+                                    <label for="bleeding-between-yes" class="statement">
+                                        I sometimes have bleeding in between my normal periods.
+                                    </label>
+                                </div>
+                                <div class="col-12 radio-boxes-container">
+                                    <div class="radio-boxes checkboxes">
+                                        <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                            <input type="radio" id="bleeding-after-yes" name="bleeding_after"
+                                                   class="custom-control-input" value="1">
+                                            <label class="custom-control-label" for="bleeding-after-yes"></label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="bleeding-after-no" name="bleeding_after"
+                                                   class="custom-control-input" value="0">
+                                            <label class="custom-control-label" for="bleeding-after-no"></label>
+                                        </div>
+                                    </div>
+                                    <label for="bleeding-after-yes" class="statement">
+                                        I sometimes have bleeding after intercourse.
+                                    </label>
+                                </div>
                                 <div class="col-12 col-md-6">
                                     <ul>
                                         <li>Date of last PAP smear</li>
@@ -1289,7 +1299,6 @@
                                 <div class="col-12 col-md-6">
                                     <div class="form-group c-dropdown">
                                         <!-- <label for="lastpap"></label> -->
-
                                         <input type="text" class="form-control" id="lastpap" name="last_pap_date"
                                                placeholder="">
                                     </div>
