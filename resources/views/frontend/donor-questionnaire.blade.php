@@ -1191,7 +1191,6 @@
                                 <div class="col-6 col-md-3 mb-4 ">
                                     <div class="form-group c-dropdown" id="menmonth">
                                         <!-- <label for="menstrualMonths"></label> -->
-
                                         <input type="text" class="form-control" id="bleeding_ends"
                                                name="bleeding_ends" placeholder="To">
                                     </div>
@@ -1215,57 +1214,73 @@
                                                name="bleeding_lasts_to" placeholder="To">
                                     </div>
                                 </div>
-                                <div class="col-12">
-                                    <div class='checkboxes'>
-                                        <label class='checkbox'>
-                                            <input type="hidden" name="pelvic_exam" value="0">
-                                            <input type='checkbox' name="pelvic_exam" value="1">
-                                            <span class='indicator'></span>
-                                            Have you ever had a pelvic exam?
-                                        </label>
+                                <div class="col-12 radio-boxes-container">
+                                    <div class="radio-boxes">
+                                        <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                            <input type="radio" id="q2-yes-radio" name="q2"
+                                                   class="custom-control-input" value="1">
+                                            <label class="custom-control-label" for="q2-yes-radio"></label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="q2-no-radio" name="q2"
+                                                   class="custom-control-input" value="0">
+                                            <label class="custom-control-label" for="q2-no-radio"></label>
+                                        </div>
+                                        <label for="q2-yes-radio" class=".statement">Have you ever had a pelvic
+                                            exam?</label>
                                     </div>
                                 </div>
-                                <div class="col-12">
-                                    <div class='checkboxes'>
-                                        <label class='checkbox'>
-                                            <input type="hidden" name="abnormal_pap" value="0">
-                                            <input type='checkbox' name="abnormal_pap" value="1">
-                                            <span class='indicator'></span>
-                                            Have you ever had an abnormal PAP smear?
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class='checkboxes'>
-                                        <label class='checkbox'>
-                                            <input type="hidden" name="pregnancy_issues" value="0">
-                                            <input type='checkbox' name="pregnancy_issues" value="1">
-                                            <span class='indicator'></span>
-                                            Have you ever been told you might have trouble having children?
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class='checkboxes'>
-                                        <label class='checkbox'>
+                                {{--                                <div class="col-12">
+                                                                    <div class='checkboxes'>
+                                                                        <label class='checkbox'>
+                                                                            <input type="hidden" name="pelvic_exam" value="0">
+                                                                            <input type='checkbox' name="pelvic_exam" value="1">
+                                                                            <span class='indicator'></span>
+                                                                            Have you ever had a pelvic exam?
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <div class='checkboxes'>
+                                                                        <label class='checkbox'>
+                                                                            <input type="hidden" name="abnormal_pap" value="0">
+                                                                            <input type='checkbox' name="abnormal_pap" value="1">
+                                                                            <span class='indicator'></span>
+                                                                            Have you ever had an abnormal PAP smear?
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <div class='checkboxes'>
+                                                                        <label class='checkbox'>
+                                                                            <input type="hidden" name="pregnancy_issues" value="0">
+                                                                            <input type='checkbox' name="pregnancy_issues" value="1">
+                                                                            <span class='indicator'></span>
+                                                                            Have you ever been told you might have trouble having children?
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <div class='checkboxes'>
+                                                                        <label class='checkbox'>
 
-                                            <input type="hidden" name="bleeding_between" value="0">
-                                            <input type='checkbox' name="bleeding_between" value="1">
-                                            <span class='indicator'></span>
-                                            I sometimes have bleeding in between my normal periods.
-                                        </label>
-                                    </div>
-                                </div>
-                                <div class="col-12">
-                                    <div class='checkboxes'>
-                                        <label class='checkbox'>
-                                            <input type="hidden" name="bleeding_after" value="0">
-                                            <input type='checkbox' name="bleeding_after" value="1">
-                                            <span class='indicator'></span>
-                                            I sometimes have bleeding after intercourse.
-                                        </label>
-                                    </div>
-                                </div>
+                                                                            <input type="hidden" name="bleeding_between" value="0">
+                                                                            <input type='checkbox' name="bleeding_between" value="1">
+                                                                            <span class='indicator'></span>
+                                                                            I sometimes have bleeding in between my normal periods.
+                                                                        </label>
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col-12">
+                                                                    <div class='checkboxes'>
+                                                                        <label class='checkbox'>
+                                                                            <input type="hidden" name="bleeding_after" value="0">
+                                                                            <input type='checkbox' name="bleeding_after" value="1">
+                                                                            <span class='indicator'></span>
+                                                                            I sometimes have bleeding after intercourse.
+                                                                        </label>
+                                                                    </div>
+                                                                </div>--}}
                                 <div class="col-12 col-md-6">
                                     <ul>
                                         <li>Date of last PAP smear</li>
@@ -2183,16 +2198,26 @@
                                 </div>
                             </div>
                             <div class="row">
-                                <div class="col-12 radio-container">
-                                    <p>
-                                        <input type="radio" class="radio" id="test1" name="radio-group" checked>
-                                        <label for="test1"></label>
-                                        <input type="radio" class="radio" id="test2" name="radio-group">
-                                        <label for="test2"> </label>
-                                        <label for="test1" class="statement">
-                                            Have you injected drugs for a non-medical reason in the last 5 years?
-                                        </label>
-                                    </p>
+                                <div class="col-12 radio-boxes-container">
+                                    <div class="checkboxes radio-boxes">
+                                        {{--                                        <div class="col-12 radio-boxes-container">--}}
+                                        {{--                                            <div class="radio-boxes">--}}
+                                        <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                            <input type="radio" id="ddk" name="q3" class="custom-control-input"
+                                                   value="1">
+                                            <label class="custom-control-label" for="ddk"></label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="ddkk" name="q3" class="custom-control-input"
+                                                   value="0">
+                                            <label class="custom-control-label" for="ddkk"></label>
+                                        </div>
+                                    </div>
+                                    <label for="ddk" class="statement"> Have you engaged in sexual contact in
+                                        exchange for money or drugs?</label>
+
+                                    {{--                                        </div>--}}
+                                    {{--                                    </div>--}}
                                 </div>
                                 <div class="col-12">
                                     <div class='checkboxes'>
