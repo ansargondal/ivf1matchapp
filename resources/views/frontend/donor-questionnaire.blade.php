@@ -2568,7 +2568,8 @@
                                             <label class="custom-control-label" for="gonorrhea-yes"></label>
                                         </div>
                                         <div class="custom-control custom-radio custom-control-inline">
-                                            <input type="radio" id="gonorrhea-no" name="gonorrhea" class="custom-control-input"
+                                            <input type="radio" id="gonorrhea-no" name="gonorrhea"
+                                                   class="custom-control-input"
                                                    value="0">
                                             <label class="custom-control-label" for="gonorrhea-no"></label>
                                         </div>
@@ -2607,12 +2608,14 @@
                                 <div class="col-6 radio-boxes-container">
                                     <div class="checkboxes radio-boxes">
                                         <div class="custom-control custom-radio custom-control-inline first mr-2">
-                                            <input type="radio" id="donor-rejection-yes" name="donor_rejection" class="custom-control-input"
+                                            <input type="radio" id="donor-rejection-yes" name="donor_rejection"
+                                                   class="custom-control-input"
                                                    value="1">
                                             <label class="custom-control-label" for="donor-rejection-yes"></label>
                                         </div>
                                         <div class="custom-control custom-radio custom-control-inline">
-                                            <input type="radio" id="donor-rejection-no" name="donor_rejection" class="custom-control-input"
+                                            <input type="radio" id="donor-rejection-no" name="donor_rejection"
+                                                   class="custom-control-input"
                                                    value="0">
                                             <label class="custom-control-label" for="donor-rejection-no"></label>
                                         </div>
@@ -2630,12 +2633,14 @@
                                 <div class="col-12 radio-boxes-container">
                                     <div class="checkboxes radio-boxes">
                                         <div class="custom-control custom-radio custom-control-inline first mr-2">
-                                            <input type="radio" id="transplant-yes" name="transplant" class="custom-control-input"
+                                            <input type="radio" id="transplant-yes" name="transplant"
+                                                   class="custom-control-input"
                                                    value="1">
                                             <label class="custom-control-label" for="transplant-yes"></label>
                                         </div>
                                         <div class="custom-control custom-radio custom-control-inline">
-                                            <input type="radio" id="transplant-no" name="transplant" class="custom-control-input"
+                                            <input type="radio" id="transplant-no" name="transplant"
+                                                   class="custom-control-input"
                                                    value="0">
                                             <label class="custom-control-label" for="transplant-no"></label>
                                         </div>
@@ -2648,12 +2653,14 @@
                                 <div class="col-12 radio-boxes-container">
                                     <div class="checkboxes radio-boxes">
                                         <div class="custom-control custom-radio custom-control-inline first mr-2">
-                                            <input type="radio" id="transplant-contact-yes" name="transplant_contact" class="custom-control-input"
+                                            <input type="radio" id="transplant-contact-yes" name="transplant_contact"
+                                                   class="custom-control-input"
                                                    value="1">
                                             <label class="custom-control-label" for="transplant-contact-yes"></label>
                                         </div>
                                         <div class="custom-control custom-radio custom-control-inline">
-                                            <input type="radio" id="transplant-contact-no" name="transplant_contact" class="custom-control-input"
+                                            <input type="radio" id="transplant-contact-no" name="transplant_contact"
+                                                   class="custom-control-input"
                                                    value="0">
                                             <label class="custom-control-label" for="transplant-contact-no"></label>
                                         </div>
@@ -2669,12 +2676,14 @@
                                 <div class="col-12 radio-boxes-container">
                                     <div class="checkboxes radio-boxes">
                                         <div class="custom-control custom-radio custom-control-inline first mr-2">
-                                            <input type="radio" id="african-countries-yes" name="african_countries" class="custom-control-input"
+                                            <input type="radio" id="african-countries-yes" name="african_countries"
+                                                   class="custom-control-input"
                                                    value="1">
                                             <label class="custom-control-label" for="african-countries-yes"></label>
                                         </div>
                                         <div class="custom-control custom-radio custom-control-inline">
-                                            <input type="radio" id="african-countries-no" name="african_countries" class="custom-control-input"
+                                            <input type="radio" id="african-countries-no" name="african_countries"
+                                                   class="custom-control-input"
                                                    value="0">
                                             <label class="custom-control-label" for="african-countries-no"></label>
                                         </div>
@@ -2690,12 +2699,14 @@
                                 <div class="col-12 radio-boxes-container">
                                     <div class="checkboxes radio-boxes">
                                         <div class="custom-control custom-radio custom-control-inline first mr-2">
-                                            <input type="radio" id="african-transfusion-yes" name="african_transfusion" class="custom-control-input"
+                                            <input type="radio" id="african-transfusion-yes" name="african_transfusion"
+                                                   class="custom-control-input"
                                                    value="1">
                                             <label class="custom-control-label" for="african-transfusion-yes"></label>
                                         </div>
                                         <div class="custom-control custom-radio custom-control-inline">
-                                            <input type="radio" id="african-transfusion-no" name="african_transfusion" class="custom-control-input"
+                                            <input type="radio" id="african-transfusion-no" name="african_transfusion"
+                                                   class="custom-control-input"
                                                    value="0">
                                             <label class="custom-control-label" for="african-transfusion-no"></label>
                                         </div>
@@ -2717,12 +2728,14 @@
                                 <div class="col-12 radio-boxes-container">
                                     <div class="checkboxes radio-boxes">
                                         <div class="custom-control custom-radio custom-control-inline first mr-2">
-                                            <input type="radio" id="zika-virus-1-yes" name="zika_virus_1" class="custom-control-input"
+                                            <input type="radio" id="zika-virus-1-yes" name="zika_virus_1"
+                                                   class="custom-control-input"
                                                    value="1">
                                             <label class="custom-control-label" for="zika-virus-1-yes"></label>
                                         </div>
                                         <div class="custom-control custom-radio custom-control-inline">
-                                            <input type="radio" id="zika-virus-1-no" name="zika_virus_1" class="custom-control-input"
+                                            <input type="radio" id="zika-virus-1-no" name="zika_virus_1"
+                                                   class="custom-control-input"
                                                    value="0">
                                             <label class="custom-control-label" for="zika-virus-1-no"></label>
                                         </div>
@@ -2734,12 +2747,14 @@
                                 <div class="col-12 radio-boxes-container">
                                     <div class="checkboxes radio-boxes">
                                         <div class="custom-control custom-radio custom-control-inline first mr-2">
-                                            <input type="radio" id="zika-virus-2-yes" name="zika_virus_2" class="custom-control-input"
+                                            <input type="radio" id="zika-virus-2-yes" name="zika_virus_2"
+                                                   class="custom-control-input"
                                                    value="1">
                                             <label class="custom-control-label" for="zika-virus-2-yes"></label>
                                         </div>
                                         <div class="custom-control custom-radio custom-control-inline">
-                                            <input type="radio" id="zika-virus-2-no" name="zika_virus_2" class="custom-control-input"
+                                            <input type="radio" id="zika-virus-2-no" name="zika_virus_2"
+                                                   class="custom-control-input"
                                                    value="0">
                                             <label class="custom-control-label" for="zika-virus-2-no"></label>
                                         </div>
@@ -2753,12 +2768,14 @@
                                 <div class="col-12 radio-boxes-container">
                                     <div class="checkboxes radio-boxes">
                                         <div class="custom-control custom-radio custom-control-inline first mr-2">
-                                            <input type="radio" id="zika-virus-3-yes" name="zika_virus_3" class="custom-control-input"
+                                            <input type="radio" id="zika-virus-3-yes" name="zika_virus_3"
+                                                   class="custom-control-input"
                                                    value="1">
                                             <label class="custom-control-label" for="zika-virus-3-yes"></label>
                                         </div>
                                         <div class="custom-control custom-radio custom-control-inline">
-                                            <input type="radio" id="zika-virus-3-no" name="zika_virus_3" class="custom-control-input"
+                                            <input type="radio" id="zika-virus-3-no" name="zika_virus_3"
+                                                   class="custom-control-input"
                                                    value="0">
                                             <label class="custom-control-label" for="zika-virus-3-no"></label>
                                         </div>
@@ -2772,12 +2789,14 @@
                                 <div class="col-12 radio-boxes-container">
                                     <div class="checkboxes radio-boxes">
                                         <div class="custom-control custom-radio custom-control-inline first mr-2">
-                                            <input type="radio" id="zika-virus-4-yes" name="zika_virus_4" class="custom-control-input"
+                                            <input type="radio" id="zika-virus-4-yes" name="zika_virus_4"
+                                                   class="custom-control-input"
                                                    value="1">
                                             <label class="custom-control-label" for="zika-virus-4-yes"></label>
                                         </div>
                                         <div class="custom-control custom-radio custom-control-inline">
-                                            <input type="radio" id="zika-virus-4-no" name="zika_virus_4" class="custom-control-input"
+                                            <input type="radio" id="zika-virus-4-no" name="zika_virus_4"
+                                                   class="custom-control-input"
                                                    value="0">
                                             <label class="custom-control-label" for="zika-virus-4-no"></label>
                                         </div>
@@ -3451,14 +3470,14 @@
                                 <thead>
                                 <tr>
                                     <th scope="col"></th>
-                                    <th scope="col"></th>
-                                    <th scope="col">Family</th>
+                                    <th scope="col"><strong>You</strong></th>
+                                    <th scope="col"><strong>Family</strong></th>
                                     <th scope="col"></th>
                                 </tr>
                                 <tr>
                                     <th scope="col">Medical Problem</th>
-                                    <th scope="col">Yes/No</th>
-                                    <th scope="col">Yes/No</th>
+                                    <th scope="col">Yes &nbsp; No</th>
+                                    <th scope="col">Yes &nbsp; No</th>
                                     <th scope="col">Comments (Which family member, severity, etc)</th>
                                 </tr>
                                 </thead>
@@ -3470,25 +3489,34 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_cleftlip"></label>
-                                            <input type="text" readonly class="form-control" id="d_cleftlip"
-                                                   name="cleft_lip" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="cleft-lip-yes" name="cleft_lip"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="cleft-lip-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="cleft-lip-no" name="cleft_lip"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="cleft-lip-no"></label>
+                                            </div>
                                         </div>
-                                    </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_f_cleftlip"></label>
-                                            <input type="text" readonly class="form-control" id="d_f_cleftlip"
-                                                   name="cleft_lip_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="cleft-lip-family-yes" name="cleft_lip_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="cleft-lip-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="cleft-lip-family-no" name="cleft_lip_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="cleft-lip-family-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
@@ -3505,25 +3533,37 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_cleftPalate"></label>
-                                            <input type="text" readonly class="form-control" id="d_cleftpalate"
-                                                   name="cleft_palate" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="cleft-palate-yes" name="cleft_palate"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="cleft-palate-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="cleft-palate-no" name="cleft_palate"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="cleft-palate-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_f_cleftpalate"></label>
-                                            <input type="text" readonly class="form-control" id="d_f_cleftpalate"
-                                                   name="cleft_palate_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="cleft-palate-family-yes"
+                                                       name="cleft_palate_family" class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="cleft-palate-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="cleft-palate-family-no"
+                                                       name="cleft_palate_family" class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label"
+                                                       for="cleft-palate-family-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
@@ -3540,25 +3580,39 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_congenitalhip"></label>
-                                            <input type="text" readonly class="form-control" id="d_congenitalhip"
-                                                   name="hip_dislocation" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="hip-dislocation-yes" name="hip_dislocation"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="hip-dislocation-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="hip-dislocation-no" name="hip_dislocation"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="hip-dislocation-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_f_congenitalhip"></label>
-                                            <input type="text" readonly class="form-control" id="d_f_congenitalhip"
-                                                   name="hip_dislocation_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="hip-dislocation-family-yes"
+                                                       name="hip_dislocation_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="hip-dislocation-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="hip-dislocation-family-no"
+                                                       name="hip_dislocation_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label"
+                                                       for="hip-dislocation-family-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
@@ -3575,25 +3629,35 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_clubfoot"></label>
-                                            <input type="text" readonly class="form-control" id="d_clubfoot"
-                                                   name="clubfoot" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="clubfoot-yes" name="clubfoot"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="clubfoot-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="clubfoot-no" name="clubfoot"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="clubfoot-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_f_clubfoot"></label>
-                                            <input type="text" readonly class="form-control" id="d_f_clubfoot"
-                                                   name="clubfoot_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="clubfoot-family-yes" name="clubfoot_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="clubfoot-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="clubfoot-family-no" name="clubfoot_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="clubfoot-family-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
@@ -3610,25 +3674,39 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_heartDefect"></label>
-                                            <input type="text" readonly class="form-control" id="d_heartdefect"
-                                                   name="heart_defect" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="heart-defect-yes" name="heart_defect"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="heart-defect-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="heart-defect-no" name="heart_defect"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="heart-defect-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_f_heartdefect"></label>
-                                            <input type="text" readonly class="form-control" id="d_f_heartdefect"
-                                                   name="heart_defect_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="heart-defect-family-yes"
+                                                       name="heart_defect_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="heart-defect-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="heart-defect-family-no"
+                                                       name="heart_defect_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label"
+                                                       for="heart-defect-family-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
@@ -3645,25 +3723,39 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_hearingproblems"></label>
-                                            <input type="text" readonly class="form-control" id="d_hearingproblems"
-                                                   name="hearing_issue" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="hearing-issue-yes" name="hearing_issue"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="hearing-issue-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="hearing-issue-no" name="hearing_issue"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="hearing-issue-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_f_hearingproblems"></label>
-                                            <input type="text" readonly class="form-control" id="d_f_hearingproblems"
-                                                   name="hearing_issue_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="hearing-issue-family-yes"
+                                                       name="hearing_issue_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="hearing-issue-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="hearing-issue-family-no"
+                                                       name="hearing_issue_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label"
+                                                       for="hearing-issue-family-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
@@ -3680,27 +3772,39 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_spina"></label>
-                                            <input type="text" readonly class="form-control" id="d_spina"
-                                                   name="spina_bifida"
-                                                   placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="spina-bifida-yes" name="spina_bifida"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="spina-bifida-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="spina-bifida-no" name="spina_bifida"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="spina-bifida-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_f_spina"></label>
-                                            <input type="text" readonly class="form-control" id="d_f_spina"
-                                                   name="spina_bifida_family"
-                                                   placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="spina-bifida-family-yes"
+                                                       name="spina_bifida_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="spina-bifida-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="spina-bifida-family-no"
+                                                       name="spina_bifida_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label"
+                                                       for="spina-bifida-family-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
@@ -3717,25 +3821,39 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_microcephaly"></label>
-                                            <input type="text" readonly class="form-control" id="d_microcephaly"
-                                                   name="microcephaly" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="microcephaly-yes" name="microcephaly"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="microcephaly-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="microcephaly-no" name="microcephaly"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="microcephaly-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_f_microcephaly"></label>
-                                            <input type="text" readonly class="form-control" id="d_f_microcephaly"
-                                                   name="microcephaly_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="microcephaly-family-yes"
+                                                       name="microcephaly_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="microcephaly-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="microcephaly-family-no"
+                                                       name="microcephaly_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label"
+                                                       for="microcephaly-family-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
@@ -3752,25 +3870,39 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_holoprosencephaly"></label>
-                                            <input type="text" readonly class="form-control" id="d_holoprosencephaly"
-                                                   name="holoprosencephaly" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="holoprosencephaly-yes" name="holoprosencephaly"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="holoprosencephaly-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="holoprosencephaly-no" name="holoprosencephaly"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="holoprosencephaly-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_f_holoprosencephaly"></label>
-                                            <input type="text" readonly class="form-control" id="d_f_holoprosencephaly"
-                                                   name="holoprosencephaly_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="holoprosencephaly-family-yes"
+                                                       name="holoprosencephaly_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="holoprosencephaly-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="holoprosencephaly-family-no"
+                                                       name="holoprosencephaly_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label"
+                                                       for="holoprosencephaly-family-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
@@ -3787,25 +3919,39 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_babiesdiedatbirth"></label>
-                                            <input type="text" readonly class="form-control" id="d_babiesdiedatbirth"
-                                                   name="death_at_birth" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="death-at-birth-yes" name="death_at_birth"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="death-at-birth-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="death-at-birth-no" name="death_at_birth"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="death-at-birth-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_f_babiesdiedatbirth"></label>
-                                            <input type="text" readonly class="form-control" id="d_f_babiesdiedatbirth"
-                                                   name="death_at_birth_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="death-at-birth-family-yes"
+                                                       name="death_at_birth_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="death-at-birth-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="death-at-birth-family-no"
+                                                       name="death_at_birth_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label"
+                                                       for="death-at-birth-family-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
@@ -3822,25 +3968,35 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_dwarfism"></label>
-                                            <input type="text" readonly class="form-control" id="d_dwarfism"
-                                                   name="dwarfism" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="dwarfism-yes" name="dwarfism"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="dwarfism-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="dwarfism-no" name="dwarfism"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="dwarfism-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_f_dwarfism"></label>
-                                            <input type="text" readonly class="form-control" id="d_f_dwarfism"
-                                                   name="dwarfism_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="dwarfism-family-yes" name="dwarfism_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="dwarfism-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="dwarfism-family-no" name="dwarfism_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="dwarfism-family-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
@@ -3857,25 +4013,37 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_hypospadias"></label>
-                                            <input type="text" readonly class="form-control" id="d_hypospadias"
-                                                   name="hypospadias" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="hypospadias-yes" name="hypospadias"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="hypospadias-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="hypospadias-no" name="hypospadias"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="hypospadias-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_f_hypospadias"></label>
-                                            <input type="text" readonly class="form-control" id="d_f_hypospadias"
-                                                   name="hypospadias_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="hypospadias-family-yes"
+                                                       name="hypospadias_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="hypospadias-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="hypospadias-family-no" name="hypospadias_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="hypospadias-family-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
@@ -3892,25 +4060,35 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_phenylketonuria"></label>
-                                            <input type="text" readonly class="form-control" id="d_phenylketonuria"
-                                                   name="pheny" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="pheny-yes" name="pheny"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="pheny-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="pheny-no" name="pheny"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="pheny-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_f_phenylketonuria"></label>
-                                            <input type="text" readonly class="form-control" id="d_f_phenylketonuria"
-                                                   name="pheny_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="pheny-family-yes" name="pheny_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="pheny-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="pheny-family-no" name="pheny_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="pheny-family-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
@@ -3927,25 +4105,35 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_polycystickidney"></label>
-                                            <input type="text" readonly class="form-control" id="d_polycystickidney"
-                                                   name="polycystic" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="polycystic-yes" name="polycystic"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="polycystic-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="polycystic-no" name="polycystic"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="polycystic-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_f_polycystickidney"></label>
-                                            <input type="text" readonly class="form-control" id="d_f_polycystickidney"
-                                                   name="polycystic_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="polycystic-family-yes" name="polycystic_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="polycystic-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="polycystic-family-no" name="polycystic_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="polycystic-family-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
@@ -3962,25 +4150,35 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_pyloricstenosis"></label>
-                                            <input type="text" readonly class="form-control" id="d_pyloricstenosis"
-                                                   name="pyloric" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="pyloric-yes" name="pyloric"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="pyloric-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="pyloric-no" name="pyloric"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="pyloric-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_f_pyloricstenosis"></label>
-                                            <input type="text" readonly class="form-control" id="d_f_pyloricstenosis"
-                                                   name="pyloric_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="pyloric-family-yes" name="pyloric_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="pyloric-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="pyloric-family-no" name="pyloric_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="pyloric-family-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
@@ -3997,25 +4195,39 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_othercogenital"></label>
-                                            <input type="text" readonly class="form-control" id="d_othercogenital"
-                                                   name="other_congenital" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="other-congenital-yes" name="other_congenital"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="other-congenital-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="other-congenital-no" name="other_congenital"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="other-congenital-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_f_othercogenital"></label>
-                                            <input type="text" readonly class="form-control" id="d_f_othercogenital"
-                                                   name="other_congenital_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="other-congenital-family-yes"
+                                                       name="other_congenital_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="other-congenital-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="other-congenital-family-no"
+                                                       name="other_congenital_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label"
+                                                       for="other-congenital-family-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
@@ -4037,14 +4249,14 @@
                                 <thead>
                                 <tr>
                                     <th scope="col"></th>
-                                    <th scope="col"></th>
-                                    <th scope="col">Family</th>
+                                    <th scope="col"><strong>You</strong></th>
+                                    <th scope="col"><strong>Family</strong></th>
                                     <th scope="col"></th>
                                 </tr>
                                 <tr>
                                     <th scope="col">Medical Problem</th>
-                                    <th scope="col">Yes/No</th>
-                                    <th scope="col">Yes/No</th>
+                                    <th scope="col">Yes No</th>
+                                    <th scope="col">Yes No</th>
                                     <th scope="col">Comments (Which family member, severity, etc)</th>
                                 </tr>
                                 </thead>
@@ -4056,25 +4268,35 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_downsyndrome"></label>
-                                            <input type="text" readonly class="form-control" id="d_downsyndrome"
-                                                   name="downs" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="downs-yes" name="downs"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="downs-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="downs-no" name="downs"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="downs-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_f_downsyndrome"></label>
-                                            <input type="text" readonly class="form-control" id="d_f_downsyndrome"
-                                                   name="downs_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="downs-family-yes" name="downs_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="downs-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="downs-family-no" name="downs_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="downs-family-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
@@ -4091,25 +4313,35 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_fragilex"></label>
-                                            <input type="text" readonly class="form-control" id="d_fragilex"
-                                                   name="fragile_x" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="fragile-x-yes" name="fragile_x"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="fragile-x-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="fragile-x-no" name="fragile_x"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="fragile-x-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_f_fragilex"></label>
-                                            <input type="text" readonly class="form-control" id="d_f_fragilex"
-                                                   name="fragile_x_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="fragile-x-family-yes" name="fragile_x_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="fragile-x-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="fragile-x-family-no" name="fragile_x_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="fragile-x-family-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
@@ -4126,25 +4358,35 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_turnursyndrom"></label>
-                                            <input type="text" readonly class="form-control" id="d_turnursyndrom"
-                                                   name="turner" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="turner-yes" name="turner"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="turner-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="turner-no" name="turner"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="turner-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_f_turnursyndrom"></label>
-                                            <input type="text" readonly class="form-control" id="d_f_turnursyndrom"
-                                                   name="turner_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="turner-family-yes" name="turner_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="turner-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="turner-family-no" name="turner_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="turner-family-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
@@ -4161,25 +4403,37 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_klinefelter"></label>
-                                            <input type="text" readonly class="form-control" id="d_klinefelter"
-                                                   name="klinefelter" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="klinefelter-yes" name="klinefelter"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="klinefelter-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="klinefelter-no" name="klinefelter"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="klinefelter-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_f_klinefelter"></label>
-                                            <input type="text" readonly class="form-control" id="d_f_klinefelter"
-                                                   name="klinefelter_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="klinefelter-family-yes"
+                                                       name="klinefelter_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="klinefelter-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="klinefelter-family-no" name="klinefelter_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="klinefelter-family-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
@@ -4196,25 +4450,39 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_otherchromosomal"></label>
-                                            <input type="text" readonly class="form-control" id="d_otherchromosomal"
-                                                   name="other_abnormality" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="other-abnormality-yes" name="other_abnormality"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="other-abnormality-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="other-abnormality-no" name="other_abnormality"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="other-abnormality-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_f_otherchromosomal"></label>
-                                            <input type="text" readonly class="form-control" id="d_f_otherchromosomal"
-                                                   name="other_abnormality_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="other-abnormality-family-yes"
+                                                       name="other_abnormality_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="other-abnormality-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="other-abnormality-family-no"
+                                                       name="other_abnormality_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label"
+                                                       for="other-abnormality-family-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
@@ -4231,20 +4499,19 @@
                         <div class="row">
                             <h3>Genetic <span>Abnormalities</span></h3>
                         </div>
-
                         <div class="row table-responsive">
                             <table class="table">
                                 <thead>
                                 <tr>
                                     <th scope="col"></th>
-                                    <th scope="col"></th>
-                                    <th scope="col">Family</th>
+                                    <th scope="col"><strong>You</strong></th>
+                                    <th scope="col"><strong>Family</strong></th>
                                     <th scope="col"></th>
                                 </tr>
                                 <tr>
                                     <th scope="col">Medical Problem</th>
-                                    <th scope="col">Yes/No</th>
-                                    <th scope="col">Yes/No</th>
+                                    <th scope="col">Yes &nbsp; No</th>
+                                    <th scope="col">Yes &nbsp; No</th>
                                     <th scope="col">Comments (Which family member, severity, etc)</th>
                                 </tr>
                                 </thead>
@@ -4256,34 +4523,41 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_alpha_1"></label>
-                                            <input type="text" readonly class="form-control" id="d_alpha_1"
-                                                   name="alpha_1"
-                                                   placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="alpha-1-yes" name="alpha_1"
+                                                       class="custom-control-input" value="1">
+                                                <label class="custom-control-label" for="alpha-1-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="alpha-1-no" name="alpha_1"
+                                                       class="custom-control-input" value="0">
+                                                <label class="custom-control-label" for="alpha-1-no"></label>
+                                            </div>
                                         </div>
+
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_f_alpha_1"></label>
-                                            <input type="text" readonly class="form-control" id="d_f_alpha_1"
-                                                   name="alpha_1_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="alpha-1-family-yes" name="alpha_1_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="alpha-1-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="alpha-1-family-no" name="alpha_1_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="alpha-1-family-no"></label>
+                                            </div>
                                         </div>
-                                    </td>
                                     <td>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="i_alpha_1"
-                                                   name="alpha_1_comment">
+                                            <input type="text" class="form-control" id="i_alpha_1_comment" name="alpha_1_comment">
                                         </div>
                                     </td>
+
                                 </tr>
                                 <tr>
                                     <th scope="row">
@@ -4292,27 +4566,41 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_bloom"></label>
-                                            <input type="text" readonly class="form-control" id="d_bloom" name="bloom"
-                                                   placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="bloom-yes" name="bloom"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="bloom-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="bloom-no" name="bloom"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="bloom-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_f_bloom"></label>
-                                            <input type="text" readonly class="form-control" id="d_f_bloom"
-                                                   name="bloom_family"
-                                                   placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="bloom-family-yes" name="bloom_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="bloom-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="bloom-family-no" name="bloom_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="bloom-family-no"></label>
+                                            </div>
                                         </div>
+
                                     </td>
                                     <td>
                                         <div class="form-group">
@@ -4327,26 +4615,38 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_canavan"></label>
-                                            <input type="text" readonly class="form-control" id="d_canavan"
-                                                   name="canavan"
-                                                   placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="canavan-yes" name="canavan"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="canavan-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="canavan-no" name="canavan"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="canavan-no"></label>
+                                            </div>
                                         </div>
+
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_f_canavan"></label>
-                                            <input type="text" readonly class="form-control" id="d_f_canavan"
-                                                   name="canavan_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="canavan-family-yes" name="canavan_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="canavan-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="canavan-family-no" name="canavan_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="canavan-family-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
@@ -4363,26 +4663,45 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_cysticfibroses"></label>
-                                            <input type="text" readonly class="form-control" id="d_cysticfibroses"
-                                                   name="cystic_fibrosis" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="cystic-fibrosis-yes" name="cystic_fibrosis"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="cystic-fibrosis-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="cystic-fibrosis-no" name="cystic_fibrosis"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="cystic-fibrosis-no"></label>
+                                            </div>
                                         </div>
+
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_f_cysticfibroses"></label>
-                                            <input type="text" readonly class="form-control" id="d_f_cysticfibroses"
-                                                   name="cystic_fibrosis_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="cystic-fibrosis-family-yes"
+                                                       name="cystic_fibrosis_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="cystic-fibrosis-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="cystic-fibrosis-family-no"
+                                                       name="cystic_fibrosis_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label"
+                                                       for="cystic-fibrosis-family-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
                                         <div class="form-group">
@@ -4398,25 +4717,36 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_fabrydisease"></label>
-                                            <input type="text" readonly class="form-control" id="d_fabrydisease"
-                                                   name="fabry" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="fabry-yes" name="fabry"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="fabry-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="fabry-no" name="fabry"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="fabry-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_fabrydisease"></label>
-                                            <input type="text" readonly class="form-control" id="d_f_fabrydisease"
-                                                   name="fabry_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="fabry-family-yes" name="fabry_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="fabry-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="fabry-family-no" name="fabry_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="fabry-family-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
@@ -4433,26 +4763,36 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_factorv"></label>
-                                            <input type="text" readonly class="form-control" id="d_factorv"
-                                                   name="factor_v"
-                                                   placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="factor-v-yes" name="factor_v"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="factor-v-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="factor-v-no" name="factor_v"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="factor-v-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_f_factorv"></label>
-                                            <input type="text" readonly class="form-control" id="d_f_factorv"
-                                                   name="factor_v_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="factor-v-family-yes" name="factor_v_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="factor-v-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="factor-v-family-no" name="factor_v_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="factor-v-family-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
@@ -4469,25 +4809,40 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_familial"></label>
-                                            <input type="text" readonly class="form-control" id="d_familial"
-                                                   name="familial_dis" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="familial-dis-yes" name="familial_dis"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="familial-dis-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="familial-dis-no" name="familial_dis"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="familial-dis-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_f_familial"></label>
-                                            <input type="text" readonly class="form-control" id="d_f_familial"
-                                                   name="familial_dis_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="familial-dis-family-yes"
+                                                       name="familial_dis_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="familial-dis-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="familial-dis-family-no"
+                                                       name="familial_dis_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label"
+                                                       for="familial-dis-family-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
@@ -4504,25 +4859,41 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_familialfever"></label>
-                                            <input type="text" readonly class="form-control" id="d_familialfever"
-                                                   name="familial_med" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="familial-med-yes" name="familial_med"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="familial-med-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="familial-med-no" name="familial_med"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="familial-med-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="familial_med_family"></label>
-                                            <input type="text" readonly class="form-control" id="d_f_familialfever"
-                                                   name="familial_med_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="familial-med-family-yes"
+                                                       name="familial_med_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="familial-med-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="familial-med-family-no"
+                                                       name="familial_med_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label"
+                                                       for="familial-med-family-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
@@ -4539,26 +4910,37 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_fanconi"></label>
-                                            <input type="text" readonly class="form-control" id="d_fanconi"
-                                                   name="fanconi"
-                                                   placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="fanconi-yes" name="fanconi"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="fanconi-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="fanconi-no" name="fanconi"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="fanconi-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_f_fanconi"></label>
-                                            <input type="text" readonly class="form-control" id="d_f_fanconi"
-                                                   name="fanconi_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="fanconi-family-yes" name="fanconi_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="fanconi-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="fanconi-family-no" name="fanconi_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="fanconi-family-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
@@ -4575,25 +4957,39 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_hemophilia"></label>
-                                            <input type="text" readonly class="form-control" id="hemophilia"
-                                                   name="hemophilia" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="hemophilia-yes" name="hemophilia"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="hemophilia-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="hemophilia-no" name="hemophilia"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="hemophilia-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_f_hemophilia"></label>
-                                            <input type="text" readonly class="form-control" id="d_f_hemophilia"
-                                                   name="hemophilia_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="hemophilia-family-yes" name="hemophilia_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="hemophilia-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="hemophilia-family-no" name="hemophilia_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="hemophilia-family-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
@@ -4610,27 +5006,40 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_marfan"></label>
-                                            <input type="text" readonly class="form-control" id="d_marfan"
-                                                   name="marfan"
-                                                   placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="marfan-yes" name="marfan"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="marfan-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="marfan-no" name="marfan"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="marfan-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_f_marfan"></label>
-                                            <input type="text" readonly class="form-control" id="d_f_marfan"
-                                                   name="marfan_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="marfan-family-yes" name="marfan_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="marfan-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="marfan-family-no" name="marfan_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="marfan-family-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
                                         <div class="form-group">
@@ -4645,25 +5054,42 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_mucolipidosis"></label>
-                                            <input type="text" readonly class="form-control" id="d_mucolipidosis"
-                                                   name="mucolipidosis4" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="mucolipidosis4-yes" name="mucolipidosis4"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="mucolipidosis4-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="mucolipidosis4-no" name="mucolipidosis4"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="mucolipidosis4-no"></label>
+                                            </div>
                                         </div>
+
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_f_mucolipidosis"></label>
-                                            <input type="text" readonly class="form-control" id="d_f_mucolipidosis"
-                                                   name="mucolipidosis4_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="mucolipidosis4-family-yes"
+                                                       name="mucolipidosis4_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="mucolipidosis4-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="mucolipidosis4-family-no"
+                                                       name="mucolipidosis4_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label"
+                                                       for="mucolipidosis4-family-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
@@ -4680,27 +5106,45 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_niemann"></label>
-                                            <input type="text" readonly class="form-control" id="d_niemann"
-                                                   name="niemann_pick"
-                                                   placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="niemann-pick-yes" name="niemann_pick"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="niemann-pick-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="niemann-pick-no" name="niemann_pick"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="niemann-pick-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_f_niemann"></label>
-                                            <input type="text" readonly class="form-control" id="d_f_niemann"
-                                                   name="niemann_pick_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="niemann-pick-family-yes"
+                                                       name="niemann_pick_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="niemann-pick-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="niemann-pick-family-no"
+                                                       name="niemann_pick_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label"
+                                                       for="niemann-pick-family-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
                                         <div class="form-group">
@@ -4716,27 +5160,44 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_sickle"></label>
-                                            <input type="text" readonly class="form-control" id="d_sickle"
-                                                   name="sickle_cell"
-                                                   placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="sickle-cell-yes" name="sickle_cell"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="sickle-cell-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="sickle-cell-no" name="sickle_cell"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="sickle-cell-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_f_sickle"></label>
-                                            <input type="text" readonly class="form-control" id="d_f_sickle"
-                                                   name="sickle_cell_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="sickle-cell-family-yes"
+                                                       name="sickle_cell_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="sickle-cell-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="sickle-cell-family-no" name="sickle_cell_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="sickle-cell-family-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
                                         <div class="form-group">
@@ -4752,25 +5213,38 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_taysachs"></label>
-                                            <input type="text" readonly class="form-control" id="d_taysachs"
-                                                   name="tay_sachs" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="tay-sachs-yes" name="tay_sachs"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="tay-sachs-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="tay-sachs-no" name="tay_sachs"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="tay-sachs-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_f_taysachs"></label>
-                                            <input type="text" readonly class="form-control" id="d_f_taysachs"
-                                                   name="tay_sachs_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="tay-sachs-family-yes" name="tay_sachs_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="tay-sachs-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="tay-sachs-family-no" name="tay_sachs_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="tay-sachs-family-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
@@ -4787,26 +5261,44 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_thallasmia"></label>
-                                            <input type="text" readonly class="form-control" id="d_thallasmia"
-                                                   name="thallasemia" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="thallasemia-yes" name="thallasemia"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="thallasemia-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="thallasemia-no" name="thallasemia"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="thallasemia-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_f_thallasmia"></label>
-                                            <input type="text" readonly class="form-control" id="d_f_thallasmia"
-                                                   name="thallasemia_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="thallasemia-family-yes"
+                                                       name="thallasemia_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="thallasemia-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="thallasemia-family-no" name="thallasemia_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="thallasemia-family-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
                                         <div class="form-group">
@@ -4822,26 +5314,42 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_f_blindness"></label>
-                                            <input type="text" readonly class="form-control" id="d_blindness"
-                                                   name="blindness" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="blindness-yes" name="blindness"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="blindness-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="blindness-no" name="blindness"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="blindness-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_f_blindness"></label>
-                                            <input type="text" readonly class="form-control" id="d_f_blindness"
-                                                   name="blindness_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="blindness-family-yes" name="blindness_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="blindness-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="blindness-family-no" name="blindness_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="blindness-family-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
                                         <div class="form-group">
@@ -4857,26 +5365,44 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_colorblind"></label>
-                                            <input type="text" readonly class="form-control" id="d_colorblind"
-                                                   name="color_blind" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="color-blind-yes" name="color_blind"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="color-blind-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="color-blind-no" name="color_blind"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="color-blind-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_f_colorblind"></label>
-                                            <input type="text" readonly class="form-control" id="d_f_colorblind"
-                                                   name="color_blind_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="color-blind-family-yes"
+                                                       name="color_blind_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="color-blind-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="color-blind-family-no" name="color_blind_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="color-blind-family-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
                                         <div class="form-group">
@@ -4892,26 +5418,42 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="deafness"></label>
-                                            <input type="text" readonly class="form-control" id="d_deafness"
-                                                   name="deafness" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="deafness-yes" name="deafness"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="deafness-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="deafness-no" name="deafness"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="deafness-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_f_deafness"></label>
-                                            <input type="text" readonly class="form-control" id="d_f_deafness"
-                                                   name="deafness_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="deafness-family-yes" name="deafness_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="deafness-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="deafness-family-no" name="deafness_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="deafness-family-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
                                         <div class="form-group">
@@ -4927,26 +5469,42 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_albinism"></label>
-                                            <input type="text" readonly class="form-control" id="d_albinism"
-                                                   name="albinism" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="albinism-yes" name="albinism"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="albinism-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="albinism-no" name="albinism"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="albinism-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_f_albinism"></label>
-                                            <input type="text" readonly class="form-control" id="d_f_albinism"
-                                                   name="albinism_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="albinism-family-yes" name="albinism_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="albinism-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="albinism-family-no" name="albinism_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="albinism-family-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
                                         <div class="form-group">
@@ -4962,26 +5520,48 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_muscular"></label>
-                                            <input type="text" readonly class="form-control" id="d_muscular"
-                                                   name="muscular_dystrophy" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="muscular-dystrophy-yes"
+                                                       name="muscular_dystrophy"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="muscular-dystrophy-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="muscular-dystrophy-no" name="muscular_dystrophy"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="muscular-dystrophy-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_f_muscular"></label>
-                                            <input type="text" readonly class="form-control" id="d_f_muscular"
-                                                   name="muscular_dystrophy_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="muscular-dystrophy-family-yes"
+                                                       name="muscular_dystrophy_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="muscular-dystrophy-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="muscular-dystrophy-family-no"
+                                                       name="muscular_dystrophy_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label"
+                                                       for="muscular-dystrophy-family-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
                                         <div class="form-group">
@@ -4997,26 +5577,46 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_galactosemia"></label>
-                                            <input type="text" readonly class="form-control" id="d_galactosemia"
-                                                   name="galactosemia" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="galactosemia-yes" name="galactosemia"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="galactosemia-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="galactosemia-no" name="galactosemia"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="galactosemia-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_f_galactosemia"></label>
-                                            <input type="text" readonly class="form-control" id="d_f_galactosemia"
-                                                   name="galactosemia_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="galactosemia-family-yes"
+                                                       name="galactosemia_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="galactosemia-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="galactosemia-family-no"
+                                                       name="galactosemia_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label"
+                                                       for="galactosemia-family-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
                                         <div class="form-group">
@@ -5032,27 +5632,40 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_hurler"></label>
-                                            <input type="text" readonly class="form-control" id="d_hurler"
-                                                   name="hurlers"
-                                                   placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="hurlers-yes" name="hurlers"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="hurlers-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="hurlers-no" name="hurlers"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="hurlers-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_f_hurler"></label>
-                                            <input type="text" readonly class="form-control" id="d_f_hurler"
-                                                   name="hurlers_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="hurlers-family-yes" name="hurlers_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="hurlers-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="hurlers-family-no" name="hurlers_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="hurlers-family-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
                                         <div class="form-group">
@@ -5068,26 +5681,45 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_other_genetic"></label>
-                                            <input type="text" readonly class="form-control" id="d_other_genetic"
-                                                   name="other_genetic" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="other-genetic-yes" name="other_genetic"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="other-genetic-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="other-genetic-no" name="other_genetic"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="other-genetic-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for="d_f_other_genetic"></label>
-                                            <input type="text" readonly class="form-control" id="d_f_other_genetic"
-                                                   name="other_genetic_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="other-genetic-family-yes"
+                                                       name="other_genetic_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="other-genetic-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="other-genetic-family-no"
+                                                       name="other_genetic_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label"
+                                                       for="other-genetic-family-no"></label>
+                                            </div>
                                         </div>
+
                                     </td>
                                     <td>
                                         <div class="form-group">
@@ -5100,7 +5732,6 @@
                             </table>
                         </div>
 
-
                         <div class="row">
                             <h3>Cancer</h3>
                         </div>
@@ -5109,14 +5740,14 @@
                                 <thead>
                                 <tr>
                                     <th scope="col"></th>
-                                    <th scope="col"></th>
-                                    <th scope="col">Family</th>
+                                    <th scope="col"><strong>You</strong></th>
+                                    <th scope="col"><strong>Family</strong></th>
                                     <th scope="col"></th>
                                 </tr>
                                 <tr>
                                     <th scope="col">Medical Problem</th>
-                                    <th scope="col">Yes/No</th>
-                                    <th scope="col">Yes/No</th>
+                                    <th scope="col">Yes &nbsp;No</th>
+                                    <th scope="col">Yes &nbsp;No</th>
                                     <th scope="col">Comments (Which family member, severity, etc)</th>
                                 </tr>
                                 </thead>
@@ -5128,26 +5759,42 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_breast_cancer"
-                                                   name="breast" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="breast-yes" name="breast"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="breast-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="breast-no" name="breast"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="breast-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_f_breast_cancer"
-                                                   name="breast_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="breast-family-yes" name="breast_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="breast-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="breast-family-no" name="breast_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="breast-family-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
                                         <div class="form-group">
@@ -5163,26 +5810,42 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_colon_cancer"
-                                                   name="colon" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="colon-yes" name="colon"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="colon-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="colon-no" name="colon"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="colon-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_f_colon_cancer"
-                                                   name="colon_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="colon-family-yes" name="colon_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="colon-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="colon-family-no" name="colon_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="colon-family-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
                                         <div class="form-group">
@@ -5198,26 +5861,42 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_hereditary_non"
-                                                   name="hnpcc" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="hnpcc-yes" name="hnpcc"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="hnpcc-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="hnpcc-no" name="hnpcc"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="hnpcc-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_f_hereditary_non"
-                                                   name="hnpcc_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="hnpcc-family-yes" name="hnpcc_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="hnpcc-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="hnpcc-family-no" name="hnpcc_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="hnpcc-family-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
                                         <div class="form-group">
@@ -5233,26 +5912,43 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_ovarian_cancer"
-                                                   name="ovarian" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="ovarian-yes" name="ovarian"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="ovarian-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="ovarian-no" name="ovarian"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="ovarian-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_f_ovarian_cancer"
-                                                   name="ovarian_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="ovarian-family-yes" name="ovarian_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="ovarian-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="ovarian-family-no" name="ovarian_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="ovarian-family-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
                                         <div class="form-group">
@@ -5268,26 +5964,46 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_any_other_cancer"
-                                                   name="other_cancer" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="other-cancer-yes" name="other_cancer"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="other-cancer-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="other-cancer-no" name="other_cancer"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="other-cancer-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_f_any_other_cancer"
-                                                   name="other_cancer_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="other-cancer-family-yes"
+                                                       name="other_cancer_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="other-cancer-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="other-cancer-family-no"
+                                                       name="other_cancer_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label"
+                                                       for="other-cancer-family-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
                                         <div class="form-group">
@@ -5296,7 +6012,6 @@
                                         </div>
                                     </td>
                                 </tr>
-
 
                                 </tbody>
                             </table>
@@ -5310,14 +6025,14 @@
                                 <thead>
                                 <tr>
                                     <th scope="col"></th>
-                                    <th scope="col"></th>
-                                    <th scope="col">Family</th>
+                                    <th scope="col"><strong>You</strong></th>
+                                    <th scope="col"><strong>Family</strong></th>
                                     <th scope="col"></th>
                                 </tr>
                                 <tr>
                                     <th scope="col">Medical Problem</th>
-                                    <th scope="col">Yes/No</th>
-                                    <th scope="col">Yes/No</th>
+                                    <th scope="col">Yes &nbsp;No</th>
+                                    <th scope="col">Yes &nbsp;No</th>
                                     <th scope="col">Comments (Which family member, severity, etc)</th>
                                 </tr>
                                 </thead>
@@ -5329,26 +6044,43 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_alzheimer"
-                                                   name="alzhemers" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="alzhemers-yes" name="alzhemers"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="alzhemers-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="alzhemers-no" name="alzhemers"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="alzhemers-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_f_alzheimer"
-                                                   name="alzhemers_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="alzhemers-family-yes"
+                                                       name="alzhemers_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="alzhemers-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="alzhemers-family-no" name="alzhemers_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label"
+                                                       for="alzhemers-family-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
                                         <div class="form-group">
@@ -5364,31 +6096,45 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_autism"
-                                                   name="autism"
-                                                   placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="autism-yes" name="autism"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="autism-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="autism-no" name="autism"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="autism-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_f_autism"
-                                                   name="autism_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="autism-family-yes" name="autism_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="autism-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="autism-family-no" name="autism_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="autism-family-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="i_autism" name="autism_comment">
+                                            <input type="text" class="form-control" id="i_autism"
+                                                   name="autism_comment">
                                         </div>
                                     </td>
                                 </tr>
@@ -5399,26 +6145,46 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_cerebral"
-                                                   name="cerebral_palsy" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="cerebral-palsy-yes" name="cerebral_palsy"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="cerebral-palsy-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="cerebral-palsy-no" name="cerebral_palsy"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="cerebral-palsy-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_f_cerebral"
-                                                   name="cerebral_palsy_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="cerebral-palsy-family-yes"
+                                                       name="cerebral_palsy_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="cerebral-palsy-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="cerebral-palsy-family-no"
+                                                       name="cerebral_palsy_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label"
+                                                       for="cerebral-palsy-family-no"></label>
+                                            </div>
                                         </div>
+
                                     </td>
                                     <td>
                                         <div class="form-group">
@@ -5434,26 +6200,45 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_creultzfeldt"
-                                                   name="creultzfeldt" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="creultzfeldt-yes" name="creultzfeldt"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="creultzfeldt-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="creultzfeldt-no" name="creultzfeldt"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="creultzfeldt-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_f_creultzfeldt"
-                                                   name="creultzfeldt_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="creultzfeldt-family-yes"
+                                                       name="creultzfeldt_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="creultzfeldt-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="creultzfeldt-family-no"
+                                                       name="creultzfeldt_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label"
+                                                       for="creultzfeldt-family-no"></label>
+                                            </div>
                                         </div>
+
                                     </td>
                                     <td>
                                         <div class="form-group">
@@ -5469,26 +6254,45 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_depression"
-                                                   name="depression" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="depression-yes" name="depression"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="depression-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="depression-no" name="depression"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="depression-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_f_depression"
-                                                   name="depression_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="depression-family-yes"
+                                                       name="depression_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="depression-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="depression-family-no"
+                                                       name="depression_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label"
+                                                       for="depression-family-no"></label>
+                                            </div>
                                         </div>
+
                                     </td>
                                     <td>
                                         <div class="form-group">
@@ -5504,27 +6308,43 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_gaucher"
-                                                   name="gauchers"
-                                                   placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="gauchers-yes" name="gauchers"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="gauchers-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="gauchers-no" name="gauchers"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="gauchers-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_f_gaucher"
-                                                   name="gauchers_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="gauchers-family-yes" name="gauchers_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="gauchers-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="gauchers-family-no" name="gauchers_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label"
+                                                       for="gauchers-family-no"></label>
+                                            </div>
                                         </div>
+
                                     </td>
                                     <td>
                                         <div class="form-group">
@@ -5540,26 +6360,45 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_huntington"
-                                                   name="huntingtons" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="huntingtons-yes" name="huntingtons"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="huntingtons-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="huntingtons-no" name="huntingtons"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="huntingtons-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_f_huntington"
-                                                   name="huntingtons_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="huntingtons-family-yes"
+                                                       name="huntingtons_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="huntingtons-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="huntingtons-family-no"
+                                                       name="huntingtons_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label"
+                                                       for="huntingtons-family-no"></label>
+                                            </div>
                                         </div>
+
                                     </td>
                                     <td>
                                         <div class="form-group">
@@ -5575,26 +6414,45 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_hydrocephalus"
-                                                   name="hydrocephalus" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="hydrocephalus-yes" name="hydrocephalus"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="hydrocephalus-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="hydrocephalus-no" name="hydrocephalus"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="hydrocephalus-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_f_hydrocephalus"
-                                                   name="hydrocephalus_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="hydrocephalus-family-yes"
+                                                       name="hydrocephalus_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="hydrocephalus-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="hydrocephalus-family-no"
+                                                       name="hydrocephalus_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label"
+                                                       for="hydrocephalus-family-no"></label>
+                                            </div>
                                         </div>
+
                                     </td>
                                     <td>
                                         <div class="form-group">
@@ -5610,27 +6468,44 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_obsessive_compulsive"
-                                                   name="obsessive" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="obsessive-yes" name="obsessive"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="obsessive-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="obsessive-no" name="obsessive"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="obsessive-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control"
-                                                   id="d_f_obsessive_compulsive"
-                                                   name="obsessive_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="obsessive-family-yes"
+                                                       name="obsessive_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="obsessive-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="obsessive-family-no" name="obsessive_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label"
+                                                       for="obsessive-family-no"></label>
+                                            </div>
                                         </div>
+
                                     </td>
                                     <td>
                                         <div class="form-group">
@@ -5646,31 +6521,46 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_mania" name="mania"
-                                                   placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="mania-yes" name="mania"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="mania-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="mania-no" name="mania"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="mania-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_f_mania"
-                                                   name="mania_family"
-                                                   placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="mania-family-yes" name="mania_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="mania-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="mania-family-no" name="mania_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="mania-family-no"></label>
+                                            </div>
                                         </div>
+
                                     </td>
                                     <td>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="i_mania" name="mania_comment">
+                                            <input type="text" class="form-control" id="i_mania"
+                                                   name="mania_comment">
                                         </div>
                                     </td>
                                 </tr>
@@ -5681,28 +6571,46 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_mental"
-                                                   name="retardation"
-                                                   placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="retardation-yes" name="retardation"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="retardation-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="retardation-no" name="retardation"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="retardation-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_f_mental"
-                                                   name="retardation_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="retardation-family-yes"
+                                                       name="retardation_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="retardation-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="retardation-family-no"
+                                                       name="retardation_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label"
+                                                       for="retardation-family-no"></label>
+                                            </div>
                                         </div>
                                     </td>
+
                                     <td>
                                         <div class="form-group">
                                             <input type="text" class="form-control" id="i_mental"
@@ -5717,26 +6625,48 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_neurofibro"
-                                                   name="neurofibromatosis" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="neurofibromatosis-yes"
+                                                       name="neurofibromatosis"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="neurofibromatosis-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="neurofibromatosis-no"
+                                                       name="neurofibromatosis"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label"
+                                                       for="neurofibromatosis-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_f_neurofibro"
-                                                   name="neurofibromatosis_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="neurofibromatosis-family-yes"
+                                                       name="neurofibromatosis_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="neurofibromatosis-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="neurofibromatosis-family-no"
+                                                       name="neurofibromatosis_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label"
+                                                       for="neurofibromatosis-family-no"></label>
+                                            </div>
                                         </div>
+
                                     </td>
                                     <td>
                                         <div class="form-group">
@@ -5752,27 +6682,43 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_schizo"
-                                                   name="schizophrenia"
-                                                   placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="schizophrenia-yes" name="schizophrenia"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="schizophrenia-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="schizophrenia-no" name="schizophrenia"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="schizophrenia-no"></label>
+                                            </div>
                                         </div>
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_f_schizo"
-                                                   name="schizophrenia_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="schizophrenia-family-yes"
+                                                       name="schizophrenia_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="schizophrenia-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="schizophrenia-family-no"
+                                                       name="schizophrenia_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label"
+                                                       for="schizophrenia-family-no"></label>
+                                            </div>
                                         </div>
+
                                     </td>
                                     <td>
                                         <div class="form-group">
@@ -5788,26 +6734,43 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_tourette"
-                                                   name="tourette" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="tourette-yes" name="tourette"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="tourette-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="tourette-no" name="tourette"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="tourette-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_f_tourette"
-                                                   name="tourette_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="tourette-family-yes" name="tourette_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="tourette-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="tourette-family-no" name="tourette_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label"
+                                                       for="tourette-family-no"></label>
+                                            </div>
                                         </div>
+
                                     </td>
                                     <td>
                                         <div class="form-group">
@@ -5823,26 +6786,43 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_tuberous"
-                                                   name="tuberous" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="tuberous-yes" name="tuberous"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="tuberous-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="tuberous-no" name="tuberous"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="tuberous-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_f_tuberous"
-                                                   name="tuberous_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="tuberous-family-yes" name="tuberous_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="tuberous-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="tuberous-family-no" name="tuberous_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label"
+                                                       for="tuberous-family-no"></label>
+                                            </div>
                                         </div>
+
                                     </td>
                                     <td>
                                         <div class="form-group">
@@ -5858,26 +6838,42 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_wilson_disease"
-                                                   name="wilsons" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="wilsons-yes" name="wilsons"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="wilsons-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="wilsons-no" name="wilsons"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="wilsons-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_f_wilson_disease"
-                                                   name="wilsons_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="wilsons-family-yes" name="wilsons_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="wilsons-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="wilsons-family-no" name="wilsons_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="wilsons-family-no"></label>
+                                            </div>
                                         </div>
+
                                     </td>
                                     <td>
                                         <div class="form-group">
@@ -5893,26 +6889,49 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_multiple_sclerosis"
-                                                   name="multiple_sclerosis" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="multiple-sclerosis-yes"
+                                                       name="multiple_sclerosis"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="multiple-sclerosis-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="multiple-sclerosis-no"
+                                                       name="multiple_sclerosis"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label"
+                                                       for="multiple-sclerosis-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_f_multiple_sclerosis"
-                                                   name="multiple_sclerosis_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="multiple-sclerosis-family-yes"
+                                                       name="multiple_sclerosis_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="multiple-sclerosis-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="multiple-sclerosis-family-no"
+                                                       name="multiple_sclerosis_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label"
+                                                       for="multiple-sclerosis-family-no"></label>
+                                            </div>
                                         </div>
+
                                     </td>
                                     <td>
                                         <div class="form-group">
@@ -5928,26 +6947,45 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_parkinson"
-                                                   name="parkinsons" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="parkinsons-yes" name="parkinsons"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="parkinsons-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="parkinsons-no" name="parkinsons"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="parkinsons-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_f_parkinson"
-                                                   name="parkinsons_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="parkinsons-family-yes"
+                                                       name="parkinsons_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="parkinsons-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="parkinsons-family-no"
+                                                       name="parkinsons_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label"
+                                                       for="parkinsons-family-no"></label>
+                                            </div>
                                         </div>
+
                                     </td>
                                     <td>
                                         <div class="form-group">
@@ -5963,26 +7001,45 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_lou_gehrig"
-                                                   name="lougehrigs" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="lougehrigs-yes" name="lougehrigs"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="lougehrigs-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="lougehrigs-no" name="lougehrigs"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="lougehrigs-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_f_lou_gehrig"
-                                                   name="lougehrigs_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="lougehrigs-family-yes"
+                                                       name="lougehrigs_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="lougehrigs-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="lougehrigs-family-no"
+                                                       name="lougehrigs_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label"
+                                                       for="lougehrigs-family-no"></label>
+                                            </div>
                                         </div>
+
                                     </td>
                                     <td>
                                         <div class="form-group">
@@ -5998,26 +7055,48 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_any_other_neuro"
-                                                   name="other_neurologic" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="other-neurologic-yes"
+                                                       name="other_neurologic"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="other-neurologic-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="other-neurologic-no" name="other_neurologic"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label"
+                                                       for="other-neurologic-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_f_any_other_neuro"
-                                                   name="other_neurologic_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="other-neurologic-family-yes"
+                                                       name="other_neurologic_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="other-neurologic-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="other-neurologic-family-no"
+                                                       name="other_neurologic_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label"
+                                                       for="other-neurologic-family-no"></label>
+                                            </div>
                                         </div>
+
                                     </td>
                                     <td>
                                         <div class="form-group">
@@ -6033,26 +7112,43 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_diabetes"
-                                                   name="diabetes" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="diabetes-yes" name="diabetes"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="diabetes-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="diabetes-no" name="diabetes"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="diabetes-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_f_diabetes"
-                                                   name="diabetes_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="diabetes-family-yes" name="diabetes_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="diabetes-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="diabetes-family-no" name="diabetes_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label"
+                                                       for="diabetes-family-no"></label>
+                                            </div>
                                         </div>
+
                                     </td>
                                     <td>
                                         <div class="form-group">
@@ -6068,26 +7164,45 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_heart_disease"
-                                                   name="heart_disease" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="heart-disease-yes" name="heart_disease"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="heart-disease-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="heart-disease-no" name="heart_disease"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="heart-disease-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_f_heart_disease"
-                                                   name="heart_disease_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="heart-disease-family-yes"
+                                                       name="heart_disease_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="heart-disease-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="heart-disease-family-no"
+                                                       name="heart_disease_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label"
+                                                       for="heart-disease-family-no"></label>
+                                            </div>
                                         </div>
+
                                     </td>
                                     <td>
                                         <div class="form-group">
@@ -6103,26 +7218,42 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_high_blood"
-                                                   name="high_bp" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="high-bp-yes" name="high_bp"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="high-bp-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="high-bp-no" name="high_bp"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="high-bp-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_f_high_blood"
-                                                   name="high_bp_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="high-bp-family-yes" name="high_bp_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="high-bp-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="high-bp-family-no" name="high_bp_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="high-bp-family-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
                                         <div class="form-group">
@@ -6138,31 +7269,45 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_asthma"
-                                                   name="asthma"
-                                                   placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="asthma-yes" name="asthma"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="asthma-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="asthma-no" name="asthma"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="asthma-no"></label>
+                                            </div>
                                         </div>
+
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_f_asthma"
-                                                   name="asthma_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="asthma-family-yes" name="asthma_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="asthma-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="asthma-family-no" name="asthma_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="asthma-family-no"></label>
+                                            </div>
                                         </div>
+
                                     </td>
                                     <td>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="i_asthma" name="asthma_comment">
+                                            <input type="text" class="form-control" id="i_asthma"
+                                                   name="asthma_comment">
                                         </div>
                                     </td>
                                 </tr>
@@ -6173,31 +7318,46 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_lupus" name="lupus"
-                                                   placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="lupus-yes" name="lupus"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="lupus-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="lupus-no" name="lupus"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="lupus-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_f_lupus"
-                                                   name="lupus_family"
-                                                   placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="lupus-family-yes" name="lupus_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="lupus-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="lupus-family-no" name="lupus_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="lupus-family-no"></label>
+                                            </div>
                                         </div>
+
                                     </td>
                                     <td>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="i_lupus" name="lupus_comment">
+                                            <input type="text" class="form-control" id="i_lupus"
+                                                   name="lupus_comment">
                                         </div>
                                     </td>
                                 </tr>
@@ -6208,27 +7368,42 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_obesity"
-                                                   name="obesity"
-                                                   placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="obesity-yes" name="obesity"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="obesity-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="obesity-no" name="obesity"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="obesity-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_f_obesity"
-                                                   name="obesity_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="obesity-family-yes" name="obesity_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="obesity-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="obesity-family-no" name="obesity_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="obesity-family-no"></label>
+                                            </div>
                                         </div>
+
                                     </td>
                                     <td>
                                         <div class="form-group">
@@ -6244,26 +7419,45 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_alcoholism"
-                                                   name="alcoholism" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="alcoholism-yes" name="alcoholism"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="alcoholism-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="alcoholism-no" name="alcoholism"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="alcoholism-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_f_alcoholism"
-                                                   name="alcoholism_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="alcoholism-family-yes"
+                                                       name="alcoholism_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="alcoholism-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="alcoholism-family-no"
+                                                       name="alcoholism_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label"
+                                                       for="alcoholism-family-no"></label>
+                                            </div>
                                         </div>
+
                                     </td>
                                     <td>
                                         <div class="form-group">
@@ -6279,26 +7473,45 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_infertility"
-                                                   name="infertility" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="infertility-yes" name="infertility"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="infertility-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="infertility-no" name="infertility"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="infertility-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_f_infertility"
-                                                   name="infertility_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="infertility-family-yes"
+                                                       name="infertility_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="infertility-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="infertility-family-no"
+                                                       name="infertility_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label"
+                                                       for="infertility-family-no"></label>
+                                            </div>
                                         </div>
+
                                     </td>
                                     <td>
                                         <div class="form-group">
@@ -6314,26 +7527,45 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_recurrent"
-                                                   name="miscarriage" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="miscarriage-yes" name="miscarriage"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="miscarriage-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="miscarriage-no" name="miscarriage"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="miscarriage-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_f_recurrent"
-                                                   name="miscarriage_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="miscarriage-family-yes"
+                                                       name="miscarriage_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="miscarriage-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="miscarriage-family-no"
+                                                       name="miscarriage_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label"
+                                                       for="miscarriage-family-no"></label>
+                                            </div>
                                         </div>
+
                                     </td>
                                     <td>
                                         <div class="form-group">
@@ -6349,26 +7581,45 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_endometriosis"
-                                                   name="endometriosis" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="endometriosis-yes" name="endometriosis"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label" for="endometriosis-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="endometriosis-no" name="endometriosis"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label" for="endometriosis-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_f_endometriosis"
-                                                   name="endometriosis_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="endometriosis-family-yes"
+                                                       name="endometriosis_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="endometriosis-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="endometriosis-family-no"
+                                                       name="endometriosis_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label"
+                                                       for="endometriosis-family-no"></label>
+                                            </div>
                                         </div>
+
                                     </td>
                                     <td>
                                         <div class="form-group">
@@ -6384,26 +7635,48 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_polycystic_ovary"
-                                                   name="polycystic_ovary" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="polycystic-ovary-yes"
+                                                       name="polycystic_ovary"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="polycystic-ovary-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="polycystic-ovary-no" name="polycystic_ovary"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label"
+                                                       for="polycystic-ovary-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_f_polycystic_ovary"
-                                                   name="polycystic_ovary_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="polycystic-ovary-family-yes"
+                                                       name="polycystic_ovary_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="polycystic-ovary-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="polycystic-ovary-family-no"
+                                                       name="polycystic_ovary_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label"
+                                                       for="polycystic-ovary-family-no"></label>
+                                            </div>
                                         </div>
+
                                     </td>
                                     <td>
                                         <div class="form-group">
@@ -6419,26 +7692,48 @@
                                         </ul>
                                     </th>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_uterine_fibroids"
-                                                   name="uterine_fibroids" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="uterine-fibroids-yes"
+                                                       name="uterine_fibroids"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="uterine-fibroids-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="uterine-fibroids-no" name="uterine_fibroids"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label"
+                                                       for="uterine-fibroids-no"></label>
+                                            </div>
                                         </div>
+
+
                                     </td>
                                     <td>
-                                        <div class="form-group c-dropdown">
-                                            <label for=""></label>
-                                            <input type="text" readonly class="form-control" id="d_f_uterine_fibroids"
-                                                   name="uterine_fibroids_family" placeholder="Select">
-                                            <ul class="c-dropdown-menu">
-                                                <li><a href="#" class="active">Yes</a></li>
-                                                <li><a href="#">No</a></li>
-                                            </ul>
+
+                                        <div class="checkboxes radio-boxes">
+                                            <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                                <input type="radio" id="uterine-fibroids-family-yes"
+                                                       name="uterine_fibroids_family"
+                                                       class="custom-control-input"
+                                                       value="1">
+                                                <label class="custom-control-label"
+                                                       for="uterine-fibroids-family-yes"></label>
+                                            </div>
+                                            <div class="custom-control custom-radio custom-control-inline">
+                                                <input type="radio" id="uterine-fibroids-family-no"
+                                                       name="uterine_fibroids_family"
+                                                       class="custom-control-input"
+                                                       value="0">
+                                                <label class="custom-control-label"
+                                                       for="uterine-fibroids-family-no"></label>
+                                            </div>
                                         </div>
+
                                     </td>
                                     <td>
                                         <div class="form-group">
@@ -6449,7 +7744,10 @@
                                 </tr>
 
                                 </tbody>
+
+
                             </table>
+
                         </div>
 
                         <div class="row">
