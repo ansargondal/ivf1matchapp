@@ -2321,190 +2321,281 @@
                                         {{--                                        <div class="col-12 radio-boxes-container">--}}
                                         {{--                                            <div class="radio-boxes">--}}
                                         <div class="custom-control custom-radio custom-control-inline first mr-2">
-                                            <input type="radio" id="ddk" name="q3" class="custom-control-input"
+                                            <input type="radio" id="injectable-last-5-yes" name="injectable_last_5"
+                                                   class="custom-control-input"
                                                    value="1">
-                                            <label class="custom-control-label" for="ddk"></label>
+                                            <label class="custom-control-label" for="injectable-last-5-yes"></label>
                                         </div>
                                         <div class="custom-control custom-radio custom-control-inline">
-                                            <input type="radio" id="ddkk" name="q3" class="custom-control-input"
+                                            <input type="radio" id="injectable-last-5-no" name="injectable_last_5"
+                                                   class="custom-control-input"
                                                    value="0">
-                                            <label class="custom-control-label" for="ddkk"></label>
+                                            <label class="custom-control-label" for="injectable-last-5-no"></label>
                                         </div>
                                     </div>
-                                    <label for="ddk" class="statement"> Have you engaged in sexual contact in
-                                        exchange for money or drugs?</label>
-
-                                    {{--                                        </div>--}}
-                                    {{--                                    </div>--}}
+                                    <label for="injectable-last-5-yes" class="statement">
+                                        Have you injected drugs for a non-medical reason in the last 5 years?
+                                    </label>
                                 </div>
-                                <div class="col-12">
-                                    <div class='checkboxes'>
-                                        <label class='checkbox'>
-                                            <input type="hidden" name="injectable_last_5" value="0">
-                                            <input type='checkbox' name="injectable_last_5" value="1">
-                                            <span class='indicator'></span>
-                                            Have you injected drugs for a non-medical reason in the last 5 years?
-                                        </label>
-                                    </div>
-                                </div>
-
-                                <div class="col-12">
-                                    <div class='checkboxes'>
-                                        <label class='checkbox'>
-                                            <input type="hidden" name="hemophilia" value="0">
-                                            <input type='checkbox' name="hemophilia" value="1">
-                                            <span class='indicator'></span>
-                                            Do you have hemophilia and/or received human-derived clotting factor
-                                            concentrates in the last 5 years?
-                                        </label>
-                                    </div>
-                                </div>
-
-                                <div class="col-12">
-                                    <div class='checkboxes'>
-                                        <label class='checkbox'>
-                                            <input type="hidden" name="hepatitis_contact" value="0">
-                                            <input type='checkbox' name="hepatitis_contact" value="1">
-                                            <span class='indicator'></span>
-                                            Have you in the last 12 months lived in the same dwelling with another
-                                            person
-                                            with hepatitis B infection or hepatitis C infection?
-                                        </label>
-                                    </div>
-                                </div>
-
-                                <div class="col-12">
-                                    <div class='checkboxes'>
-                                        <label class='checkbox'>
-                                            <input type="hidden" name="hiv" value="0">
-                                            <input type='checkbox' name="hiv" value="1">
-                                            <span class='indicator'></span>
-                                            Have you been exposed in the preceding 12 months to known or suspected HIV
-                                            (AIDS), Hepatitis B, and/or Hepatitis C infected blood through percutaneous
-                                            inoculation (e.g., needle stick) or through contact with an open wound,
-                                            non-intact skin, or mucous membrane?
-                                        </label>
-                                    </div>
-                                </div>
-
-                                <div class="col-12">
-                                    <div class='checkboxes'>
-                                        <label class='checkbox'>
-                                            <input type="hidden" name="hepatitis" value="0">
-                                            <input type='checkbox' name="hepatitis" value="1">
-                                            <span class='indicator'></span>
-                                            Have you ever been diagnosed with any form of hepatitis?
-                                        </label>
-                                    </div>
-                                </div>
-
-                                <div class="col-12">
-                                    <div class='checkboxes'>
-                                        <label class='checkbox'>
-                                            <input type="hidden" name="prison" value="0">
-                                            <input type='checkbox' name="prison" value="1">
-                                            <span class='indicator'></span>
-                                            Have you been in juvenile detention, lock up, jail or prison in the last 12
-                                            months?
-                                        </label>
-                                    </div>
-                                </div>
-
-                                <div class="col-12">
-                                    <div class='checkboxes'>
-                                        <label class='checkbox'>
-                                            <input type="hidden" name="tattoo" value="0">
-                                            <input type='checkbox' name="tattoo" value="1">
-                                            <span class='indicator'></span>
-                                            In the last 12 months, have you gotten a new tattoo, ear piercing or body
-                                            piercing, or had acupuncture treatment in which sterile procedures may not
-                                            have
-                                            been used?
-                                        </label>
-                                    </div>
-                                </div>
-
-                                <div class="col-12">
-                                    <div class='checkboxes'>
-                                        <label class='checkbox'>
-                                            <input type="hidden" name="smallpox_vaccine" value="0">
-                                            <input type='checkbox' name="smallpox_vaccine" value="1">
-                                            <span class='indicator'></span>
-                                            In the last 8 weeks, did you receive a smallpox vaccination (vaccinia
-                                            virus)?
-                                        </label>
-                                    </div>
-                                </div>
-
-                                <div class="col-12">
-                                    <div class='checkboxes'>
-                                        <label class='checkbox'>
-                                            <input type="hidden" name="smallpox_contact" value="0">
-                                            <input type='checkbox' name="smallpox_contact" value="1">
-                                            <span class='indicator'></span>
-                                            In the last 12 months, have you had any contact with someone who received a
-                                            smallpox vaccination or who was diagnosed with smallpox?
-                                        </label>
-                                    </div>
-                                </div>
-
-                                <div class="col-12">
-                                    <div class='checkboxes'>
-                                        <label class='checkbox'>
-                                            <input type="hidden" name="smallpox" value="0">
-                                            <input type='checkbox' name="smallpox" value="1">
-                                            <span class='indicator'></span>
-                                            Have you ever been diagnosed with smallpox?
-                                        </label>
-                                    </div>
-                                </div>
-
-                                <div class="col-12">
-                                    <div class='checkboxes'>
-                                        <label class='checkbox'>
-                                            <input type="hidden" name="west_nile_virus" value="0">
-                                            <input type='checkbox' name="west_nile_virus" value="1">
-                                            <span class='indicator'></span>
-                                            In the last 12 months, were you diagnosed with or treated for West Nile
-                                            Virus?
-                                        </label>
-                                    </div>
-                                </div>
-
-                                <div class="col-12">
-                                    <div class='checkboxes'>
-                                        <label class='checkbox'>
-                                            <input type="hidden" name="syphilis" value="0">
-                                            <input type='checkbox' name="syphilis" value="1">
-                                            <span class='indicator'></span>
-                                            In the last 12 months, were you diagnosed with or treated for Syphilis?
-                                        </label>
-                                    </div>
-                                </div>
-
-                                <div class="col-12">
-                                    <div class='checkboxes'>
-                                        <label class='checkbox'>
-                                            <input type="hidden" name="gonorrhea" value="0">
-                                            <input type='checkbox' name="gonorrhea" value="1">
-                                            <span class='indicator'></span>
-                                            In the last 12 months, were you diagnosed with or treated for Chlamydia or
-                                            gonorrhea infection?
-                                        </label>
-                                    </div>
-                                </div>
-
-                                <div class="col-12 col-md-8">
-                                    <div class='checkboxes'>
-                                        <label class='checkbox'>
-                                            <input type="hidden" name="transfusion" value="0">
-                                            <input type='checkbox' id="c_blood_transfusion" name="transfusion"
+                                <div class="col-12 radio-boxes-container">
+                                    <div class="checkboxes radio-boxes">
+                                        <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                            <input type="radio" id="hemophilia-yes" name="hemophilia"
+                                                   class="custom-control-input"
                                                    value="1">
-                                            <span class='indicator'></span>
-                                            Have you ever received a blood transfusion? If yes, when?
-
-                                        </label>
+                                            <label class="custom-control-label" for="hemophilia-yes"></label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="hemophilia-no" name="hemophilia"
+                                                   class="custom-control-input"
+                                                   value="0">
+                                            <label class="custom-control-label" for="hemophilia-no"></label>
+                                        </div>
                                     </div>
+                                    <label for="hemophilia-yes" class="statement">
+                                        Do you have hemophilia and/or received human-derived clotting factor
+                                        concentrates in the last 5 years?
+                                    </label>
+                                </div>
+                                <div class="col-12 radio-boxes-container">
+                                    <div class="checkboxes radio-boxes">
+                                        <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                            <input type="radio" id="hepatitis-contact-yes" name="hepatitis_contact"
+                                                   class="custom-control-input"
+                                                   value="1">
+                                            <label class="custom-control-label" for="hepatitis-contact-yes"></label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="hepatitis-contact-no" name="hepatitis_contact"
+                                                   class="custom-control-input"
+                                                   value="0">
+                                            <label class="custom-control-label" for="hepatitis-contact-no"></label>
+                                        </div>
+                                    </div>
+                                    <label for="hepatitis-contact-yes" class="statement">
+                                        Have you in the last 12 months lived in the same dwelling with another
+                                        person
+                                        with hepatitis B infection or hepatitis C infection?
+                                    </label>
+                                </div>
+                                <div class="col-12 radio-boxes-container">
+                                    <div class="checkboxes radio-boxes">
+                                        <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                            <input type="radio" id="hiv-yes" name="hiv" class="custom-control-input"
+                                                   value="1">
+                                            <label class="custom-control-label" for="hiv-yes"></label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="hiv-no" name="hiv" class="custom-control-input"
+                                                   value="0">
+                                            <label class="custom-control-label" for="hiv-no"></label>
+                                        </div>
+                                    </div>
+                                    <label for="hiv-yes" class="statement">
+                                        Have you been exposed in the preceding 12 months to known or suspected HIV
+                                        (AIDS), Hepatitis B, and/or Hepatitis C infected blood through percutaneous
+                                        inoculation (e.g., needle stick) or through contact with an open wound,
+                                        non-intact skin, or mucous membrane?
+                                    </label>
+                                </div>
+
+                                <div class="col-12 radio-boxes-container">
+                                    <div class="checkboxes radio-boxes">
+                                        <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                            <input type="radio" id="hepatitis-yes" name="hepatitis"
+                                                   class="custom-control-input"
+                                                   value="1">
+                                            <label class="custom-control-label" for="hepatitis-yes"></label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="hepatitis-no" name="hepatitis"
+                                                   class="custom-control-input"
+                                                   value="0">
+                                            <label class="custom-control-label" for="hepatitis-no"></label>
+                                        </div>
+                                    </div>
+                                    <label for="hepatitis-yes" class="statement">
+                                        Have you ever been diagnosed with any form of hepatitis?
+                                    </label>
+                                </div>
+
+                                <div class="col-12 radio-boxes-container">
+                                    <div class="checkboxes radio-boxes">
+                                        <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                            <input type="radio" id="prison-yes" name="prison"
+                                                   class="custom-control-input"
+                                                   value="1">
+                                            <label class="custom-control-label" for="prison-yes"></label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="prison-no" name="prison"
+                                                   class="custom-control-input"
+                                                   value="0">
+                                            <label class="custom-control-label" for="prison-no"></label>
+                                        </div>
+                                    </div>
+                                    <label for="prison-yes" class="statement">
+                                        Have you been in juvenile detention, lock up, jail or prison in the last 12
+                                        months?
+                                    </label>
+                                </div>
+                                <div class="col-12 radio-boxes-container">
+                                    <div class="checkboxes radio-boxes">
+                                        <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                            <input type="radio" id="tattoo-yes" name="tattoo"
+                                                   class="custom-control-input"
+                                                   value="1">
+                                            <label class="custom-control-label" for="tattoo-yes"></label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="tattoo-no" name="tattoo"
+                                                   class="custom-control-input"
+                                                   value="0">
+                                            <label class="custom-control-label" for="tattoo-no"></label>
+                                        </div>
+                                    </div>
+                                    <label for="tattoo-yes" class="statement">
+                                        In the last 12 months, have you gotten a new tattoo, ear piercing or body
+                                        piercing, or had acupuncture treatment in which sterile procedures may not
+                                        have
+                                        been used?
+                                    </label>
+                                </div>
+                                <div class="col-12 radio-boxes-container">
+                                    <div class="checkboxes radio-boxes">
+                                        <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                            <input type="radio" id="smallpox-vaccine-yes" name="smallpox_vaccine"
+                                                   class="custom-control-input"
+                                                   value="1">
+                                            <label class="custom-control-label" for="smallpox-vaccine-yes"></label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="smallpox-vaccine-no" name="smallpox_vaccine"
+                                                   class="custom-control-input"
+                                                   value="0">
+                                            <label class="custom-control-label" for="smallpox-vaccine-no"></label>
+                                        </div>
+                                    </div>
+                                    <label for="smallpox-vaccine-yes" class="statement">
+                                        In the last 8 weeks, did you receive a smallpox vaccination (vaccinia
+                                        virus)?
+                                    </label>
+                                </div>
+                                <div class="col-12 radio-boxes-container">
+                                    <div class="checkboxes radio-boxes">
+                                        <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                            <input type="radio" id="smallpox-contact-yes" name="smallpox_contact"
+                                                   class="custom-control-input"
+                                                   value="1">
+                                            <label class="custom-control-label" for="smallpox-contact-yes"></label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="smallpox-contact-no" name="smallpox_contact"
+                                                   class="custom-control-input"
+                                                   value="0">
+                                            <label class="custom-control-label" for="smallpox-contact-no"></label>
+                                        </div>
+                                    </div>
+                                    <label for="smallpox-contact-yes" class="statement">
+                                        In the last 12 months, have you had any contact with someone who received a
+                                        smallpox vaccination or who was diagnosed with smallpox?
+                                    </label>
+                                </div>
+                                <div class="col-12 radio-boxes-container">
+                                    <div class="checkboxes radio-boxes">
+                                        <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                            <input type="radio" id="smallpox-yes" name="smallpox"
+                                                   class="custom-control-input"
+                                                   value="1">
+                                            <label class="custom-control-label" for="smallpox-yes"></label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="smallpox-no" name="smallpox"
+                                                   class="custom-control-input"
+                                                   value="0">
+                                            <label class="custom-control-label" for="smallpox-no"></label>
+                                        </div>
+                                    </div>
+                                    <label for="smallpox-yes" class="statement">
+                                        Have you ever been diagnosed with smallpox?
+                                    </label>
+                                </div>
+                                <div class="col-12 radio-boxes-container">
+                                    <div class="checkboxes radio-boxes">
+                                        <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                            <input type="radio" id="west-nile-virus-yes" name="west_nile_virus"
+                                                   class="custom-control-input"
+                                                   value="1">
+                                            <label class="custom-control-label" for="west-nile-virus-yes"></label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="west-nile-virus-no" name="west_nile_virus"
+                                                   class="custom-control-input"
+                                                   value="0">
+                                            <label class="custom-control-label" for="west-nile-virus-no"></label>
+                                        </div>
+                                    </div>
+                                    <label for="west-nile-virus-yes" class="statement">
+                                        In the last 12 months, were you diagnosed with or treated for West Nile
+                                        Virus?
+                                    </label>
+                                </div>
+                                <div class="col-12 radio-boxes-container">
+                                    <div class="checkboxes radio-boxes">
+                                        <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                            <input type="radio" id="syphilis-yes" name="syphilis"
+                                                   class="custom-control-input"
+                                                   value="1">
+                                            <label class="custom-control-label" for="syphilis-yes"></label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="syphilis-no" name="syphilis"
+                                                   class="custom-control-input"
+                                                   value="0">
+                                            <label class="custom-control-label" for="syphilis-no"></label>
+                                        </div>
+                                    </div>
+                                    <label for="syphilis-yes" class="statement">
+                                        In the last 12 months, were you diagnosed with or treated for Syphilis?
+                                    </label>
+                                </div>
+                                <div class="col-12 radio-boxes-container">
+                                    <div class="checkboxes radio-boxes">
+                                        <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                            <input type="radio" id="gonorrhea-yes" name="gonorrhea"
+                                                   class="custom-control-input"
+                                                   value="1">
+                                            <label class="custom-control-label" for="gonorrhea-yes"></label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="gonorrhea-no" name="gonorrhea" class="custom-control-input"
+                                                   value="0">
+                                            <label class="custom-control-label" for="gonorrhea-no"></label>
+                                        </div>
+                                    </div>
+                                    <label for="gonorrhea-yes" class="statement">
+                                        In the last 12 months, were you diagnosed with or treated for Chlamydia or
+                                        gonorrhea infection?
+                                    </label>
+                                </div>
+                                <div class="col-6 radio-boxes-container">
+                                    <div class="checkboxes radio-boxes">
+                                        <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                            <input type="radio" id="transfusion-yes" name="transfusion"
+                                                   class="custom-control-input"
+                                                   value="1">
+                                            <label class="custom-control-label" for="transfusion-yes"></label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="transfusion-no" name="transfusion"
+                                                   class="custom-control-input"
+                                                   value="0">
+                                            <label class="custom-control-label" for="transfusion-no"></label>
+                                        </div>
+                                    </div>
+                                    <label for="transfusion-yes" class="statement">
+                                        Have you ever received a blood transfusion? If yes, when?
+                                    </label>
                                 </div>
                                 <div class="col-12 col-md-4">
                                     <div class="form-group">
@@ -2513,15 +2604,22 @@
                                     </div>
                                 </div>
 
-                                <div class="col-12 col-md-8">
-                                    <div class='checkboxes'>
-                                        <label class='checkbox'>
-                                            <input type="hidden" name="donor_rejection" value="0">
-                                            <input type='checkbox' id="c_blood_donor" name="donor_rejection" value="1">
-                                            <span class='indicator'></span>
-                                            Have you ever been turned down to be a blood donor? If yes, why?
-                                        </label>
+                                <div class="col-6 radio-boxes-container">
+                                    <div class="checkboxes radio-boxes">
+                                        <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                            <input type="radio" id="donor-rejection-yes" name="donor_rejection" class="custom-control-input"
+                                                   value="1">
+                                            <label class="custom-control-label" for="donor-rejection-yes"></label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="donor-rejection-no" name="donor_rejection" class="custom-control-input"
+                                                   value="0">
+                                            <label class="custom-control-label" for="donor-rejection-no"></label>
+                                        </div>
                                     </div>
+                                    <label for="donor-rejection-yes" class="statement">
+                                        Have you ever been turned down to be a blood donor? If yes, why?
+                                    </label>
                                 </div>
                                 <div class="col-12 col-md-4">
                                     <div class="form-group">
@@ -2529,64 +2627,86 @@
                                                name="rejection_reason">
                                     </div>
                                 </div>
-
-                                <div class="col-12">
-                                    <div class='checkboxes'>
-                                        <label class='checkbox'>
-                                            <input type="hidden" name="transplant" value="0">
-                                            <input type='checkbox' name="transplant" value="1">
-                                            <span class='indicator'></span>
-                                            Have you ever received a transplant of any tissue, cells or fluids from a
-                                            non-human, animal source?
-                                        </label>
+                                <div class="col-12 radio-boxes-container">
+                                    <div class="checkboxes radio-boxes">
+                                        <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                            <input type="radio" id="transplant-yes" name="transplant" class="custom-control-input"
+                                                   value="1">
+                                            <label class="custom-control-label" for="transplant-yes"></label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="transplant-no" name="transplant" class="custom-control-input"
+                                                   value="0">
+                                            <label class="custom-control-label" for="transplant-no"></label>
+                                        </div>
                                     </div>
+                                    <label for="transplant-yes" class="statement">
+                                        Have you ever received a transplant of any tissue, cells or fluids from a
+                                        non-human, animal source?
+                                    </label>
                                 </div>
-
-                                <div class="col-12">
-                                    <div class='checkboxes'>
-                                        <label class='checkbox'>
-                                            <input type="hidden" name="transplant_contact" value="0">
-                                            <input type='checkbox' name="transplant_contact" value="1">
-                                            <span class='indicator'></span>
-                                            Have you ever had intimate contact with a recipient of a transplant of any
-                                            tissue, cells or fluids from a non-human, animal source? (Intimate contact
-                                            means
-                                            exchange of body fluids like blood, saliva, semen; this includes sexual
-                                            partners, household members that share razors or toothbrushes)
-                                        </label>
+                                <div class="col-12 radio-boxes-container">
+                                    <div class="checkboxes radio-boxes">
+                                        <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                            <input type="radio" id="transplant-contact-yes" name="transplant_contact" class="custom-control-input"
+                                                   value="1">
+                                            <label class="custom-control-label" for="transplant-contact-yes"></label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="transplant-contact-no" name="transplant_contact" class="custom-control-input"
+                                                   value="0">
+                                            <label class="custom-control-label" for="transplant-contact-no"></label>
+                                        </div>
                                     </div>
+                                    <label for="transplant-contact-yes" class="statement">
+                                        Have you ever had intimate contact with a recipient of a transplant of any
+                                        tissue, cells or fluids from a non-human, animal source? (Intimate contact
+                                        means
+                                        exchange of body fluids like blood, saliva, semen; this includes sexual
+                                        partners, household members that share razors or toothbrushes)
+                                    </label>
                                 </div>
-
-                                <div class="col-12">
-                                    <div class='checkboxes'>
-                                        <label class='checkbox'>
-                                            <input type="hidden" name="african_countries" value="0">
-                                            <input type='checkbox' name="african_countries" value="1">
-                                            <span class='indicator'></span>
-                                            Were you born in or did you live in any of the following countries since
-                                            1977?
-                                            Cameroon, Central African Republic, Chad, Congo, Equatorial Guinea, Gabon,
-                                            Niger
-                                            or Nigeria?
-                                        </label>
+                                <div class="col-12 radio-boxes-container">
+                                    <div class="checkboxes radio-boxes">
+                                        <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                            <input type="radio" id="african-countries-yes" name="african_countries" class="custom-control-input"
+                                                   value="1">
+                                            <label class="custom-control-label" for="african-countries-yes"></label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="african-countries-no" name="african_countries" class="custom-control-input"
+                                                   value="0">
+                                            <label class="custom-control-label" for="african-countries-no"></label>
+                                        </div>
                                     </div>
+                                    <label for="african-countries-yes" class="statement">
+                                        Were you born in or did you live in any of the following countries since
+                                        1977?
+                                        Cameroon, Central African Republic, Chad, Congo, Equatorial Guinea, Gabon,
+                                        Niger
+                                        or Nigeria?
+                                    </label>
                                 </div>
-
-                                <div class="col-12">
-                                    <div class='checkboxes'>
-                                        <label class='checkbox'>
-                                            <input type="hidden" name="african_transfusion" value="0">
-                                            <input type='checkbox' name="african_transfusion" value="1">
-                                            <span class='indicator'></span>
-                                            Did you have a blood transfusion or have any medical treatment involving
-                                            blood
-                                            in any of the following countries since 1977? Cameroon, Central African
-                                            republic, Chad, Congo, Equatorial Guinea, Gabon, Niger or Nigeria?
-                                        </label>
+                                <div class="col-12 radio-boxes-container">
+                                    <div class="checkboxes radio-boxes">
+                                        <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                            <input type="radio" id="african-transfusion-yes" name="african_transfusion" class="custom-control-input"
+                                                   value="1">
+                                            <label class="custom-control-label" for="african-transfusion-yes"></label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="african-transfusion-no" name="african_transfusion" class="custom-control-input"
+                                                   value="0">
+                                            <label class="custom-control-label" for="african-transfusion-no"></label>
+                                        </div>
                                     </div>
+                                    <label for="african-transfusion-yes" class="statement">
+                                        Did you have a blood transfusion or have any medical treatment involving
+                                        blood
+                                        in any of the following countries since 1977? Cameroon, Central African
+                                        republic, Chad, Congo, Equatorial Guinea, Gabon, Niger or Nigeria?
+                                    </label>
                                 </div>
-
-
                             </div>
 
 
@@ -2594,58 +2714,81 @@
                                 <div class="col-12">
                                     <h3>Zika Virus <span>Screening</span></h3>
                                 </div>
-
-                                <div class="col-12">
-                                    <div class='checkboxes'>
-                                        <label class='checkbox'>
-                                            <input type="hidden" name="zika_virus_1" value="0">
-                                            <input type='checkbox' name="zika_virus_1" value="1">
-                                            <span class='indicator'></span>
-                                            Have you been diagnosed with Zika virus infection in the past 6 months?
-                                        </label>
+                                <div class="col-12 radio-boxes-container">
+                                    <div class="checkboxes radio-boxes">
+                                        <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                            <input type="radio" id="zika-virus-1-yes" name="zika_virus_1" class="custom-control-input"
+                                                   value="1">
+                                            <label class="custom-control-label" for="zika-virus-1-yes"></label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="zika-virus-1-no" name="zika_virus_1" class="custom-control-input"
+                                                   value="0">
+                                            <label class="custom-control-label" for="zika-virus-1-no"></label>
+                                        </div>
                                     </div>
+                                    <label for="zika-virus-1-yes" class="statement">
+                                        Have you been diagnosed with Zika virus infection in the past 6 months?
+                                    </label>
                                 </div>
-
-                                <div class="col-12">
-                                    <div class='checkboxes'>
-                                        <label class='checkbox'>
-                                            <input type="hidden" name="zika_virus_2" value="0">
-                                            <input type='checkbox' name="zika_virus_2" value="1">
-                                            <span class='indicator'></span>
-                                            Have you traveled to an area with active Zika virus transmission in the last
-                                            6
-                                            months?
-                                        </label>
+                                <div class="col-12 radio-boxes-container">
+                                    <div class="checkboxes radio-boxes">
+                                        <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                            <input type="radio" id="zika-virus-2-yes" name="zika_virus_2" class="custom-control-input"
+                                                   value="1">
+                                            <label class="custom-control-label" for="zika-virus-2-yes"></label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="zika-virus-2-no" name="zika_virus_2" class="custom-control-input"
+                                                   value="0">
+                                            <label class="custom-control-label" for="zika-virus-2-no"></label>
+                                        </div>
                                     </div>
+                                    <label for="zika-virus-2-yes" class="statement">
+                                        Have you traveled to an area with active Zika virus transmission in the last
+                                        6
+                                        months?
+                                    </label>
                                 </div>
-
-                                <div class="col-12">
-                                    <div class='checkboxes'>
-                                        <label class='checkbox'>
-                                            <input type="hidden" name="zika_virus_3" value="0">
-                                            <input type='checkbox' name="zika_virus_3" value="1">
-                                            <span class='indicator'></span>
-                                            Have you had sex with a male who has been diagnosed with Zika virus
-                                            infection in
-                                            the last 6 months?
-                                        </label>
+                                <div class="col-12 radio-boxes-container">
+                                    <div class="checkboxes radio-boxes">
+                                        <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                            <input type="radio" id="zika-virus-3-yes" name="zika_virus_3" class="custom-control-input"
+                                                   value="1">
+                                            <label class="custom-control-label" for="zika-virus-3-yes"></label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="zika-virus-3-no" name="zika_virus_3" class="custom-control-input"
+                                                   value="0">
+                                            <label class="custom-control-label" for="zika-virus-3-no"></label>
+                                        </div>
                                     </div>
+                                    <label for="zika-virus-3-yes" class="statement">
+                                        Have you had sex with a male who has been diagnosed with Zika virus
+                                        infection in
+                                        the last 6 months?
+                                    </label>
                                 </div>
-
-                                <div class="col-12">
-                                    <div class='checkboxes'>
-                                        <label class='checkbox'>
-                                            <input type="hidden" name="zika_virus_4" value="0">
-                                            <input type='checkbox' name="zika_virus_4" value="1">
-                                            <span class='indicator'></span>
-                                            Have you had sex with a male who has traveled to an area with active Zika
-                                            virus
-                                            transmission in the last 6 months?
-                                        </label>
+                                <div class="col-12 radio-boxes-container">
+                                    <div class="checkboxes radio-boxes">
+                                        <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                            <input type="radio" id="zika-virus-4-yes" name="zika_virus_4" class="custom-control-input"
+                                                   value="1">
+                                            <label class="custom-control-label" for="zika-virus-4-yes"></label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="zika-virus-4-no" name="zika_virus_4" class="custom-control-input"
+                                                   value="0">
+                                            <label class="custom-control-label" for="zika-virus-4-no"></label>
+                                        </div>
                                     </div>
+                                    <label for="zika-virus-4-yes" class="statement">
+                                        Have you had sex with a male who has traveled to an area with active Zika
+                                        virus
+                                        transmission in the last 6 months?
+                                    </label>
                                 </div>
                             </div>
-
                             <div class="row">
                                 <div class="col-xs-12 text-center">
                                     <button id="submit6" class="bttn btn donor-submit">Next Step</button>

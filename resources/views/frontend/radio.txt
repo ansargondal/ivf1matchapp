@@ -1,0 +1,17 @@
+<div class="col-12 radio-boxes-container">
+                                    <div class="checkboxes radio-boxes">
+                                        <div class="custom-control custom-radio custom-control-inline first mr-2">
+                                            <input type="radio" id=-yes" name="" class="custom-control-input"
+                                                   value="1">
+                                            <label class="custom-control-label" for="-yes"></label>
+                                        </div>
+                                        <div class="custom-control custom-radio custom-control-inline">
+                                            <input type="radio" id="-no" name="" class="custom-control-input"
+                                                   value="0">
+                                            <label class="custom-control-label" for="-no"></label>
+                                        </div>
+                                    </div>
+                                    <label for="-yes" class="statement">
+                                        Have you injected drugs for a non-medical reason in the last 5 years?
+                                    </label>
+                                </div>
