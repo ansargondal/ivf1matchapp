@@ -19,7 +19,7 @@ class DonorProfileController extends Controller
 
             'profile' => function ($query) {
 
-                return $query->select('id', 'user_id', 'age', 'eye_color', 'photo_permission');
+                return $query->select('id', 'user_id', 'age', 'eye_color');
 
             }, 'images'])->has('profile')->paginate(3);
 
@@ -30,7 +30,7 @@ class DonorProfileController extends Controller
     public function availableDonors()
     {
         $donors = User::whereHas('profile')
-            ->with('profile:id,user_id,age,eye_color,photo_permission')->limit(3)->get();
+            ->with('profile:id,user_id,age,eye_color')->limit(3)->get();
 
 
         return view('frontend.index', compact('donors'));
@@ -54,7 +54,7 @@ class DonorProfileController extends Controller
         //Illinois is the local state in which Ivf1match is located
         $local_state = ($is_local === 'true') ? 'illinois' : '';
 
-        return User::with('profile:id,user_id,age,eye_color,photo_permission')
+        return User::with('profile:id,user_id,age,eye_color')
             ->whereHas('profile', function ($query) use ($opts) {
 
                 foreach ($opts as $key => $opt) {

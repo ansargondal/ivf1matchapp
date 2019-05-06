@@ -4554,7 +4554,8 @@
                                         </div>
                                     <td>
                                         <div class="form-group">
-                                            <input type="text" class="form-control" id="i_alpha_1_comment" name="alpha_1_comment">
+                                            <input type="text" class="form-control" id="i_alpha_1_comment"
+                                                   name="alpha_1_comment">
                                         </div>
                                     </td>
 
@@ -8742,25 +8743,25 @@
                                     </div>
                                 </div>
 
-                                <div class="col-12 col-md-8">
-                                    <ul>
-                                        <li class="mt-4 pt-3 mb-4">Is it okay to have prospective egg recipients to view
-                                            your photographs?
-                                        </li>
-                                    </ul>
-                                </div>
-                                <div class="col-12 col-md-4">
-                                    <div class="form-group c-dropdown dd-photo-permission">
-                                        <label for=""></label>
-                                        <input type="text" readonly class="form-control" id="d_is_it_ok"
-                                               name="photo_permission"
-                                               placeholder="No">
-                                        <ul class="c-dropdown-menu">
-                                            <li><a href="#">Yes</a></li>
-                                            <li><a href="#" class="active">No</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
+                                {{--                                <div class="col-12 col-md-8">--}}
+                                {{--                                    <ul>--}}
+                                {{--                                        <li class="mt-4 pt-3 mb-4">Is it okay to have prospective egg recipients to view--}}
+                                {{--                                            your photographs?--}}
+                                {{--                                        </li>--}}
+                                {{--                                    </ul>--}}
+                                {{--                                </div>--}}
+                                {{--                                <div class="col-12 col-md-4">--}}
+                                {{--                                    <div class="form-group c-dropdown dd-photo-permission">--}}
+                                {{--                                        <label for=""></label>--}}
+                                {{--                                        <input type="text" readonly class="form-control" id="d_is_it_ok"--}}
+                                {{--                                               name="photo_permission"--}}
+                                {{--                                               placeholder="No">--}}
+                                {{--                                        <ul class="c-dropdown-menu">--}}
+                                {{--                                            <li><a href="#">Yes</a></li>--}}
+                                {{--                                            <li><a href="#" class="active">No</a></li>--}}
+                                {{--                                        </ul>--}}
+                                {{--                                    </div>--}}
+                                {{--                                </div>--}}
 
                                 <div class="col-12 " id="egg-donation-reason">
                                     <h4>I am interested in becoming an egg donor because:

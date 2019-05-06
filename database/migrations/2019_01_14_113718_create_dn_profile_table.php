@@ -63,7 +63,7 @@ class CreateDnProfileTable extends Migration
             $table->boolean('donated');
             $table->string('number_of_donations', 10)->nullable();
             $table->longText('personal_message');
-            $table->boolean('photo_permission')->default(false);
+//            $table->boolean('photo_permission')->default(false);
             $table->boolean('knows_someone')->default(false);
             $table->boolean('rewarding')->default(false);
             $table->boolean('fascinating')->default(false);

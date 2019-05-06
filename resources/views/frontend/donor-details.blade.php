@@ -15,27 +15,27 @@
                     <div class="wrap">
 
                         {{--check if donor has give photo permissions --}}
-                        @if($donor->profile->photo_permission)
-                            @foreach($donor->images as $image)
-                                @if($loop->first)
-                                    <a href="{{asset('storage/' . $image->path)}}" data-lightbox="profile-images">
-                                        <img src="{{asset('storage/photos/' . $image->path)}}" alt=""
-                                             class="img-responsive">
-                                    </a>
-                                @else
-                                    <a href="{{asset('storage/'. $image->path)}}"
-                                       data-lightbox="profile-images" class="hide"> <img
-                                                src="{{asset('storage/photos/' . $image->path)}}" alt=""
-                                                class="img-responsive"></a>
-                                @endif
-                            @endforeach
-                        @else
-                            {{--Show avatar user permission are false--}}
-                            <a href="{{asset('img/avatar.png')}}" data-lightbox="profile-images">
-                                <img src="{{asset('img/avatar.png')}}" alt=""
-                                     class="img-responsive">
-                            </a>
-                        @endif
+                        {{--                        @if($donor->profile->photo_permission)--}}
+                        @foreach($donor->images as $image)
+                            @if($loop->first)
+                                <a href="{{asset('storage/' . $image->path)}}" data-lightbox="profile-images">
+                                    <img src="{{asset('storage/photos/' . $image->path)}}" alt=""
+                                         class="img-responsive">
+                                </a>
+                            @else
+                                <a href="{{asset('storage/'. $image->path)}}"
+                                   data-lightbox="profile-images" class="hide"> <img
+                                            src="{{asset('storage/photos/' . $image->path)}}" alt=""
+                                            class="img-responsive"></a>
+                            @endif
+                        @endforeach
+                        {{--                        @else--}}
+                        {{--                            --}}{{--Show avatar user permission are false--}}
+                        {{--                            <a href="{{asset('img/avatar.png')}}" data-lightbox="profile-images">--}}
+                        {{--                                <img src="{{asset('img/avatar.png')}}" alt=""--}}
+                        {{--                                     class="img-responsive">--}}
+                        {{--                            </a>--}}
+                        {{--                        @endif--}}
                         <h3>Donor #{{$donor->code}} </h3>
                         <p>{{str_limit($donor->profile->personal_message, 130)}}</p>
                         <a href="#" data-id="{{$donor->id}}" class="btn bttn btn-contact-donor">Contact Donor</a>

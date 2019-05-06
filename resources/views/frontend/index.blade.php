@@ -136,15 +136,15 @@
                 @foreach($donors as $donor)
                     <div class="col-xs-12 col-md-4">
                         <div class="wrap text-center">
-                            @if($donor->profile->photo_permission)
-                                <img src="{{asset('storage/'. $donor->images->first()->path)}}"
-                                     alt="EGG DONOR"
-                                     class="img-fluid">
-                            @else
-                                <img src="{{asset('img/avatar.png')}}"
-                                     alt="EGG DONOR"
-                                     class="img-fluid">
-                            @endif
+                            {{--                            @if($donor->profile->photo_permission)--}}
+                            <img src="{{asset('storage/'. $donor->images->first()->path)}}"
+                                 alt="EGG DONOR"
+                                 class="img-fluid">
+                            {{--                            @else--}}
+                            {{--                            <img src="{{asset('img/avatar.png')}}"--}}
+                            {{--                                 alt="EGG DONOR"--}}
+                            {{--                                 class="img-fluid">--}}
+                            {{--                            @endif--}}
                             <h4>DONOR INFO</h4>
                             <ul class="text-left">
                                 <li>Age <span class="pull-right">{{$donor->profile->age}}</span></li>
