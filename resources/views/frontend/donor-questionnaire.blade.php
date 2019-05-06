@@ -67,8 +67,8 @@
                                 <div class="col-12 col-md-6">
                                     <div class="form-group">
                                         <label for="date_birth">Date Birth</label>
-                                        <input type="text" class="form-control date-picker" id="date_birth"
-                                               name="dob">
+                                        <input type="text" class="form-control" id="date_birth"
+                                               name="dob" readonly>
                                     </div>
                                 </div>
                                 <div class="col-12 col-md-6">
@@ -4241,7 +4241,7 @@
                             </table>
                         </div>
                         <div class="row">
-{{--                            <h3>Chromosomal <span>Abnormalities</span></h3>--}}
+                            {{--                            <h3>Chromosomal <span>Abnormalities</span></h3>--}}
                             <h3>Psychological <span>History (Answer each question)</span></h3>
                         </div>
                         <div class="row table-responsive">
@@ -8164,30 +8164,66 @@
                     <form action="{{route('donor.profile.store')}}" id="step10" method="post"
                           enctype="multipart/form-data">
                         @csrf
-
                         <div class="row">
                             <div class="col-12 col-md-6">
-                                <div class="form-group">
+                                <div class="form-group c-dropdown">
                                     <label for="i_height">Height</label>
-                                    <input type="text" class="form-control" id="i_height" name="height">
+                                    <input type="text" readonly class="form-control" id="i_height"
+                                           name="height">
+                                    <ul class="c-dropdown-menu">
+                                        <li><a href="#">4’</a></li>
+                                        <li><a href="#">4’ 1”</a></li>
+                                        <li><a href="#">4’ 2”</a></li>
+                                        <li><a href="#">4’ 3”</a></li>
+                                        <li><a href="#">4’ 4”</a></li>
+                                        <li><a href="#">4’ 5”</a></li>
+                                        <li><a href="#">4’ 6”</a></li>
+                                        <li><a href="#">4’ 7”</a></li>
+                                        <li><a href="#">4’ 8”</a></li>
+                                        <li><a href="#">4’ 9”</a></li>
+                                        <li><a href="#">5’</a></li>
+                                        <li><a href="#">5’ 1”</a></li>
+                                        <li><a href="#">5’ 2”</a></li>
+                                        <li><a href="#">5’ 3”</a></li>
+                                        <li><a href="#">5’ 4”</a></li>
+                                        <li><a href="#">5’ 5”</a></li>
+                                        <li><a href="#">5’ 6”</a></li>
+                                        <li><a href="#">5’ 7”</a></li>
+                                        <li><a href="#">5’ 8”</a></li>
+                                        <li><a href="#">5’ 9”</a></li>
+                                        <li><a href="#">6’ 1”</a></li>
+                                        <li><a href="#">6’ 2”</a></li>
+                                        <li><a href="#">6’ 3”</a></li>
+                                        <li><a href="#">6’ 4”</a></li>
+                                        <li><a href="#">6’ 5”</a></li>
+                                    </ul>
                                 </div>
                             </div>
                             <div class="col-12 col-md-6">
                                 <div class="form-group">
-                                    <label for="i_weight">Weight</label>
+                                    <label for="i_weight">Weight (lbs)</label>
                                     <input type="text" class="form-control" id="i_weight" name="weight">
                                 </div>
                             </div>
                             <div class="col-12 col-md-6">
-                                <div class="form-group">
+                                <div class="form-group c-dropdown">
                                     <label for="i_race">Race</label>
-                                    <input type="text" class="form-control" id="i_race" name="race">
+                                    <input type="text" readonly class="form-control" id="i_race"
+                                           name="race">
+                                    <ul class="c-dropdown-menu">
+                                        <li><a href="#" class="">Caucasian</a></li>
+                                        <li><a href="#">Hispanic</a></li>
+                                        <li><a href="#">Mixed</a></li>
+                                        <li><a href="#">Black (Carib)</a></li>
+                                        <li><a href="#">Black (African)</a></li>
+                                        <li><a href="#">Black (Hispanic)</a></li>
+                                    </ul>
                                 </div>
                             </div>
                             <div class="col-12 col-md-6">
                                 <div class="form-group">
                                     <label for="i_home_phone">Age</label>
-                                    <input type="text" class="form-control" id="i_home_phone" name="age">
+                                    <input type="text" class="form-control" id="i_home_phone" name="age" readonly>
                                 </div>
                             </div>
                         </div>
@@ -8379,11 +8415,10 @@
                                     <input type="text" readonly class="form-control" id="d_eyecolor" name="eye_color">
                                     <ul class="c-dropdown-menu">
                                         <li><a href="#" class="">Blue</a></li>
+                                        <li><a href="#">Blue</a></li>
                                         <li><a href="#">Brown</a></li>
-                                        <li><a href="#">Lt Brown</a></li>
-                                        <li><a href="#">Dk Brown</a></li>
-                                        <li><a href="#">Green</a></li>
                                         <li><a href="#">Hazel</a></li>
+                                        <li><a href="#">Green</a></li>
                                     </ul>
                                 </div>
                             </div>
@@ -8426,13 +8461,14 @@
                                     <input type="text" readonly class="form-control" id="d_haircolor"
                                            name="hair_color">
                                     <ul class="c-dropdown-menu">
+                                        <li><a href="#" class="">Md Brown</a></li>
                                         <li><a href="#" class="">Black</a></li>
-                                        <li><a href="#">Lt Blonde</a></li>
-                                        <li><a href="#">Md Blonde</a></li>
-                                        <li><a href="#">Dk Blonde</a></li>
+                                        <li><a href="#" class="">Dk Blonde</a></li>
                                         <li><a href="#">Lt Brown</a></li>
-                                        <li><a href="#">Md Brown</a></li>
                                         <li><a href="#">Dk Brown</a></li>
+                                        <li><a href="#">Red</a></li>
+                                        <li><a href="#">Md Blonde</a></li>
+                                        <li><a href="#">Lt Blonde</a></li>
                                     </ul>
                                 </div>
                             </div>

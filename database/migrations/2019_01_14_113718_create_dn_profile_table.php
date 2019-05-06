@@ -17,7 +17,7 @@ class CreateDnProfileTable extends Migration
             $table->increments('id');
             $table->unsignedInteger('user_id');
             $table->string('age', 50);
-            $table->string('height', 30);
+            $table->string('height', 10);
             $table->string('weight', 30);
             $table->string('race', 50);
             $table->string('mother', 150);
