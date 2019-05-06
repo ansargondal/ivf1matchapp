@@ -4241,8 +4241,8 @@
                             </table>
                         </div>
                         <div class="row">
-                            <h3>Chromosomal <span>Abnormalities</span></h3>
-                            <h3>Psychological History (Answer each question)</h3>
+{{--                            <h3>Chromosomal <span>Abnormalities</span></h3>--}}
+                            <h3>Psychological <span>History (Answer each question)</span></h3>
                         </div>
                         <div class="row table-responsive">
                             <table class="table">
