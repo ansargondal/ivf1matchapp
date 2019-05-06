@@ -18,7 +18,7 @@ Route::group(['middleware' => 'guest'], function () {
     Route::post('recipient/register', 'Admin\RecipientController@store')->name('recipient.register.store');
 
     //Authentication Common routes showLogin/Login/Logout
-    Route::get('login', 'Auth\LoginController@show')->name('login.show')->middleware('guest');
+    Route::get('login', 'Auth\LoginController@show')->name('login.show');
     Route::post('login', 'Auth\LoginController@authenticate')->name('login.authenticate');
 });
 
