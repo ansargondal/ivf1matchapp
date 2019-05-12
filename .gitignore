@@ -14,3 +14,4 @@ yarn-error.log
 .env
 .phpunit.result.cache
 resources/assets/
+/var/www/html/projects/ivf1match/resources/assets/js/dq-MH-validation.js

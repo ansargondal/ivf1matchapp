@@ -4958,26 +4958,22 @@
                                         </ul>
                                     </th>
                                     <td>
-
                                         <div class="checkboxes radio-boxes">
                                             <div class="custom-control custom-radio custom-control-inline first mr-2">
-                                                <input type="radio" id="hemophilia-yes" name="hemophilia"
+                                                <input type="radio" id="hemophilia-mh-yes" name="hemophilia"
                                                        class="custom-control-input"
                                                        value="1">
-                                                <label class="custom-control-label" for="hemophilia-yes"></label>
+                                                <label class="custom-control-label" for="hemophilia-mh-yes"></label>
                                             </div>
                                             <div class="custom-control custom-radio custom-control-inline">
-                                                <input type="radio" id="hemophilia-no" name="hemophilia"
+                                                <input type="radio" id="hemophilia-mh-no" name="hemophilia"
                                                        class="custom-control-input"
                                                        value="0">
-                                                <label class="custom-control-label" for="hemophilia-no"></label>
+                                                <label class="custom-control-label" for="hemophilia-mh-no"></label>
                                             </div>
                                         </div>
-
-
                                     </td>
                                     <td>
-
                                         <div class="checkboxes radio-boxes">
                                             <div class="custom-control custom-radio custom-control-inline first mr-2">
                                                 <input type="radio" id="hemophilia-family-yes" name="hemophilia_family"
@@ -5024,7 +5020,6 @@
                                         </div>
                                     </td>
                                     <td>
-
                                         <div class="checkboxes radio-boxes">
                                             <div class="custom-control custom-radio custom-control-inline first mr-2">
                                                 <input type="radio" id="marfan-family-yes" name="marfan_family"
@@ -5039,8 +5034,6 @@
                                                 <label class="custom-control-label" for="marfan-family-no"></label>
                                             </div>
                                         </div>
-
-
                                     </td>
                                     <td>
                                         <div class="form-group">
