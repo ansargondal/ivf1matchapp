@@ -1,7 +1,15 @@
 <?php
 
-//all the routes
 
+//subscription route is public and don't need auth middleware
+use Illuminate\Support\Facades\Route;
+
+Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'as' => 'admin.'], function () {
+
+    Route::post('subscribe', 'SubscriptionController@store')->name('subscription.store');
+});
+
+//all the routes
 Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => 'auth', 'as' => 'admin.'], function () {
 
     //TODO:: Redirect users properly after logging in... Recipient| Donor| Admin
@@ -38,7 +46,6 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => 'auth
     Route::post('messages/{id}/mark-as-read', 'MessageController@markAsRead')
         ->name('messages.mark.as.read');
 
-    Route::post('subscribe', 'SubscriptionController@store')->name('subscription.store');
 
     //Data table  ajax data routes Routes
     Route::get('tasksAjax', 'TaskController@tasksDTData')->name('tasks.ajax');
