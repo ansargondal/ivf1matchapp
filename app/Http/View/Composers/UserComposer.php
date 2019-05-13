@@ -10,8 +10,8 @@ class  UserComposer
     public function compose(View $view)
     {
 
-        $username = Auth::user()->fullName;
-        
-        $view->with('username', $username);
+        $user = Auth::user();
+
+        $view->with('user', $user);
     }
 }

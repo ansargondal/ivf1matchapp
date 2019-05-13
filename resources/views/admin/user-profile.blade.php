@@ -4,7 +4,7 @@
 
 @section('content')
     <main class="main" id="user-profile">
-        <form action="{{route('admin.users.update', 1)}}" method="post" class="user-info" id="form-user-update">
+        <form action="{{route('admin.users.update', $user->id)}}" method="post" class="user-info" id="form-user-update">
             <div class="row">
                 <div class="col-md-10 border px-3 pb-3">
                     <h3>User Info</h3>

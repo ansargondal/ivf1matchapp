@@ -5270,11 +5270,8 @@
                                                 <label class="custom-control-label" for="thallasemia-no"></label>
                                             </div>
                                         </div>
-
-
                                     </td>
                                     <td>
-
                                         <div class="checkboxes radio-boxes">
                                             <div class="custom-control custom-radio custom-control-inline first mr-2">
                                                 <input type="radio" id="thallasemia-family-yes"
@@ -5291,8 +5288,6 @@
                                                 <label class="custom-control-label" for="thallasemia-family-no"></label>
                                             </div>
                                         </div>
-
-
                                     </td>
                                     <td>
                                         <div class="form-group">
@@ -5308,7 +5303,6 @@
                                         </ul>
                                     </th>
                                     <td>
-
                                         <div class="checkboxes radio-boxes">
                                             <div class="custom-control custom-radio custom-control-inline first mr-2">
                                                 <input type="radio" id="blindness-yes" name="blindness"
@@ -5323,8 +5317,6 @@
                                                 <label class="custom-control-label" for="blindness-no"></label>
                                             </div>
                                         </div>
-
-
                                     </td>
                                     <td>
 

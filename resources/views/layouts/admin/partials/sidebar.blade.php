@@ -12,7 +12,7 @@
                 <span class="sb-profile">
                     <img src="../img/avatar.png" alt="profile pic" class="img-fluid">
                 </span>
-                    {{ $username }}
+                    <span id="full-name">{{ $user->fullName }}</span>
                 </a>
                 {{--Todd B Cutick</a>--}}
                 <ul class="sb-sub-nav">

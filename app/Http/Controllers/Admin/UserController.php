@@ -63,14 +63,16 @@ class UserController extends Controller
 
     public function update(Request $request)
     {
+
+
         $pathInfo = request()->getPathInfo();
 
         $id = explode("/", $pathInfo)[3];
 
         $user = user::find($id);
 
-        $user->fname = $request->fname;
-        $user->lname = $request->lname;
+        $user->fname = $request->first_name;
+        $user->lname = $request->last_name;
 
 
         //Only update password if user has filled the password filed
