@@ -31,9 +31,12 @@
                        title="Visit Website"><i class="fa fa-space-shuttle"></i></a>
                 </li>
                 <li class="nav-item dropdown ">
-                    <a href="#" class="nav-link " data-toggle="dropdown">
+                    <a href="#" class="nav-link " data-toggle="dropdown" data-title="No Notifications found">
                         <i class="fa fa-bell" aria-hidden="true"></i>
-                        <span class="badge badge-danger badge-pill">{{sprintf('%01d',$message_count->unread)}}</span>
+
+                        @if($message_count->unread > 0)
+                            <span class="badge badge-danger badge-pill">{{sprintf('%01d',$message_count->unread)}}</span>
+                        @endif
                     </a>
                     @if(count($messages))
                         <div class="dropdown-menu message-dropdown">

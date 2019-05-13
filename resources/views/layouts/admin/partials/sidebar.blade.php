@@ -62,7 +62,10 @@
             <li>
                 <a href="#">
                     <i class="fa fa-envelope" aria-hidden="true"></i>MESSAGES
-                    <span class="badge badge-danger">{{ sprintf('%01d', $message_count->unread)}}</span>
+
+                    @if($message_count->unread > 0)
+                        <span class="badge badge-danger">{{ sprintf('%01d', $message_count->unread)}}</span>
+                    @endif
                 </a>
                 <ul class="sb-sub-nav">
                     <li><a href="{{route('admin.messages.index')}}"><span class="initials">VA</span>View All</a></li>
