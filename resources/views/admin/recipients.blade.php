@@ -5,7 +5,6 @@
 @section('content')
     <main class="main" id="salesman-customers">
         <div class="c-container">
-
             <div class="row">
                 @foreach($recipients as $recipient)
                     <div class="col-md-6 col-xl-3">

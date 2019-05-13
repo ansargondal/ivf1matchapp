@@ -32,7 +32,8 @@
                 </ul>
             </li>
             @endrole
-            @hasanyrole('admin|recipient')
+
+            @hasanyrole('Admin|Recipient')
             <li>
                 <a href="#">
                     <i class="fa fa-code-fork" aria-hidden="true"></i>DONORS

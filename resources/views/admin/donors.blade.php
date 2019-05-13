@@ -6,26 +6,26 @@
     <main class="main" id="salesman-customers">
         <div class="c-container">
             <div class="row mx-auto">
-                {{--                @foreach($donors as $donor)--}}
-                {{--<div class="col-md-6 col-xl-3">--}}
-                {{--<div class="card user">--}}
-                {{--<div class="card-body ">--}}
-                {{--<img src="../img/avatar.png" alt="" class="salesman-profile">--}}
-                {{--<span class="salesman-info">--}}
-                {{--<h4>{{$donor->fullName}}</h4>--}}
-                {{--<p>{{$donor->email}}</p>--}}
-                {{--<p><b class="mr-4">Status: </b>--}}
-                {{--<span class="{{$donor->statusClass}}">{{ucfirst($donor->status)}}</span>--}}
-                {{--</p>--}}
-                {{--</span>--}}
-                {{--</div>--}}
-                {{--<div class="card-footer">--}}
-                {{--<span class="blocked-on">Last Updated</span>--}}
-                {{--<span class="date">{{$donor->updated_at->format('M, d Y')}}</span>--}}
-                {{--</div>--}}
-                {{--</div>--}}
-                {{--</div>--}}
-                {{--@endforeach--}}
+                @foreach($donors as $donor)
+                    <div class="col-md-6 col-xl-3">
+                        <div class="card user">
+                            <div class="card-body ">
+                                <img src="../img/avatar.png" alt="" class="salesman-profile">
+                                <span class="salesman-info">
+                <h4>{{$donor->fullName}}</h4>
+                                                <p>{{$donor->email}}</p>
+                <p><b class="mr-4">Status: </b>
+                <span class="{{$donor->statusClass}}">{{ucfirst($donor->status)}}</span>
+                </p>
+                </span>
+                            </div>
+                            <div class="card-footer">
+                                <span class="blocked-on">Last Updated</span>
+                                <span class="date">{{$donor->updated_at->format('M, d Y')}}</span>
+                            </div>
+                        </div>
+                    </div>
+                @endforeach
             </div><!--!row-->
             <div class="row">
                 <div class="table-responsive">

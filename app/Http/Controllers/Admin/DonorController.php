@@ -7,7 +7,6 @@ use App\Http\Requests\RegisterUserRequest;
 use App\Models\Backend\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
-use Spatie\Permission\Models\Role;
 
 class DonorController extends Controller
 {
@@ -19,12 +18,17 @@ class DonorController extends Controller
 
     public function index()
     {
+        $donors = User::whereHas('roles', function ($query) {
+            $query->where('name', 'Donor');
+        })->with('profile')->limit(4)->get();
 
-        $donors = Role::with('users')->where('name', '=', 'Donor')->get();
 
-//        return Auth::user()->with('roles')->get();
+//        $donors = User::whereHas('roles', function ($query) {
+//            $query->where('name', 'Donor');
+//        })->with('profile')->where('id', 40)->get();
+//        return $donors[0]->profile->age;
 
-        return view('admin.donors', $donors);
+        return view('admin.donors', compact('donors'));
     }
 
     public function create()
@@ -100,24 +104,58 @@ class DonorController extends Controller
      * @desc adds fname & lname initials and adds random number to them
      * @param $request
      * @return code
+     * @throws \Exception
      */
     protected function makeCode($request)
     {
         $fname_intial = $request->input('fname')[0];
         $lname_initial = $request->input('lname')[0];
 
-        $code = $fname_intial . $lname_initial . rand(1000, 10000);
+        $code = strtoupper($fname_intial) . strtoupper($lname_initial) . random_int(1000, 10000);
 
         return $code;
+    }
+
+
+    public function destroy($id)
+    {
+        try {
+            User::whereHas('roles', function ($query) {
+                $query->where('name', 'Donor');
+            })->whereId($id)->delete();
+
+            return response()->json(['error' => false, 'message' => 'Donor deleted successfully!']);
+
+        } catch (\Exception $exception) {
+
+            return response()->json(['error' => true, 'message' => 'something went wrong! Try again!']);
+        }
     }
 
     public function donorsDTData()
     {
         $donors = User::whereHas('roles', function ($query) {
+
             $query->where('name', 'Donor');
+
         })->with('profile')->get();
 
         return datatables($donors)
+            ->addColumn('name', function ($donors) {
+
+                return $donors->fullName;
+
+            })
+            ->addColumn('weight', function ($donors) {
+
+                return $donors->profile->weight ?? '';
+
+            })
+            ->addColumn('age', function ($donors) {
+
+                return $donors->profile->age ?? '';
+
+            })
             ->addColumn('cycle', function ($donors) {
 
                 $btnClass = $this->getMatchedClass($donors->cycle);

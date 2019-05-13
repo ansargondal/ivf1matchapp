@@ -25,7 +25,6 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin', 'middleware' => 'auth
     Route::get('password/edit', 'UserController@passwordEdit')->name('user.password.edit');
     Route::post('password/update', 'UserController@passwordUpdate')->name('user.password.update');
 
-
     Route::resource('donors', 'DonorController');
     Route::post('donors/{id}/update-status', 'DonorController@updateStatus')
         ->name('donor.status');
