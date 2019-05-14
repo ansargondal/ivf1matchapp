@@ -10,6 +10,7 @@ use App\Models\Frontend\Donor\S2Suppliment;
 use App\Models\Frontend\Donor\S2Surgical;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Log;
 
 class S2MedHistoryController extends Controller
 {
@@ -17,7 +18,6 @@ class S2MedHistoryController extends Controller
     public function store(Request $request)
     {
         try {
-
             //get only vaccinated data for medical history table
             $vaccinated_data = $request->only(['user_id', 'vaccinated', 'vaccinated_for']);
 
@@ -27,7 +27,7 @@ class S2MedHistoryController extends Controller
             $vaccinated_data['vaccinated'] = ($vaccinated === 'yes') ? 1 : 0;
 
             //save medical history data and return last inserted medical history row
-            $medical_history = Auth::user()->s2MedicalHistory()->create($vaccinated_data);
+            $medical_history = Auth::user()->s2MedicalHistory()->updateOrCreate(['user_id' => 44], $vaccinated_data);
 
             //Medical History Illness data Insertion
             S2Illness::store($request, $medical_history);
@@ -47,6 +47,8 @@ class S2MedHistoryController extends Controller
             return response()->json(['error' => false, 'message' => 'Medical History Information saved.']);
 
         } catch (\Exception $exception) {
+
+            Log::error($exception->getMessage());
 
             return response()->json(['error' => true, 'message' => 'something went wrong! Try again!']);
         }

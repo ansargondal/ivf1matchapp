@@ -35,7 +35,11 @@ class S3CancerAb extends Model
             }
         }
 
-        $medical_abnormality->cancerAb()->create($data);
+        $medical_abnormality
+            ->cancerAb()
+            ->updateOrCreate([
+                'medical_abnormality_id' => $medical_abnormality->id
+            ], $data);
     }
 
     public function cancerAb()

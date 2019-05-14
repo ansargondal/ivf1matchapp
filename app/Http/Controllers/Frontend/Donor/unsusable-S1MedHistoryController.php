@@ -15,7 +15,7 @@ class S1MedHistoryController extends Controller
         try {
             $request->only(['user_id', 'vaccinated', 'vaccinated_for']);
 
-            S1Question::create($request->all());
+            S1Question::updateOrCreate(['user_id' => 44], $request->all());
 
             return response()->json(['error' => false, 'message' => 'Medical History Information saved.']);
 

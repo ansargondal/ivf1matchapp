@@ -20,12 +20,13 @@ class LifestyleController extends Controller
             $data = $request->only($column_list);
 
             //Save lifestyle Info
-            $lifestyle = Auth::user()->lifestyle()->create($data);
+            $lifestyle = Auth::user()->lifestyle()->updateOrCreate(['user_id' => 44], $data);
 
             //save lifestyle sterile information
             LifeStyleSterile::store($request, $lifestyle);
 
             return response()->json(['error' => false, 'message' => 'Lifestyle information saved.']);
+
         } catch (\Exception $exception) {
 
             return response()->json(['error' => true, 'message' => 'something went wrong! Try again!']);

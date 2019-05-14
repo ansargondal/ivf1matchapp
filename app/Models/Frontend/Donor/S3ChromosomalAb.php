@@ -35,7 +35,12 @@ class S3ChromosomalAb extends Model
             }
         }
 
-        $medical_abnormality->chromosomalAb()->create($data);
+        $medical_abnormality
+            ->chromosomalAb()
+            ->updateOrCreate([
+                'medical_abnormality_id' => $medical_abnormality->id
+            ],
+                $data);
     }
 
     public function medicalAbnormality()

@@ -20,7 +20,8 @@ class PregnancyController extends Controller
             $data = $request->only($column_list);
 
             //Save Pregnancy History data
-            $pregnancy = Auth::user()->pregnancy()->create($data);
+            $pregnancy = Auth::user()->pregnancy()->updateOrCreate(['user_id' => 44], $data);
+
 
             //saving sexual activity data
             PhSexualActivity::store($request, $pregnancy);

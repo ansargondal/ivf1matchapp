@@ -13,9 +13,10 @@ class SexualHistoryController extends Controller
     {
         try {
 
-            Auth::user()->sexualHistory()->create($request->all());
+            Auth::user()->sexualHistory()->updateOrCreate(['user_id' => 44], $request->all());
 
             return response()->json(['error' => false, 'message' => 'Sexual History Information saved.']);
+
         } catch (Exception $exception) {
 
             return response()->json(['error' => true, 'message' => 'something went wrong! Try again!']);

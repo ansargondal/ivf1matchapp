@@ -25,6 +25,9 @@ class S2Surgical extends Model
         //count medical history illness data
         $count = count($surgical_list['surgery_type']);
 
+
+        $surgical_list_id = 1;
+
         for ($i = 0; $i < $count; $i++) {
 
             $medication_list_row = [];
@@ -35,7 +38,17 @@ class S2Surgical extends Model
             }
 
             //save one row at a time till the loop completes
-            $medical_history->surgicalList()->create($surgical_list_row);
+            $medical_history
+                ->surgicalList()
+                ->updateOrCreate([
+
+                    'medical_history_id' => $medical_history->id,
+
+                    'id' => $surgical_list_id
+
+                ], $surgical_list_row);
+
+            $surgical_list_id++;
         }
     }
 }

@@ -26,6 +26,8 @@ class S2Illness extends Model
         //count medical history illness data
         $count = count($medical_illness['problem']);
 
+        $medical_illness_id = 1;
+
         for ($i = 0; $i < $count; $i++) {
 
             $medical_illness_row = [];
@@ -36,7 +38,14 @@ class S2Illness extends Model
             }
 
             //save one row at a time till the loop completes
-            $medical_history->medicalIllness()->create($medical_illness_row);
+            $medical_history->medicalIllness()
+                ->updateOrCreate([
+                    'medical_history_id' => $medical_history->id,
+                    'id' => $medical_illness_id
+                ],
+                $medical_illness_row);
+
+            $medical_illness_id++;
         }
 
         return true;

@@ -11,8 +11,6 @@ use Illuminate\Support\Facades\Auth;
 
 class DonorProfileController extends Controller
 {
-
-
     public function index()
     {
         $donors = User::with([
@@ -31,7 +29,6 @@ class DonorProfileController extends Controller
     {
         $donors = User::whereHas('profile')
             ->with('profile:id,user_id,age,eye_color')->limit(3)->get();
-
 
         return view('frontend.index', compact('donors'));
     }
@@ -84,14 +81,20 @@ class DonorProfileController extends Controller
                 $temp = strtolower($request->get($key));
 
                 if ($temp === 'yes') {
+
                     $data[$key] = 1;
+
                 } elseif ($temp === 'no') {
+
                     $data[$key] = 0;
+
                 }
             }
 
             //save donor profile information
-            $donor_profile = Auth::user()->profile()->create($data);
+            $donor_profile = Auth::user()
+                ->profile()
+                ->updateOrCreate(['user_id' => 44], $data);
 
             //save images and move them to specific directory
             Image::store($request, $donor_profile);

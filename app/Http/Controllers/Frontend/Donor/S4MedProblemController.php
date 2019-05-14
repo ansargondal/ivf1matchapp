@@ -23,13 +23,19 @@ class S4MedProblemController extends Controller
                 $temp = strtolower($request->get($key));
 
                 if ($temp === 'yes') {
+
                     $data[$key] = 1;
+
                 } elseif ($temp === 'no') {
+
                     $data[$key] = 0;
+
                 }
             }
 
-            Auth::user()->medicalProblem()->create($data);
+            Auth::user()
+                ->medicalProblem()
+                ->updateOrCreate(['user_id' => 44], $data);
 
 
             return response()->json(['error' => false, 'message' => 'Medical Problems Information saved.']);

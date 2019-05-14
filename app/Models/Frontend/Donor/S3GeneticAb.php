@@ -35,7 +35,11 @@ class S3GeneticAb extends Model
             }
         }
 
-        $medical_abnormality->geneticAb()->create($data);
+        $medical_abnormality
+            ->geneticAb()
+            ->updateOrCreate([
+                'medical_abnormality_id' => $medical_abnormality->id
+            ], $data);
     }
 
     public function medicalAbnormality()

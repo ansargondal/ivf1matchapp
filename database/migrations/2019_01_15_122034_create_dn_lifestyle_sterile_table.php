@@ -14,8 +14,8 @@ class CreateDnLifestyleSterileTable extends Migration
     public function up()
     {
         Schema::create('dn_lifestyle_sterile', function (Blueprint $table) {
-            $table->unsignedInteger('lifestyle_id');
 
+            $table->unsignedInteger('lifestyle_id');
             $table->string('tattoo', 20)->nullable();
             $table->string('tattoo_date', 20)->nullable();
             $table->string('tattoo_location', 150)->nullable();

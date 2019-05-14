@@ -25,6 +25,9 @@ class S2Suppliment extends Model
         //count medical history medication data
         $count = count($supplement_list['non_prescription']);
 
+        $supplement_list_id = 1;
+
+
         for ($i = 0; $i < $count; $i++) {
 
             $supplement_list_row = [];
@@ -35,7 +38,14 @@ class S2Suppliment extends Model
             }
 
             //save one row at a time till the loop completes
-            $medical_history->supplementList()->create($supplement_list_row);
+            $medical_history
+                ->supplementList()
+                ->updateOrCreate([
+                    'medical_history_id' => $medical_history->id,
+                    'id' => $supplement_list_id
+                ], $supplement_list_row);
+
+            $supplement_list_id++;
         }
 
     }

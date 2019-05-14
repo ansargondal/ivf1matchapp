@@ -15,9 +15,11 @@ class S1MedQuestionController extends Controller
         try {
 
             $questions = $request->except('token');
-            Auth::user()->s1Question()->create($questions);
+
+            Auth::user()->s1Question()->updateOrCreate(['user_id' => 44], $questions);
 
             return response()->json(['error' => false, 'message' => 'Medical History Information saved.']);
+
         } catch (Exception $exception) {
 
             return response()->json(['error' => true, 'message' => 'something went wrong! Try again!']);

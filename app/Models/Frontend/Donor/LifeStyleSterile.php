@@ -24,6 +24,7 @@ class LifeStyleSterile extends Model
         //get only lifestyle sterile values
         $data = $request->only($column_list);
 
+        $lifestyle_sterile_id = 1;
 
         //if there is any data for sterile used  checkbox (checking by it's first column)
         if (isset($data['sterile_used'])) {
@@ -41,7 +42,10 @@ class LifeStyleSterile extends Model
                 }
 
                 //save one row at a time till the loop completes
-                $lifestyle->sterile()->create($sterile_row);
+                $lifestyle->sterile()->updateOrCreate(['lifestyle_id' => $lifestyle->id, 'id' => $lifestyle_sterile_id], $sterile_row);
+
+                $lifestyle_sterile_id++;
+
             }
         }
     }

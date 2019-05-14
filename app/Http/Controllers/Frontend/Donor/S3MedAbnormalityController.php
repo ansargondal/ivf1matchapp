@@ -33,7 +33,7 @@ class S3MedAbnormalityController extends Controller
             }
 
             //Medical Abnormality Data Insertion
-            $medical_abnormality = Auth::user()->medicalAbnormality()->create($data);
+            $medical_abnormality = Auth::user()->medicalAbnormality()->updateOrCreate(['user_id' => 44], $data);
 
 
             //Chromosomal Abnormality Data Insertion

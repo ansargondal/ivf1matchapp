@@ -3,6 +3,7 @@
 namespace App\Models\Frontend\Donor;
 
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Schema;
 
 class PhSexualActivity extends Model
@@ -18,7 +19,7 @@ class PhSexualActivity extends Model
         return Schema::getColumnListing($table);
     }
 
-    public static function store(\Illuminate\Http\Request $request, $pregnancy)
+    public static function store(Request $request, $pregnancy)
     {
         $column_list = self::getTableColumns('dn_ph_sexual_activity');
 
@@ -31,17 +32,23 @@ class PhSexualActivity extends Model
             //count sexual activity items
             $count = count($data['delivered_baby']);
 
+            $sexual_activity_id = 1;
+
             for ($i = 0; $i < $count; $i++) {
 
                 $sexual_activity_row = [];
 
                 //get a row one by one of sexual activity data
                 foreach ($data as $key => $activity) {
+
                     $sexual_activity_row[$key] = $activity[$i];
+
                 }
 
                 //save one row at a time till the loop completes
-                $pregnancy->sexualActivity()->create($sexual_activity_row);
+                $pregnancy->sexualActivity()->updateOrCreate(['id' => $sexual_activity_id, 'pregnancy_id' => $pregnancy->id], $sexual_activity_row);
+
+                $sexual_activity_id++;
             }
         }
     }

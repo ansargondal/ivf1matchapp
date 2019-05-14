@@ -34,12 +34,22 @@ class S3NeurologicAb extends Model
             $temp = strtolower($request->get($key));
 
             if ($temp === 'yes') {
+
                 $data[$key] = 1;
+
             } elseif ($temp === 'no') {
+
                 $data[$key] = 0;
+
             }
         }
 
-        $medical_abnormality->neurologicAb()->create($data);
+        $medical_abnormality
+            ->neurologicAb()
+            ->updateOrCreate([
+
+                'medical_abnormality_id' => $medical_abnormality->id
+
+            ], $data);
     }
 }
