@@ -11,12 +11,11 @@ class ContactController extends Controller
 
     public function store(Request $request)
     {
-
         try {
 
             $contactInfo = $request->except('_token');
 
-            Auth::user()->contact()->create($contactInfo);
+            Auth::user()->contact()->updateOrCreate(['user_id' => 44], $contactInfo);
 
             return response()->json(['error' => false, 'message' => 'Contact Information saved.']);
 

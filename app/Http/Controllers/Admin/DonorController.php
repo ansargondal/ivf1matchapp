@@ -50,7 +50,6 @@ class DonorController extends Controller
 
         return response()->json(['error' => false,
             'message' => 'Donor status has been changed to' . $request->status . '!']);
-
     }
 
     public function updateCycle(Request $request)
@@ -116,12 +115,13 @@ class DonorController extends Controller
         return $code;
     }
 
-
     public function destroy($id)
     {
         try {
             User::whereHas('roles', function ($query) {
+
                 $query->where('name', 'Donor');
+
             })->whereId($id)->delete();
 
             return response()->json(['error' => false, 'message' => 'Donor deleted successfully!']);

@@ -4,7 +4,6 @@ namespace App\Http\Controllers\Frontend\Donor;
 
 use App\Http\Controllers\Controller;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 
 class EducationController extends Controller
 {
@@ -13,7 +12,6 @@ class EducationController extends Controller
         try {
 
             $education = $request->except('token');
-            Auth::user()->education()->create($education);
 
             return response()->json(['error' => false, 'message' => 'Education Information saved.']);
         } catch (\Exception $exception) {
