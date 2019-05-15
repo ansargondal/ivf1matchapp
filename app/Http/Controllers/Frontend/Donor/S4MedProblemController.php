@@ -3,9 +3,9 @@
 namespace App\Http\Controllers\Frontend\Donor;
 
 use App\Http\Controllers\Controller;
+use App\Models\Frontend\Donor\DQProgress;
 use App\Models\Frontend\Donor\MedicalProblem;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 
 class S4MedProblemController extends Controller
 {
@@ -33,9 +33,12 @@ class S4MedProblemController extends Controller
                 }
             }
 
-            Auth::user()
+            $request->user()
                 ->medicalProblem()
                 ->updateOrCreate(['user_id' => 44], $data);
+
+            //updates or creates the current progress of donor questionnaire
+            (new DQProgress)->updateOrCreate($request);
 
 
             return response()->json(['error' => false, 'message' => 'Medical Problems Information saved.']);

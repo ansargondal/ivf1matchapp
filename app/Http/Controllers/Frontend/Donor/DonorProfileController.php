@@ -5,9 +5,9 @@ namespace App\Http\Controllers\Frontend\Donor;
 use App\Http\Controllers\Controller;
 use App\Models\Backend\User;
 use App\Models\Frontend\Donor\DonorProfile;
+use App\Models\Frontend\Donor\DQProgress;
 use App\Models\Frontend\Donor\Image;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 
 class DonorProfileController extends Controller
 {
@@ -92,12 +92,15 @@ class DonorProfileController extends Controller
             }
 
             //save donor profile information
-            $donor_profile = Auth::user()
+            $donor_profile = $request->user()
                 ->profile()
                 ->updateOrCreate(['user_id' => 44], $data);
 
             //save images and move them to specific directory
             Image::store($request, $donor_profile);
+
+            //updates or creates the current progress of donor questionnaire
+            (new DQProgress)->updateOrCreate($request);
 
             return response()->json(['error' => false, 'message' => 'Donor Profile Information saved.']);
 

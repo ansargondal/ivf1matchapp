@@ -3,13 +3,13 @@
 namespace App\Http\Controllers\Frontend\Donor;
 
 use App\Http\Controllers\Controller;
+use App\Models\Frontend\Donor\DQProgress;
 use App\Models\Frontend\Donor\MedicalAbnormality;
 use App\Models\Frontend\Donor\S3CancerAb;
 use App\Models\Frontend\Donor\S3ChromosomalAb;
 use App\Models\Frontend\Donor\S3GeneticAb;
 use App\Models\Frontend\Donor\S3NeurologicAb;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 
 class S3MedAbnormalityController extends Controller
 {
@@ -26,14 +26,20 @@ class S3MedAbnormalityController extends Controller
                 $temp = strtolower($request->get($key));
 
                 if ($temp === 'yes') {
+
                     $data[$key] = 1;
+
                 } elseif ($temp === 'no') {
+
                     $data[$key] = 0;
+
                 }
             }
 
             //Medical Abnormality Data Insertion
-            $medical_abnormality = Auth::user()->medicalAbnormality()->updateOrCreate(['user_id' => 44], $data);
+            $medical_abnormality = $request->user()
+                ->medicalAbnormality()
+                ->updateOrCreate(['user_id' => 44], $data);
 
 
             //Chromosomal Abnormality Data Insertion
@@ -47,6 +53,9 @@ class S3MedAbnormalityController extends Controller
 
             //Neurological Abnormality data Insertion
             S3NeurologicAb::store($request, $medical_abnormality);
+
+            //updates or creates the current progress of donor questionnaire
+            (new DQProgress)->updateOrCreate($request);
 
             return response()->json(['error' => false, 'message' => 'Medical Abnormality Information saved.']);
 

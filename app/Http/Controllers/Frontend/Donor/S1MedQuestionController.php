@@ -3,9 +3,9 @@
 namespace App\Http\Controllers\Frontend\Donor;
 
 use App\Http\Controllers\Controller;
+use App\Models\Frontend\Donor\DQProgress;
 use Exception;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 
 class S1MedQuestionController extends Controller
 {
@@ -14,9 +14,17 @@ class S1MedQuestionController extends Controller
     {
         try {
 
-            $questions = $request->except('token');
+            $questions = $request->except(['token', 'current_step']);
 
-            Auth::user()->s1Question()->updateOrCreate(['user_id' => 44], $questions);
+            $request
+                ->user()
+                ->s1Question()
+                ->updateOrCreate(['user_id' => 44], $questions);
+
+
+            //updates or creates the current progress of donor questionnaire
+            (new DQProgress)->updateOrCreate($request);
+
 
             return response()->json(['error' => false, 'message' => 'Medical History Information saved.']);
 

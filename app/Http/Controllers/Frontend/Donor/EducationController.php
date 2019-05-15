@@ -3,6 +3,7 @@
 namespace App\Http\Controllers\Frontend\Donor;
 
 use App\Http\Controllers\Controller;
+use App\Models\Frontend\Donor\DQProgress;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
 
@@ -12,10 +13,14 @@ class EducationController extends Controller
     {
         try {
 
-            $education = $request->except('token');
+            $education = $request->except(['token', 'current_step']);
 
             Auth::user()->education()->updateOrCreate(['user_id' => 44], $education);
 
+
+            //updates or creates the current progress of donor questionnaire
+            (new DQProgress)->updateOrCreate($request);
+          
             return response()->json(['error' => false, 'message' => 'Education Information saved.']);
 
         } catch (\Exception $exception) {

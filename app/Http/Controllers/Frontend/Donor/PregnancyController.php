@@ -3,10 +3,12 @@
 namespace App\Http\Controllers\Frontend\Donor;
 
 use App\Http\Controllers\Controller;
+use App\Models\Frontend\Donor\DQProgress;
 use App\Models\Frontend\Donor\PhSexualActivity;
 use App\Models\Frontend\Donor\Pregnancy;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\Log;
 
 class PregnancyController extends Controller
 {
@@ -26,11 +28,18 @@ class PregnancyController extends Controller
             //saving sexual activity data
             PhSexualActivity::store($request, $pregnancy);
 
-            return response()->json(['error' => false, 'message' => 'Pregnancy Information saved.']);
+            //updates or creates the current progress of donor questionnaire
+            (new DQProgress)->updateOrCreate($request);
+
+            return response()
+                ->json(['error' => false, 'message' => 'Pregnancy Information saved.']);
 
         } catch (\Exception $exception) {
 
-            return response()->json(['error' => true, 'message' => 'something went wrong! Try again!']);
+            Log::error($exception->getMessage());
+
+            return response()
+                ->json(['error' => true, 'message' => 'something went wrong! Try again!']);
         }
     }
 }

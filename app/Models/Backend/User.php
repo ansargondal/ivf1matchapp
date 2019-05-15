@@ -4,6 +4,7 @@ namespace App\Models\Backend;
 
 use App\Models\Frontend\Donor\Contact;
 use App\Models\Frontend\Donor\DonorProfile;
+use App\Models\Frontend\Donor\DQProgress;
 use App\Models\Frontend\Donor\Education;
 use App\Models\Frontend\Donor\Image;
 use App\Models\Frontend\Donor\Lifestyle;
@@ -158,6 +159,11 @@ class User extends Authenticatable
 //        $foreign_key = Auth::user()->hasRole('Recipient') ? 'recipient_id' : 'donor_id';
 
         return $this->hasMany(Message::class);
+    }
+
+    public function progress()
+    {
+       return $this->hasOne(DQProgress::class) ;
     }
 
 }

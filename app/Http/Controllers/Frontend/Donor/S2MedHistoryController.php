@@ -3,13 +3,13 @@
 namespace App\Http\Controllers\Frontend\Donor;
 
 use App\Http\Controllers\Controller;
+use App\Models\Frontend\Donor\DQProgress;
 use App\Models\Frontend\Donor\S2Allergy;
 use App\Models\Frontend\Donor\S2Illness;
 use App\Models\Frontend\Donor\S2Medication;
 use App\Models\Frontend\Donor\S2Suppliment;
 use App\Models\Frontend\Donor\S2Surgical;
 use Illuminate\Http\Request;
-use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Log;
 
 class S2MedHistoryController extends Controller
@@ -27,7 +27,9 @@ class S2MedHistoryController extends Controller
             $vaccinated_data['vaccinated'] = ($vaccinated === 'yes') ? 1 : 0;
 
             //save medical history data and return last inserted medical history row
-            $medical_history = Auth::user()->s2MedicalHistory()->updateOrCreate(['user_id' => 44], $vaccinated_data);
+            $medical_history = $request->user()
+                ->s2MedicalHistory()
+                ->updateOrCreate(['user_id' => 44], $vaccinated_data);
 
             //Medical History Illness data Insertion
             S2Illness::store($request, $medical_history);
@@ -43,6 +45,10 @@ class S2MedHistoryController extends Controller
 
             //Medical History  Allergy List data Insertion
             S2Allergy::store($request, $medical_history);
+
+
+            //updates or creates the current progress of donor questionnaire
+            (new DQProgress)->updateOrCreate($request);
 
             return response()->json(['error' => false, 'message' => 'Medical History Information saved.']);
 
