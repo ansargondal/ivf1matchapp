@@ -31,6 +31,7 @@ class SexualHistoryController extends Controller
         } catch (Exception $exception) {
 
             Log::error($exception->getMessage());
+
             return response()
                 ->json(['error' => true, 'message' => 'something went wrong! Try again!']);
         }

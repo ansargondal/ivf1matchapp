@@ -7,6 +7,7 @@ use App\Models\Frontend\Donor\DQProgress;
 use App\Models\Frontend\Donor\Lifestyle;
 use App\Models\Frontend\Donor\LifeStyleSterile;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class LifestyleController extends Controller
 {
@@ -31,6 +32,8 @@ class LifestyleController extends Controller
             return response()->json(['error' => false, 'message' => 'Lifestyle information saved.']);
 
         } catch (\Exception $exception) {
+
+            Log::error($exception->getMessage());
 
             return response()->json(['error' => true, 'message' => 'something went wrong! Try again!']);
         }

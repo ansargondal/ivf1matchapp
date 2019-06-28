@@ -15,7 +15,7 @@ class AddIdColumnToDnS2SupplimentListTable extends Migration
     {
         Schema::table('dn_s2_suppliment_list', function (Blueprint $table) {
 
-            $table->increments('id')->first();
+            $table->unsignedTinyInteger('id')->first();
 
         });
     }

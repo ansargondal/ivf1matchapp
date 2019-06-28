@@ -15,7 +15,7 @@ class AddIdColumnToDnS2MedicationListTable extends Migration
     {
         Schema::table('dn_s2_medication_list', function (Blueprint $table) {
             
-            $table->increments('id')->first();
+            $table->unsignedTinyInteger('id')->first();
 
         });
     }

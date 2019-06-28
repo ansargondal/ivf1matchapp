@@ -15,7 +15,7 @@ class AddIdColumnToDnS3ChromosomalAbTable extends Migration
     {
         Schema::table('dn_s3_chromosomal_ab', function (Blueprint $table) {
 
-            $table->increments('id')->first();
+            $table->unsignedTinyInteger('id')->first();
 
         });
     }

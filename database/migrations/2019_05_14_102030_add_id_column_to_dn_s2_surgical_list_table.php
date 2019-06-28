@@ -15,7 +15,7 @@ class AddIdColumnToDnS2SurgicalListTable extends Migration
     {
         Schema::table('dn_s2_surgical_list', function (Blueprint $table) {
 
-            $table->increments('id')->first();
+            $table->unsignedTinyInteger('id')->first();
 
         });
     }

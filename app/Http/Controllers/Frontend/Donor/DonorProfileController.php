@@ -8,6 +8,7 @@ use App\Models\Frontend\Donor\DonorProfile;
 use App\Models\Frontend\Donor\DQProgress;
 use App\Models\Frontend\Donor\Image;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class DonorProfileController extends Controller
 {
@@ -66,7 +67,6 @@ class DonorProfileController extends Controller
             })->with('images')->paginate(3);
     }
 
-
     public function store(Request $request)
     {
         try {
@@ -105,6 +105,8 @@ class DonorProfileController extends Controller
             return response()->json(['error' => false, 'message' => 'Donor Profile Information saved.']);
 
         } catch (\Exception $exception) {
+
+            Log::error($exception->getMessage());
 
             return response()->json(['error' => true, 'message' => 'something went wrong! Try again!']);
         }

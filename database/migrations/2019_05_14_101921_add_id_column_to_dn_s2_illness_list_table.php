@@ -14,7 +14,7 @@ class AddIdColumnToDnS2IllnessListTable extends Migration
     public function up()
     {
         Schema::table('dn_s2_illness_list', function (Blueprint $table) {
-            $table->increments('id')->first();
+            $table->unsignedTinyInteger('id')->first();
         });
     }
 

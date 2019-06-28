@@ -6,6 +6,7 @@ use App\Http\Controllers\Controller;
 use App\Models\Frontend\Donor\DQProgress;
 use Exception;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class S1MedQuestionController extends Controller
 {
@@ -29,6 +30,8 @@ class S1MedQuestionController extends Controller
             return response()->json(['error' => false, 'message' => 'Medical History Information saved.']);
 
         } catch (Exception $exception) {
+
+            Log::error($exception->getMessage());
 
             return response()->json(['error' => true, 'message' => 'something went wrong! Try again!']);
         }

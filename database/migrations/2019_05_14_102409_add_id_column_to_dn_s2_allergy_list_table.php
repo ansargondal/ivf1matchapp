@@ -15,7 +15,7 @@ class AddIdColumnToDnS2AllergyListTable extends Migration
     {
         Schema::table('dn_s2_allergy_list', function (Blueprint $table) {
 
-            $table->increments('id')->first();
+            $table->unsignedTinyInteger('id')->first();
 
         });
     }

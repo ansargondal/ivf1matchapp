@@ -36,6 +36,8 @@
             @endguest
             @auth
                 <li class="nav-item"><a href="{{route('admin.dashboard')}}" class="nav-link">DASHBOARD</a></li>
+                <li class="nav-item"><a href="{{route('questionnaire.last.edited')}}" class="nav-link">QUESTIONNAIRE</a>
+                </li>
                 <li class="nav-item"><a href="{{route('auth.logout')}}" class="nav-link">LOG OUT</a></li>
             @endauth
             <li class="nav-item text-center"> &nbsp;&nbsp;&nbsp;&nbsp;<a href="{{route('donor.profiles')}}"

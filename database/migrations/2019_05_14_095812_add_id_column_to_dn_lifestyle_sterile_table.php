@@ -14,7 +14,7 @@ class AddIdColumnToDnLifestyleSterileTable extends Migration
     public function up()
     {
         Schema::table('dn_lifestyle_sterile', function (Blueprint $table) {
-            $table->increments('id')->first();
+            $table->unsignedTinyInteger('id')->first();
         });
     }
 

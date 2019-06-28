@@ -23,6 +23,10 @@ class S3ChromosomalAb extends Model
 
         $data = $request->only($columns_list);
 
+
+        $chromosomal_ab_id = 1;
+
+
         foreach ($data as $key => $value) {
 
             //transform vaccinated data 'yes' => 1 and 'no' => 0
@@ -37,7 +41,7 @@ class S3ChromosomalAb extends Model
 
         $medical_abnormality
             ->chromosomalAb()
-            ->updateOrCreate([
+            ->updateOrCreate(['id' => $chromosomal_ab_id,
                 'medical_abnormality_id' => $medical_abnormality->id
             ],
                 $data);

@@ -15,7 +15,7 @@ class AddIdColumnToDnS3NeurologicAbTable extends Migration
     {
         Schema::table('dn_s3_neurologic_ab', function (Blueprint $table) {
 
-            $table->increments('id')->first();
+            $table->unsignedTinyInteger('id')->first();
 
         });
     }

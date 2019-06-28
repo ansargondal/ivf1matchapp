@@ -14,7 +14,7 @@ class CreateDnPhSexualActivityTable extends Migration
     public function up()
     {
         Schema::create('dn_ph_sexual_activity', function (Blueprint $table) {
-            $table->increments('id');
+            $table->unsignedTinyInteger('id');
             $table->unsignedInteger('pregnancy_id');
 
             $table->boolean('delivered_baby')->default(false);

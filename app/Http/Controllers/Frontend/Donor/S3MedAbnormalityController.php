@@ -10,6 +10,7 @@ use App\Models\Frontend\Donor\S3ChromosomalAb;
 use App\Models\Frontend\Donor\S3GeneticAb;
 use App\Models\Frontend\Donor\S3NeurologicAb;
 use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Log;
 
 class S3MedAbnormalityController extends Controller
 {
@@ -60,6 +61,8 @@ class S3MedAbnormalityController extends Controller
             return response()->json(['error' => false, 'message' => 'Medical Abnormality Information saved.']);
 
         } catch (\Exception $exception) {
+
+            Log::error($exception->getMessage());
 
             return response()->json(['error' => true, 'message' => 'something went wrong! Try again!']);
         }

@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Auth;
 
 use App\Http\Controllers\Controller;
 use App\Http\Requests\UserLoginRequest;
+use App\Models\Frontend\Donor\DQProgress;
 use Illuminate\Support\Facades\Auth;
 
 class LoginController extends Controller
@@ -27,6 +28,18 @@ class LoginController extends Controller
                 return response()->json(['error' => false, 'message' => 'Logged In Successfully!', 'url' => $this->url]);
             }
 
+
+            //user is donor and Donor Questionnaire form is not completed
+            if ($this->isDonor() && !$this->isDQFormCompleted()) {
+
+                $this->url = DQProgress::getLastDQSavedStepURL();
+
+                //if url is null then redirect to questionnaire step form
+                $this->url = $this->url ?? '/donor/questionnaire';
+
+                return response()->json(['error' => false, 'message' => 'Logged In Successfully!', 'url' => $this->url]);
+            }
+
             //check active status for donors/recipients
             if ($this->isActiveUser()) {
 
@@ -36,7 +49,7 @@ class LoginController extends Controller
                 return response()->json(['error' => false, 'message' => 'Logged In Successfully!', 'url' => $this->url]);
             }
 
-            //logout if they are not acitve
+            //logout if they are not active
             Auth::logout();
 
             return response()->json(['error' => true, 'message' => 'Your profile is not active yet.']);
@@ -56,6 +69,7 @@ class LoginController extends Controller
     public function logout()
     {
         Auth::logout();
+
         return redirect(route('frontend.index'));
     }
 
@@ -63,5 +77,16 @@ class LoginController extends Controller
     private function isAdmin()
     {
         return Auth::user()->hasRole('Admin');
+    }
+
+    private function isDonor()
+    {
+        return Auth::user()->hasRole('Donor');
+    }
+
+    private function isDQFormCompleted()
+    {
+        //TODO: Implement the Form completed Logic
+        return false;
     }
 }

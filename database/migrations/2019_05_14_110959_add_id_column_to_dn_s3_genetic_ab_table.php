@@ -15,7 +15,7 @@ class AddIdColumnToDnS3GeneticAbTable extends Migration
     {
         Schema::table('dn_s3_genetic_ab', function (Blueprint $table) {
 
-            $table->increments('id')->first();
+            $table->unsignedTinyInteger('id')->first();
 
         });
     }

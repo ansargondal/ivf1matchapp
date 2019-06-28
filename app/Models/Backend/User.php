@@ -139,7 +139,6 @@ class User extends Authenticatable
 
     public function medicalAbnormality()
     {
-
         return $this->hasOne(MedicalAbnormality::class);
     }
 
@@ -163,7 +162,7 @@ class User extends Authenticatable
 
     public function progress()
     {
-       return $this->hasOne(DQProgress::class) ;
+        return $this->hasOne(DQProgress::class);
     }
 
 }
